@@ -41,6 +41,15 @@ This mod can be installed on client, server, or both. Footsteps, armor movement 
 
 `./gradlew build`.
 
+To test alongside a local Past Footsteps development build, explicitly supply its jar:
+
+```sh
+./gradlew runClient -PpastFootstepsJar=../PastFootsteps/build/libs/pastfootsteps-0.0.1-dev.jar
+```
+
+Use a development (`-dev.jar`) artifact. This is an optional local test dependency; it is not bundled or
+required by the published mod. See [release preparation](RELEASE_CHECKLIST.md) for the current cleanup status.
+
 ## Credits
 
 * [Dynamic Surroundings](https://github.com/OreCruncher/DynamicSurroundingsFabric). Armor equip sound assets come from this mod; the steam and lava jet behavior is inspired by its modern implementation.

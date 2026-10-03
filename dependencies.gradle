@@ -35,6 +35,14 @@
  */
 dependencies {
     // Pure runtime
+    // Optional local integration test; a standalone checkout needs no sibling build.
+    if (project.hasProperty("pastFootstepsJar")) {
+        def integrationJar = file(project.property("pastFootstepsJar"))
+        if (!integrationJar.isFile()) {
+            throw new GradleException("Past Footsteps development jar not found: ${integrationJar}")
+        }
+        runtimeOnlyNonPublishable(files(integrationJar))
+    }
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:Hodgepodge:2.7.209:dev")
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.8.144-GTNH:dev")
     runtimeOnlyNonPublishable(rfg.deobf("curse.maven:catalogue-vintage-1465746:8384975")) // 1.0.8-1.7.10
