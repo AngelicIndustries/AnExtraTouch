@@ -12,7 +12,17 @@ repositories {
         name = "Ventooth Maven"
         url = "https://mvn.ventooth.com/releases/"
     }
-    maven {
-        url = uri("https://maven.angelic.industries/github/")
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Angelic GitHub releases"
+                url = uri("https://maven.angelic.industries/github/")
+            }
+        }
+        filter {
+            includeGroup("Myask-s")
+            includeGroup("jss2a98aj")
+            includeGroup("kanmikan")
+        }
     }
 }
