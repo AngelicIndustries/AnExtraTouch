@@ -4,27 +4,27 @@
 
 Various small visual, audio, and gameplay tweaks, aimed to enhance the game experience. For Minecraft 1.7.10.
 
-[![hub](images/badges/github.png)](https://github.com/JackOfNoneTrades/AnExtraTouch/releases)
+[![hub](images/badges/github.png)](https://github.com/AngelicIndustries/AnExtraTouch/releases)
 [![curse](images/badges/curse.png)](https://www.curseforge.com/minecraft/mc-mods/an-extra-touch)
 [![modrinth](images/badges/modrinth.png)](https://modrinth.com/mod/an-extra-touch)
 [![mcmodcn](images/badges/mcmodcn.png)](https://www.mcmod.cn/class/26935.html)
-[![67](images/badges/67.png)](https://67.fentanylsolutions.org/mod/an-extra-touch)
-[![maven](images/badges/maven.png)](https://maven.fentanylsolutions.org/#/releases/org/fentanylsolutions/anextratouch)
+[![67](images/badges/67.png)](https://67minecraft.com/mod/an-extra-touch)
+[![maven](images/badges/maven.png)](https://maven.angelic.industries/#/releases/industries/angelic/anextratouch/AnExtraTouch)
 ![forge](images/badges/forge.png)
 
 ## Features
 
-* [Entity effects](https://github.com/JackOfNoneTrades/AnExtraTouch/wiki/Entity-effects): cold breath, dripping wet entities, and cake crumbs.
-* [Sounds](https://github.com/JackOfNoneTrades/AnExtraTouch/wiki/Sounds): enhanced thunder, item swing and selection sounds, bow drawstrings, armor equip sounds, and optional muting of Dynamic Surroundings animal ambience.
-* [Water effects](https://github.com/JackOfNoneTrades/AnExtraTouch/wiki/Water-effects): water and lava splashes, waterfall foam and ambience, chest bubbles, rain ripples, and Wakes trails with swimming ripples.
-* [Steam and lava](https://github.com/JackOfNoneTrades/AnExtraTouch/wiki/Steam-and-Lava): cosmetic steam over heated water and occasional lava jets.
-* [Coastal Waves](https://github.com/JackOfNoneTrades/AnExtraTouch/wiki/Coastal-Waves): shore waves and breaking sounds.
-* [Camera Overhaul](https://github.com/JackOfNoneTrades/AnExtraTouch/wiki/Camera-Overhaul): movement tilt, idle sway, and configurable camera shakes, including sound triggers.
-* [Shoulder Surfing additions](https://github.com/JackOfNoneTrades/AnExtraTouch/wiki/Shoulder-Surfing): decoupled camera, aiming transitions, player fading, smooth follow, and omnidirectional sprinting.
-* [Smooth GUI and loading screen](https://github.com/JackOfNoneTrades/AnExtraTouch/wiki/Smooth-GUI): animated menus and the Loading Progress Bar port.
-* [Gameplay](https://github.com/JackOfNoneTrades/AnExtraTouch/wiki/Gameplay): modern boat controls, optional grass trampling, and Thermal Foundation Blizz snow trails.
+* [Entity effects](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Entity-effects): cold breath, dripping wet entities, and cake crumbs.
+* [Sounds](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Sounds): enhanced thunder, item swing and selection sounds, bow drawstrings, armor equip sounds, and optional muting of Dynamic Surroundings animal ambience.
+* [Water effects](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Water-effects): water and lava splashes, waterfall foam and ambience, chest bubbles, rain ripples, and Wakes trails with swimming ripples.
+* [Steam and lava](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Steam-and-Lava): cosmetic steam over heated water and occasional lava jets.
+* [Coastal Waves](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Coastal-Waves): shore waves and breaking sounds.
+* [Camera Overhaul](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Camera-Overhaul): movement tilt, idle sway, and configurable camera shakes, including sound triggers.
+* [Shoulder Surfing additions](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Shoulder-Surfing): decoupled camera, aiming transitions, player fading, smooth follow, and omnidirectional sprinting.
+* [Smooth GUI and loading screen](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Smooth-GUI): animated menus and the Loading Progress Bar port.
+* [Gameplay](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Gameplay): modern boat controls, optional grass trampling, and Thermal Foundation Blizz snow trails.
 
-See the [configuration guide](https://github.com/JackOfNoneTrades/AnExtraTouch/wiki/Configuration) and category pages for all settings.
+See the [configuration guide](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Configuration) and category pages for all settings.
 
 This mod can be installed on client, server, or both. Footsteps, armor movement sounds, rain footstep audio, and footprints are provided by Past Footsteps.
 
@@ -32,7 +32,7 @@ This mod can be installed on client, server, or both. Footsteps, armor movement 
 
 * [UniMixins](https://modrinth.com/mod/unimixins) [![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/unimixins)  [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/unimixins/versions) [![git](images/icons/git.png)](https://github.com/LegacyModdingMC/UniMixins/releases)
 * [GTNHLib](https://modrinth.com/mod/gtnhlib)   [![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/gtnhlib)  [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/gtnhlib) [![git](images/icons/git.png)](https://github.com/GTNewHorizons/GTNHLib/releases)
-* [FentLib](https://www.curseforge.com/minecraft/mc-mods/fentlib) [![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/fentlib) [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/fentlib) [![67](images/icons/67.png)](https://67.fentanylsolutions.org/mod/fentlib) [![git](images/icons/git.png)](https://github.com/JackOfNoneTrades/FentLib)
+* [AngelLib](https://www.curseforge.com/minecraft/mc-mods/angellib) [![curse](images/icons/curse.png)](https://www.curseforge.com/minecraft/mc-mods/angellib) [![modrinth](images/icons/modrinth.png)](https://modrinth.com/mod/angellib) [![67](images/icons/67.png)](https://67minecraft.com/mod/angellib) [![git](images/icons/git.png)](https://github.com/AngelicIndustries/AngelLib)
 
 ![breath](images/gifs/breath_pov.gif)
 ![dripping](images/gifs/drip.gif)
