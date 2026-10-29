@@ -7,7 +7,6 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import industries.angelic.anextratouch.handlers.client.ClientHandler;
-import industries.angelic.anextratouch.handlers.client.DynamicSurroundingsSoundHandler;
 import industries.angelic.anextratouch.handlers.client.ItemSoundHandler;
 import industries.angelic.anextratouch.handlers.client.SmoothGuiHandler;
 import industries.angelic.anextratouch.handlers.client.StepSoundHandler;
@@ -73,7 +72,6 @@ public class ClientProxy extends CommonProxy {
             .register(clientHandler);
         MinecraftForge.EVENT_BUS.register(clientHandler);
         MinecraftForge.EVENT_BUS.register(new SoundShakeHandler());
-        MinecraftForge.EVENT_BUS.register(DynamicSurroundingsSoundHandler.INSTANCE);
         MinecraftForge.EVENT_BUS.register(new ThunderSoundHandler());
         ItemSoundHandler.INSTANCE.onConfigReload();
         FMLCommonHandler.instance()
@@ -94,7 +92,6 @@ public class ClientProxy extends CommonProxy {
         AnExtraTouch.vic.populateListsFromConfig();
         WaterCascadeManager.INSTANCE.onConfigReload();
         WaterWaveManager.INSTANCE.onConfigReload();
-        DynamicSurroundingsSoundHandler.INSTANCE.onConfigReload();
         ItemSoundHandler.INSTANCE.onConfigReload();
         ThermalEffectsManager.INSTANCE.onConfigReload();
     }

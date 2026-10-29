@@ -85,12 +85,7 @@ final class ConfigGuiLayout {
                     "armorSoundVolume",
                     "armorDefaultCategory",
                     "armorCategoryOverrides",
-                    "armorSoundEntityWhitelist"),
-                section(
-                    config,
-                    "sounds.dynamic_surroundings",
-                    "dynamic_surroundings",
-                    "muteDynamicSurroundingsAnimalSounds")),
+                    "armorSoundEntityWhitelist")),
             menu(
                 "water_effects",
                 section(

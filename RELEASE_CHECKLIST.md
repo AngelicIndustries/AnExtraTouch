@@ -9,8 +9,7 @@ player-model rework.
 * Water/lava splashes, swimming ripples and wakes, coastal foam and optional Angelica shader-water rendering,
   with fixes for water depth, lighting, held-item occlusion and wake continuity.
 * Cosmetic steam and lava jets, waterfall spawning limits and Minecraft particle-setting support.
-* Modern Dynamic Surroundings thunder/item sounds, duplicate-sound prevention, shield and sword-blocking fixes,
-  and optional animal-ambience muting.
+* Modern Dynamic Surroundings thunder/item sounds, duplicate-sound prevention, and shield and sword-blocking fixes.
 * Independent camera-shake patterns, Shoulder Surfing perspective fixes and camera-relative horse steering.
 * Config menus, feature documentation, artwork and Catalogue integration.
 * Walking sounds, equipment movement, rain steps and footprints moved to Past Footsteps. AET retains armor

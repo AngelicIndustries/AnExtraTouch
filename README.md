@@ -15,7 +15,7 @@ Various small visual, audio, and gameplay tweaks, aimed to enhance the game expe
 ## Features
 
 * [Entity effects](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Entity-effects): cold breath, dripping wet entities, and cake crumbs.
-* [Sounds](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Sounds): enhanced thunder, item swing and selection sounds, bow drawstrings, armor equip sounds, and optional muting of Dynamic Surroundings animal ambience.
+* [Sounds](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Sounds): enhanced thunder, item swing and selection sounds, bow drawstrings, and armor equip sounds.
 * [Water effects](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Water-effects): water and lava splashes, waterfall foam and ambience, chest bubbles, rain ripples, and Wakes trails with swimming ripples.
 * [Steam and lava](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Steam-and-Lava): cosmetic steam over heated water and occasional lava jets.
 * [Coastal Waves](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Coastal-Waves): shore waves and breaking sounds.

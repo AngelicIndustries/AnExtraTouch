@@ -13,7 +13,6 @@ public class Config {
         public static final String general = "general";
         public static final String breath = "breath";
         public static final String armor = "armor";
-        public static final String dynamicSurroundings = "dynamic_surroundings";
         public static final String thunder = "thunder";
         public static final String itemSounds = "item_sounds";
         public static final String thermalEffects = "thermal_effects";
@@ -56,9 +55,6 @@ public class Config {
     public static String armorDefaultCategory = "heavy";
     public static String[] armorCategoryOverrides = { "etfuturum:elytra;elytra" };
     public static String[] armorSoundEntityWhitelist = { "Player", "Zombie", "Skeleton", "PigZombie" };
-
-    // Dynamic Surroundings
-    public static boolean muteDynamicSurroundingsAnimalSounds = false;
 
     // thunder
     public static boolean thunderSoundsEnabled = true;
@@ -390,13 +386,6 @@ public class Config {
                 Categories.armor,
                 armorSoundEntityWhitelist,
                 "Entity classes that play armor equip and unequip sounds.");
-
-            // Dynamic Surroundings
-            muteDynamicSurroundingsAnimalSounds = config.getBoolean(
-                "muteDynamicSurroundingsAnimalSounds",
-                Categories.dynamicSurroundings,
-                false,
-                "Mute Dynamic Surroundings ambient animal and insect sounds, including creature growls. Also mutes entire forest, jungle, and plains background recordings to cover embedded calls. Does not mute actual Minecraft mobs, weather, water, or footsteps. Applies immediately when saved; disable to allow these sounds again.");
 
             // thunder
             thunderSoundsEnabled = config.getBoolean(
