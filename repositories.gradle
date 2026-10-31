@@ -1,6 +1,17 @@
 // Add any additional repositories for your dependencies here.
 
 repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "MCLib JitPack"
+                url = uri("https://jitpack.io")
+            }
+        }
+        filter {
+            includeModule("com.github.makamys", "MCLib")
+        }
+    }
     maven {
         url "https://maven.angelic.industries/releases"
     }

@@ -10,13 +10,43 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
 import industries.angelic.anextratouch.AnExtraTouch;
 import industries.angelic.anextratouch.Config;
+import industries.angelic.anextratouch.compat.EtFuturumElytraCompat;
+import industries.angelic.anextratouch.varinstances.configcaches.ArmorCache;
 
 /** Detects armor equip and unequip changes on the client. */
 public class StepSoundHandler {
 
-    private static class ArmorTracker {
+    static class ArmorTracker {
 
-        final ItemStack[] prevArmor = new ItemStack[4];
+        private final ItemStack[] prevArmor;
+
+        ArmorTracker(ItemStack[] equipment) {
+            prevArmor = new ItemStack[equipment.length];
+            for (int i = 0; i < equipment.length; i++) {
+                prevArmor[i] = equipment[i] == null ? null : equipment[i].copy();
+            }
+        }
+
+        String update(ItemStack[] equipment, ArmorCache armor) {
+            String bestCategory = null;
+            int bestPriority = -1;
+            for (int i = 0; i < equipment.length; i++) {
+                ItemStack current = equipment[i];
+                if (isSameArmorItem(prevArmor[i], current)) continue;
+
+                ItemStack relevant = current != null ? current : prevArmor[i];
+                if (relevant != null) {
+                    String category = armor.resolveArmorCategory(relevant);
+                    int priority = armor.getArmorPriority(category);
+                    if (priority > bestPriority) {
+                        bestPriority = priority;
+                        bestCategory = category;
+                    }
+                }
+                prevArmor[i] = current == null ? null : current.copy();
+            }
+            return bestCategory;
+        }
     }
 
     private final WeakHashMap<EntityLivingBase, ArmorTracker> trackers = new WeakHashMap<>();
@@ -40,7 +70,7 @@ public class StepSoundHandler {
 
             ArmorTracker tracker = trackers.get(living);
             if (tracker == null) {
-                tracker = createTracker(living);
+                tracker = new ArmorTracker(equipment(living));
                 trackers.put(living, tracker);
             } else {
                 checkEquipSound(living, tracker);
@@ -48,35 +78,17 @@ public class StepSoundHandler {
         }
     }
 
-    private static ArmorTracker createTracker(EntityLivingBase living) {
-        ArmorTracker tracker = new ArmorTracker();
+    private static ItemStack[] equipment(EntityLivingBase living) {
+        ItemStack[] equipment = new ItemStack[5];
         for (int i = 0; i < 4; i++) {
-            ItemStack stack = living.getEquipmentInSlot(i + 1);
-            tracker.prevArmor[i] = stack == null ? null : stack.copy();
+            equipment[i] = living.getEquipmentInSlot(i + 1);
         }
-        return tracker;
+        equipment[4] = EtFuturumElytraCompat.getBaubleElytra(living);
+        return equipment;
     }
 
     private static void checkEquipSound(EntityLivingBase living, ArmorTracker tracker) {
-        String bestCategory = null;
-        int bestPriority = -1;
-
-        for (int i = 0; i < 4; i++) {
-            ItemStack current = living.getEquipmentInSlot(i + 1);
-            if (isSameArmorItem(tracker.prevArmor[i], current)) continue;
-
-            ItemStack relevant = current != null ? current : tracker.prevArmor[i];
-            if (relevant != null) {
-                String category = AnExtraTouch.vic.armor.resolveArmorCategory(relevant);
-                int priority = AnExtraTouch.vic.armor.getArmorPriority(category);
-                if (priority > bestPriority) {
-                    bestPriority = priority;
-                    bestCategory = category;
-                }
-            }
-            tracker.prevArmor[i] = current == null ? null : current.copy();
-        }
-
+        String bestCategory = tracker.update(equipment(living), AnExtraTouch.vic.armor);
         if (bestCategory != null) {
             playEquipSound(living, bestCategory);
         }
@@ -117,7 +129,10 @@ public class StepSoundHandler {
             case "crystal":
                 return AnExtraTouch.MODID + ":armor.crystal_walk";
             case "elytra":
-                return "minecraft_1.21.10:item.armor.equip_elytra";
+            case "netherite":
+            case "turtle":
+            case "generic":
+                return AnExtraTouch.MODID + ":armor." + category + "_equip";
             default:
                 return null;
         }

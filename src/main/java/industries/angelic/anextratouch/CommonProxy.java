@@ -10,6 +10,8 @@ import industries.angelic.anextratouch.util.MobUtil;
 
 public class CommonProxy {
 
+    public void construct() {}
+
     public void preInit(FMLPreInitializationEvent event) {
         Config.loadConfig(AnExtraTouch.confFile);
     }

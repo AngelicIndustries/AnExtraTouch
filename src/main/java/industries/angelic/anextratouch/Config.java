@@ -13,6 +13,7 @@ public class Config {
         public static final String general = "general";
         public static final String breath = "breath";
         public static final String armor = "armor";
+        public static final String extraSounds = "extra_sounds";
         public static final String thunder = "thunder";
         public static final String itemSounds = "item_sounds";
         public static final String thermalEffects = "thermal_effects";
@@ -54,7 +55,33 @@ public class Config {
     public static float armorSoundVolume = 0.3f;
     public static String armorDefaultCategory = "heavy";
     public static String[] armorCategoryOverrides = { "etfuturum:elytra;elytra" };
+    // EFR armorEquipCustomRules, translated to AET equip categories.
+    public static String[] armorNameRules = { "light:thermal_padding", "light:wool", "medium:cultist", "heavy:alloy",
+        "heavy:angmallen", "heavy:astral_silver", "heavy:carmot", "heavy:copper", "heavy:efrine", "heavy:electrum",
+        "heavy:hepatizon", "heavy:midasium", "heavy:orichalcum", "heavy:oureclase", "heavy:platinum", "heavy:silver",
+        "heavy:amordrine", "heavy:brass", "heavy:bronze", "heavy:celenegil", "heavy:ceruclase", "heavy:desh",
+        "heavy:endium", "heavy:inolashite", "heavy:invar", "heavy:kalendrite", "heavy:lead", "heavy:nickel",
+        "heavy:nickle", "heavy:prometheum", "heavy:solar", "heavy:steel", "heavy:thaumium", "heavy:tin",
+        "heavy:titanium", "heavy:vyroxeres", "crystal:adamantine", "crystal:amethyst", "crystal:atlarus",
+        "crystal:desichalkos", "crystal:eximite", "crystal:mithril", "crystal:mythril", "crystal:void",
+        "netherite:haderoth", "netherite:heavyblaze", "netherite:ignatius", "netherite:sanguinite",
+        "netherite:tartarite", "netherite:fortress", "netherite:vulcanite", "turtle:wood", "elytra:hazmat" };
     public static String[] armorSoundEntityWhitelist = { "Player", "Zombie", "Skeleton", "PigZombie" };
+
+    // Extra Sounds
+    public static boolean extraInventoryClicks = true;
+    public static boolean extraCreativeActions = true;
+    public static boolean extraItemDrops = true;
+    public static boolean extraInventoryScreens = true;
+    public static boolean extraScreenScroll = true;
+    public static boolean extraChat = true;
+    public static boolean extraTyping = true;
+    public static boolean extraScreenshots = true;
+    public static boolean extraStatusEffects = true;
+    public static boolean extraRepeaters = true;
+    public static boolean extraJukebox = true;
+    public static boolean extraEntityPoof = false;
+    public static float extraSoundsVolume = 1.0F;
 
     // thunder
     public static boolean thunderSoundsEnabled = true;
@@ -375,17 +402,82 @@ public class Config {
                 "armorDefaultCategory",
                 Categories.armor,
                 armorDefaultCategory,
-                "Default equip sound category for unknown or modded armor items. Valid: light, medium, heavy, crystal, elytra.");
+                "Default equip sound category when no material or name rule matches. Valid: light, medium, heavy, crystal, netherite, elytra, turtle, generic, none.");
             armorCategoryOverrides = config.getStringList(
                 "armorCategoryOverrides",
                 Categories.armor,
                 armorCategoryOverrides,
-                "Per-item armor equip category overrides. Format: \"registry_name;category\". e.g. \"minecraft:iron_chestplate;crystal\". Valid categories: light, medium, heavy, crystal, elytra. The \"elytra\" category routes to the vanilla MC 1.20+ equip_elytra sound provided by Et Futurum Requiem's Asset Director.");
+                "Per-item armor equip category overrides. Format: \"registry_name;category\". e.g. \"minecraft:iron_chestplate;crystal\". Valid categories: light, medium, heavy, crystal, netherite, elytra, turtle, generic, none.");
+            armorNameRules = config.getStringList(
+                "armorNameRules",
+                Categories.armor,
+                armorNameRules,
+                "Armor equip name rules: category:phrase. Case-insensitive substring matching on unlocalized and ArmorMaterial names, after registry overrides and vanilla materials. Priority: none, medium, crystal, heavy, light, netherite, elytra, turtle, generic. Rules within a category share priority. Modern categories use EFR when available; netherite falls back to heavy, elytra/turtle/generic to light.");
             armorSoundEntityWhitelist = config.getStringList(
                 "armorSoundEntityWhitelist",
                 Categories.armor,
                 armorSoundEntityWhitelist,
                 "Entity classes that play armor equip and unequip sounds.");
+
+            // Extra Sounds
+            extraInventoryClicks = config.getBoolean(
+                "extraInventoryClicks",
+                Categories.extraSounds,
+                true,
+                "Inventory item clicks, transfers, hotbar swaps and drag splitting.");
+            extraCreativeActions = config.getBoolean(
+                "extraCreativeActions",
+                Categories.extraSounds,
+                true,
+                "Creative inventory cloning and deleting items.");
+            extraItemDrops = config.getBoolean(
+                "extraItemDrops",
+                Categories.extraSounds,
+                true,
+                "Dropping items with the drop key or from an inventory.");
+            extraInventoryScreens = config.getBoolean(
+                "extraInventoryScreens",
+                Categories.extraSounds,
+                true,
+                "Opening and closing container screens.");
+            extraScreenScroll = config.getBoolean(
+                "extraScreenScroll",
+                Categories.extraSounds,
+                true,
+                "Scrolling rows in the creative inventory.");
+            extraChat = config.getBoolean(
+                "extraChat",
+                Categories.extraSounds,
+                true,
+                "Incoming chat messages and mentions of your name.");
+            extraTyping = config.getBoolean(
+                "extraTyping",
+                Categories.extraSounds,
+                true,
+                "Typing, moving the cursor, deleting, cutting and pasting text.");
+            extraScreenshots = config
+                .getBoolean("extraScreenshots", Categories.extraSounds, true, "Successfully saving a screenshot.");
+            extraStatusEffects = config.getBoolean(
+                "extraStatusEffects",
+                Categories.extraSounds,
+                true,
+                "Gaining and losing beneficial or harmful potion effects.");
+            extraRepeaters = config
+                .getBoolean("extraRepeaters", Categories.extraSounds, true, "Changing repeater delay.");
+            extraJukebox = config
+                .getBoolean("extraJukebox", Categories.extraSounds, true, "Ejecting a record from a jukebox.");
+            extraEntityPoof = config.getBoolean(
+                "extraEntityPoof",
+                Categories.extraSounds,
+                false,
+                "Living entities disappearing in death particles.");
+            extraSoundsVolume = config.getFloat(
+                "extraSoundsVolume",
+                Categories.extraSounds,
+                1.0F,
+                0.0F,
+                2.0F,
+                "Volume multiplier for Extra Sounds (1 = normal).");
 
             // thunder
             thunderSoundsEnabled = config.getBoolean(

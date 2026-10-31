@@ -21,10 +21,17 @@ import industries.angelic.anextratouch.handlers.client.effects.WaterRippleManage
 import industries.angelic.anextratouch.handlers.client.effects.WaterSplashManager;
 import industries.angelic.anextratouch.handlers.client.effects.WaterWaveManager;
 import industries.angelic.anextratouch.handlers.client.effects.WetParticleHandler;
+import industries.angelic.anextratouch.handlers.client.extrasounds.ExtraSoundHandler;
+import industries.angelic.anextratouch.handlers.client.extrasounds.ModernSounds;
 import industries.angelic.anextratouch.varinstances.VarInstanceClient;
 
 @SuppressWarnings("unused")
 public class ClientProxy extends CommonProxy {
+
+    @Override
+    public void construct() {
+        ModernSounds.register();
+    }
 
     @Override
     public void preInit(FMLPreInitializationEvent event) {
@@ -73,6 +80,10 @@ public class ClientProxy extends CommonProxy {
         MinecraftForge.EVENT_BUS.register(clientHandler);
         MinecraftForge.EVENT_BUS.register(new SoundShakeHandler());
         MinecraftForge.EVENT_BUS.register(new ThunderSoundHandler());
+        MinecraftForge.EVENT_BUS.register(ExtraSoundHandler.INSTANCE);
+        FMLCommonHandler.instance()
+            .bus()
+            .register(ExtraSoundHandler.INSTANCE);
         ItemSoundHandler.INSTANCE.onConfigReload();
         FMLCommonHandler.instance()
             .bus()

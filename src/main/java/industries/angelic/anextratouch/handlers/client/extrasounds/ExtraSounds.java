@@ -1,0 +1,69 @@
+package industries.angelic.anextratouch.handlers.client.extrasounds;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.audio.ISound;
+import net.minecraft.client.audio.PositionedSoundRecord;
+import net.minecraft.entity.Entity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+
+import industries.angelic.anextratouch.Config;
+
+/** Local accents. Volume and pitch on the event's entries come from Extra Sounds' definitions. */
+public final class ExtraSounds {
+
+    private ExtraSounds() {}
+
+    public static ResourceLocation id(String event) {
+        return new ResourceLocation("anextratouch", event);
+    }
+
+    public static void ui(String event) {
+        ui(id(event), 1.0F);
+    }
+
+    public static void ui(ResourceLocation event, float pitch) {
+        if (Config.extraSoundsVolume <= 0) return;
+        Minecraft.getMinecraft()
+            .getSoundHandler()
+            .playSound(new UiSound(event, Config.extraSoundsVolume, pitch));
+    }
+
+    public static void at(String event, double x, double y, double z, float volume, float pitch) {
+        if (Config.extraSoundsVolume <= 0) return;
+        Minecraft.getMinecraft()
+            .getSoundHandler()
+            .playSound(
+                new PositionedSoundRecord(
+                    id(event),
+                    volume * Config.extraSoundsVolume,
+                    pitch,
+                    (float) x,
+                    (float) y,
+                    (float) z));
+    }
+
+    public static void drop(ItemStack stack, int count) {
+        if (!Config.extraItemDrops || stack == null || count <= 0) return;
+        ui(id("item.drop"), dropPitch(count, stack.isStackable() ? stack.getMaxStackSize() : 1));
+    }
+
+    public static float dropPitch(int count, int maximum) {
+        return maximum <= 1 ? 2.0F : 2.0F - 0.5F * Math.max(0, Math.min(1, (count - 1.0F) / (maximum - 1.0F)));
+    }
+
+    public static void poof(Entity entity) {
+        if (!Config.extraEntityPoof || !entity.worldObj.isRemote) return;
+        float size = (float) Math.sqrt(entity.height * entity.width) * 0.4F;
+        float pitch = size + (2 - size) * 0.65F + (float) ((Math.random() - 0.5) / 3);
+        at("entity.poof", entity.posX, entity.posY, entity.posZ, 0.7F, pitch);
+    }
+
+    static final class UiSound extends PositionedSoundRecord {
+
+        UiSound(ResourceLocation event, float volume, float pitch) {
+            super(event, volume, pitch, 0, 0, 0);
+            this.field_147666_i = ISound.AttenuationType.NONE;
+        }
+    }
+}

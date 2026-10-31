@@ -1,6 +1,8 @@
 package industries.angelic.anextratouch.handlers.client;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import net.minecraft.item.Item;
@@ -9,7 +11,53 @@ import net.minecraft.nbt.NBTTagCompound;
 
 import org.junit.Test;
 
+import industries.angelic.anextratouch.varinstances.configcaches.ArmorCache;
+
 public class StepSoundHandlerTest {
+
+    private static final ArmorCache ELYTRA_SOUNDS = new ArmorCache() {
+
+        @Override
+        public String resolveArmorCategory(ItemStack stack) {
+            return "elytra";
+        }
+    };
+
+    @Test
+    public void baubleElytraEquipAndUnequipEachReportOneChange() {
+        ItemStack[] equipment = new ItemStack[5];
+        StepSoundHandler.ArmorTracker tracker = new StepSoundHandler.ArmorTracker(equipment);
+        equipment[4] = new ItemStack(new Item().setMaxDamage(432));
+        assertEquals("elytra", tracker.update(equipment, ELYTRA_SOUNDS));
+        assertNull(tracker.update(equipment, ELYTRA_SOUNDS));
+        equipment[4] = null;
+        assertEquals("elytra", tracker.update(equipment, ELYTRA_SOUNDS));
+        assertNull(tracker.update(equipment, ELYTRA_SOUNDS));
+    }
+
+    @Test
+    public void existingBaubleAndDurabilityChangesStaySilent() {
+        ItemStack[] equipment = new ItemStack[5];
+        equipment[4] = new ItemStack(new Item().setMaxDamage(432));
+        StepSoundHandler.ArmorTracker tracker = new StepSoundHandler.ArmorTracker(equipment);
+        assertNull(tracker.update(equipment, ELYTRA_SOUNDS));
+        equipment[4].setItemDamage(20);
+        equipment[4].setTagCompound(new NBTTagCompound());
+        equipment[4].getTagCompound()
+            .setBoolean("flying", true);
+        assertNull(tracker.update(equipment, ELYTRA_SOUNDS));
+    }
+
+    @Test
+    public void movingElytraBetweenChestAndBaubleCoalescesChanges() {
+        ItemStack[] equipment = new ItemStack[5];
+        equipment[2] = new ItemStack(new Item());
+        StepSoundHandler.ArmorTracker tracker = new StepSoundHandler.ArmorTracker(equipment);
+        equipment[4] = equipment[2];
+        equipment[2] = null;
+        assertEquals("elytra", tracker.update(equipment, ELYTRA_SOUNDS));
+        assertNull(tracker.update(equipment, ELYTRA_SOUNDS));
+    }
 
     @Test
     public void nullSlotsCompareAsExpected() {

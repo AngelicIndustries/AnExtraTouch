@@ -73,6 +73,12 @@ dependencies {
     implementation("com.github.GTNewHorizons:GTNHLib:0.11.49:dev")
     implementation("industries.angelic.angellib:AngelLib:1.0.0:dev")
 
+    // Keep the shared pre-init protocol compatible with EFR's bundled MCLib.
+    // AssetDirector shares its cache and requests with other shaded copies.
+    shadowImplementation("com.github.makamys:MCLib:0.3.7.8") {
+        exclude group: "codechicken"
+    }
+
     // Pure compile
     compileOnly(rfg.deobf("curse.maven:jingames-jrmcore-497507:4523117"))
     compileOnly(rfg.deobf("curse.maven:jingames-jbra-client-497511:4505635"))

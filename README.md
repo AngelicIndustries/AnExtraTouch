@@ -16,6 +16,7 @@ Various small visual, audio, and gameplay tweaks, aimed to enhance the game expe
 
 * [Entity effects](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Entity-effects): cold breath, dripping wet entities, and cake crumbs.
 * [Sounds](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Sounds): enhanced thunder, item swing and selection sounds, bow drawstrings, and armor equip sounds.
+* [Extra Sounds](docs/EXTRA_SOUNDS.md): inventory actions, typing, chat, screenshots, potion changes, repeater adjustment, jukebox ejection, and optional entity death sounds.
 * [Water effects](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Water-effects): water and lava splashes, waterfall foam and ambience, chest bubbles, rain ripples, and Wakes trails with swimming ripples.
 * [Steam and lava](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Steam-and-Lava): cosmetic steam over heated water and occasional lava jets.
 * [Coastal Waves](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Coastal-Waves): shore waves and breaking sounds.
@@ -52,6 +53,8 @@ required by the published mod. See [release preparation](RELEASE_CHECKLIST.md) f
 
 ## Credits
 
+* [Extra Sounds](https://github.com/extrasounds/extra-sounds). Client sound behavior, event definitions, and 33 recordings, licensed under CC0-1.0.
+
 * [Dynamic Surroundings](https://github.com/OreCruncher/DynamicSurroundingsFabric). Armor equip sound assets come from this mod; the steam and lava jet behavior is inspired by its modern implementation.
 * [LegendarySurvivalOverhaul](https://github.com/Alex-Hashtag/LegendarySurvivalOverhaul).
 * [Smooth Gui](https://github.com/Ezzenix/SmoothGui)
@@ -62,6 +65,7 @@ required by the published mod. See [release preparation](RELEASE_CHECKLIST.md) f
 * [Coastal Waves](https://www.curseforge.com/minecraft/mc-mods/coastal-waves) by Verph. Source of the shore wave effect, textures, and sounds.
 * [Crest Ocean System](https://github.com/wave-harmonic/crest). Coastal foam simulation and shared coastal/wake foam appearance and texture.
 * [Et Futurum Requiem](https://github.com/Roadhog360/Et-Futurum-Requiem).
+* [MCLib](https://github.com/makamys/MCLib), for downloading and caching modern sound assets.
 * [Loading Progress Bar](https://github.com/jbredwards/Loading-Progress-Bar). Mixin port thanks to [kotmatross28729](https://github.com/kotmatross28729).
 * [GT:NH buildscript](https://github.com/GTNewHorizons/ExampleMod1.7.10).
 

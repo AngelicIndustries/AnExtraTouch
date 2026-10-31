@@ -58,6 +58,23 @@ final class ConfigGuiLayout {
                 property(config, "misc", "cakeEatingParticlesEnabled")),
             menu(
                 "sounds",
+                section(
+                    config,
+                    "sounds.extra_sounds",
+                    "extra_sounds",
+                    "extraInventoryClicks",
+                    "extraCreativeActions",
+                    "extraItemDrops",
+                    "extraInventoryScreens",
+                    "extraScreenScroll",
+                    "extraChat",
+                    "extraTyping",
+                    "extraScreenshots",
+                    "extraStatusEffects",
+                    "extraRepeaters",
+                    "extraJukebox",
+                    "extraEntityPoof",
+                    "extraSoundsVolume"),
                 section(config, "sounds.thunder", "thunder", "thunderSoundsEnabled", "thunderSoundVolume"),
                 menu(
                     "sounds.items",
@@ -85,6 +102,7 @@ final class ConfigGuiLayout {
                     "armorSoundVolume",
                     "armorDefaultCategory",
                     "armorCategoryOverrides",
+                    "armorNameRules",
                     "armorSoundEntityWhitelist")),
             menu(
                 "water_effects",

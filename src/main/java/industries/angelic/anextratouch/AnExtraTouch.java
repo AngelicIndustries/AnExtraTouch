@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLConstructionEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -20,7 +21,7 @@ import industries.angelic.anextratouch.varinstances.VarInstanceClient;
     name = "An Extra Touch",
     acceptedMinecraftVersions = "[1.7.10]",
     acceptableRemoteVersions = "*",
-    dependencies = "required-after:unimixins;required-after:gtnhlib;required-after:angellib@[1.0.0,)",
+    dependencies = "required-after:unimixins;required-after:gtnhlib;required-after:angellib@[1.0.0,);after:etfuturum",
     guiFactory = "industries.angelic.anextratouch.gui.GuiFactory",
     customProperties = { @Mod.CustomProperty(k = "license", v = "LGPLv3"),
         @Mod.CustomProperty(k = "issueTrackerUrl", v = "https://github.com/AngelicIndustries/AnExtraTouch/issues"),
@@ -40,6 +41,11 @@ public class AnExtraTouch {
         clientSide = MODGROUP + "." + MODID + ".ClientProxy",
         serverSide = MODGROUP + "." + MODID + ".CommonProxy")
     public static industries.angelic.anextratouch.CommonProxy proxy;
+
+    @Mod.EventHandler
+    public void construct(FMLConstructionEvent event) {
+        proxy.construct();
+    }
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {

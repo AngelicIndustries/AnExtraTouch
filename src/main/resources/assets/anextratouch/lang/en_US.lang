@@ -52,3 +52,5 @@ anextratouch.configgui.menu.debug=Debug
 # Keybindings
 key.anextratouch.free_look=Free Look
 key.categories.anextratouch=An Extra Touch
+
+anextratouch.configgui.menu.sounds.extra_sounds=Extra Sounds

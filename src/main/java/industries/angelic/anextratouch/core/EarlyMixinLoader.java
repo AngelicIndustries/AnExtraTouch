@@ -20,6 +20,20 @@ public class EarlyMixinLoader extends AngelEarlyMixinLoader {
         List<String> mixins = new MixinBuilder()
             // Accessors
 
+            .addMixin("MixinExtraInventoryClicks", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinExtraCreativeClicks", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinExtraItemDrop", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinExtraTextField", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinExtraSignTyping", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinExtraBookTyping", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinExtraScreenshot", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinExtraEntityPoof", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinExtraCreativeScroll", MixinBuilder.Side.CLIENT)
+            .addMixin("AccessorExtraCreativeContainer", MixinBuilder.Side.CLIENT)
+            .addMixin("AccessorExtraSoundHandler", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinExtraSoundResources", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinExtraUiSoundSource", MixinBuilder.Side.CLIENT)
+
             // Rest
             .addMixin("MixinBlockCake", MixinBuilder.Side.CLIENT)
             .addMixin("MixinBlockChest", MixinBuilder.Side.CLIENT)
