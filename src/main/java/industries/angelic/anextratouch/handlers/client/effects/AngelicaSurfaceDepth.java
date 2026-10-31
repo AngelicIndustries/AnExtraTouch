@@ -11,12 +11,11 @@ import net.minecraft.client.shader.Framebuffer;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL30;
 
-import com.gtnewhorizons.angelica.glsm.GLStateManager;
 import com.gtnewhorizons.angelica.glsm.RenderSystem;
 import com.gtnewhorizons.angelica.glsm.texture.DepthBufferFormat;
 import com.gtnewhorizons.angelica.glsm.texture.TextureInfoCache;
 
-/** Optional depth snapshots. All copies use Angelica's backend and preserve framebuffer bindings. */
+/** Optional depth snapshots. Angelica redirects GL calls to its backend; framebuffer bindings are preserved. */
 final class AngelicaSurfaceDepth {
 
     private static GlFramebuffer scene;
@@ -45,9 +44,9 @@ final class AngelicaSurfaceDepth {
             TextureInfoCache.INSTANCE.getInfo(depth)
                 .getInternalFormat());
         if (nextFormat == null) return false;
-        int read = GLStateManager.glGetInteger(GL30.GL_READ_FRAMEBUFFER_BINDING);
-        int draw = GLStateManager.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING);
-        int texture = GLStateManager.glGetInteger(GL11.GL_TEXTURE_BINDING_2D);
+        int read = GL11.glGetInteger(GL30.GL_READ_FRAMEBUFFER_BINDING);
+        int draw = GL11.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING);
+        int texture = GL11.glGetInteger(GL11.GL_TEXTURE_BINDING_2D);
         try {
             if (scene == null || depthId != depth
                 || width != main.framebufferWidth
@@ -69,7 +68,7 @@ final class AngelicaSurfaceDepth {
             captured = true;
             return true;
         } finally {
-            GLStateManager.glBindTexture(GL11.GL_TEXTURE_2D, texture);
+            GL11.glBindTexture(GL11.GL_TEXTURE_2D, texture);
             restoreBindings(read, draw);
         }
     }
@@ -94,12 +93,12 @@ final class AngelicaSurfaceDepth {
     }
 
     private static boolean isActiveDepth(int texture) {
-        if (GLStateManager.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING) == 0) return false;
-        return GLStateManager.glGetFramebufferAttachmentParameteri(
+        if (GL11.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING) == 0) return false;
+        return GL30.glGetFramebufferAttachmentParameteri(
             GL30.GL_DRAW_FRAMEBUFFER,
             GL30.GL_DEPTH_ATTACHMENT,
             GL30.GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE) == GL11.GL_TEXTURE
-            && GLStateManager.glGetFramebufferAttachmentParameteri(
+            && GL30.glGetFramebufferAttachmentParameteri(
                 GL30.GL_DRAW_FRAMEBUFFER,
                 GL30.GL_DEPTH_ATTACHMENT,
                 GL30.GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME) == texture;
@@ -119,8 +118,8 @@ final class AngelicaSurfaceDepth {
 
     private static void copy(GlFramebuffer source, int sourceTexture, GlFramebuffer destination,
         int destinationTexture) {
-        int read = GLStateManager.glGetInteger(GL30.GL_READ_FRAMEBUFFER_BINDING);
-        int draw = GLStateManager.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING);
+        int read = GL11.glGetInteger(GL30.GL_READ_FRAMEBUFFER_BINDING);
+        int draw = GL11.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING);
         try {
             copier.copy(source, sourceTexture, destination, destinationTexture, width, height);
         } finally {
@@ -129,8 +128,8 @@ final class AngelicaSurfaceDepth {
     }
 
     private static void restoreBindings(int read, int draw) {
-        GLStateManager.glBindFramebuffer(GL30.GL_READ_FRAMEBUFFER, read);
-        GLStateManager.glBindFramebuffer(GL30.GL_DRAW_FRAMEBUFFER, draw);
+        GL30.glBindFramebuffer(GL30.GL_READ_FRAMEBUFFER, read);
+        GL30.glBindFramebuffer(GL30.GL_DRAW_FRAMEBUFFER, draw);
     }
 
     private static void destroy() {

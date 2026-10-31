@@ -11,7 +11,7 @@ import net.irisshaders.iris.api.v0.IrisApi;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 
-import com.gtnewhorizons.angelica.glsm.GLStateManager;
+import org.lwjgl.opengl.GL20;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -57,7 +57,8 @@ final class AngelicaWaterRenderer implements AngelicaShaderHelper.WaterRenderSco
             GbufferPrograms.setOverridePhase(phase);
             // The immediate Tessellator path consumes the constant mc_Entity attribute.
             // Its water ID comes from this pack's block.properties, never a fixed numeric ID.
-            GLStateManager.glVertexAttrib2s(ProgramCreator.MC_ENTITY, id, type);
+            // Angelica redirects this entry point to its active backend.
+            GL20.glVertexAttrib2s(ProgramCreator.MC_ENTITY, id, type);
             return scope;
         } catch (RuntimeException | LinkageError e) {
             scope.close();
@@ -76,7 +77,7 @@ final class AngelicaWaterRenderer implements AngelicaShaderHelper.WaterRenderSco
         try {
             // These draws run at the main-world water boundary, outside entity renderers.
             // Match Angelica's own material reset through its backend (including non-GL backends).
-            GLStateManager.glVertexAttrib2s(ProgramCreator.MC_ENTITY, (short) -1, (short) -1);
+            GL20.glVertexAttrib2s(ProgramCreator.MC_ENTITY, (short) -1, (short) -1);
         } finally {
             GbufferPrograms.setupSpecialRenderCondition(previousCondition);
             GbufferPrograms.setTranslucencyDeclaration(previousTranslucency);
