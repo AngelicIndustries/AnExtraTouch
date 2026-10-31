@@ -4,7 +4,6 @@ import java.util.HashSet;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.gui.inventory.GuiInventory;
 import net.minecraftforge.client.event.GuiOpenEvent;
 import net.minecraftforge.client.event.GuiScreenEvent;
 
@@ -78,14 +77,6 @@ public class SmoothGuiHandler {
         return mc.theWorld == null && mc.thePlayer == null;
     }
 
-    private static boolean isPlayerInventory(GuiScreen screen) {
-        if (screen instanceof GuiInventory) return true;
-        // Match by name so Baubles remains optional.
-        return screen != null && "baubles.client.gui.GuiPlayerExpanded".equals(
-            screen.getClass()
-                .getName());
-    }
-
     @SubscribeEvent
     public void onGuiOpen(GuiOpenEvent event) {
         GuiScreen newScreen = event.gui;
@@ -97,7 +88,7 @@ public class SmoothGuiHandler {
                 return;
             }
             // The Baubles button switches pages of the same inventory.
-            if (isPlayerInventory(oldScreen) && isPlayerInventory(newScreen)) {
+            if (PlayerInventoryScreens.isPageSwitch(oldScreen, newScreen)) {
                 return;
             }
             lastScreenChangedTime = now;

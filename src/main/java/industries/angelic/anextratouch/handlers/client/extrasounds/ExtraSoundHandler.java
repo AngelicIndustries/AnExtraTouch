@@ -24,6 +24,7 @@ import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
 import industries.angelic.anextratouch.Config;
+import industries.angelic.anextratouch.handlers.client.PlayerInventoryScreens;
 
 /** Forge hooks for screen transitions, chat, potion changes and block interactions. */
 public final class ExtraSoundHandler {
@@ -58,7 +59,7 @@ public final class ExtraSoundHandler {
         // Creative inventory redirects through GuiInventory during the same call.
         // Use the final screen so that redirect does not play open, close, open.
         GuiScreen next = mc.currentScreen;
-        if (Config.extraInventoryScreens && screen != next) {
+        if (Config.extraInventoryScreens && screen != next && !PlayerInventoryScreens.isPageSwitch(screen, next)) {
             if (screen instanceof GuiContainer) ExtraSounds.ui("inventory.close");
             if (next instanceof GuiContainer) ExtraSounds.ui("inventory.open");
         }
