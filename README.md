@@ -16,6 +16,8 @@ Various small visual, audio, and gameplay tweaks, aimed to enhance the game expe
 
 * [Entity effects](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Entity-effects): cold breath, dripping wet entities, and cake crumbs.
 * [Sounds](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Sounds): enhanced thunder, item swing and selection sounds, bow drawstrings, and armor equip sounds.
+* [Vintage Resourcify](https://github.com/AngelicIndustries/VintageResourcify). Item deletion uses its pack-delete recording, credited to [ZapSplat](https://www.zapsplat.com) under the [ZapSplat Standard License](https://www.zapsplat.com/license-type/standard-license/).
+
 * [Extra Sounds](docs/EXTRA_SOUNDS.md): inventory actions, typing, chat, screenshots, potion changes, repeater adjustment, jukebox ejection, and optional entity death sounds.
 * [Water effects](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Water-effects): water and lava splashes, waterfall foam and ambience, chest bubbles, rain ripples, and Wakes trails with swimming ripples.
 * [Steam and lava](https://github.com/AngelicIndustries/AnExtraTouch/wiki/Steam-and-Lava): cosmetic steam over heated water and occasional lava jets.

@@ -221,3 +221,8 @@ setting, and approximate time. This session's launcher log is
   from its internal clicks. A transfer that returns to the original state is silent.
 - Disable `extraInventoryClicks` and `extraCreativeActions` independently and repeat
   the corresponding actions. Restore both toggles afterwards.
+
+- Compare single-item, stack, matching-item and full-inventory deletion in creative
+  inventory and NEI. All use Vintage Resourcify's pack-delete sound at the same
+  pitch and gain. Check that Players volume, Extra Sounds volume and
+  `extraCreativeActions` still control it.

@@ -948,9 +948,7 @@
   "item.delete_all": {
     "sounds": [
       {
-        "name": "minecraft:random/fizz",
-        "volume": 0.4,
-        "pitch": 1.6
+        "name": "anextratouch:items/delete"
       }
     ],
     "category": "player"
@@ -959,7 +957,6 @@
     "sounds": [
       {
         "name": "anextratouch:item.delete_all",
-        "volume": 0.5,
         "type": "event"
       }
     ],

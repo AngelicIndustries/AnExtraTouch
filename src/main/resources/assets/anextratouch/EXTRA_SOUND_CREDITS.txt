@@ -3,6 +3,16 @@ Source: https://github.com/extrasounds/extra-sounds
 Revision: 53398494b160ad874604a44747928fc9ab861ace
 License: CC0-1.0 (code and sounds). See licenses/extra-sounds-cc0.txt.
 
+Item deletion uses sounds/items/delete.ogg, copied unchanged from Vintage Resourcify:
+https://github.com/AngelicIndustries/VintageResourcify/blob/1cb174fe67b4864eea7f2324175b7df0e90358b5/src/main/resources/assets/vintage-resourcify/sounds/delete.ogg
+Sound effect by ZapSplat: https://www.zapsplat.com
+License: https://www.zapsplat.com/license-type/standard-license/
+This recording is separate from the CC0 Extra Sounds recordings above.
+SHA-256: a10c129988b3a35fc21bdb1c64bde54f005e509b93ce29053fb49b7bf0bd3ccf
+Playback gain matches Vintage Resourcify: its event gain of 4.0 times the vanilla
+UI source gain of 0.25 equals AET's event/source gain of 1.0, before user volumes.
+Both item.delete_partial and item.delete_all use this recording at that gain.
+
 Modern event names are retained. AET shades MCLib 0.3.7.8 and requests every modern
 event it uses from Minecraft 1.21.10 through AssetDirector. The client downloads
 and caches the required files from Mojang; no modern recordings or Minecraft jars

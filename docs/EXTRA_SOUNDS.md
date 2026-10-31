@@ -71,7 +71,10 @@ keep NEI's own sound; AET does not add a cue there.
 NEI item acquisition and drag pickup use the item's inventory sound. Placement uses
 that sound at the same lower pitch as vanilla inventory placement. Middle-clicking
 a panel item uses `item.clone`. Deleting one item, a stack or all matching stacks
-uses `item.delete_partial`; clearing the inventory uses `item.delete_all`. These
+uses `item.delete_partial`; clearing the inventory uses `item.delete_all`.
+Both events use Vintage Resourcify's pack-delete recording at the same pitch and
+gain, including deletion in the vanilla creative inventory. The recording is
+bundled in AET; Vintage Resourcify does not need to be installed. These
 share `extraInventoryClicks` and `extraCreativeActions` with vanilla inventory cues.
 Cancelling a dragged preview is silent, and preview cloning does not imply that a
 real inventory item has been created.
