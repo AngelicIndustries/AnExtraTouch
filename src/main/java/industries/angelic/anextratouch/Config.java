@@ -74,6 +74,7 @@ public class Config {
     public static boolean extraItemDrops = true;
     public static boolean extraInventoryScreens = true;
     public static boolean extraScreenScroll = true;
+    public static boolean extraBookmarks = true;
     public static boolean extraChat = true;
     public static boolean extraTyping = true;
     public static boolean extraScreenshots = true;
@@ -429,7 +430,7 @@ public class Config {
                 "extraCreativeActions",
                 Categories.extraSounds,
                 true,
-                "Creative inventory cloning and deleting items.");
+                "Creative inventory and NEI cloning and deleting items.");
             extraItemDrops = config.getBoolean(
                 "extraItemDrops",
                 Categories.extraSounds,
@@ -444,7 +445,9 @@ public class Config {
                 "extraScreenScroll",
                 Categories.extraSounds,
                 true,
-                "Scrolling rows in the creative inventory.");
+                "Scrolling the creative inventory and NEI item lists or recipes.");
+            extraBookmarks = config
+                .getBoolean("extraBookmarks", Categories.extraSounds, true, "Adding and removing NEI bookmarks.");
             extraChat = config.getBoolean(
                 "extraChat",
                 Categories.extraSounds,

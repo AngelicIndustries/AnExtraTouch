@@ -14,6 +14,35 @@ import industries.angelic.anextratouch.Config;
 /** One completed local inventory transaction, including creative operations that bypass windowClick. */
 public final class InventorySounds {
 
+    private static int batchDepth;
+    private static InventorySounds batchStart;
+    private static Cue batchCue;
+
+    public static void beginBatch(EntityPlayer player) {
+        if (batchDepth++ == 0) {
+            batchCue = null;
+            batchStart = new InventorySounds(
+                player.inventory,
+                player.openContainer,
+                null,
+                0,
+                0,
+                0,
+                false,
+                false,
+                false);
+        }
+    }
+
+    public static void endBatch() {
+        if (--batchDepth != 0) return;
+        Cue cue = batchCue;
+        InventorySounds start = batchStart;
+        batchCue = null;
+        batchStart = null;
+        if (start.changed()) play(cue);
+    }
+
     private final Container container;
     private final InventoryPlayer inventory;
     private final Slot slot;
@@ -52,13 +81,19 @@ public final class InventorySounds {
 
     public void finish() {
         Cue cue = result();
+        if (batchDepth > 0) {
+            // A mass drop takes priority over its preliminary pickup clicks.
+            if (cue != null && (batchCue == null || "item.drop".equals(cue.event))) batchCue = cue;
+        } else play(cue);
+    }
+
+    private static void play(Cue cue) {
         if (cue != null) ExtraSounds
             .ui(cue.item == null ? ExtraSounds.id(cue.event) : InventorySoundRegistry.sound(cue.item), cue.pitch);
     }
 
-    Cue result() {
-        ItemStack after = inventory.getItemStack();
-        boolean changed = !ItemStack.areItemStacksEqual(cursor, after);
+    boolean changed() {
+        boolean changed = !ItemStack.areItemStacksEqual(cursor, inventory.getItemStack());
         for (int i = 0; i < contents.size() && !changed; i++) {
             changed = !ItemStack.areItemStacksEqual(
                 contents.get(i),
@@ -67,6 +102,12 @@ public final class InventorySounds {
         }
         if (mode == 2 && button >= 0 && button < 9)
             changed |= !ItemStack.areItemStacksEqual(hotbar, inventory.getStackInSlot(button));
+        return changed;
+    }
+
+    Cue result() {
+        ItemStack after = inventory.getItemStack();
+        boolean changed = changed();
         if (creative && trash) {
             return Config.extraCreativeActions && (mode == 1 ? hadInventory : changed)
                 ? new Cue(mode == 1 ? "item.delete_all" : "item.delete_partial", null, 1)

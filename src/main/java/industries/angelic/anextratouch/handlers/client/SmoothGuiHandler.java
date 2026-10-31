@@ -87,8 +87,7 @@ public class SmoothGuiHandler {
                 .equals(newScreen.getClass())) {
                 return;
             }
-            // The Baubles button switches pages of the same inventory.
-            if (PlayerInventoryScreens.isPageSwitch(oldScreen, newScreen)) {
+            if (PlayerInventoryScreens.isNavigation(oldScreen, newScreen)) {
                 return;
             }
             lastScreenChangedTime = now;

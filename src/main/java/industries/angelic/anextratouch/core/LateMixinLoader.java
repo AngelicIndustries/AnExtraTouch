@@ -21,6 +21,14 @@ public class LateMixinLoader implements ILateMixinLoader {
     @Override
     public List<String> getMixins(Set<String> loadedMods) {
         return new MixinBuilder().addMixin("MixinDSEnvironStateHandler", MixinBuilder.Side.CLIENT, "dsurround")
+            .addMixin("MixinExtraBookmarks", MixinBuilder.Side.CLIENT, "NotEnoughItems")
+            .addMixin("MixinExtraNeiItems", MixinBuilder.Side.CLIENT, "NotEnoughItems")
+            .addMixin("MixinExtraNeiPlacement", MixinBuilder.Side.CLIENT, "NotEnoughItems")
+            .addMixin("MixinExtraNeiClone", MixinBuilder.Side.CLIENT, "NotEnoughItems")
+            .addMixin("MixinExtraNeiTransfers", MixinBuilder.Side.CLIENT, "NotEnoughItems")
+            .addMixin("MixinExtraPanelScroll", MixinBuilder.Side.CLIENT, "NotEnoughItems")
+            .addMixin("MixinExtraRecipeScroll", MixinBuilder.Side.CLIENT, "NotEnoughItems")
+            .addMixin("MixinExtraScrollContainer", MixinBuilder.Side.CLIENT, "NotEnoughItems")
             .addMixin("MixinBlizzSnowTrail", MixinBuilder.Side.BOTH, "ThermalFoundation")
             .addMixin("MixinThaumicHorizonsBoat", MixinBuilder.Side.BOTH, "ThaumicHorizons")
             .addMixin("MixinExplosionNT", MixinBuilder.Side.BOTH, "hbm")

@@ -59,7 +59,7 @@ public final class ExtraSoundHandler {
         // Creative inventory redirects through GuiInventory during the same call.
         // Use the final screen so that redirect does not play open, close, open.
         GuiScreen next = mc.currentScreen;
-        if (Config.extraInventoryScreens && screen != next && !PlayerInventoryScreens.isPageSwitch(screen, next)) {
+        if (Config.extraInventoryScreens && screen != next && !PlayerInventoryScreens.isNavigation(screen, next)) {
             if (screen instanceof GuiContainer) ExtraSounds.ui("inventory.close");
             if (next instanceof GuiContainer) ExtraSounds.ui("inventory.open");
         }
@@ -110,6 +110,7 @@ public final class ExtraSoundHandler {
         if (event.phase != TickEvent.Phase.END) return;
         Minecraft mc = Minecraft.getMinecraft();
         screenTick(mc);
+        NeiInventorySounds.tick(mc.thePlayer);
         EntityPlayer current = mc.thePlayer;
         Map<Integer, Boolean> next = new HashMap<>();
         if (current != null) {

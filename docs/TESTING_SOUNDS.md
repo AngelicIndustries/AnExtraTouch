@@ -66,7 +66,15 @@ Test its palette and player-inventory tab, not NEI's separate item browser.
   Cues track row changes; rapid scrolling is rate-limited.
 - [ ] Scroll against the end of the list. No row change means no added cue.
 - [ ] Disable `extraInventoryScreens` and `extraScreenScroll` individually and compare.
-  NEI page scrolling is intentionally outside this change.
+- [ ] With NEI present, scroll the item list and bookmark pages, then recipe pages
+  and recipe tabs. Scroll and drag a recipe list's scrollbar. Expect the same cue
+  and speed-dependent pitch as creative scrolling. A list with no movement stays
+  silent; searching or refreshing the layout should not make a scroll cue.
+- [ ] NEI's left/right page buttons and page hotkeys do not play the extra scroll cue.
+- [ ] Open crafting and usage recipes, navigate between them, then return to the
+  inventory. These transitions should not restart the GUI animation or play extra
+  inventory open/close cues. Closing the inventory entirely still plays its close cue.
+- [ ] Disable `extraScreenScroll` and repeat NEI scrolling, then restore it.
 
 ## 4. Typing, chat, and screenshots
 
@@ -190,3 +198,26 @@ mixins need the obfuscated jar in a production instance; this session is the dev
 For any problem, note the action, game mode, item, enabled test pack, relevant
 setting, and approximate time. This session's launcher log is
 `/tmp/aet-user-sound-test.log`; Minecraft also writes `run/client/logs/latest.log`.
+
+### NEI bookmarks and item actions
+
+- Bookmark an item, remove it, and repeat by dragging it into the bookmark panel.
+  Expect one higher click on add and one lower click on remove.
+- Add/remove a recipe or group of bookmarks. Expect one cue per operation, not one
+  per ingredient. Duplicate additions and removals that change nothing are silent.
+- Toggle a preferred recipe. AET adds no cue; NEI keeps its own sound.
+  Loading saved bookmarks and automatically generated favorites stays silent.
+- Disable `extraBookmarks` and repeat. Both cues are silent; the operations still
+  work. Restore the toggle and check Extra Sounds and Players volume controls.
+
+- Take an item from NEI and drag another into an inventory slot. Pickup uses the
+  per-item cue; placement has the same lower pitch as vanilla placement. Full or
+  invalid slots and rejected requests are silent.
+- Middle-click a panel item: one clone cue. Cancel the preview: no deletion cue.
+- Delete one item, a stack, all matching items and the whole inventory. Expect one
+  partial/all cue as appropriate. Empty deletion is silent; shift-trash does not
+  double the cursor and slot deletion sounds.
+- Use NEI scroll transfer and mass transfer. Expect one cue per action, not a burst
+  from its internal clicks. A transfer that returns to the original state is silent.
+- Disable `extraInventoryClicks` and `extraCreativeActions` independently and repeat
+  the corresponding actions. Restore both toggles afterwards.

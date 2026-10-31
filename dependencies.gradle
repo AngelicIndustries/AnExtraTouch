@@ -44,7 +44,6 @@ dependencies {
         runtimeOnlyNonPublishable(files(integrationJar))
     }
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:Hodgepodge:2.7.221:dev")
-    runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.8.171-GTNH:dev")
     runtimeOnlyNonPublishable(rfg.deobf("curse.maven:catalogue-vintage-1465746:8384975")) // 1.0.8-1.7.10
     runtimeOnlyNonPublishable("curse.maven:archaicfix-677782:6785842")
     runtimeOnlyNonPublishable(rfg.deobf("kanmikan:cristalinewatermod:v1.5:cristalinewater-1.5"))
@@ -61,6 +60,7 @@ dependencies {
     //runtimeOnlyNonPublishable(rfg.deobf("curse.maven:psychedelicraft-legacy-1256222:6547962"))
 
     // Compile + runtime
+    devOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.8.171-GTNH:dev")
     devOnlyNonPublishable("com.github.GTNewHorizons:Angelica:2.2.43:dev")
     devOnlyNonPublishable("ganymedes01.etfuturum:Et-Futurum-Requiem:2.6.65-GTNH:dev")
     devOnlyNonPublishable("com.hfstudio:doabarrelroll:1.1.0:dev")

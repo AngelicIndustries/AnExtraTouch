@@ -6,10 +6,11 @@ Client-only sounds adapted from Extra Sounds for Minecraft 1.7.10. Settings are 
 | Setting | Action |
 | --- | --- |
 | `extraInventoryClicks` | Pickup, placement, shift-click, hotbar swap, completed drag distribution, double-click collection |
-| `extraCreativeActions` | Middle-click clone and partial/all deletion in creative inventory |
+| `extraCreativeActions` | Middle-click clone and partial/all deletion in creative inventory and NEI |
 | `extraItemDrops` | Q, stack drops, inventory drops, and creative palette drops |
 | `extraInventoryScreens` | Container screen opening and closing |
-| `extraScreenScroll` | Creative inventory row changes, including scrollbar dragging |
+| `extraScreenScroll` | Creative inventory rows, NEI item/bookmark pages, and NEI recipe scrolling, including scrollbar dragging |
+| `extraBookmarks` | Adding/removing NEI bookmarks |
 | `extraChat` | Received messages and mentions; own messages never count as mentions |
 | `extraTyping` | Accepted text edits and cursor/selection changes in text fields, signs, and writable books |
 | `extraScreenshots` | Successfully saved screenshots |
@@ -21,6 +22,8 @@ Client-only sounds adapted from Extra Sounds for Minecraft 1.7.10. Settings are 
 
 All toggles except entity poof default to on. Player-category volume also applies to
 UI and inventory sounds. Group settings do not change AET's existing sounds.
+Switching Baubles inventory pages or opening/returning from NEI recipe views does
+not play extra screen sounds or restart the GUI animation.
 Potion state is baselined on joining and respawning, avoiding a burst of fake changes.
 Inventory sounds follow successful local changes; server-side rejection cannot be
 predicted by a client-only mod. Block interaction cues likewise follow the local attempt.
@@ -56,14 +59,38 @@ The mapping and source revision are in
 
 ## Scope
 
-NEI scrolling is deferred, as in the handoff. Held-item selection, swings, bow draw,
+NEI navigation uses the same scroll event, speed-dependent pitch, and 20 ms limiter
+as the creative inventory. Stationary scroll attempts and layout/search refreshes
+are silent. NEI page buttons and page hotkeys do not play the scroll cue.
+NEI bookmarks play `bookmark.add` or the softer `bookmark.remove` click. Duplicate
+adds, missing removals and loading saved lists stay silent. A group action plays
+once. These cues have their own `extraBookmarks` toggle and use the usual group and
+Players volumes. Resource packs can replace both events. Preferred-recipe favorites
+keep NEI's own sound; AET does not add a cue there.
+
+NEI item acquisition and drag pickup use the item's inventory sound. Placement uses
+that sound at the same lower pitch as vanilla inventory placement. Middle-clicking
+a panel item uses `item.clone`. Deleting one item, a stack or all matching stacks
+uses `item.delete_partial`; clearing the inventory uses `item.delete_all`. These
+share `extraInventoryClicks` and `extraCreativeActions` with vanilla inventory cues.
+Cancelling a dragged preview is silent, and preview cloning does not imply that a
+real inventory item has been created.
+
+Server-driven give, placement and deletion requests wait for a matching inventory
+change (up to two seconds). Unchanged requests, full slots and empty deletion stay
+silent. Leaving the container or player discards pending cues. NEI fast transfers
+combine their underlying vanilla clicks into one cue and stay silent if the
+inventory ends up unchanged. Shift-trash combines cursor and matching-slot deletion.
+NEI remains an optional integration.
+
+Held-item selection, swings, bow draw,
 armor equip, book page flips, footsteps, armor movement, and vanilla lever/button
 clicks keep their existing implementations. Modern-only block actions are absent
 in 1.7.10 and have no hooks.
 
 ## Validation for this port
 
-`./gradlew spotlessApply build` passes, including 65 tests. Coverage includes
+`./gradlew spotlessApply build` passes, including 67 tests. Coverage includes
 inventory changes and no-ops, independent toggles, typing, mentions, drop pitch,
 scroll throttling, alias gain/pitch and cycles, resource integrity, modern asset
 registration, and present/missing/downloaded sound resolution.

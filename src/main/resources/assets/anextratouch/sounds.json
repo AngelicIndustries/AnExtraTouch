@@ -2623,5 +2623,25 @@
         "type": "event"
       }
     ]
+  },
+  "bookmark.add": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:random/click",
+        "volume": 0.35,
+        "pitch": 1.4
+      }
+    ]
+  },
+  "bookmark.remove": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:random/click",
+        "volume": 0.2,
+        "pitch": 1.25
+      }
+    ]
   }
 }

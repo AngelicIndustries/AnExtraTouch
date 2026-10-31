@@ -9,8 +9,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import industries.angelic.anextratouch.Config;
-import industries.angelic.anextratouch.handlers.client.extrasounds.ExtraSounds;
 import industries.angelic.anextratouch.handlers.client.extrasounds.ScrollSounds;
 
 @Mixin(GuiContainerCreative.class)
@@ -49,10 +47,6 @@ public abstract class MixinExtraCreativeScroll {
             .anextratouch$items()
             .size();
         int rows = Math.max(0, count / 9 - 5 + 1);
-        float pitch = anextratouch$scroll.moved(
-            Math.round(anextratouch$before * rows),
-            Math.round(currentScroll * rows),
-            System.nanoTime() / 1000000);
-        if (pitch > 0 && Config.extraScreenScroll) ExtraSounds.ui(ExtraSounds.id("generic.scroll"), pitch);
+        anextratouch$scroll.play(Math.round(anextratouch$before * rows), Math.round(currentScroll * rows));
     }
 }
