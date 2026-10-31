@@ -21,6 +21,8 @@ public class LateMixinLoader implements ILateMixinLoader {
     @Override
     public List<String> getMixins(Set<String> loadedMods) {
         return new MixinBuilder().addMixin("MixinDSEnvironStateHandler", MixinBuilder.Side.CLIENT, "dsurround")
+            .addMixin("AccessorFavoriteHeart", MixinBuilder.Side.CLIENT, "NotEnoughItems")
+            .addMixin("MixinBookmarkHeartbeat", MixinBuilder.Side.CLIENT, "NotEnoughItems")
             .addMixin("MixinExtraBookmarks", MixinBuilder.Side.CLIENT, "NotEnoughItems")
             .addMixin("MixinExtraNeiItems", MixinBuilder.Side.CLIENT, "NotEnoughItems")
             .addMixin("MixinExtraNeiPlacement", MixinBuilder.Side.CLIENT, "NotEnoughItems")

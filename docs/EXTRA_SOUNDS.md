@@ -68,6 +68,11 @@ once. These cues have their own `extraBookmarks` toggle and use the usual group 
 Players volumes. Resource packs can replace both events. Preferred-recipe favorites
 keep NEI's own sound; AET does not add a cue there.
 
+New bookmarks also show NEI's green favorite heart over their final slot. The heart
+makes two eased beats and fades over 0.82 seconds, independently of frame rate and
+item rendering cache mode. It follows NEI's bookmark-animation setting, independently
+of sound toggles. Loading saved bookmarks and adding recipe ingredients do not pulse.
+
 NEI item acquisition and drag pickup use the item's inventory sound. Placement uses
 that sound at the same lower pitch as vanilla inventory placement. Middle-clicking
 a panel item uses `item.clone`. Deleting one item, a stack or all matching stacks
@@ -93,7 +98,7 @@ in 1.7.10 and have no hooks.
 
 ## Validation for this port
 
-`./gradlew spotlessApply build` passes, including 67 tests. Coverage includes
+`./gradlew spotlessApply build` passes, including 69 tests. Coverage includes
 inventory changes and no-ops, independent toggles, typing, mentions, drop pitch,
 scroll throttling, alias gain/pitch and cycles, resource integrity, modern asset
 registration, and present/missing/downloaded sound resolution.

@@ -226,3 +226,14 @@ setting, and approximate time. This session's launcher log is
   inventory and NEI. All use Vintage Resourcify's pack-delete sound at the same
   pitch and gain. Check that Players volume, Extra Sounds volume and
   `extraCreativeActions` still control it.
+
+### NEI bookmark heart
+
+- Bookmark an item. Its destination slot shows the same green heart as NEI's
+  favorite-recipe button, with two soft beats followed by a fade.
+- Add several different bookmarks quickly. Each pulse stays at its own item slot.
+  Duplicate additions, removals and loading saved bookmarks do not start a pulse.
+- Check another bookmark page and resize the GUI. Hearts follow the final visible
+  slots rather than the mouse position or a guessed next-slot position.
+- Check with NEI item caching on and off. The pulse should animate in both modes.
+  Turning NEI's bookmark animations off also disables the heart.
