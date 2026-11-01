@@ -81,11 +81,31 @@ public class InventorySoundsTest {
     public void dragEndOutsideIsNotADropAndEmptyDragIsSilent() {
         player.setItemStack(stack(20));
         assertNull(begin(-999, 0, 5, false, false, false).result());
+        assertNull(begin(-999, 2, 5, false, false, false).result());
         InventorySounds drag = begin(-999, 2, 5, false, false, false);
-        slots.setInventorySlotContents(0, stack(5));
-        slots.setInventorySlotContents(1, stack(5));
-        player.setItemStack(stack(10));
-        assertEquals("item.drag", drag.result().event);
+        slots.setInventorySlotContents(0, stack(10));
+        slots.setInventorySlotContents(1, stack(10));
+        player.setItemStack(null);
+        assertNull(drag.result().event);
+        assertSame(item, drag.result().item.getItem());
+        assertEquals(20, drag.result().item.stackSize);
+        assertEquals(0.9F, drag.result().pitch, 0);
+    }
+
+    @Test
+    public void rightDragAcrossSlotsUsesPlacedItemAndRespectsClickToggle() {
+        player.setItemStack(stack(20));
+        slots.setInventorySlotContents(0, stack(10));
+        InventorySounds drag = begin(-999, 6, 5, false, false, false);
+        slots.getStackInSlot(0).stackSize++;
+        slots.setInventorySlotContents(1, stack(1));
+        player.getItemStack().stackSize -= 2;
+        assertNull(drag.result().event);
+        assertSame(item, drag.result().item.getItem());
+        assertEquals(20, drag.result().item.stackSize);
+        assertEquals(0.9F, drag.result().pitch, 0);
+        Config.extraInventoryClicks = false;
+        assertNull(drag.result());
     }
 
     @Test

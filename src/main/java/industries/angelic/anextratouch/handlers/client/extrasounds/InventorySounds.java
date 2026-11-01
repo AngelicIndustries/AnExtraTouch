@@ -132,28 +132,12 @@ public final class InventorySounds {
             return Config.extraCreativeActions ? new Cue("item.delete_partial", null, 1) : null;
         }
         if (!Config.extraInventoryClicks) return null;
-        if (mode == 5) {
-            // Even a one-slot placement can arrive as a drag after slight mouse movement.
-            return singleSlotPlacement() ? new Cue(null, cursor, 0.9F) : new Cue("item.drag", null, 0.9F);
-        }
+        // The completed drag places the cursor's item, even when it empties the cursor.
+        if (mode == 5) return cursor == null ? null : new Cue(null, cursor, 0.9F);
         if (mode == 6) return new Cue("item.pickup_all", null, 1);
         boolean placing = mode == 0 && cursor != null && (clicked == null || sameItem(cursor, clicked));
         ItemStack sounded = placing ? cursor : clicked != null ? clicked : hotbar;
         return sounded == null ? null : new Cue(null, sounded, placing ? 0.9F : 1.0F);
-    }
-
-    private boolean singleSlotPlacement() {
-        if (cursor == null) return false;
-        int destinations = 0;
-        for (int i = 0; i < contents.size(); i++) {
-            ItemStack before = contents.get(i);
-            ItemStack after = container.getSlot(i)
-                .getStack();
-            if (ItemStack.areItemStacksEqual(before, after)) continue;
-            if (after == null || !sameItem(cursor, after) || count(after) <= count(before)) return false;
-            if (++destinations > 1) return false;
-        }
-        return destinations == 1;
     }
 
     private static Cue drop(ItemStack source, int count) {

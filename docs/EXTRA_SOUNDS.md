@@ -195,9 +195,10 @@ reports as generic sound stream errors and caches as silence. An already affecte
 client must restart. Old snapshot directories can be removed when no instances
 using them are running.
 
-A placement affecting one slot uses the placed item cue even when Minecraft
-sends it as a drag because the pointer moved before mouse release. Spreading
-items across several slots still uses the separate drag cue.
+Left- and right-drag placement use the dragged item's cue at the normal
+placement pitch (0.9), once when distribution finishes. This also covers
+one-slot placements sent as drags after slight pointer movement. Empty or
+unchanged drags stay silent.
 
 Ghast tears use the selected Tiny wet contact (rubberduck's CC0 splash_09
 excerpt) at volume 0.25, pitch 1.25. BOP ghastly souls (misc metadata 10)
