@@ -14,6 +14,7 @@ import industries.angelic.anextratouch.handlers.client.ThunderSoundHandler;
 import industries.angelic.anextratouch.handlers.client.camera.DecoupledCameraHandler;
 import industries.angelic.anextratouch.handlers.client.camera.SoundShakeHandler;
 import industries.angelic.anextratouch.handlers.client.effects.BreathHandler;
+import industries.angelic.anextratouch.handlers.client.effects.ExperimentalWaterWakes;
 import industries.angelic.anextratouch.handlers.client.effects.ThermalEffectsManager;
 import industries.angelic.anextratouch.handlers.client.effects.WakeTrailManager;
 import industries.angelic.anextratouch.handlers.client.effects.WaterCascadeManager;
@@ -61,6 +62,9 @@ public class ClientProxy extends CommonProxy {
         FMLCommonHandler.instance()
             .bus()
             .register(WakeTrailManager.INSTANCE);
+        FMLCommonHandler.instance()
+            .bus()
+            .register(ExperimentalWaterWakes.INSTANCE);
         FMLCommonHandler.instance()
             .bus()
             .register(WaterWaveManager.INSTANCE);

@@ -3,6 +3,7 @@ package industries.angelic.anextratouch;
 import java.io.File;
 
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.common.config.Property;
 
 public class Config {
 
@@ -149,6 +150,9 @@ public class Config {
     public static float rainRippleDensity = 1.0f;
     public static boolean waterWakesEnabled = true;
     public static boolean waterWakeShaderWater = true;
+    public static boolean experimentalWaterWakes = false;
+    public static int experimentalWaterWakeQuality = 6;
+    public static float experimentalWaterWakeStrength = 1.0F;
     public static float waterWakeAlpha = 1.0f;
     public static float waterWakeDensity = 1.0f;
 
@@ -800,6 +804,29 @@ public class Config {
                 Categories.waterSplash,
                 waterWakeShaderWater,
                 "Experimental: use Angelica shader water under Crest foam on the original wake trails, including boats and paddles. Disable to keep regular AET rendering. Appearance depends on the shader pack. Other fluids keep regular rendering.");
+            experimentalWaterWakes = config.getBoolean(
+                "experimentalWaterWakes",
+                Categories.waterSplash,
+                false,
+                "Experimental: simulate persistent ripples in the shader pack's own water normals. Supports Complementary Unbound/Reimagined, Euphoria and BSL through Angelica. Replaces ordinary water wake overlays on supported packs; other packs keep regular wakes. Reload shaders after changing this switch.");
+            // Preserve the resolution selected with the original experimental presets.
+            Property wakeQuality = config.get(Categories.waterSplash, "experimentalWaterWakeQuality", 6);
+            int oldWakeQuality = wakeQuality.getInt(6);
+            if (oldWakeQuality >= 0 && oldWakeQuality <= 2) wakeQuality.set(4 + oldWakeQuality * 2);
+            experimentalWaterWakeQuality = config.getInt(
+                "experimentalWaterWakeQuality",
+                Categories.waterSplash,
+                6,
+                4,
+                16,
+                "Experimental ripple samples per block, any integer from 4 to 16. Over the 32-block field, resolution is 32 times this value: 4 = 128, 6 = 192 (default), 7 = 224, 8 = 256, 16 = 512. Higher values preserve smaller ripples; CPU, memory and upload costs grow approximately with the square of this value. Applies live and resets existing ripples. Use strength to increase visibility.");
+            experimentalWaterWakeStrength = config.getFloat(
+                "experimentalWaterWakeStrength",
+                Categories.waterSplash,
+                1.0F,
+                0.0F,
+                3.0F,
+                "Surface normal strength for all experimental shader water wakes, including swimming and boats. Default 1; try 2 or 3 for more visible ripples. Applies live without resetting the field or increasing simulation cost. The pack controls colors, reflections and transparency.");
             waterWakeAlpha = config.getFloat(
                 "waterWakeAlpha",
                 Categories.waterSplash,

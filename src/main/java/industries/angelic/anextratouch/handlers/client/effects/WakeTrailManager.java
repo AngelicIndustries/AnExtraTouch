@@ -234,6 +234,9 @@ public final class WakeTrailManager {
                 WakeNode node = iterator.next()
                     .getValue();
                 if (node.world != world) continue;
+                if (ExperimentalWaterWakes.isActive()
+                    && WetnessFluidHelper.getInteractableFluid(world, node.x, node.y, node.z) == FluidRegistry.WATER)
+                    continue;
                 boolean water = shaderWaterRendered
                     ? WetnessFluidHelper.getInteractableFluid(world, node.x, node.y, node.z) == FluidRegistry.WATER
                     : false;
@@ -329,6 +332,15 @@ public final class WakeTrailManager {
 
     private void updateEntityWake(World world, Entity entity) {
         double surfaceY = getSurfaceY(world, entity);
+        if (ExperimentalWaterWakes.isActive() && surfaceY >= 0
+            && WetnessFluidHelper.getInteractableFluid(
+                world,
+                MathHelper.floor_double(entity.posX),
+                MathHelper.floor_double(surfaceY),
+                MathHelper.floor_double(entity.posZ)) == FluidRegistry.WATER) {
+            trackers.remove(entity);
+            return;
+        }
         Tracker tracker = trackers.get(entity);
         if (tracker == null) {
             tracker = new Tracker();

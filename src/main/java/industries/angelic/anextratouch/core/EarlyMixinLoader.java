@@ -69,6 +69,9 @@ public class EarlyMixinLoader extends AngelEarlyMixinLoader {
         }
         if (!MixinBuilder.isServer() && loadedCoreMods.contains("com.gtnewhorizons.angelica.loading.AngelicaTweaker")) {
             mixins.add("angelica.MixinDeferredWorldRenderingPipeline");
+            mixins.add("angelica.MixinWakeProgramSource");
+            mixins.add("angelica.MixinWakeSamplers");
+            mixins.add("angelica.MixinWakeUniforms");
         }
 
         return mixins;

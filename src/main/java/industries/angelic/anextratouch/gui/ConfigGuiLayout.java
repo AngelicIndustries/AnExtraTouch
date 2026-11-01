@@ -144,6 +144,9 @@ final class ConfigGuiLayout {
                     "water_splash",
                     "waterWakesEnabled",
                     "waterWakeShaderWater",
+                    "experimentalWaterWakes",
+                    "experimentalWaterWakeQuality",
+                    "experimentalWaterWakeStrength",
                     "waterWakeAlpha",
                     "waterWakeDensity"),
                 section(
