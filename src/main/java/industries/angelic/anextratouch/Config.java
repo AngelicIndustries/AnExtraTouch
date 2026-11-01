@@ -429,7 +429,7 @@ public class Config {
                 "extraInventoryClicks",
                 Categories.extraSounds,
                 true,
-                "Inventory item clicks, transfers, hotbar swaps and drag splitting.");
+                "Inventory item clicks, transfers, hotbar swaps and drag splitting, plus Adventure Backpack fluid transfers and tool-cycling toggles.");
             extraCreativeActions = config.getBoolean(
                 "extraCreativeActions",
                 Categories.extraSounds,
@@ -449,7 +449,7 @@ public class Config {
                 "extraScreenScroll",
                 Categories.extraSounds,
                 true,
-                "Scrolling the creative inventory and NEI item lists or recipes.");
+                "Scrolling the creative inventory and NEI item lists or recipes, plus Adventure Backpack hose mode and tank selection.");
             extraBookmarks = config
                 .getBoolean("extraBookmarks", Categories.extraSounds, true, "Adding and removing NEI bookmarks.");
             extraChat = config.getBoolean(

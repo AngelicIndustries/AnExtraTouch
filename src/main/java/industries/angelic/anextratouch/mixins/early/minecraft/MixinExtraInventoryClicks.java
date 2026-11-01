@@ -11,6 +11,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import industries.angelic.anextratouch.compat.AdventureBackpackCompat;
 import industries.angelic.anextratouch.handlers.client.extrasounds.InventorySounds;
 
 @Mixin(PlayerControllerMP.class)
@@ -22,6 +23,7 @@ public abstract class MixinExtraInventoryClicks {
     @Inject(method = "windowClick", at = @At("HEAD"))
     private void anextratouch$before(int window, int index, int button, int mode, EntityPlayer player,
         CallbackInfoReturnable<ItemStack> cir) {
+        AdventureBackpackCompat.takeFluidClick();
         Slot slot = index >= 0 && index < player.openContainer.inventorySlots.size()
             ? player.openContainer.getSlot(index)
             : null;
@@ -34,6 +36,7 @@ public abstract class MixinExtraInventoryClicks {
         CallbackInfoReturnable<ItemStack> cir) {
         InventorySounds click = anextratouch$click;
         anextratouch$click = null;
-        if (click != null) click.finish();
+        boolean fluid = AdventureBackpackCompat.takeFluidClick();
+        if (click != null && !fluid) click.finish();
     }
 }

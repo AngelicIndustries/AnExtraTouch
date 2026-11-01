@@ -12,6 +12,24 @@ import net.minecraft.client.audio.SoundHandler;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemBoat;
+import net.minecraft.item.ItemBucket;
+import net.minecraft.item.ItemCarrotOnAStick;
+import net.minecraft.item.ItemDye;
+import net.minecraft.item.ItemEgg;
+import net.minecraft.item.ItemEmptyMap;
+import net.minecraft.item.ItemExpBottle;
+import net.minecraft.item.ItemFishingRod;
+import net.minecraft.item.ItemHangingEntity;
+import net.minecraft.item.ItemHoe;
+import net.minecraft.item.ItemLead;
+import net.minecraft.item.ItemMap;
+import net.minecraft.item.ItemMinecart;
+import net.minecraft.item.ItemNameTag;
+import net.minecraft.item.ItemRecord;
+import net.minecraft.item.ItemSaddle;
+import net.minecraft.item.ItemSeeds;
+import net.minecraft.item.ItemSoup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemTool;
@@ -56,7 +74,7 @@ public final class InventorySoundRegistry {
         return event;
     }
 
-    private static ResourceLocation fallback(ItemStack stack) {
+    static ResourceLocation fallback(ItemStack stack) {
         Item item = stack.getItem();
         if (item instanceof ItemBlock)
             return new ResourceLocation(Block.getBlockFromItem(item).stepSound.getStepResourcePath());
@@ -72,17 +90,41 @@ public final class InventorySoundRegistry {
                 return ExtraSounds.id("item.category.paper");
             case BOW:
             case CROSSBOW:
-                return ExtraSounds.id("item.pickup.minecraft.bow");
+                return gear("generic");
             case SHIELD:
                 return gear("IRON");
             case SWORD:
                 return gear(item instanceof ItemSword ? ((ItemSword) item).getToolMaterialName() : "IRON");
             case AXE:
             case TOOL:
-                return gear(item instanceof ItemTool ? ((ItemTool) item).getToolMaterialName() : "IRON");
+                return gear(
+                    item instanceof ItemTool ? ((ItemTool) item).getToolMaterialName()
+                        : item instanceof ItemHoe ? ((ItemHoe) item).getToolMaterialName() : "IRON");
             default:
-                return ExtraSounds.id("item.pickup");
+                return utility(item);
         }
+    }
+
+    private static ResourceLocation utility(Item item) {
+        // These families are generated at runtime upstream, not listed in its sounds.json.
+        if (item instanceof ItemBoat) return category("boat");
+        if (item instanceof ItemMinecart) return category("minecart");
+        if (item instanceof ItemHangingEntity) return category("frame");
+        if (item instanceof ItemDye || item instanceof ItemSeeds) return category("dust");
+        if (item instanceof ItemRecord) return category("music_disc");
+        if (item instanceof ItemSaddle || item instanceof ItemLead) return gear("leather");
+        if (item instanceof ItemMap || item instanceof ItemEmptyMap || item instanceof ItemNameTag)
+            return category("paper");
+        if (item instanceof ItemFishingRod || item instanceof ItemCarrotOnAStick) return gear("generic");
+        if (item instanceof ItemSoup) return category("bowl");
+        if (item instanceof ItemEgg) return category("egg");
+        if (item instanceof ItemBucket) return category("metal");
+        if (item instanceof ItemExpBottle) return category("potion");
+        return ExtraSounds.id("item.pickup");
+    }
+
+    private static ResourceLocation category(String name) {
+        return ExtraSounds.id("item.category." + name);
     }
 
     private static ResourceLocation gear(String material) {

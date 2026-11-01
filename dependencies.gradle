@@ -61,6 +61,7 @@ dependencies {
 
     // Compile + runtime
     devOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.8.171-GTNH:dev")
+    devOnlyNonPublishable("com.github.GTNewHorizons:AdventureBackpack2:1.4.28-GTNH:dev")
     devOnlyNonPublishable("com.github.GTNewHorizons:Angelica:2.2.43:dev")
     devOnlyNonPublishable("ganymedes01.etfuturum:Et-Futurum-Requiem:2.6.65-GTNH:dev")
     devOnlyNonPublishable("com.hfstudio:doabarrelroll:1.1.0:dev")

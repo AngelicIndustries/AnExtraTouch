@@ -3,6 +3,8 @@ package industries.angelic.anextratouch.handlers.client;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.inventory.GuiInventory;
 
+import industries.angelic.anextratouch.compat.AdventureBackpackCompat;
+
 /** Inventory pages and NEI recipe views do not represent a new inventory session. */
 public final class PlayerInventoryScreens {
 
@@ -22,7 +24,7 @@ public final class PlayerInventoryScreens {
     }
 
     private static boolean isPlayerInventory(GuiScreen screen) {
-        if (screen instanceof GuiInventory) return true;
+        if (screen instanceof GuiInventory || AdventureBackpackCompat.isWornScreen(screen)) return true;
         // Match by name so Baubles remains optional.
         return screen != null && "baubles.client.gui.GuiPlayerExpanded".equals(
             screen.getClass()

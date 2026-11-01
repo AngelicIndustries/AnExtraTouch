@@ -24,6 +24,7 @@ import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
 import industries.angelic.anextratouch.Config;
+import industries.angelic.anextratouch.compat.AdventureBackpackCompat;
 import industries.angelic.anextratouch.handlers.client.PlayerInventoryScreens;
 
 /** Forge hooks for screen transitions, chat, potion changes and block interactions. */
@@ -111,6 +112,7 @@ public final class ExtraSoundHandler {
         Minecraft mc = Minecraft.getMinecraft();
         screenTick(mc);
         NeiInventorySounds.tick(mc.thePlayer);
+        AdventureBackpackCompat.tick();
         EntityPlayer current = mc.thePlayer;
         Map<Integer, Boolean> next = new HashMap<>();
         if (current != null) {

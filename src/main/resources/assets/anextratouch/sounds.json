@@ -2640,5 +2640,608 @@
         "pitch": 1.25
       }
     ]
+  },
+  "item.pickup.adventurebackpack.adventureBackpack": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:item.armor.equip_leather",
+        "type": "event",
+        "volume": 0.7,
+        "pitch": 1
+      }
+    ]
+  },
+  "backpack.leather.equip": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:item.armor.equip_leather",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "backpack.leather.unequip": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:item.armor.equip_leather",
+        "type": "event",
+        "volume": 1,
+        "pitch": 0.9
+      }
+    ]
+  },
+  "backpack.iron.equip": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:item.armor.equip_iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "backpack.iron.unequip": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:item.armor.equip_iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 0.9
+      }
+    ]
+  },
+  "backpack.hose.mode": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:generic.scroll",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "backpack.hose.tank": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:generic.scroll",
+        "type": "event",
+        "volume": 1,
+        "pitch": 0.83
+      }
+    ]
+  },
+  "backpack.cycling.on": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.wooden_button.click_on",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "backpack.cycling.off": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.wooden_button.click_off",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "backpack.tank.fill": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:item.bucket.empty",
+        "type": "event",
+        "volume": 0.65,
+        "pitch": 1
+      }
+    ]
+  },
+  "backpack.tank.drain": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:item.bucket.fill",
+        "type": "event",
+        "volume": 0.65,
+        "pitch": 1
+      }
+    ]
+  },
+  "backpack.tank.empty": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:item.bucket.empty",
+        "type": "event",
+        "volume": 0.65,
+        "pitch": 0.9
+      }
+    ]
+  },
+  "backpack.fallback.switch_on": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:random/wood_click",
+        "volume": 0.3,
+        "pitch": 0.6
+      }
+    ]
+  },
+  "backpack.fallback.switch_off": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:random/wood_click",
+        "volume": 0.3,
+        "pitch": 0.5
+      }
+    ]
+  },
+  "item.pickup.minecraft.melon": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.melon_slice",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.speckled_melon": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.glistering_melon_slice",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.fireworks": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.firework_rocket",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.firework_charge": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.firework_star",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.netherbrick": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.nether_brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.fish": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.cod",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.fish.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.salmon",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.fish.2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.tropical_fish",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.fish.3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.pufferfish",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.cooked_fished": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.cooked_cod",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.cooked_fished.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.cooked_salmon",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.dye.0": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.ink_sac",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.dye.3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.cocoa_beans",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.dye.4": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.lapis_lazuli",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.dye.15": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone_meal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.web": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.cobweb",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.arrow": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.arrow",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.iron_horse_armor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.golden_horse_armor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.diamond_horse_armor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.spawn_egg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wet_slippery",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.minecraft.compass": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.blockCampFire": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.wood.place",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.3
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.backpackComponent.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.wool.place",
+        "type": "event",
+        "volume": 0.7,
+        "pitch": 1.3
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.blockSleepingBag": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.adventurebackpack.backpackComponent.1",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.backpackComponent.2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.melonJuiceBottle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.machete": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.pistonBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.copterPack": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.coalJetpack": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.backpackComponent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.backpackComponent.3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.backpackComponent.5": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.backpackComponent.6": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.backpackComponent.8": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.backpackComponent.9": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.clockworkCrossbow": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.generic",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.adventureHat": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.adventureSuit": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.adventurePants": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.backpackHose": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.backpackComponent.4": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.wood.place",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.3
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.backpackComponent.7": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.adventurebackpack.backpackComponent.1",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.adventurebackpack.blockBackpack": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.adventurebackpack.adventureBackpack",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
   }
 }

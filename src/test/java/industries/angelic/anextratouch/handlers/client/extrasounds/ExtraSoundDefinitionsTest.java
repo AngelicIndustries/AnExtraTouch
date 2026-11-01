@@ -33,6 +33,51 @@ public class ExtraSoundDefinitionsTest {
     }
 
     @Test
+    public void backpackCuesRetainTheAuditionedEventsPitchAndVolume() throws Exception {
+        JsonObject events;
+        try (InputStream stream = getClass().getResourceAsStream(ROOT + "sounds.json")) {
+            events = new JsonParser().parse(new InputStreamReader(stream, StandardCharsets.UTF_8))
+                .getAsJsonObject();
+        }
+        alias(events, "backpack.leather.equip", "minecraft:item.armor.equip_leather", 1, 1);
+        alias(events, "backpack.leather.unequip", "minecraft:item.armor.equip_leather", 1, 0.9);
+        alias(events, "backpack.iron.equip", "minecraft:item.armor.equip_iron", 1, 1);
+        alias(events, "backpack.iron.unequip", "minecraft:item.armor.equip_iron", 1, 0.9);
+        alias(events, "backpack.hose.mode", "anextratouch:generic.scroll", 1, 1);
+        alias(events, "backpack.hose.tank", "anextratouch:generic.scroll", 1, 0.83);
+        alias(events, "backpack.cycling.on", "minecraft:block.wooden_button.click_on", 1, 1);
+        alias(events, "backpack.cycling.off", "minecraft:block.wooden_button.click_off", 1, 1);
+        alias(events, "backpack.tank.fill", "minecraft:item.bucket.empty", 0.65, 1);
+        alias(events, "backpack.tank.drain", "minecraft:item.bucket.fill", 0.65, 1);
+        alias(events, "backpack.tank.empty", "minecraft:item.bucket.empty", 0.65, 0.9);
+    }
+
+    private static void alias(JsonObject events, String event, String target, double volume, double pitch) {
+        JsonObject definition = events.getAsJsonObject(event);
+        assertEquals(
+            "player",
+            definition.get("category")
+                .getAsString());
+        JsonObject entry = definition.getAsJsonArray("sounds")
+            .get(0)
+            .getAsJsonObject();
+        assertEquals(
+            target,
+            entry.get("name")
+                .getAsString());
+        assertEquals(
+            volume,
+            entry.get("volume")
+                .getAsDouble(),
+            0.00001);
+        assertEquals(
+            pitch,
+            entry.get("pitch")
+                .getAsDouble(),
+            0.00001);
+    }
+
+    @Test
     public void everyModernDefaultHasAFallbackAndLocalFallbacksExist() throws Exception {
         JsonObject events, fallbacks;
         try (InputStream definitions = getClass().getResourceAsStream(ROOT + "sounds.json");

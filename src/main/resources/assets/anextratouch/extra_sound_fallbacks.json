@@ -52,5 +52,8 @@
   "minecraft:item.bucket.fill_lava": "minecraft:liquid.lavapop",
   "minecraft:particle.soul_escape": "minecraft:random.fizz",
   "minecraft:ui.toast.in": "minecraft:random.click",
-  "minecraft:ui.toast.out": "minecraft:random.click"
+  "minecraft:ui.toast.out": "minecraft:random.click",
+  "minecraft:item.bucket.empty": "minecraft:liquid.swim",
+  "minecraft:block.wooden_button.click_on": "anextratouch:backpack.fallback.switch_on",
+  "minecraft:block.wooden_button.click_off": "anextratouch:backpack.fallback.switch_off"
 }

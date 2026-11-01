@@ -39,7 +39,11 @@ and `entity.poof`. `keyboard.screenshot` references `screenshot`; saving plays o
 
 Item clicks look for `item.pickup.<namespace>.<item>.<metadata>` first, then
 `item.pickup.<namespace>.<item>`. Explicit pack/default events win. Unlisted items
-fall back to AET's item classifier; block items use the block's step sound. Generated
+fall back to AET's item classifier and inventory-specific families (boats,
+minecarts, saddles/leads, maps/name tags, dyes/seeds, records, fishing rods, stew,
+eggs, buckets and experience bottles); block items use the block's step sound.
+Legacy fish/dye metadata and renamed 1.7.10 items point to the corresponding
+modern definitions. Hoes use their actual tool material. Generated
 fallbacks follow classifier changes and are discarded by sound resource reloads.
 As in vanilla sounds.json, use `"replace": true` when replacing an existing event.
 AET supports namespaced event aliases with volume and pitch, repairing 1.7.10's
