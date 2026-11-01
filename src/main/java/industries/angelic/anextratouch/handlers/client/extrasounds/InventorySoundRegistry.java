@@ -35,6 +35,7 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemTool;
 import net.minecraft.util.ResourceLocation;
 
+import industries.angelic.anextratouch.compat.EfrInventoryCompat;
 import industries.angelic.anextratouch.handlers.client.ItemSoundRegistry;
 import industries.angelic.anextratouch.mixins.early.minecraft.AccessorExtraSoundHandler;
 
@@ -53,18 +54,28 @@ public final class InventorySoundRegistry {
         ResourceLocation event = ExtraSounds.id("item.pickup." + (name == null ? "unknown" : name.replace(':', '.')));
         // Resource packs can supply per-metadata accents as well as the upstream per-item event.
         ResourceLocation variant = ExtraSounds.id(event.getResourcePath() + "." + stack.getItemDamage());
-        if (handler.getSound(variant) != null) return variant;
+        SoundEventAccessorComposite variantSound = handler.getSound(variant);
+        if (variantSound != null && variantSound != generated.get(variant)) return variant;
         SoundEventAccessorComposite existing = handler.getSound(event);
         if (existing != null && existing != generated.get(event)) return event;
-        ResourceLocation fallback = fallback(stack);
+        ResourceLocation translated = EfrInventoryCompat
+            .itemSound(name, stack.getItemDamage(), id -> handler.getSound(id) != null);
+        ResourceLocation fallback = translated == null ? fallback(stack) : translated;
+        // Keep simultaneous sounds for different subtypes independent, and recheck generated
+        // variants on every lookup so config/resource changes still take effect.
+        if (stack.getHasSubtypes()) {
+            event = variant;
+            existing = variantSound;
+        }
         if (existing == null || !fallback.equals(fallbacks.get(event))) {
             SoundEventAccessorComposite definition = new SoundEventAccessorComposite(
                 event,
                 1,
                 1,
                 SoundCategory.PLAYERS);
-            float volume = stack.getItem() instanceof ItemBlock ? 0.6F : 1.0F;
-            float pitch = stack.getItem() instanceof ItemBlock ? 1.7F : 1.0F;
+            boolean block = translated == null && stack.getItem() instanceof ItemBlock;
+            float volume = block ? 0.6F : 1.0F;
+            float pitch = block ? 1.7F : 1.0F;
             definition.addSoundToEventPool(new ExtraSoundResources.Alias(handler, fallback, volume, pitch, 1));
             ((AccessorExtraSoundHandler) handler).anextratouch$soundRegistry()
                 .registerSound(definition);
@@ -76,8 +87,9 @@ public final class InventorySoundRegistry {
 
     static ResourceLocation fallback(ItemStack stack) {
         Item item = stack.getItem();
-        if (item instanceof ItemBlock)
-            return new ResourceLocation(Block.getBlockFromItem(item).stepSound.getStepResourcePath());
+        if (item instanceof ItemBlock) return new ResourceLocation(
+            EfrInventoryCompat.blockSound(Block.getBlockFromItem(item), item.getMetadata(stack.getItemDamage()))
+                .getStepResourcePath());
         if (item instanceof ItemArmor) return gear(
             ((ItemArmor) item).getArmorMaterial()
                 .name());

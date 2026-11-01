@@ -3243,5 +3243,27 @@
         "pitch": 1
       }
     ]
+  },
+  "item.category.wood": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.wood.place",
+        "type": "event",
+        "volume": 0.7,
+        "pitch": 1.7
+      }
+    ]
+  },
+  "item.pickup.minecraft.bamboo": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.bamboo.place",
+        "type": "event",
+        "volume": 0.7,
+        "pitch": 1.3
+      }
+    ]
   }
 }

@@ -55,5 +55,6 @@
   "minecraft:ui.toast.out": "minecraft:random.click",
   "minecraft:item.bucket.empty": "minecraft:liquid.swim",
   "minecraft:block.wooden_button.click_on": "anextratouch:backpack.fallback.switch_on",
-  "minecraft:block.wooden_button.click_off": "anextratouch:backpack.fallback.switch_off"
+  "minecraft:block.wooden_button.click_off": "anextratouch:backpack.fallback.switch_off",
+  "minecraft:block.bamboo.place": "minecraft:step.wood"
 }

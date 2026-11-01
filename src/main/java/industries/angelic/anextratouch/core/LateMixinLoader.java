@@ -31,6 +31,7 @@ public class LateMixinLoader implements ILateMixinLoader {
             .addMixin("MixinExtraPanelScroll", MixinBuilder.Side.CLIENT, "NotEnoughItems")
             .addMixin("MixinExtraRecipeScroll", MixinBuilder.Side.CLIENT, "NotEnoughItems")
             .addMixin("MixinExtraScrollContainer", MixinBuilder.Side.CLIENT, "NotEnoughItems")
+            .addMixin("AccessorBasicMultiBlockSound", MixinBuilder.Side.CLIENT, "etfuturum")
             .addMixin("AccessorBackpackContainer", MixinBuilder.Side.CLIENT, "adventurebackpack")
             .addMixin("AccessorBackpackScreen", MixinBuilder.Side.CLIENT, "adventurebackpack")
             .addMixin("MixinBackpackActions", MixinBuilder.Side.CLIENT, "adventurebackpack")

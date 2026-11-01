@@ -49,6 +49,18 @@ As in vanilla sounds.json, use `"replace": true` when replacing an existing even
 AET supports namespaced event aliases with volume and pitch, repairing 1.7.10's
 alias handling for AET definitions only.
 
+EFR items reuse these modern definitions through a namespace/name translation.
+For example, `etfuturum:mutton_raw` uses `item.pickup.minecraft.mutton`, while raw
+ore and dye metadata translate to individual modern items. Existing EFR-specific
+pack events still win, followed by modern per-item events, then the upstream item
+families (including netherite gear, boats, bottles, cloth and leather). EFR's basic
+metadata-aware block sound registry supplies variant sounds for planks, slabs,
+tuff and other shared block IDs. World-dependent sound handlers keep the block's
+normal step sound in inventories. Generated subtype events have separate cache
+entries so one variant cannot overwrite another's cue.
+Wood handling and bamboo use shared modern events as well; no EFR-specific sound
+recordings or copies of the modern item definitions are bundled.
+
 The 33 original recordings are included under CC0. AET includes a relocated copy
 of MCLib 0.3.7.8 and requests all modern events it uses from Minecraft 1.21.10 through
 AssetDirector. The client downloads the needed sound files from Mojang and caches
@@ -122,3 +134,10 @@ gives immediate local inventory feedback; a later server correction cannot
 retract a cue already played.
 
 Armor equip classification is documented separately in [Armor equip categories](ARMOR_SOUNDS.md).
+
+The EFR inventory bridge passed a separate 2.6.65-GTNH dev audit covering 507 item
+IDs and 825 variants. All resolved to samples; only EFR's debugging item retained
+the generic click. The probe opened the resolved audio files and checked cherry,
+bamboo and tuff metadata, modern/EFR resource override priority, reloads and
+independent subtype events. Unit coverage now includes the identity translation
+and category fallback rules (95 tests total).
