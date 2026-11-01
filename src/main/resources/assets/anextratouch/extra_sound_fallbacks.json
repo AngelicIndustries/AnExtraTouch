@@ -61,5 +61,6 @@
   "minecraft:block.packed_mud.place": "minecraft:dig.gravel",
   "minecraft:block.mud_bricks.place": "minecraft:dig.stone",
   "minecraft:block.cherry_wood.place": "minecraft:dig.wood",
-  "minecraft:block.lantern.place": "anextratouch:armor.medium_walk"
+  "minecraft:block.lantern.place": "anextratouch:armor.medium_walk",
+  "minecraft:block.grass.step": "minecraft:step.grass"
 }

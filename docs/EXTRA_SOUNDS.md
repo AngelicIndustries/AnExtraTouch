@@ -78,6 +78,28 @@ the dry-food family. Other wet/slippery items retain their upstream mapping.
 These are resource definitions only, with no BOP classes or required dependency.
 Packs can replace the same per-item/metadata events or their shared target events.
 
+Pam's HarvestCraft 1.3.15-GTNH has explicit definitions for all 787 standalone
+item registrations, plus cakes, candles, cookware, churns and water containers. These use the exact `harvestcraft` IDs, including the case-sensitive `Item`
+suffix. The inspected upstream Extra Sounds revision (`5339849`) has no
+HarvestCraft mappings. The definitions were checked against the pack jar's
+registration code and item textures, not just translated item names.
+
+Fruit uses the accepted light apple contact; roots and vegetables follow carrots,
+grains and seeds rustle, and fish/meat follow vanilla meat. Bread and soft baked
+foods use vanilla bread; crisp biscuits follow cookies. Salads, rice, thick yogurt,
+ice cream and dry bowls use the dry wooden bowl cue, while soups, stock and hot
+mugs use the liquid bowl cue. Bottled juices, smoothies, soda, preserves and sauces
+use the full bottle family. Fresh water, fresh milk and boiled water are wooden
+buckets in this version: wood contact plus the separate bucket-liquid accent.
+Water barrels, stone basins, clay jugs and brick wells layer that same liquid
+accent over their wood, stone or ceramic contact. Churns use wood. Gummy bears
+use the short fruit contact instead of wrapper rustling.
+Metal pots and pans use the light lantern contact, without a liquid accent.
+Small mushrooms use vanilla grass steps at the inventory fallback tuning.
+Leather, cloth, wax, glass and stone utensils retain distinct material cues.
+Ordinary machines, gardens, saplings and other blocks keep their block fallback.
+No HarvestCraft dependency or custom interaction hooks are added.
+
 The 33 original recordings are included under CC0. AET includes a relocated copy
 of MCLib 0.3.7.8 and requests all modern events it uses from Minecraft 1.21.10 through
 AssetDirector. The client downloads the needed sound files from Mojang and caches
