@@ -41,3 +41,27 @@ extensions.configure<PublishingExtension> {
         }
     }
 }
+
+// A running JVM keeps ZIP offsets cached. Never let a later build rewrite its mod jar.
+val runtimeJarRoot = layout.projectDirectory.dir(".gradle/runtime-jars").asFile
+val builtJars = layout.buildDirectory.dir("libs").get().asFile
+
+tasks.withType<JavaExec>().configureEach {
+    if (name.startsWith("runClient") || name.startsWith("runServer")) {
+        val isolatedClasspath = objects.fileCollection()
+        doFirst("snapshotRuntimeJars") {
+            val currentFiles = classpath.files
+            if (currentFiles.any { it.parentFile == builtJars && it.extension == "jar" }) {
+                runtimeJarRoot.mkdirs()
+                val snapshot = java.nio.file.Files.createTempDirectory(runtimeJarRoot.toPath(), "$name-").toFile()
+                isolatedClasspath.setFrom(currentFiles.map { file ->
+                    if (file.parentFile == builtJars && file.extension == "jar") {
+                        file.copyTo(snapshot.resolve(file.name))
+                    } else file
+                })
+                classpath = isolatedClasspath
+                logger.lifecycle("Runtime mod jars copied to {}", snapshot)
+            }
+        }
+    }
+}

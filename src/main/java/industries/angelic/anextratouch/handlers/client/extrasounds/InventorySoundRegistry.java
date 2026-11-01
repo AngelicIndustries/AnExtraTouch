@@ -9,6 +9,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.SoundCategory;
 import net.minecraft.client.audio.SoundEventAccessorComposite;
 import net.minecraft.client.audio.SoundHandler;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemBlock;
@@ -87,9 +88,18 @@ public final class InventorySoundRegistry {
 
     static ResourceLocation fallback(ItemStack stack) {
         Item item = stack.getItem();
-        if (item instanceof ItemBlock) return new ResourceLocation(
-            EfrInventoryCompat.blockSound(Block.getBlockFromItem(item), item.getMetadata(stack.getItemDamage()))
-                .getStepResourcePath());
+        if (item instanceof ItemBlock) {
+            Block block = Block.getBlockFromItem(item);
+            int metadata = item.getMetadata(stack.getItemDamage());
+            // Small BOP mushrooms should follow small vanilla mushrooms, including EFR's sound changes.
+            if ("BiomesOPlenty:mushrooms".equals(Item.itemRegistry.getNameForObject(item))) {
+                block = Blocks.brown_mushroom;
+                metadata = 0;
+            }
+            return new ResourceLocation(
+                EfrInventoryCompat.blockSound(block, metadata)
+                    .getStepResourcePath());
+        }
         if (item instanceof ItemArmor) return gear(
             ((ItemArmor) item).getArmorMaterial()
                 .name());
@@ -130,7 +140,7 @@ public final class InventorySoundRegistry {
         if (item instanceof ItemFishingRod || item instanceof ItemCarrotOnAStick) return gear("generic");
         if (item instanceof ItemSoup) return category("bowl");
         if (item instanceof ItemEgg) return category("egg");
-        if (item instanceof ItemBucket) return category("metal");
+        if (item instanceof ItemBucket) return category("bucket");
         if (item instanceof ItemExpBottle) return category("potion");
         return ExtraSounds.id("item.pickup");
     }

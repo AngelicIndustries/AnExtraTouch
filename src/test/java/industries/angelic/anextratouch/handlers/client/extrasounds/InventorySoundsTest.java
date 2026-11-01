@@ -82,9 +82,34 @@ public class InventorySoundsTest {
         player.setItemStack(stack(20));
         assertNull(begin(-999, 0, 5, false, false, false).result());
         InventorySounds drag = begin(-999, 2, 5, false, false, false);
-        slots.setInventorySlotContents(0, stack(10));
+        slots.setInventorySlotContents(0, stack(5));
+        slots.setInventorySlotContents(1, stack(5));
         player.setItemStack(stack(10));
         assertEquals("item.drag", drag.result().event);
+    }
+
+    @Test
+    public void oneSlotDragUsesPlacedItemEvenWhenCursorIsEmptied() {
+        player.setItemStack(stack(20));
+        InventorySounds place = begin(-999, 2, 5, false, false, false);
+        slots.setInventorySlotContents(0, player.getItemStack());
+        player.setItemStack(null);
+        assertNull(place.result().event);
+        assertSame(item, place.result().item.getItem());
+        assertEquals(20, place.result().item.stackSize);
+        assertEquals(0.9F, place.result().pitch, 0);
+    }
+
+    @Test
+    public void oneSlotRightDragOntoStackUsesPlacedItem() {
+        player.setItemStack(stack(20));
+        slots.setInventorySlotContents(0, stack(10));
+        InventorySounds place = begin(-999, 6, 5, false, false, false);
+        slots.getStackInSlot(0).stackSize++;
+        player.getItemStack().stackSize--;
+        assertNull(place.result().event);
+        assertSame(item, place.result().item.getItem());
+        assertEquals(0.9F, place.result().pitch, 0);
     }
 
     @Test

@@ -40,6 +40,7 @@ minecraft:block.glass.place -> minecraft:dig.glass
 minecraft:block.honey_block.place -> minecraft:mob.slime.small
 minecraft:block.ladder.step -> minecraft:step.ladder
 minecraft:block.nether_bricks.place -> minecraft:dig.stone
+minecraft:block.lantern.place -> anextratouch:armor.medium_walk
 minecraft:block.nether_gold_ore.place -> minecraft:dig.stone
 minecraft:block.note_block.chime -> minecraft:note.harp
 minecraft:block.resin.place -> minecraft:dig.stone
@@ -79,3 +80,68 @@ minecraft:item.bucket.fill_lava -> minecraft:liquid.lavapop
 minecraft:particle.soul_escape -> minecraft:random.fizz
 minecraft:ui.toast.in -> minecraft:random.click
 minecraft:ui.toast.out -> minecraft:random.click
+
+Empty bottle inventory handling uses two excerpts from "Empty Bottle Clink"
+by Clearwavsound, published October 25, 2020:
+https://freesound.org/people/Clearwavsound/sounds/541031/
+License: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+https://creativecommons.org/licenses/by/3.0/
+Source audio: https://cdn.freesound.org/previews/541/541031_11502151-hq.mp3
+These recordings are separate from the CC0 Extra Sounds recordings.
+Changes: excerpts at 0.12-0.68 s and 1.27-1.87 s; mono, 44.1 kHz;
+70 Hz high-pass; 3 ms fade in / 35 ms fade out; peak normalized to -6 dB;
+Ogg Vorbis quality 6. Playback volume 0.7, pitch 1.15.
+SHA-256 contact1.ogg: d0fd5c3ff4664849dc75de7f8f759ec1e2a0037dc6c399bea68aa2b0180e91c7
+SHA-256 contact2.ogg: 9df2cd1b0eb68ab5a5903cd9e4848e547f7a8d61081f9924d5fc088ae457850e
+
+Fruit inventory handling uses two short excerpts from
+"ApplesDroppingThudinaForest.wav" by kvgarlic:
+https://freesound.org/people/kvgarlic/sounds/149418/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ MP3 preview.
+Changes: excerpts at 0.23-0.37 s and 1.86-2.00 s; mono, 44.1 kHz;
+70 Hz high-pass; 3 ms fade in / 35 ms fade out; peak normalized to -6 dB;
+Ogg Vorbis quality 6. Playback volume 0.20, pitch 2.0.
+These are the unchanged "Tiny apple contact" samples from the audition page.
+SHA-256 contact1.ogg: 8a1aca1973d791b963bd6e1fb186f19e1bce71c336619b8d39a9fe41f4923219
+SHA-256 contact2.ogg: 04116db31fe0b2b4d50edee2f4fd8e9fde35f17003f060b5d2db404e65267498
+
+Ghast tear inventory handling uses an excerpt from splash_09.ogg in
+"40 CC0 water / splash / slime SFX" by rubberduck:
+https://opengameart.org/content/40-cc0-water-splash-slime-sfx
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source archive: https://opengameart.org/sites/default/files/water-splash-slime-sfx.zip
+Changes: excerpt at 0.00-0.25 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out; peak normalized to -6 dB; Ogg Vorbis quality 6.
+Playback volume 0.25, pitch 1.25. Unchanged "Tiny wet contact" audition sample.
+SHA-256 contact.ogg: e2b573e8792b5994b3462eefae81b1a4c39c16c38187261f0c477ee02b205097
+
+Keyboard type/move/erase/cut/paste handling uses excerpts from
+"Single Key Press Sounds" by eklee, qubodup:
+https://opengameart.org/content/single-key-press-sounds
+Copyright 2012 eklee - https://freesound.org/people/eklee/
+Copyright 2012 qubodup - https://freesound.org/people/qubodup/
+qubodup extracted the single sounds from eklee's keyboard recordings.
+License: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+https://creativecommons.org/licenses/by/3.0/
+https://creativecommons.org/licenses/by/3.0/legalcode
+Source archive: https://opengameart.org/sites/default/files/eklee-KeyPresses-cc0-opengameart.zip
+The current source page specifies CC BY 3.0 despite the archive's old filename.
+Changes: eklee-KeyPressMac01.flac and Mac02 at 0.01-0.15 s; Mac04 at 0-0.12 s;
+mono, 44.1 kHz; 70 Hz high-pass; 3 ms fade in / 35 ms fade out;
+peak normalized to -6 dB; Ogg Vorbis quality 6.
+Unchanged "Natural Mac key" audition samples; playback volume 0.18, pitch 1.36.
+Erase/cut multiply volume by 0.8 and pitch by 0.85; movement multiplies volume
+by 0.55 and pitch by 1.15. Paste uses the typing cue.
+SHA-256 key1.ogg: a2f113cc860c221da0082b0416853c8fd5e547bc3721de99f4b6520ca2884663
+SHA-256 key2.ogg: 6e5f2e44a6f15dcb79ed3c247636138484f401cd863f69b3a015c49670b4a7c4
+SHA-256 key3.ogg: 8700ceb67716c60e0a312d10aaf5baa9dfe60e7df977c4626be77abcd9b34c28
+
+Full-bucket inventory liquid uses splash_14.ogg from rubberduck's
+"40 CC0 water / splash / slime SFX" (CC0-1.0), linked in the ghast tear credit above.
+Changes: excerpt at 0.00-0.40 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out; peak normalized to -6 dB; Ogg Vorbis quality 6.
+Unchanged "Weighty liquid contact" audition sample; volume 0.30, pitch 1.28.
+SHA-256 liquid.ogg: e630272162b20930e1f9974a7c2752691c8b875b84d35dd5d6ebb92cf59a5bc0

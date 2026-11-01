@@ -61,6 +61,23 @@ entries so one variant cannot overwrite another's cue.
 Wood handling and bamboo use shared modern events as well; no EFR-specific sound
 recordings or copies of the modern item definitions are bundled.
 
+Biomes O' Plenty 2.1.0.2308 has explicit inventory aliases under its case-sensitive
+`BiomesOPlenty` registry namespace. The inspected upstream Extra Sounds revision
+(`5339849`) has no BOP mappings; unrecognized mod items receive its generic fallback.
+AET reuses the vanilla/EFR sound families for produce, bowls, jars, dyes, gems,
+darts, tools and clothing, with separate metadata entries for mixed item IDs.
+Amethyst gear uses crystal sounds, mud gear uses packed mud, and scythes follow
+their material. Special blocks reuse modern mud, honey, bamboo, cherry wood and
+amethyst sounds; ordinary stone, wood and soil retain their block sounds.
+Apples (including golden apples), melon slices (including glistering slices),
+sweet/glow berries, EFR chorus fruit and related BOP fruit share
+`item.category.fruit`. It uses two short real apple-contact excerpts by kvgarlic
+(CC0), at volume 0.20 and pitch 2.0, about 70 ms per pickup. Placement retains
+the normal 10% pitch reduction. Living coral uses wet grass; popped chorus fruit uses
+the dry-food family. Other wet/slippery items retain their upstream mapping.
+These are resource definitions only, with no BOP classes or required dependency.
+Packs can replace the same per-item/metadata events or their shared target events.
+
 The 33 original recordings are included under CC0. AET includes a relocated copy
 of MCLib 0.3.7.8 and requests all modern events it uses from Minecraft 1.21.10 through
 AssetDirector. The client downloads the needed sound files from Mojang and caches
@@ -141,3 +158,58 @@ the generic click. The probe opened the resolved audio files and checked cherry,
 bamboo and tuff metadata, modern/EFR resource override priority, reloads and
 independent subtype events. Unit coverage now includes the identity translation
 and category fallback rules (95 tests total).
+
+The BOP 2.1.0.2308 inventory audit covered 127 registered item IDs and 357 variants,
+with EFR present and absent. All resolved samples opened successfully, and every
+non-block item had an explicit mapping. Checks covered bottle, crystal, mud and
+cherry samples, distinct subtype events, shared and BOP-specific overrides, and
+restoration after resource reload. The four BOP mapping tests bring the suite to
+99 tests. These are routing/resource checks; final sound choices can still be
+judged by ear in game.
+
+Empty glass bottles, BOP empty jars and Adventure Backpack tank components use
+two dry, hollow glass contacts from Clearwavsound's "Empty Bottle Clink"
+(CC BY 3.0), at volume 0.7 and pitch 1.15. Filled jars, potions and juice bottles
+keep their liquid cue. Attribution and editing details are in
+`EXTRA_SOUND_CREDITS.txt`. Packs can replace `item.category.bottle_empty`.
+
+BOP pixie dust and biome essence layer dust handling with BOP's pixie voice;
+the pixie jar layers the same voice with empty-bottle handling. The accent uses
+`biomesoplenty:mob.pixie.say` at volume 0.3 and follows pickup/placement pitch.
+For inventory cues, an optional `<item-event>.accent` plays alongside the base
+instead of competing as a random sounds.json alternative. Both use the Players
+category and Extra Sounds volume/toggles. Packs can replace or silence either
+event; an absent or empty accent, including when BOP is absent, is skipped.
+
+Bucket inventory handling uses the lantern contact at volume 0.3 and pitch 1.35.
+Full vanilla and BOP buckets add the selected Weighty liquid contact (volume
+0.3, pitch 1.28) through `item.category.bucket_liquid`. NEI fluid display items
+keep their bottle-fill cue through `item.category.fluid`. These do not change
+world bucket filling or pouring sounds. BOP's small mushrooms follow the vanilla
+small mushroom fallback, including EFR's block sound selection.
+
+Dev client/server launches copy built runtime jars into a unique directory under
+`.gradle/runtime-jars` before starting. This prevents later builds overwriting an
+open jar and invalidating the JVM's cached ZIP offsets, which Dynamic Surroundings
+reports as generic sound stream errors and caches as silence. An already affected
+client must restart. Old snapshot directories can be removed when no instances
+using them are running.
+
+A placement affecting one slot uses the placed item cue even when Minecraft
+sends it as a drag because the pointer moved before mouse release. Spreading
+items across several slots still uses the separate drag cue.
+
+Ghast tears use the selected Tiny wet contact (rubberduck's CC0 splash_09
+excerpt) at volume 0.25, pitch 1.25. BOP ghastly souls (misc metadata 10)
+use the selected Airy soul texture (modern soul-sand step) at volume 0.2,
+pitch 1.35. They have independent item events so packs can replace either.
+
+Typing uses the three Natural Mac key recordings at volume 0.18, pitch 1.36.
+Erase/cut use 0.8 times the gain and 0.85 times the pitch; cursor movement
+uses 0.55 times the gain and 1.15 times the pitch, matching the audition.
+Paste shares the typing cue. These apply to chat, signs, books and text fields.
+Recording credits and CC BY 3.0 attribution are in `EXTRA_SOUND_CREDITS.txt`.
+
+BOP ambrosia (food metadata 10) shares the regular full-bottle/potion cue.
+Fruit, veggie and shroom salads (4-6) and rice bowls (13) share vanilla
+wooden-bowl handling, without the liquid recording used by soup bowls.

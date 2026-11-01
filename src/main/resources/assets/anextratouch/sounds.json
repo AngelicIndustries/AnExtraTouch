@@ -1048,10 +1048,19 @@
   "keyboard.type": {
     "sounds": [
       {
-        "name": "minecraft:block.bamboo.hit",
-        "volume": 0.9,
-        "pitch": 2,
-        "type": "event"
+        "name": "anextratouch:keyboard/mac/key1",
+        "volume": 0.18,
+        "pitch": 1.36
+      },
+      {
+        "name": "anextratouch:keyboard/mac/key2",
+        "volume": 0.18,
+        "pitch": 1.36
+      },
+      {
+        "name": "anextratouch:keyboard/mac/key3",
+        "volume": 0.18,
+        "pitch": 1.36
       }
     ],
     "category": "player"
@@ -1059,10 +1068,10 @@
   "keyboard.move": {
     "sounds": [
       {
-        "name": "anextratouch:generic.scroll",
-        "volume": 1.3,
-        "pitch": 0.8,
-        "type": "event"
+        "name": "anextratouch:keyboard.type",
+        "type": "event",
+        "volume": 0.55,
+        "pitch": 1.15
       }
     ],
     "category": "player"
@@ -1070,10 +1079,10 @@
   "keyboard.erase": {
     "sounds": [
       {
-        "name": "anextratouch:generic.click",
-        "volume": 0.9,
-        "pitch": 2.4,
-        "type": "event"
+        "name": "anextratouch:keyboard.type",
+        "type": "event",
+        "volume": 0.8,
+        "pitch": 0.85
       }
     ],
     "category": "player"
@@ -1133,7 +1142,7 @@
     "replace": true,
     "sounds": [
       {
-        "name": "anextratouch:item.category.wet_slippery",
+        "name": "anextratouch:item.category.fruit",
         "type": "event"
       }
     ],
@@ -1332,7 +1341,7 @@
     "replace": true,
     "sounds": [
       {
-        "name": "anextratouch:item.category.wet_slippery",
+        "name": "anextratouch:item.category.fruit",
         "type": "event"
       }
     ],
@@ -1557,7 +1566,7 @@
     "replace": true,
     "sounds": [
       {
-        "name": "anextratouch:item.category.wet_slippery",
+        "name": "anextratouch:item.category.fruit",
         "type": "event"
       }
     ],
@@ -1672,8 +1681,9 @@
     "replace": true,
     "sounds": [
       {
-        "name": "anextratouch:item.category.wet_slippery",
-        "type": "event"
+        "name": "anextratouch:item/ghast_tear/contact",
+        "volume": 0.25,
+        "pitch": 1.25
       }
     ],
     "category": "player"
@@ -1682,10 +1692,8 @@
     "replace": true,
     "sounds": [
       {
-        "name": "minecraft:block.glass.place",
-        "pitch": 1.7,
-        "type": "event",
-        "volume": 0.6
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
       }
     ],
     "category": "player"
@@ -1694,7 +1702,7 @@
     "replace": true,
     "sounds": [
       {
-        "name": "anextratouch:item.category.wet",
+        "name": "anextratouch:item.category.fruit",
         "type": "event"
       }
     ],
@@ -1704,7 +1712,7 @@
     "replace": true,
     "sounds": [
       {
-        "name": "anextratouch:item.category.crunchy_dry",
+        "name": "anextratouch:item.category.fruit",
         "type": "event"
       }
     ],
@@ -1754,7 +1762,7 @@
     "replace": true,
     "sounds": [
       {
-        "name": "anextratouch:item.category.wet_slippery",
+        "name": "anextratouch:item.category.fruit",
         "type": "event"
       }
     ],
@@ -1902,21 +1910,22 @@
     "replace": true,
     "sounds": [
       {
-        "name": "anextratouch:item.category.wet",
+        "name": "anextratouch:item.category.fruit",
         "type": "event"
       }
     ],
     "category": "player"
   },
   "item.pickup.minecraft.milk_bucket": {
-    "replace": true,
+    "category": "player",
     "sounds": [
       {
-        "name": "anextratouch:item.pickup.minecraft.water_bucket",
-        "type": "event"
+        "name": "anextratouch:item.category.bucket",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
       }
-    ],
-    "category": "player"
+    ]
   },
   "item.pickup.minecraft.mushroom_block": {
     "replace": true,
@@ -2050,7 +2059,7 @@
     "replace": true,
     "sounds": [
       {
-        "name": "anextratouch:item.category.wet_slippery",
+        "name": "anextratouch:item.category.food_dry",
         "type": "event"
       }
     ],
@@ -2375,7 +2384,7 @@
     "replace": true,
     "sounds": [
       {
-        "name": "anextratouch:item.category.crunchy_dry",
+        "name": "anextratouch:item.category.fruit",
         "type": "event"
       }
     ],
@@ -2571,8 +2580,10 @@
     "category": "player",
     "sounds": [
       {
-        "name": "minecraft:item.bucket.fill",
-        "type": "event"
+        "name": "anextratouch:item.category.bucket",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
       }
     ]
   },
@@ -2580,8 +2591,10 @@
     "category": "player",
     "sounds": [
       {
-        "name": "minecraft:item.bucket.fill_lava",
-        "type": "event"
+        "name": "anextratouch:item.category.bucket",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
       }
     ]
   },
@@ -3028,10 +3041,8 @@
     "category": "player",
     "sounds": [
       {
-        "name": "anextratouch:item.category.potion",
-        "type": "event",
-        "volume": 1,
-        "pitch": 1
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
       }
     ]
   },
@@ -3263,6 +3274,1831 @@
         "type": "event",
         "volume": 0.7,
         "pitch": 1.3
+      }
+    ]
+  },
+  "item.pickup.minecraft.mud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.mud.place",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.7
+      }
+    ]
+  },
+  "item.pickup.minecraft.packed_mud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.packed_mud.place",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.7
+      }
+    ]
+  },
+  "item.pickup.minecraft.mud_bricks": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.mud_bricks.place",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.7
+      }
+    ]
+  },
+  "item.pickup.minecraft.amethyst_block": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.amethyst_block.place",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.7
+      }
+    ]
+  },
+  "item.pickup.minecraft.honey_block": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.honey_block.place",
+        "type": "event",
+        "volume": 0.5,
+        "pitch": 1.7
+      }
+    ]
+  },
+  "item.pickup.minecraft.cherry_planks": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.cherry_wood.place",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.7
+      }
+    ]
+  },
+  "item.pickup.minecraft.coral_block": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.wet_grass.place",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.5
+      }
+    ]
+  },
+  "item.category.gear.amethyst": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.amethyst_block.place",
+        "type": "event",
+        "volume": 0.7,
+        "pitch": 1.4
+      }
+    ]
+  },
+  "item.category.gear.mud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.packed_mud.place",
+        "type": "event",
+        "volume": 0.7,
+        "pitch": 1.4
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.0": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.sweet_berries",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.carrot",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.11": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.carrot",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.turnip": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.carrot",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.apple",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.8": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.apple",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.12": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.apple",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.fruitBop": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.apple",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.4": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.5": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.6": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.10": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.13": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.7": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.clay_ball",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.food.9": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honeycomb",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honeycomb",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.turnipSeeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.5": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.6": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.7": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.8": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.9": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.11": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.ash": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.0": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.flesh": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.4": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.gems.0": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.10": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.soul_sand.step",
+        "type": "event",
+        "volume": 0.2,
+        "pitch": 1.35
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.12": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wet_slippery",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.13": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.gems": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.diamond",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.mudball": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.clay_ball",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.jarEmpty": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.jarFilled": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.jarFilled.0": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honey_bottle",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.dartBlower": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.dart": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.arrow",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.ancientStaff": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.ancientStaff.3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.ancientStaff.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.ancientStaff.2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.enderporter": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.ender_pearl",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.bopBucket": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.record_wanderer": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.music_disc",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.record_corruption": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.music_disc",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.biomeFinder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.compass",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.biomeEssence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.biomeBook": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.swordMud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.shovelMud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.pickaxeMud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.axeMud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.hoeMud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.scytheMud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.helmetMud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.chestplateMud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.leggingsMud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.bootsMud": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.swordAmethyst": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.amethyst",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.shovelAmethyst": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.amethyst",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.pickaxeAmethyst": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.amethyst",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.axeAmethyst": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.amethyst",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.hoeAmethyst": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.amethyst",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.scytheAmethyst": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.amethyst",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.helmetAmethyst": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.amethyst",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.chestplateAmethyst": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.amethyst",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.leggingsAmethyst": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.amethyst",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.bootsAmethyst": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.amethyst",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.scytheWood": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.scytheStone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.scytheIron": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.scytheGold": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.scytheDiamond": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.flowerBand": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.flippers": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.wadingBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.mud.0": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.driedDirt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.packed_mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.hardDirt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.packed_mud",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.mudBricks": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mud_bricks",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.mudBricksStairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mud_bricks",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.stoneSingleSlab": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mud_bricks",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.stoneDoubleSlab": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mud_bricks",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.crystal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_block",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.gemOre.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_block",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.honeyBlock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honey_block",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.hive.0": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honey_block",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.hive.2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honey_block",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.hive.3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honey_block",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.hive.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.poison": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wet",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.hell_blood": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wet",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.honey": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honey_block",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.bamboo": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.logs1.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.cherry_planks",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.planks.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.cherry_planks",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.woodenSingleSlab1.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.cherry_planks",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.woodenDoubleSlab1.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.cherry_planks",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.cherryStairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.cherry_planks",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.planks.10": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.flowers": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.flowers2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.foliage": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.lilyBop": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.appleLeaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.persimmonLeaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.leaves1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.leaves2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.leaves3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.leaves4": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.colorizedLeaves1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.colorizedLeaves2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.petals": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.saplings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.colorizedSaplings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.willow": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.ivy": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.treeMoss": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.flowerVine": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.wisteria": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.moss": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants.0": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants.2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants.3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants.6": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants.7": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants.14": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.foliage.10": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.foliage.15": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants.8": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants.13": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wet",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants.15": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.plants.11": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.carrot",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.coral1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.coral1.11": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.coral2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.category.fruit": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item/fruit/contact1",
+        "volume": 0.2,
+        "pitch": 2.0
+      },
+      {
+        "name": "anextratouch:item/fruit/contact2",
+        "volume": 0.2,
+        "pitch": 2.0
+      }
+    ]
+  },
+  "item.category.bottle_empty": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item/bottle_empty/contact1",
+        "volume": 0.7,
+        "pitch": 1.15
+      },
+      {
+        "name": "anextratouch:item/bottle_empty/contact2",
+        "volume": 0.7,
+        "pitch": 1.15
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.misc.11.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "biomesoplenty:mob.pixie.say",
+        "type": "event",
+        "volume": 0.3,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.biomeEssence.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "biomesoplenty:mob.pixie.say",
+        "type": "event",
+        "volume": 0.3,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.jarFilled.2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.jarFilled.2.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "biomesoplenty:mob.pixie.say",
+        "type": "event",
+        "volume": 0.3,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.category.bucket": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.lantern.place",
+        "type": "event",
+        "volume": 0.3,
+        "pitch": 1.35
+      }
+    ]
+  },
+  "item.category.fluid": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:item.bottle.fill",
+        "type": "event",
+        "volume": 0.3,
+        "pitch": 1.6
+      }
+    ]
+  },
+  "item.pickup.minecraft.bucket": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.minecraft.water_bucket.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket_liquid",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.minecraft.lava_bucket.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket_liquid",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.minecraft.milk_bucket.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket_liquid",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.BiomesOPlenty.bopBucket.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket_liquid",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.pickup.NotEnoughItems.neiFluidDisplay": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fluid",
+        "type": "event",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  },
+  "item.category.bucket_liquid": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item/bucket/liquid",
+        "volume": 0.3,
+        "pitch": 1.28
       }
     ]
   }

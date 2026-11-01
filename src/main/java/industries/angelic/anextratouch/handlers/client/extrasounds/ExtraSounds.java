@@ -1,8 +1,13 @@
 package industries.angelic.anextratouch.handlers.client.extrasounds;
 
+import java.util.function.Consumer;
+import java.util.function.Function;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.ISound;
 import net.minecraft.client.audio.PositionedSoundRecord;
+import net.minecraft.client.audio.SoundEventAccessorComposite;
+import net.minecraft.client.audio.SoundHandler;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -24,9 +29,22 @@ public final class ExtraSounds {
 
     public static void ui(ResourceLocation event, float pitch) {
         if (Config.extraSoundsVolume <= 0) return;
-        Minecraft.getMinecraft()
-            .getSoundHandler()
-            .playSound(new UiSound(event, Config.extraSoundsVolume, pitch));
+        SoundHandler handler = Minecraft.getMinecraft()
+            .getSoundHandler();
+        ui(event, pitch, Config.extraSoundsVolume, handler::getSound, handler::playSound);
+    }
+
+    static void ui(ResourceLocation event, float pitch, float volume,
+        Function<ResourceLocation, SoundEventAccessorComposite> lookup, Consumer<ISound> play) {
+        if (volume <= 0) return;
+        play.accept(new UiSound(event, volume, pitch));
+        // sounds.json entries are random alternatives. A companion event plays simultaneously.
+        if (!"anextratouch".equals(event.getResourceDomain()) || !event.getResourcePath()
+            .startsWith("item.pickup.")) return;
+        ResourceLocation accent = id(event.getResourcePath() + ".accent");
+        SoundEventAccessorComposite definition = lookup.apply(accent);
+        // Missing optional mods and empty pack replacements must stay silent.
+        if (definition != null && definition.func_148721_a() > 0) play.accept(new UiSound(accent, volume, pitch));
     }
 
     public static void at(String event, double x, double y, double z, float volume, float pitch) {

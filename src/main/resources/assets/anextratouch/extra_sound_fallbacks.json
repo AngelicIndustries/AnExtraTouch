@@ -56,5 +56,10 @@
   "minecraft:item.bucket.empty": "minecraft:liquid.swim",
   "minecraft:block.wooden_button.click_on": "anextratouch:backpack.fallback.switch_on",
   "minecraft:block.wooden_button.click_off": "anextratouch:backpack.fallback.switch_off",
-  "minecraft:block.bamboo.place": "minecraft:step.wood"
+  "minecraft:block.bamboo.place": "minecraft:step.wood",
+  "minecraft:block.mud.place": "minecraft:dig.gravel",
+  "minecraft:block.packed_mud.place": "minecraft:dig.gravel",
+  "minecraft:block.mud_bricks.place": "minecraft:dig.stone",
+  "minecraft:block.cherry_wood.place": "minecraft:dig.wood",
+  "minecraft:block.lantern.place": "anextratouch:armor.medium_walk"
 }
