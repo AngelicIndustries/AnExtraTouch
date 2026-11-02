@@ -115,6 +115,24 @@ do not enable them. Upstream Extra Sounds `5339849` has no SaltyMod definitions;
 these aliases were checked against the installed jar's registration/variant code
 and textures. No dependency or custom interaction hook is added.
 
+Growthcraft 2.7.3 has definitions across its Core, Apples, Bamboo, Bees, Cellar,
+Grapes, Hops, Rice and Milk modules, using exact case-sensitive `Growthcraft|...`
+registry IDs rather than asset namespaces. Grapes use light fruit contact; seeds,
+yeast and starter culture rustle; cheese, butter and rice balls use soft food
+contact; yogurt and ice cream use dry bowls. The honey jar is a clay pot and uses
+the liquid bowl cue. Cloth, leather bags, wax, bamboo and metal tools retain their
+material cues. Wooden machines and the Fishtrap module keep native block sounds.
+
+All 51 generated booze buckets and nine generic fluid buckets use light metal
+contact plus the bucket-liquid accent. Their 17 bottle IDs use the full bottle
+cue. Salt bottles and buckets contain dry salt and instead add a quiet dust
+rustle. The water bag stores fill level in NBT, while metadata selects color:
+this definitions-only pass gives every color leather contact without an
+unconditional liquid accent. NBT-dependent bag sounds need a future code hook.
+The inspected upstream Extra Sounds revision (`5339849`) has no Growthcraft
+mappings. These definitions were checked against the installed complete jar's
+registrations, fluid factories and textures; no Growthcraft dependency is added.
+
 The 33 original recordings are included under CC0. AET includes a relocated copy
 of MCLib 0.3.7.8 and requests all modern events it uses from Minecraft 1.21.10 through
 AssetDirector. The client downloads the needed sound files from Mojang and caches

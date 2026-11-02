@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 03 - Growthcraft suite.** HarvestCraft and SaltyMod Expanded are accepted.
+**Next: 04 - Cooking for Blockheads.** Growthcraft definitions are accepted.
 
 ## Scope and workflow
 
@@ -22,7 +22,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | --- | --- | --- | --- | --- |
 | 01 | Pam's HarvestCraft | Accepted | Fruit, vegetables, dry ingredients, meat, prepared meals, bowls, bottles, cookware | Market and cooking-container transactions; inspect existing feedback |
 | 02 | SaltyMod Expanded | Accepted | Salt and powders, fish, preserved foods, meals, bowls, jars and tools | Cooking pot, apiary and other container controls |
-| 03 | Growthcraft suite | Queued | All enabled modules: produce, honeycomb, cheese, bottles, buckets and brewing supplies | Brewing/tank/container actions; avoid duplicate native fluid sounds |
+| 03 | Growthcraft suite | Accepted | All enabled modules: produce, honeycomb, cheese, bottles, buckets and brewing supplies | Brewing/tank/container actions; avoid duplicate native fluid sounds |
 | 04 | Cooking for Blockheads | Queued | Recipe books, toast and kitchen blocks by material | Recipe selection, sorting and confirmed crafting; screen transitions |
 | 05 | Spice of Life - Carrot Edition | Queued | Food journal, lunch bag and lunch box | Journal navigation and lunch-container interactions |
 | 06 | Adventura Arcana Core | Queued | Bamboo shoots, pack-specific produce, worktable and compartments | Compartment tabs and worktable actions; inspect local build |
@@ -191,3 +191,41 @@ Machine-readable inventory and per-jar disposition for this session: `/tmp/aet-p
 - Pack listening result: mud masks sounded too hard. Changed all four from
   packed-mud gear to the mineral mud ball's wet-mud contact. Accepted for commit
   by jack.
+
+## Growthcraft review - 2026-11-02
+
+- Audited installed `growthcraft-1.7.10-2.7.3-complete.jar`, checking registration
+  classes, FluidFactory and BoozeRegistryHelper directly against the jar. Used
+  matching local source for item behavior and checked representative textures.
+- Modules: Core, Apples, Bamboo, Bees, Cellar, Grapes, Hops, Rice and Milk have
+  definitions; Fishtrap has only block items already using material fallbacks.
+  Cactus and Ender textures are bundled leftovers, with no corresponding module
+  classes or registrations in this jar, so no invented mappings were added.
+- 126 item/block IDs and 62 accents, 188 definitions total. Includes all 32 ordinary
+  standalone registrations, seven booze bottle IDs, ten generic bottle IDs,
+  51 booze buckets, nine generic liquid buckets and 17 selected block materials.
+  The achievement icon item is excluded. No dependencies or new audio assets.
+- Booze bottle metadata selects fermentation variant; buckets use numbered registry
+  names. FluidFactory registers food bottles as `BottleFluid...`, despite the
+  `FoodBottleFluid...` translation name. Ordinary milk uses vanilla's milk bucket;
+  cheese-fluid entries use FEATURE_NONE and have no bottle/bucket items to map.
+- Honey fluid, milk and thistle are enabled in the installed pack config. Their
+  definitions do not enable those features when another pack disables them.
+- Dry salt bottle/bucket accents are dust, not liquid. Water bag fill is in NBT,
+  with 17 color metadata values, so all bags use leather contact. Conditional
+  liquid accents are deferred because they need code beyond definitions.
+- Yogurt and ice cream use dry bowls; cheese/butter/rice balls use soft food;
+  the honey jar returns a clay flower pot and uses the liquid bowl cue.
+  Bamboo building items use the existing bamboo cue. Leaves, wooden presses,
+  churns, barrels and bee/fish boxes retain their ordinary material fallbacks.
+- Interaction audit: inventory screens use ordinary container handling. Cellar
+  discard controls use GuiButton and server messages. Cheese presses already
+  click; fruit press pistons already sound; brewing kettles and cheese vats have
+  native fluid/machine feedback. Future transfer/discard/churn hooks must account
+  for these and successful state changes. No new action hooks in this batch.
+- Listening batch: grapes and seeds; rice vs rice ball; cheese/butter vs yogurt;
+  yeast/starter culture; salt bottle/bucket vs saltwater bottle/bucket; cider/wine
+  bottle vs bucket (try multiple fermentation variants); milk/cream buckets;
+  honey jar, cheesecloth, colored water bag, bamboo raft/fence and metal kettle.
+- Build validation: `./gradlew spotlessApply build` passed; 119 tests, no failures.
+- Pack listening result: accepted by jack.
