@@ -100,6 +100,21 @@ Leather, cloth, wax, glass and stone utensils retain distinct material cues.
 Ordinary machines, gardens, saplings and other blocks keep their block fallback.
 No HarvestCraft dependency or custom interaction hooks are added.
 
+SaltyMod Expanded 2.0.8 has definitions for 139 food/material/gear item IDs,
+including its optional Twilight Forest, BOP and Wild Mobs foods. Salted, unsalted,
+raw and cooked metadata variants reuse the same material or container family.
+Preserves and pickles use full bottles; salads, porridge, egg bowls and saltwort
+meat bowls use dry bowls; soups and stews use liquid bowls. Loose salt, baking
+soda and powdered milk rustle, while fruit, bread, cookies and meat follow the
+accepted vanilla/HarvestCraft families. The four washable mud masks use the same
+wet-mud contact as mineral mud balls; salt shards, crystals and the salt pickaxe
+use glass contact. The cooking pot uses the
+light metal cookware cue. Native wood/cloth storage and custom mud block sounds
+remain in place. The debug tool is left alone, and definitions for disabled items
+do not enable them. Upstream Extra Sounds `5339849` has no SaltyMod definitions;
+these aliases were checked against the installed jar's registration/variant code
+and textures. No dependency or custom interaction hook is added.
+
 The 33 original recordings are included under CC0. AET includes a relocated copy
 of MCLib 0.3.7.8 and requests all modern events it uses from Minecraft 1.21.10 through
 AssetDirector. The client downloads the needed sound files from Mojang and caches

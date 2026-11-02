@@ -12559,5 +12559,1280 @@
         "type": "event"
       }
     ]
+  },
+  "item.pickup.saltymod.apple_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.apple_preserves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.baking_soda": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.bee_larva": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.beef_stew": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.beetroot_salad": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.berry_preserves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.birthday_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.bone_marrow_soup": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.bop_hemoglobin": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wet_slippery",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.bop_pickled_turnip": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.bop_poison": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.bop_salt_rice_bowl": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.bop_salt_shroom_powder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.bop_salt_shroom_salad": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.bop_salt_veggie_salad": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.bop_sugar_fruit_salad": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.boreal_bee": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.cactus_soup": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.calamari": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.calamari_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.carpenter_bee": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.carrot_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.chicken_soup": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.chocolate_bar": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.chocolate_berries": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.chocolate_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.chorus_cookie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.cod_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.cooked_tropical_fish": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.cured_meat": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.dandelion_salad": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.developer_foods": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.dough": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.dressed_herring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.egg_bowl": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.fermented_fern": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.fermented_marsh_reeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.fermented_mushroom": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.fermented_saltwort": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.fish_bait": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.fish_soup": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.fizzy_drink": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.frozen_honey": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honeycomb",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.fruit_salad": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.fungus_stew": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.golden_berries": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.golden_fruit_salad": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.golden_potato": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.golden_saltwort": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.golden_saltwort_salad": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.golden_vegetables": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.grated_carrot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.haunch": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.honey_apple": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.honey_bee": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.honey_berries": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.honey_porkchop": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.honeycomb": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honeycomb",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.melon_preserves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.melon_soup": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.mineral_mud_ball": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mud",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.mud_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mud",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.mud_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mud",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.mud_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mud",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.mud_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mud",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.muffin": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.mushroom_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.onion": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.onion_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.pickled_beetroot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.pickled_calamari": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.pickled_onion": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.potato_mushroom": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.potato_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.powdered_milk": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.pumpkin_porridge": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.rainmaker": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.firework_rocket",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.rainmaker_star": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.firework_star",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.regal_bee": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.royal_jelly": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salmon_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_baked_potato": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_beetroot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_beetroot_soup": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_bread": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_cooked_beef": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_cooked_chicken": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_cooked_cod": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_cooked_mutton": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_cooked_porkchop": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_cooked_rabbit": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_cooked_salmon": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_egg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_mushroom_stew": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_pinch": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_rabbit_stew": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.saltwort": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.saltwort_cooked_beef": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.saltwort_cooked_haunch": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.saltwort_cooked_mutton": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.saltwort_cooked_porkchop": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.saltwort_cooked_strider": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.saltwort_honey_porkchop": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.saltwort_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.saltwort_salad": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.sheep_horn": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.shepherds_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.stewed_vegetables": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.strider": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.sugar_apple": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.sugar_berries": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.sugar_melon": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.sugar_pinch": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.sweetberry_cookie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.sweetberry_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tailor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tailor_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tf_pickled_mushgloom": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tf_salt_cooked_venison": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tf_salt_hydra_chop": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tf_salt_meef_steak": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tf_salt_meef_stroganoff": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tf_saltwort_cooked_venison": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tf_saltwort_meef_steak": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tough_jelly": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tropical_fish_pie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.tunneler_concoction": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.waxcomb": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honeycomb",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.wheat_sprouts": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.wm_salt_cooked_bison": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.wm_salt_cooked_calamari": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.wm_salt_cooked_chevon": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.wm_salt_cooked_goose": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.wm_salt_cooked_mouse": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.wm_salt_cooked_venison": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.glass.place",
+        "type": "event",
+        "volume": 0.7,
+        "pitch": 1.4
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_shard": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.glass.place",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 2
+      }
+    ]
+  },
+  "item.pickup.saltymod.salt_crystal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.glass.place",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.7
+      }
+    ]
+  },
+  "item.pickup.saltymod.cooking_pot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket",
+        "type": "event"
+      }
+    ]
   }
 }

@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 02 - SaltyMod Expanded.** Pam's HarvestCraft is accepted.
+**Next: 03 - Growthcraft suite.** HarvestCraft and SaltyMod Expanded are accepted.
 
 ## Scope and workflow
 
@@ -21,7 +21,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | Order | Mod / suite | Status | Mapping audit | Possible later interaction work |
 | --- | --- | --- | --- | --- |
 | 01 | Pam's HarvestCraft | Accepted | Fruit, vegetables, dry ingredients, meat, prepared meals, bowls, bottles, cookware | Market and cooking-container transactions; inspect existing feedback |
-| 02 | SaltyMod Expanded | Queued | Salt and powders, fish, preserved foods, meals, bowls, jars and tools | Cooking pot, apiary and other container controls |
+| 02 | SaltyMod Expanded | Accepted | Salt and powders, fish, preserved foods, meals, bowls, jars and tools | Cooking pot, apiary and other container controls |
 | 03 | Growthcraft suite | Queued | All enabled modules: produce, honeycomb, cheese, bottles, buckets and brewing supplies | Brewing/tank/container actions; avoid duplicate native fluid sounds |
 | 04 | Cooking for Blockheads | Queued | Recipe books, toast and kitchen blocks by material | Recipe selection, sorting and confirmed crafting; screen transitions |
 | 05 | Spice of Life - Carrot Edition | Queued | Food journal, lunch bag and lunch box | Journal navigation and lunch-container interactions |
@@ -160,3 +160,34 @@ Machine-readable inventory and per-jar disposition for this session: `/tmp/aet-p
   accents and gummy bears. Corrected churn to wood, all four sink variants to
   material contact plus bucket liquid, and gummy bears to the short fruit contact.
   Corrections accepted for commit by jack.
+
+## SaltyMod Expanded review - 2026-11-02
+
+- Audited installed `SaltyMod Expanded [1.7.10] [2.0.8].jar`, not its stale embedded
+  `2.0.4` metadata. `ConditionalRegistrar` forwards exact names to GameRegistry
+  only when feature/mod conditions pass; namespace is `saltymod`.
+- 139 standalone food/material/gear registrations mapped, plus `cooking_pot` and
+  `salt_crystal`: 141 events. The debug tool `dev_item` keeps its fallback.
+  The optional developer apples are mapped but disabled by this pack's config.
+- Checked ItemSaltFood metadata variants and the ItemUtils variant builders.
+  Salted/raw/cooked variants retain their container/material. No invented IDs
+  from translation names (for example, `salt_chicken_soup` is `chicken_soup:1`).
+- Includes optional Twilight Forest, BOP and Wild Mobs food aliases. Definitions
+  do not enable absent mods or disabled items. No new dependencies or audio assets.
+- Native cloth sacks, wood barrels/crates, and custom mud block sounds already
+  match their materials. They keep their fallbacks. Cooking pots use the accepted
+  light metal contact; the item is not a filled bucket and gets no liquid accent.
+- Pot/apiary screens use ordinary GuiContainer and Container slot handling.
+  The evaporator drain control extends GuiButton, so it retains vanilla button
+  feedback; it sends a server message and is disabled when its fluid level is zero.
+  Any later drain/transfer cue needs confirmation and checks for existing machine
+  audio before adding a hook. No additional machine or button cue is added here.
+- Listening batch: salt/powdered milk; onion vs honey apple; salted meat vs
+  saltwort meat bowl; salad/porridge/egg bowl vs soup; pickled onion/preserves vs
+  loose ingredients; cooking pot, salt pickaxe/shard, mud armor. Try salted and
+  unsalted food variants and one BOP/TF food. Pickup/place/drag should retain
+  the selected item's material and normal lower placement pitch.
+- Build validation: `./gradlew spotlessApply build` passed; 114 tests, no failures.
+- Pack listening result: mud masks sounded too hard. Changed all four from
+  packed-mud gear to the mineral mud ball's wet-mud contact. Accepted for commit
+  by jack.
