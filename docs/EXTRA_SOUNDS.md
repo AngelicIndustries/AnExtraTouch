@@ -149,6 +149,14 @@ or recipe-arrow buttons. These respect `extraInventoryClicks`,
 `extraScreenScroll`, Players volume and `extraSoundsVolume`; no dependency is
 added.
 
+Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
+metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch
+bag: a short crinkle excerpted from MichaelGillighan's CC0 "03 - Bolsa llena.wav"
+(credited in `EXTRA_SOUND_CREDITS.txt`). The journal is not an
+`ItemBook`, so it needs an explicit definition. Lunch-container contents and lid
+state are NBT and do not change the cue. The installed registrations, recipes
+and textures were checked; upstream Extra Sounds `5339849` has no matching entries.
+
 The 33 original recordings are included under CC0. AET includes a relocated copy
 of MCLib 0.3.7.8 and requests all modern events it uses from Minecraft 1.21.10 through
 AssetDirector. The client downloads the needed sound files from Mojang and caches

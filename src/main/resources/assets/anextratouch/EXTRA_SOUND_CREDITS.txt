@@ -118,6 +118,17 @@ Changes: excerpt at 0.00-0.25 s; mono, 44.1 kHz; 70 Hz high-pass;
 Playback volume 0.25, pitch 1.25. Unchanged "Tiny wet contact" audition sample.
 SHA-256 contact.ogg: e2b573e8792b5994b3462eefae81b1a4c39c16c38187261f0c477ee02b205097
 
+Paper bag inventory handling uses an excerpt from "03 - Bolsa llena.wav"
+by MichaelGillighan:
+https://freesound.org/people/MichaelGillighan/sounds/429201/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpt at 1.18-1.51 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out; peak normalized to -6 dB; Ogg Vorbis quality 6.
+Playback volume 0.8, pitch 1.0. Picked from the lunch bag audition page.
+SHA-256 paper_bag/contact.ogg: 0a22baac5b74ba0863dfb678101228ff5c9e6fbbd04490124217fa0a10fb95df
+
 Keyboard type/move/erase/cut/paste handling uses excerpts from
 "Single Key Press Sounds" by eklee, qubodup:
 https://opengameart.org/content/single-key-press-sounds

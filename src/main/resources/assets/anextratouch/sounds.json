@@ -15573,5 +15573,42 @@
         "type": "event"
       }
     ]
+  },
+  "item.pickup.SpiceOfLife.bookfoodjournal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.SpiceOfLife.lunchbag": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper_bag",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.SpiceOfLife.lunchbox": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket",
+        "type": "event"
+      }
+    ]
+  },
+  "item.category.paper_bag": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item/paper_bag/contact",
+        "volume": 0.8,
+        "pitch": 1.0
+      }
+    ]
   }
 }

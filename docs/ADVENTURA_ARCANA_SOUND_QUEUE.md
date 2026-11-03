@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 05 - Spice of Life - Carrot Edition.** Growthcraft and Cooking for Blockheads are accepted.
+**Next: 06 - Adventura Arcana Core.** Growthcraft, Cooking for Blockheads and Spice of Life are accepted.
 
 ## Scope and workflow
 
@@ -24,7 +24,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 02 | SaltyMod Expanded | Accepted | Salt and powders, fish, preserved foods, meals, bowls, jars and tools | Cooking pot, apiary and other container controls |
 | 03 | Growthcraft suite | Accepted | All enabled modules: produce, honeycomb, cheese, bottles, buckets and brewing supplies | Brewing/tank/container actions; avoid duplicate native fluid sounds |
 | 04 | Cooking for Blockheads | Accepted | Recipe books, toast and kitchen blocks by material | Recipe selection, sorting and confirmed crafting; screen transitions |
-| 05 | Spice of Life - Carrot Edition | Queued | Food journal, lunch bag and lunch box | Journal navigation and lunch-container interactions |
+| 05 | Spice of Life - Carrot Edition | Accepted | Food journal, lunch bag and lunch box | Journal navigation and lunch-container interactions |
 | 06 | Adventura Arcana Core | Queued | Bamboo shoots, pack-specific produce, worktable and compartments | Compartment tabs and worktable actions; inspect local build |
 | 07 | Biomic | Queued | Boats, produce and special material variants; ordinary blocks may already fall back correctly | Biome-browser interactions are low priority; inspect actual survival-facing actions |
 | 08 | Plant Mega Pack | Queued | Berries, seeds, plant products and nonstandard block materials | Mostly mappings; config screens are out of scope |
@@ -317,3 +317,45 @@ Machine-readable inventory and per-jar disposition for this session: `/tmp/aet-p
   stack in the empty hand, which made NoHotbarNeeded (U05) show the bread's
   total on selection; it now tops up carried stacks first, like a pickup.
 - Accepted by jack after the second check, with the AAC patches.
+
+## Spice of Life - Carrot Edition review - 2026-11-03
+
+- Audited installed `SpiceOfLife-2.2.12-carrot.jar`. `ModContent` registers three
+  items unconditionally under the case-sensitive `SpiceOfLife` mod ID:
+  `bookfoodjournal`, `lunchbox` and `lunchbag`. None use metadata. Upstream Extra
+  Sounds `5339849` has no corresponding definitions.
+- The journal is a plain `Item`, not `ItemBook`, so the book classifier missed it
+  and it used generic contact. It now uses paper, matching CFB recipe books.
+  The lunch bag is crafted from paper and uses paper. The lunch box is crafted
+  from heavy weighted (iron) pressure plates and uses the accepted light metal
+  contact.
+- Container contents (`Inventory`) and lid state (`Open`) are NBT, so they cannot
+  select a definition. No unconditional food accent: containers are often empty.
+- The lunch-container screen is an ordinary `GuiContainer`. Its `slotClick`
+  refuses the held container's own slot without changing anything, so the
+  existing change-based inventory cue stays silent there. Eating from an open
+  container already uses vanilla eating audio.
+- Interaction candidates, documented, not added:
+  - Lid toggle (sneak-use) is silent and predicted on the client in
+    `onItemRightClick`. Opening the screen also sets the flag, and closing it
+    clears it, so a lid cue must not double the screen open/close cues. The
+    pack disables left-click opening, which would be server-only anyway.
+  - A food-content accent like the water bag would need an NBT-aware lookup.
+  - Journal page arrows are ordinary `GuiButton`s with the vanilla click, the
+    same as 1.7.10 books. A modern `item.book.page_turn` backport for
+    `GuiScreenBook` could be shared with the journal.
+  - Dumping into or pulling food from an inventory happens only on the server
+    (`onItemUseFirst`). A cue would need confirmed slot changes.
+- Held-item equip/swing: the journal and CFB recipe books still use utility
+  sounds because they are not `ItemBook`. Without code, the pack can opt in with
+  `itemSoundOverrides`, for example `SpiceOfLife:bookfoodjournal=book`.
+- Lunch bag follow-up (jack): it deserved its own paper sound. From an audition
+  of 4 vanilla and 16 CC0 Freesound paper bag options, jack picked
+  MichaelGillighan's "03 - Bolsa llena.wav". A 0.33 s excerpt ships as
+  `item.category.paper_bag` (volume 0.8), reusable for later paper bags.
+- Listening batch: journal, lunch bag and lunch box pickup/place/drag, compared
+  with vanilla paper and book. Open a lunch box and move food in and out, then
+  click the held box's own slot, which must stay silent.
+- Validation: `./gradlew spotlessApply build` passed, 133 tests with no failures,
+  including the lunch bag follow-up.
+- Pack listening result: accepted by jack.
