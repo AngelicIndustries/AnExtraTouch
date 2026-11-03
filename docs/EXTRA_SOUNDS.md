@@ -135,6 +135,20 @@ The inspected upstream Extra Sounds revision (`5339849`) has no Growthcraft
 mappings. These definitions were checked against the installed complete jar's
 registrations, fluid factories and textures; no Growthcraft dependency is added.
 
+Cooking for Blockheads 1.4.14-GTNH uses paper for every recipe-book tier, soft
+bread for toast, and light metal contact for the toaster. The oven, fridge and
+other kitchen blocks retain native material sounds. Sinks do not receive unconditional
+liquid accents: their placed tanks may be empty. The installed registrations and
+textures were checked; upstream Extra Sounds `5339849` has no matching entries.
+Optional client-only Cooking for Blockheads hooks add item-specific feedback
+for tool-rack insert/remove/swap, oven-top cookware placement and toaster bread
+insertion. They compare actual local inventory changes, so no-op clicks stay
+silent, and reuse inventory pickup/placement pitches. Recipe-list wheel and
+scrollbar movement use the existing scroll cue without adding sounds to sort
+or recipe-arrow buttons. These respect `extraInventoryClicks`,
+`extraScreenScroll`, Players volume and `extraSoundsVolume`; no dependency is
+added.
+
 The 33 original recordings are included under CC0. AET includes a relocated copy
 of MCLib 0.3.7.8 and requests all modern events it uses from Minecraft 1.21.10 through
 AssetDirector. The client downloads the needed sound files from Mojang and caches

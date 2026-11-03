@@ -158,6 +158,23 @@ public class InventorySoundsTest {
     }
 
     @Test
+    public void doubleClickOnlyCollectsWhenTheCursorGains() {
+        // Cooking for Blockheads' recipe book turns the second click into an ordinary one,
+        // which puts the single item back down.
+        player.setItemStack(stack(1));
+        InventorySounds putBack = begin(0, 0, 6, false, false, false);
+        slots.setInventorySlotContents(0, player.getItemStack());
+        player.setItemStack(null);
+        assertNull(putBack.result().event);
+        assertEquals(0.9F, putBack.result().pitch, 0);
+        // Other slots changing (its recipe display) is not a collection either.
+        player.setItemStack(stack(1));
+        InventorySounds nothing = begin(0, 0, 6, false, false, false);
+        slots.setInventorySlotContents(1, stack(3));
+        assertNull(nothing.result());
+    }
+
+    @Test
     public void creativePaletteDropsSoundWithoutChangingThePalette() {
         slots.setInventorySlotContents(0, stack(1));
         InventorySounds one = begin(0, 0, 4, true, true, false);

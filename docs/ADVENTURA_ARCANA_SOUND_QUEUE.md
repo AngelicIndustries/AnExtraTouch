@@ -2,13 +2,13 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 04 - Cooking for Blockheads.** Growthcraft definitions and the NBT water-bag follow-up are accepted.
+**Next: 05 - Spice of Life - Carrot Edition.** Growthcraft and Cooking for Blockheads are accepted.
 
 ## Scope and workflow
 
 - Work through one mod or closely related suite at a time. Status starts as queued; use in progress, ready for pack test, needs adjustment, and accepted as we proceed.
 - Do not add mod dependencies or install these mods into the AET dev run. Read the pack's actual jars or matching local sources.
-- The current implementation scope is sound definitions only, except the explicitly requested Growthcraft water-bag NBT detection. New NEI-style behaviors need code hooks; the candidates below are observations to investigate, not promised features or authorization to add hooks.
+- The current implementation scope is sound definitions only, except the explicitly requested Growthcraft water-bag NBT detection and Cooking for Blockheads interaction cues. New NEI-style behaviors need code hooks; the candidates below are observations to investigate, not promised features or authorization to add hooks.
 - Confirm case-sensitive registry names, metadata and NBT distinctions before writing definitions. Localization keys, asset namespaces and mod IDs are discovery hints, not registry IDs. Disabled/optional items must not be mistaken for enabled registrations.
 - Reuse the accepted vanilla/EFR/AET material sounds. Keep dry food bowls separate from liquid bowls, empty bottles separate from full bottles, and bucket liquid separate from bottled liquid. Ordinary blocks/tools already receive fallbacks; add overrides where they improve the result.
 - Check the original Extra Sounds mappings where the corresponding item exists, then fill gaps using the accepted material families.
@@ -23,7 +23,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 01 | Pam's HarvestCraft | Accepted | Fruit, vegetables, dry ingredients, meat, prepared meals, bowls, bottles, cookware | Market and cooking-container transactions; inspect existing feedback |
 | 02 | SaltyMod Expanded | Accepted | Salt and powders, fish, preserved foods, meals, bowls, jars and tools | Cooking pot, apiary and other container controls |
 | 03 | Growthcraft suite | Accepted | All enabled modules: produce, honeycomb, cheese, bottles, buckets and brewing supplies | Brewing/tank/container actions; avoid duplicate native fluid sounds |
-| 04 | Cooking for Blockheads | Queued | Recipe books, toast and kitchen blocks by material | Recipe selection, sorting and confirmed crafting; screen transitions |
+| 04 | Cooking for Blockheads | Accepted | Recipe books, toast and kitchen blocks by material | Recipe selection, sorting and confirmed crafting; screen transitions |
 | 05 | Spice of Life - Carrot Edition | Queued | Food journal, lunch bag and lunch box | Journal navigation and lunch-container interactions |
 | 06 | Adventura Arcana Core | Queued | Bamboo shoots, pack-specific produce, worktable and compartments | Compartment tabs and worktable actions; inspect local build |
 | 07 | Biomic | Queued | Boats, produce and special material variants; ordinary blocks may already fall back correctly | Biome-browser interactions are low priority; inspect actual survival-facing actions |
@@ -232,3 +232,88 @@ Machine-readable inventory and per-jar disposition for this session: `/tmp/aet-p
   honey jar, cheesecloth, colored water bag, bamboo raft/fence and metal kettle.
 - Build validation: `./gradlew spotlessApply build` passed; 119 tests, no failures.
 - Pack listening result: accepted by jack.
+
+## Cooking for Blockheads review - 2026-11-02
+
+- Audited installed `CookingForBlockheads-1.4.14-GTNH.jar`: registrations, item
+  metadata, kitchen block materials, textures and recipe container/GUI code.
+  Upstream Extra Sounds `5339849` has no corresponding definitions.
+- Five aliases at first: `recipebook` uses paper across tiers (metadata 3, 0
+  and 1); `toast` matches HarvestCraft toast with soft bread contact; `toaster`,
+  `cookingoven` and `fridge` use the accepted light metal contact.
+- Counters/cabinets and all 16 kitchen floors retain stone material fallbacks.
+  The cooking table, sink and tool rack retain wood. Sink tanks can be empty;
+  the pack enables `sinkRequiresWater`, so no unconditional liquid accent.
+- Only recipebook and toast are standalone registered items. Bundled pot,
+  saucepan, skillet and bakeware textures do not justify invented item IDs.
+  Corner blocks are `countercorner`/`cabinetcorner`, not translation-key names.
+- Interaction candidates: recipe selection and successful craft/smelt requests,
+  custom scrollbar movement and screen transitions. Sorting/recipe arrows use
+  ordinary GuiButton handling; future hooks must avoid doubled clicks and
+  distinguish preview changes from server-confirmed crafting. No GUI hooks or
+  dependencies added in the definition batch.
+- Listening batch: all recipe-book tiers, toast, toaster, oven and fridge;
+  compare a counter and a wooden tool rack as unchanged material baselines.
+- Build validation (including water-bag follow-up): `./gradlew spotlessApply build`
+  passed; 123 tests, no failures. Pack listening pending.
+
+### Cooking for Blockheads interactions - 2026-11-02
+
+- Requested follow-up: tool-rack interactions and an audit of other missing cues.
+- Added one item-specific cue for rack insertion, removal and replacement. Removal
+  uses inventory pickup pitch; insertion/replacement uses placement pitch. Empty
+  clicks, clicks below the rack slots and rejected block items leave contents
+  unchanged and stay silent. Replacements play only the incoming item's cue.
+- The same direct inventory comparison covers oven-top cookware insertion and
+  toaster bread insertion. Toaster activation returns false even when insertion
+  succeeds, so checking its boolean return would miss valid actions.
+- These optional client-only mixins compare contents around the local player's
+  activation, not tile sync/update calls. They follow CFB's local prediction,
+  just like normal inventory click feedback; they do not await server acceptance.
+  Remote players, integrated-server execution, chunk loads and background machine
+  changes cannot replay the cue. No CFB dependency was added.
+- Recipe book/table wheel scrolling and scrollbar dragging use the existing
+  rate-limited scroll cue only when the visible row changes. Recipe-arrow and
+  sort buttons retain native button clicks. Layout refreshes and scroll limits
+  stay silent. Wheel events outside the CFB panel do not add a second cue over
+  NEI. Existing inventory-click, screen-scroll and volume toggles apply.
+- Remaining candidates: sink fill/pour/rinse, toaster lever and completion,
+  recipe selection and successful craft/smelt feedback. Sink interactions can
+  drain/discard fluid or spawn particles without delivering a container; a
+  future cue must check actual output/transfer, not just particles or true return.
+  Craft/smelt operations are server-side and require matching result updates;
+  clicking a preview is not proof that crafting succeeded. Toaster active state
+  is not in its tile NBT, so generic tile-sync observation cannot detect cycles.
+  Fridge/oven door feedback could also be distinct, but must avoid overlapping
+  the existing screen-open/close cues. These candidates are documented, not added.
+- Listening batch: rack place/take/swap and empty clicks; cookware on empty vs
+  occupied oven-top positions; bread into empty vs full toaster; wheel and drag
+  a recipe list, including its limits; verify sort/arrow clicks remain single.
+- Validation: `./gradlew spotlessApply build` passed, 128 tests with no failures.
+  Checked activation signatures and both scrollbar call sites against installed
+  jar bytecode, plus inherited GUI field remapping in the production AET jar.
+  Runtime mixin application and listening still need the pack relaunch.
+- Pack listening result (2026-11-03): recipe books, toast, toaster, baselines,
+  every rack, oven-top and toaster cue, recipe-list scrolling and single button
+  clicks accepted by jack. The oven and fridge sounded like a bucket. They now
+  drop their overrides and use their native metal block sound (soundTypeMetal).
+- Follow-ups requested for Adventura Arcana Core, not AET, and written there
+  (`kitchenSneakTake`, `toasterLever`, `recipeListScroll`): sneak-use with an
+  empty hand takes cookware off the oven and bread out of the toaster; the
+  recipe list scrolls only with the mouse over the list or scrollbar; the
+  toaster's lever and bread move smoothly, its running state is saved and
+  synced, and the server plays a lever-down sound on start and a pop on stop.
+  Both CC0 by MTJohnson, picked by jack: "Toaster Pop.wav" and "Priming
+  Toaster.wav", played about 8% higher. AET's change-based kitchen cue covers
+  the sneak-take removals. This replaces the toaster lever/completion
+  candidate above.
+- Second pack check (2026-11-03): recipe-list scrolling accepted. Fixed three
+  issues. CFB's recipe book turns a double click (mode 6) into an ordinary
+  click that puts a single item back down; AET played the collect cue because
+  slots changed. The collect cue now needs the cursor to gain items, otherwise
+  the click is judged as ordinary. The toaster's client count ran ahead of a
+  busy server, so the lever rose before the pop; with `toasterLever` the client
+  now waits for the server's state. Toaster take-back started a second bread
+  stack in the empty hand, which made NoHotbarNeeded (U05) show the bread's
+  total on selection; it now tops up carried stacks first, like a pickup.
+- Accepted by jack after the second check, with the AAC patches.

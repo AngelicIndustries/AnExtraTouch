@@ -38,6 +38,8 @@ public class LateMixinLoader implements ILateMixinLoader {
             .addMixin("MixinBackpackClicks", MixinBuilder.Side.CLIENT, "adventurebackpack")
             .addMixin("MixinBackpackSync", MixinBuilder.Side.CLIENT, "adventurebackpack")
             .addMixin("MixinBackpackTileSync", MixinBuilder.Side.CLIENT, "adventurebackpack")
+            .addMixin("MixinKitchenItems", MixinBuilder.Side.CLIENT, "cookingforblockheads")
+            .addMixin("MixinKitchenScroll", MixinBuilder.Side.CLIENT, "cookingforblockheads")
             .addMixin("MixinBlizzSnowTrail", MixinBuilder.Side.BOTH, "ThermalFoundation")
             .addMixin("MixinThaumicHorizonsBoat", MixinBuilder.Side.BOTH, "ThaumicHorizons")
             .addMixin("MixinExplosionNT", MixinBuilder.Side.BOTH, "hbm")

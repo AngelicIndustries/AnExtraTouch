@@ -15546,5 +15546,32 @@
         "type": "event"
       }
     ]
+  },
+  "item.pickup.cookingforblockheads.recipebook": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.cookingforblockheads.toast": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.cookingforblockheads.toaster": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket",
+        "type": "event"
+      }
+    ]
   }
 }

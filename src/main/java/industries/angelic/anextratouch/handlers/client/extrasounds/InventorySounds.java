@@ -134,8 +134,12 @@ public final class InventorySounds {
         if (!Config.extraInventoryClicks) return null;
         // The completed drag places the cursor's item, even when it empties the cursor.
         if (mode == 5) return cursor == null ? null : new Cue(null, cursor, 0.9F);
-        if (mode == 6) return new Cue("item.pickup_all", null, 1);
-        boolean placing = mode == 0 && cursor != null && (clicked == null || sameItem(cursor, clicked));
+        if (mode == 6) {
+            if (count(after) > count(cursor)) return new Cue("item.pickup_all", null, 1);
+            // Cooking for Blockheads' recipe book handles a double click as an ordinary click.
+            if (ItemStack.areItemStacksEqual(cursor, after)) return null;
+        }
+        boolean placing = (mode == 0 || mode == 6) && cursor != null && (clicked == null || sameItem(cursor, clicked));
         ItemStack sounded = placing ? cursor : clicked != null ? clicked : hotbar;
         return sounded == null ? null : new Cue(null, sounded, placing ? 0.9F : 1.0F);
     }
