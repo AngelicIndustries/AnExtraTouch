@@ -15528,5 +15528,23 @@
         "type": "event"
       }
     ]
+  },
+  "item.pickup.Growthcraft|Cellar.grc.waterBag.filled": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.Growthcraft|Cellar.grc.waterBag",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.Growthcraft|Cellar.grc.waterBag.filled.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket_liquid",
+        "type": "event"
+      }
+    ]
   }
 }

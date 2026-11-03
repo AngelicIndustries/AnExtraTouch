@@ -2,13 +2,13 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 04 - Cooking for Blockheads.** Growthcraft definitions are accepted.
+**Next: 04 - Cooking for Blockheads.** Growthcraft definitions and the NBT water-bag follow-up are accepted.
 
 ## Scope and workflow
 
 - Work through one mod or closely related suite at a time. Status starts as queued; use in progress, ready for pack test, needs adjustment, and accepted as we proceed.
 - Do not add mod dependencies or install these mods into the AET dev run. Read the pack's actual jars or matching local sources.
-- The current implementation scope is sound definitions only. New NEI-style behaviors need code hooks; the candidates below are observations to investigate, not promised features or authorization to add hooks.
+- The current implementation scope is sound definitions only, except the explicitly requested Growthcraft water-bag NBT detection. New NEI-style behaviors need code hooks; the candidates below are observations to investigate, not promised features or authorization to add hooks.
 - Confirm case-sensitive registry names, metadata and NBT distinctions before writing definitions. Localization keys, asset namespaces and mod IDs are discovery hints, not registry IDs. Disabled/optional items must not be mistaken for enabled registrations.
 - Reuse the accepted vanilla/EFR/AET material sounds. Keep dry food bowls separate from liquid bowls, empty bottles separate from full bottles, and bucket liquid separate from bottled liquid. Ordinary blocks/tools already receive fallbacks; add overrides where they improve the result.
 - Check the original Extra Sounds mappings where the corresponding item exists, then fill gaps using the accepted material families.
@@ -212,8 +212,11 @@ Machine-readable inventory and per-jar disposition for this session: `/tmp/aet-p
 - Honey fluid, milk and thistle are enabled in the installed pack config. Their
   definitions do not enable those features when another pack disables them.
 - Dry salt bottle/bucket accents are dust, not liquid. Water bag fill is in NBT,
-  with 17 color metadata values, so all bags use leather contact. Conditional
-  liquid accents are deferred because they need code beyond definitions.
+  with 17 color metadata values, so all bags use leather contact. The requested
+  follow-up reads the Forge FluidStack on each sound lookup and selects a filled
+  event with a liquid accent only for positive registered fluid amounts. Explicit
+  metadata resource overrides retain priority. NBT follow-up accepted by jack;
+  no Growthcraft dependency is needed.
 - Yogurt and ice cream use dry bowls; cheese/butter/rice balls use soft food;
   the honey jar returns a clay flower pot and uses the liquid bowl cue.
   Bamboo building items use the existing bamboo cue. Leaves, wooden presses,

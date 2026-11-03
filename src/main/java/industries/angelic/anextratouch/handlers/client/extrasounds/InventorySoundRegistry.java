@@ -3,6 +3,7 @@ package industries.angelic.anextratouch.handlers.client.extrasounds;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.function.Predicate;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -34,7 +35,9 @@ import net.minecraft.item.ItemSoup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemTool;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fluids.FluidRegistry;
 
 import industries.angelic.anextratouch.compat.EfrInventoryCompat;
 import industries.angelic.anextratouch.handlers.client.ItemSoundRegistry;
@@ -57,6 +60,8 @@ public final class InventorySoundRegistry {
         ResourceLocation variant = ExtraSounds.id(event.getResourcePath() + "." + stack.getItemDamage());
         SoundEventAccessorComposite variantSound = handler.getSound(variant);
         if (variantSound != null && variantSound != generated.get(variant)) return variant;
+        ResourceLocation filled = filledWaterBag(name, stack.getTagCompound());
+        if (filled != null && handler.getSound(filled) != null) return filled;
         SoundEventAccessorComposite existing = handler.getSound(event);
         if (existing != null && existing != generated.get(event)) return event;
         ResourceLocation translated = EfrInventoryCompat
@@ -84,6 +89,20 @@ public final class InventorySoundRegistry {
             fallbacks.put(event, fallback);
         }
         return event;
+    }
+
+    static ResourceLocation filledWaterBag(String name, NBTTagCompound tag) {
+        return filledWaterBag(name, tag, fluid -> FluidRegistry.getFluid(fluid) != null);
+    }
+
+    static ResourceLocation filledWaterBag(String name, NBTTagCompound tag, Predicate<String> registeredFluid) {
+        if (!"Growthcraft|Cellar:grc.waterBag".equals(name) || tag == null || !tag.hasKey("Fluid", 10)) return null;
+        // Growthcraft stores color in metadata and a Forge FluidStack in this tag.
+        // Read every stack so filling or draining cannot leave a stale cached cue.
+        NBTTagCompound fluid = tag.getCompoundTag("Fluid");
+        return fluid.getInteger("Amount") > 0 && registeredFluid.test(fluid.getString("FluidName"))
+            ? ExtraSounds.id("item.pickup.Growthcraft|Cellar.grc.waterBag.filled")
+            : null;
     }
 
     static ResourceLocation fallback(ItemStack stack) {

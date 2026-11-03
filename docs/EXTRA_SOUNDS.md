@@ -127,8 +127,10 @@ All 51 generated booze buckets and nine generic fluid buckets use light metal
 contact plus the bucket-liquid accent. Their 17 bottle IDs use the full bottle
 cue. Salt bottles and buckets contain dry salt and instead add a quiet dust
 rustle. The water bag stores fill level in NBT, while metadata selects color:
-this definitions-only pass gives every color leather contact without an
-unconditional liquid accent. NBT-dependent bag sounds need a future code hook.
+every color keeps leather contact, with a bucket-liquid accent only when its
+Forge FluidStack tag contains a positive amount of registered fluid. Filling or
+draining is checked on each inventory sound lookup, without cached fill state.
+Explicit resource-pack metadata overrides still take precedence.
 The inspected upstream Extra Sounds revision (`5339849`) has no Growthcraft
 mappings. These definitions were checked against the installed complete jar's
 registrations, fluid factories and textures; no Growthcraft dependency is added.

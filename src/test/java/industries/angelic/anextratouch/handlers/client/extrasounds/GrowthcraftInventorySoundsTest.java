@@ -101,12 +101,14 @@ public class GrowthcraftInventorySoundsTest {
         aliases("", "grccore.saltBucket", "category.bucket");
         aliases("", "grccore.saltBottle.accent", "category.dust");
         aliases("", "grccore.saltBucket.accent", "category.dust");
-        // Bag metadata is color; fill level is NBT and cannot select a definition.
+        // Bag metadata is color; only the NBT-aware lookup selects the filled event.
         for (int color = 0; color < 17; color++) {
             assertEquals("anextratouch:item.pickup.minecraft.leather", target("Cellar", "grc.waterBag", color));
             assertFalse(events.has(key("Cellar", "grc.waterBag." + color + ".accent")));
         }
         assertFalse(events.has(key("Cellar", "grc.waterBag.accent")));
+        aliases("Cellar", "grc.waterBag.filled", "pickup.Growthcraft|Cellar.grc.waterBag");
+        aliases("Cellar", "grc.waterBag.filled.accent", "category.bucket_liquid");
     }
 
     @Test
