@@ -450,3 +450,46 @@ have AET hooks; their documented gaps are unchanged.
   vanilla; their primitive normal surface is intentional. Monster egg
   metadata 3-15 is unused.
 
+## Remaining interaction candidates on supported mods - 2026-11-06
+
+Per jack: quick wins, server-confirmed buttons and CFB doors (AAC skipped while
+in development). All under `extraModInteractions` unless noted.
+
+- CFB sink: fill and pour use the bucket/bottle cues; rinsing an item by a sink
+  recipe (coloured wool and carpet, dyed leather armor, milk buckets, potions),
+  even when nothing changes, plays a rinse cue, and so does the tap CFB runs for
+  an empty hand or any item without a sink use (only with a bucket's worth of
+  water when `sinkRequiresWater`). Dye recolouring stays silent. Per jack's check:
+  unsupported items showed the tap's particles silently; now they splash too.
+- CFB doors: fridges, ovens, counters and cabinets sound as their door starts to
+  open and when it shuts, on every nearby client (like chests), and replace the
+  generic screen open/close sounds for those screens.
+- CFB cooking table: one cue when a craft returns a result (shift-crafts once),
+  one when an ingredient goes into an oven. Previews stay silent.
+- Spice of Life: sneak-use lid open/close cues for the lunch box and bag; the
+  screen-opening path keeps its screen sound.
+- Book page arrows (vanilla books and the food journal) play modern
+  `item.book.page_turn` instead of the button click (`extraBookPages`).
+- HarvestCraft market: a cue when the bought item spawns.
+- SaltyMod evaporator drain button and Growthcraft discard buttons: a pour when a
+  tank with fluid is emptied; the brew kettle's switch button: a cue when the
+  tanks' contents actually change. Growthcraft's packets are hooked, not
+  `clearTank`, because switching clears both tanks internally.
+- Mod packet handlers run on network threads, so cues raised there are queued
+  and sent on the next server tick.
+- Picks from the interaction audition page: rinse uses vanilla fish swimming
+  (RIN1), the kettle switch an iron trapdoor closing (SW5), purchases a cash
+  register (BUY12, CapsLok), oven smelting a sizzle (SM7, roboroo), the lunch
+  bag a paper crumple pitched up to open and down to fold (BAG8, esperri),
+  fridges open with a recorded fridge door (FR7, naxxfish), ovens use copper
+  doors (OV4) and counters and cabinets wooden trapdoors (CAB1).
+- From the follow-up page: cooking table crafts play a knife chop (CR17,
+  egomassive), the lunch box lid keeps a quiet, high iron trapdoor (BOX14) and
+  fridges close with bolkmar's fridge door (FR14), since FR7 only records the
+  opening.
+- jack's in-game check, 2026-11-06: CFB doors, cooking table craft/smelt,
+  Spice of Life lunch box/bag lids, the CFB sink (after the tap fix), the
+  market purchase, book page arrows, the SaltyMod drain plug (a hidden 3x3
+  spot under the evaporator's fluid gauge), the brew kettle's discard and
+  switch buttons, the drop flutter and `/aet_sound` work.
+

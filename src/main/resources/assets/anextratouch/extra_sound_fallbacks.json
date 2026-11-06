@@ -64,5 +64,12 @@
   "minecraft:block.lantern.place": "anextratouch:armor.medium_walk",
   "minecraft:block.grass.step": "minecraft:step.grass",
   "minecraft:item.bottle.empty": "anextratouch:item.potion.equip",
-  "minecraft:item.hoe.till": "minecraft:step.gravel"
+  "minecraft:item.hoe.till": "minecraft:step.gravel",
+  "minecraft:entity.fish.swim": "minecraft:random.splash",
+  "minecraft:block.iron_trapdoor.open": "minecraft:random.door_open",
+  "minecraft:block.iron_trapdoor.close": "minecraft:random.door_close",
+  "minecraft:block.wooden_trapdoor.open": "minecraft:random.door_open",
+  "minecraft:block.wooden_trapdoor.close": "minecraft:random.door_close",
+  "minecraft:block.copper_door.open": "minecraft:random.door_open",
+  "minecraft:block.copper_door.close": "minecraft:random.door_close"
 }

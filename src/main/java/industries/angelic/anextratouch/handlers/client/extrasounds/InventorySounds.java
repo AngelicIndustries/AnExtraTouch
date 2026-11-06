@@ -88,8 +88,9 @@ public final class InventorySounds {
     }
 
     private static void play(Cue cue) {
-        if (cue != null) ExtraSounds
-            .ui(cue.item == null ? ExtraSounds.id(cue.event) : InventorySoundRegistry.sound(cue.item), cue.pitch);
+        if (cue == null) return;
+        float pitch = "item.drop".equals(cue.event) ? ExtraSounds.varied(cue.pitch) : cue.pitch;
+        ExtraSounds.ui(cue.item == null ? ExtraSounds.id(cue.event) : InventorySoundRegistry.sound(cue.item), pitch);
     }
 
     boolean changed() {

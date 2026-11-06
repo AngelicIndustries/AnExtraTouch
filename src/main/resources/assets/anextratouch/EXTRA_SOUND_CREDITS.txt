@@ -33,14 +33,18 @@ minecraft:block.bone_block.place -> minecraft:dig.stone
 minecraft:block.chain.step -> anextratouch:armor.medium_walk
 minecraft:block.chorus_flower.grow -> minecraft:random.orb
 minecraft:block.conduit.ambient.short -> minecraft:note.bassattack
+minecraft:block.copper_door.close -> minecraft:random.door_close
+minecraft:block.copper_door.open -> minecraft:random.door_open
 minecraft:block.coral_block.place -> minecraft:mob.slime.small
 minecraft:block.deepslate_bricks.place -> minecraft:dig.stone
 minecraft:block.dried_ghast.place -> minecraft:dig.cloth
 minecraft:block.glass.place -> minecraft:dig.glass
 minecraft:block.honey_block.place -> minecraft:mob.slime.small
+minecraft:block.iron_trapdoor.close -> minecraft:random.door_close
+minecraft:block.iron_trapdoor.open -> minecraft:random.door_open
 minecraft:block.ladder.step -> minecraft:step.ladder
-minecraft:block.nether_bricks.place -> minecraft:dig.stone
 minecraft:block.lantern.place -> anextratouch:armor.medium_walk
+minecraft:block.nether_bricks.place -> minecraft:dig.stone
 minecraft:block.nether_gold_ore.place -> minecraft:dig.stone
 minecraft:block.note_block.chime -> minecraft:note.harp
 minecraft:block.resin.place -> minecraft:dig.stone
@@ -57,9 +61,12 @@ minecraft:block.stone_button.click_on -> minecraft:random.click
 minecraft:block.tuff.place -> minecraft:dig.stone
 minecraft:block.wet_grass.place -> minecraft:dig.grass
 minecraft:block.wood.place -> minecraft:dig.wood
+minecraft:block.wooden_trapdoor.close -> minecraft:random.door_close
+minecraft:block.wooden_trapdoor.open -> minecraft:random.door_open
 minecraft:block.wool.place -> minecraft:dig.cloth
 minecraft:entity.armor_stand.break -> minecraft:dig.wood
 minecraft:entity.cod.flop -> minecraft:mob.slime.small
+minecraft:entity.fish.swim -> minecraft:random.splash
 minecraft:entity.item_frame.place -> minecraft:dig.wood
 minecraft:item.armor.equip_chain -> anextratouch:armor.medium_walk
 minecraft:item.armor.equip_copper -> anextratouch:armor.medium_walk
@@ -195,6 +202,70 @@ Ogg Vorbis quality 6.
 Playback volume 0.79, pitch 0.8, with a wider random pitch range in game.
 SHA-256 action/churn/stir1.ogg: 8ad4b5a29b1d099e5ca84a8f0086b847c53b904a35486244a1e4fefbd5bd5500
 SHA-256 action/churn/stir2.ogg: 650632b49358857b0177c93758f1ece842455c14c82c0014b05c44e84a1be845
+
+Dropping items uses an excerpt from "Flutter.wav" by Aquafeniz:
+https://freesound.org/people/Aquafeniz/sounds/468113/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpt at 0.55-0.66 s; mono, 44.1 kHz; 150 Hz high-pass;
+3 ms fade in / 35 ms fade out; peak normalized to -6 dB; Ogg Vorbis quality 6.
+Playback volume 0.71. Replaces Extra Sounds' high-pitched bow shot. Picked from
+the lighter drop audition page (L15a).
+SHA-256 item/drop/flutter.ogg: 8a2aff482da639c38d60ce72b653da641a0a2fd8e2d0cedf58edac7e2f336feb
+
+Market purchases use an excerpt from "Cash Register Fake.wav" by CapsLok:
+https://freesound.org/people/CapsLok/sounds/184438/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpt at 0.32-1.01 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out; peak normalized to -6 dB; Ogg Vorbis quality 6.
+Playback volume 0.79.
+SHA-256 action/purchase/register.ogg: 00c8b4b12e0b4aaa4212c8e549c845adee20ab234899fa6c3bb33982228b090a
+
+Cooking table crafts use an excerpt from "Chop.ogg" by egomassive:
+https://freesound.org/people/egomassive/sounds/536736/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpt at 0.03-0.19 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out; peak normalized to -6 dB; Ogg Vorbis quality 6.
+Playback volume 0.79.
+SHA-256 action/cook/chop.ogg: 952bf45defcbdce496ff63c96ca9b509c33cb0f17e2aec4c70c703dcc1261eae
+
+Cooking table smelting uses an excerpt from "Sizzle" by roboroo:
+https://freesound.org/people/roboroo/sounds/436791/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpt at 0-0.61 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out; peak normalized to -6 dB; Ogg Vorbis quality 6.
+Playback volume 0.71.
+SHA-256 action/cook/sizzle.ogg: 6eb46013222358307296149a7ac126217434a9d295f91890c7cd9f253186d390
+
+Opening and folding the lunch bag use an excerpt from "Papebag Cumple.wav" by esperri:
+https://freesound.org/people/esperri/sounds/119142/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpt at 0.99-1.44 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out; peak normalized to -1.5 dB; Ogg Vorbis quality 6.
+Playback pitch 1.1 to open and 0.9 to fold.
+SHA-256 action/lunchbag/crumple.ogg: 078921e85ebc1f89b77a2f3b71d022fc8311b3251df371c8242460248ee7e8dc
+
+Fridge doors use an excerpt from "fridge_door_open.WAV" by naxxfish to open:
+https://freesound.org/people/naxxfish/sounds/121210/
+and an excerpt from "Fridge door - closing" by bolkmar to close:
+https://freesound.org/people/bolkmar/sounds/503478/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpts at 0-0.76 s (open) and 0.06-0.45 s (close); mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out; peak normalized to -6 dB; Ogg Vorbis quality 6.
+Playback volume 1.
+SHA-256 action/door/fridge_open.ogg: 90c14ba19363e08275e98cc2b734e3555ee2d1debe9d69224fcca70cf07c79c6
+SHA-256 action/door/fridge_close.ogg: da94cd023340fc3ddda47eb1534b84158765b7a92d028b502f46609983b63984
 
 Keyboard type/move/erase/cut/paste handling uses excerpts from
 "Single Key Press Sounds" by eklee, qubodup:

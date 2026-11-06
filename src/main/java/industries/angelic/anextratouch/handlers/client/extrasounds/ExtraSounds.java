@@ -63,11 +63,17 @@ public final class ExtraSounds {
 
     public static void drop(ItemStack stack, int count) {
         if (!Config.extraItemDrops || stack == null || count <= 0) return;
-        ui(id("item.drop"), dropPitch(count, stack.isStackable() ? stack.getMaxStackSize() : 1));
+        ui(id("item.drop"), varied(dropPitch(count, stack.isStackable() ? stack.getMaxStackSize() : 1)));
     }
 
+    /** A single or unstackable item at 1.2, down to 0.9 for a full stack. */
     public static float dropPitch(int count, int maximum) {
-        return maximum <= 1 ? 2.0F : 2.0F - 0.5F * Math.max(0, Math.min(1, (count - 1.0F) / (maximum - 1.0F)));
+        return maximum <= 1 ? 1.2F : 1.2F - 0.3F * Math.max(0, Math.min(1, (count - 1.0F) / (maximum - 1.0F)));
+    }
+
+    /** Each drop varies by up to 6% so repeated drops don't sound identical. */
+    static float varied(float pitch) {
+        return pitch * (0.94F + (float) Math.random() * 0.12F);
     }
 
     public static void poof(Entity entity) {

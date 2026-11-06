@@ -83,6 +83,7 @@ public class Config {
     public static boolean extraRepeaters = true;
     public static boolean extraJukebox = true;
     public static boolean extraModInteractions = true;
+    public static boolean extraBookPages = true;
     public static boolean extraEntityPoof = false;
     public static float extraSoundsVolume = 1.0F;
 
@@ -478,7 +479,12 @@ public class Config {
                 "extraModInteractions",
                 Categories.extraSounds,
                 true,
-                "Mod interactions that are otherwise silent: right-click harvesting (HarvestCraft, Biomes O' Plenty, Growthcraft), filling and emptying buckets and bottles at sinks, tanks, barrels and paddies, tilling salt grass and churning butter. The server must also have An Extra Touch.");
+                "Mod interactions that are otherwise silent: right-click harvesting (HarvestCraft, Biomes O' Plenty, Growthcraft), filling and emptying buckets and bottles at sinks, tanks, barrels and paddies, tilling salt grass, churning butter, kitchen doors, sinks and cooking, market purchases, drain and tank buttons, and lunch box lids. The server must also have An Extra Touch, except for kitchen doors.");
+            extraBookPages = config.getBoolean(
+                "extraBookPages",
+                Categories.extraSounds,
+                true,
+                "Book page arrows turn a page, as in modern Minecraft, instead of clicking: vanilla books and Spice of Life's food journal.");
             extraEntityPoof = config.getBoolean(
                 "extraEntityPoof",
                 Categories.extraSounds,

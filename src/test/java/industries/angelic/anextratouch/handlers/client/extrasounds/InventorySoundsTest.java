@@ -138,7 +138,7 @@ public class InventorySoundsTest {
         InventorySounds drop = begin(-999, 1, 0, false, false, false);
         player.setItemStack(stack(19));
         assertEquals("item.drop", drop.result().event);
-        assertEquals(2, drop.result().pitch, 0);
+        assertEquals(1.2, drop.result().pitch, 0.00001);
     }
 
     @Test
@@ -179,8 +179,8 @@ public class InventorySoundsTest {
         slots.setInventorySlotContents(0, stack(1));
         InventorySounds one = begin(0, 0, 4, true, true, false);
         InventorySounds all = begin(0, 1, 4, true, true, false);
-        assertEquals(2, one.result().pitch, 0);
-        assertEquals(1.5, all.result().pitch, 0.00001);
+        assertEquals(1.2, one.result().pitch, 0.00001);
+        assertEquals(0.9, all.result().pitch, 0.00001);
         Config.extraItemDrops = false;
         assertNull(all.result());
     }

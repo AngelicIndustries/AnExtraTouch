@@ -3,7 +3,9 @@ package industries.angelic.anextratouch.compat;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Locale;
+import java.util.Queue;
 import java.util.Set;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Items;
@@ -11,6 +13,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.TickEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import industries.angelic.anextratouch.AnExtraTouch;
 import industries.angelic.anextratouch.network.NetworkHandler;
@@ -24,6 +28,8 @@ public final class InteractionCues {
 
     /** Vanilla's usual range for block sounds. */
     static final double RANGE = 16;
+    private static final Queue<Runnable> pending = new ConcurrentLinkedQueue<>();
+    private static volatile Thread serverThread;
     /** Cut like wheat. */
     private static final Set<String> GRAINS = new HashSet<>(
         Arrays.asList("wheat", "barley", "oats", "rye", "rice", "sesameseeds", "mustardseeds"));
@@ -70,7 +76,19 @@ public final class InteractionCues {
         /** Crops that are neither grain nor leafy, and gardens. */
         HARVEST_CROP("action.harvest.crop"),
         HARVEST_GRAIN("action.harvest.grain"),
-        HARVEST_LEAFY("action.harvest.leafy");
+        HARVEST_LEAFY("action.harvest.leafy"),
+        /** A sink rinsing an item, or running water over an empty hand. */
+        SINK_RINSE("action.sink.rinse"),
+        /** A tank emptied by its drain or discard button. */
+        DRAIN("action.drain"),
+        TANK_SWITCH("action.tank.switch"),
+        PURCHASE("action.purchase"),
+        COOK_CRAFT("action.cook.craft"),
+        COOK_SMELT("action.cook.smelt"),
+        LUNCHBOX_OPEN("action.lunchbox.open"),
+        LUNCHBOX_CLOSE("action.lunchbox.close"),
+        LUNCHBAG_OPEN("action.lunchbag.open"),
+        LUNCHBAG_CLOSE("action.lunchbag.close");
 
         public final String event;
         /** Random pitch range around the event's own pitch. */
@@ -95,10 +113,27 @@ public final class InteractionCues {
 
     public static void send(World world, int x, int y, int z, Cue cue) {
         if (world == null || world.isRemote || cue == null) return;
-        AnExtraTouch.debug("Interaction cue " + cue + " (" + cue.event + ") sent at " + x + ", " + y + ", " + z);
-        NetworkHandler.channel.sendToAllAround(
-            new MessageInteractionCue(cue, x, y, z),
-            new NetworkRegistry.TargetPoint(world.provider.dimensionId, x + 0.5, y + 0.5, z + 0.5, RANGE));
+        int dimension = world.provider.dimensionId;
+        Runnable send = () -> {
+            AnExtraTouch.debug("Interaction cue " + cue + " (" + cue.event + ") sent at " + x + ", " + y + ", " + z);
+            NetworkHandler.channel.sendToAllAround(
+                new MessageInteractionCue(cue, x, y, z),
+                new NetworkRegistry.TargetPoint(dimension, x + 0.5, y + 0.5, z + 0.5, RANGE));
+        };
+        // Mod packet handlers run on network threads; sending from there would race the server thread.
+        if (Thread.currentThread() == serverThread) send.run();
+        else pending.add(send);
+    }
+
+    /** Sends cues raised off the server thread on its next tick. */
+    public static final class Ticker {
+
+        @SubscribeEvent
+        public void tick(TickEvent.ServerTickEvent event) {
+            if (event.phase != TickEvent.Phase.START) return;
+            serverThread = Thread.currentThread();
+            for (Runnable send; (send = pending.poll()) != null;) send.run();
+        }
     }
 
     /** Filling or emptying a container, judged by what was held before the action. */

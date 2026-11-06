@@ -31,6 +31,11 @@ public class EarlyMixinLoader extends AngelEarlyMixinLoader {
             .addMixin("MixinExtraCreativeScroll", MixinBuilder.Side.CLIENT)
             .addMixin("AccessorExtraCreativeContainer", MixinBuilder.Side.CLIENT)
             .addMixin("AccessorExtraSoundHandler", MixinBuilder.Side.CLIENT)
+            .addMixin("AccessorSoundEventComposite", MixinBuilder.Side.CLIENT)
+            .addMixin("AccessorReloadableResources", MixinBuilder.Side.CLIENT)
+            .addMixin("AccessorFallbackResources", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinSoundTrace", MixinBuilder.Side.CLIENT)
+            .addMixin("MixinBookPageButton", MixinBuilder.Side.CLIENT)
             .addMixin("MixinExtraSoundResources", MixinBuilder.Side.CLIENT)
             .addMixin("MixinExtraUiSoundSource", MixinBuilder.Side.CLIENT)
 

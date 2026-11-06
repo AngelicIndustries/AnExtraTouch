@@ -103,6 +103,23 @@ public final class ExtraSoundResources {
             this.weight = weight;
         }
 
+        public ResourceLocation target() {
+            return target;
+        }
+
+        public float volume() {
+            return volume;
+        }
+
+        public float pitch() {
+            return pitch;
+        }
+
+        /** The event this alias plays, as resolved right now. */
+        public SoundEventAccessorComposite resolve() {
+            return lookup.apply(target);
+        }
+
         @Override
         public int func_148721_a() {
             if (resolving) return 0;

@@ -976,8 +976,8 @@
   "item.drop": {
     "sounds": [
       {
-        "name": "minecraft:random/bow",
-        "volume": 0.7
+        "name": "anextratouch:item/drop/flutter",
+        "volume": 0.71
       }
     ],
     "category": "player"
@@ -15737,6 +15737,170 @@
         "name": "anextratouch:action/harvest/leafy3",
         "volume": 0.71,
         "pitch": 1.0
+      }
+    ]
+  },
+  "action.sink.rinse": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:entity.fish.swim",
+        "type": "event"
+      }
+    ]
+  },
+  "action.drain": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.bucket.empty",
+        "type": "event"
+      }
+    ]
+  },
+  "action.tank.switch": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.iron_trapdoor.close",
+        "type": "event"
+      }
+    ]
+  },
+  "action.purchase": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/purchase/register",
+        "volume": 0.79,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "action.cook.craft": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/cook/chop",
+        "volume": 0.79,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "action.cook.smelt": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/cook/sizzle",
+        "volume": 0.71,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "action.lunchbox.open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.iron_trapdoor.open",
+        "type": "event",
+        "volume": 0.4,
+        "pitch": 1.4
+      }
+    ]
+  },
+  "action.lunchbox.close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.iron_trapdoor.close",
+        "type": "event",
+        "volume": 0.4,
+        "pitch": 1.4
+      }
+    ]
+  },
+  "action.lunchbag.open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/lunchbag/crumple",
+        "volume": 1.0,
+        "pitch": 1.1
+      }
+    ]
+  },
+  "action.lunchbag.close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/lunchbag/crumple",
+        "volume": 1.0,
+        "pitch": 0.9
+      }
+    ]
+  },
+  "door.fridge.open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/door/fridge_open",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "door.fridge.close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/door/fridge_close",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "door.oven.open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.copper_door.open",
+        "type": "event"
+      }
+    ]
+  },
+  "door.oven.close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.copper_door.close",
+        "type": "event"
+      }
+    ]
+  },
+  "door.cabinet.open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.wooden_trapdoor.open",
+        "type": "event"
+      }
+    ]
+  },
+  "door.cabinet.close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.wooden_trapdoor.close",
+        "type": "event"
+      }
+    ]
+  },
+  "ui.book.page_turn": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "minecraft:item.book.page_turn",
+        "type": "event"
       }
     ]
   }

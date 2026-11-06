@@ -175,6 +175,24 @@ players within 16 blocks. Each client plays it under its own toggle, the Blocks
 volume and `extraSoundsVolume`, so clients without AET simply receive nothing.
 These hooks need AET on the server; no mod dependency is added.
 
+The same toggle covers kitchen and shop interactions. A Cooking for Blockheads
+sink rinsing an item, or running its tap for an empty hand or an item it has no
+use for, plays vanilla's fish swimming splash; a cooking table craft plays a knife chop (CC0, egomassive), once
+per craft, and putting an ingredient into an oven plays a short sizzle (CC0,
+roboroo). HarvestCraft market
+purchases play a cash register (CC0, CapsLok). SaltyMod's drain button and
+Growthcraft's discard buttons pour when a tank with fluid is emptied, and the brew
+kettle's switch button closes like an iron trapdoor when the tanks' contents
+change. Spice of Life's sneak-use lid opens and folds the lunch bag with a paper
+crumple (CC0, esperri) and flips the lunch box with a quiet, high iron trapdoor. Cooking for Blockheads doors play
+on every nearby client as they start to open and when they shut, instead of the
+generic screen sounds: fridges open and close with recorded fridge doors (CC0,
+naxxfish and bolkmar),
+ovens sound like copper doors and counters and cabinets like wooden trapdoors.
+These recordings are credited in `EXTRA_SOUND_CREDITS.txt`. Book page arrows, in
+vanilla books and Spice of Life's food journal, turn a page instead of clicking
+(`extraBookPages`).
+
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch
 bag: a short crinkle excerpted from MichaelGillighan's CC0 "03 - Bolsa llena.wav"
@@ -182,6 +200,12 @@ bag: a short crinkle excerpted from MichaelGillighan's CC0 "03 - Bolsa llena.wav
 `ItemBook`, so it needs an explicit definition. Lunch-container contents and lid
 state are NBT and do not change the cue. The installed registrations, recipes
 and textures were checked; upstream Extra Sounds `5339849` has no matching entries.
+
+Dropping items plays a short, light flutter (a CC0 excerpt from Aquafeniz's
+"Flutter.wav") instead of Extra Sounds' bow shot, which at pitch 1.5-2.0 sounded
+harsh, and which resource packs replacing `random/bow.ogg` change unpredictably.
+A single or unstackable item plays at pitch 1.2, a full stack at 0.9, and every
+drop varies by up to 6%.
 
 The 33 original recordings are included under CC0. AET includes a relocated copy
 of MCLib 0.3.7.8 and requests all modern events it uses from Minecraft 1.21.10 through

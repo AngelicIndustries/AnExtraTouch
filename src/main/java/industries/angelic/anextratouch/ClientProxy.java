@@ -1,11 +1,13 @@
 package industries.angelic.anextratouch;
 
+import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import industries.angelic.anextratouch.commands.CommandSound;
 import industries.angelic.anextratouch.handlers.client.ClientHandler;
 import industries.angelic.anextratouch.handlers.client.ItemSoundHandler;
 import industries.angelic.anextratouch.handlers.client.SmoothGuiHandler;
@@ -43,6 +45,7 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void init(FMLInitializationEvent event) {
         super.init(event);
+        ClientCommandHandler.instance.registerCommand(new CommandSound());
         FMLCommonHandler.instance()
             .bus()
             .register(new StepSoundHandler());

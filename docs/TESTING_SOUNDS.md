@@ -187,6 +187,22 @@ The pack tests namespaced event aliases, pitch/volume settings, replacement,
 per-item and per-metadata selection, and sound reloads without editing the mod jar.
 Direct `/playsound` commands bypass AET's feature toggles/group multiplier.
 
+## Find out what really plays
+
+Definitions alone don't say what you hear: resource packs can replace a file
+(Rhapsodia replaces `random/bow.ogg`, which the item-drop cue uses) or redefine an
+event, and AET aliases and modern-sound fallbacks resolve at runtime. The client
+command `/aet_sound` reads the live sound registry and resource packs instead:
+
+* `/aet_sound <event>`, for example `/aet_sound anextratouch:item.drop`, lists every
+  entry the event can play, with nested events and AET aliases followed, each file's
+  chance, volume and pitch, the resource pack (or mod jar) that provides the file and
+  which packs' `sounds.json` define the event. Tab completes registered events.
+* `/aet_sound trace <text>` prints, for every sound whose event or file contains the
+  text, the file the sound manager actually picked as it plays, with its pack,
+  volume and pitch. `trace all` logs every sound (to the log only, as `Sound trace:`),
+  and `trace off` stops.
+
 ## Remaining separate-environment checks
 
 EFR-absent fallbacks have automated tests, but a full no-EFR game launch is a

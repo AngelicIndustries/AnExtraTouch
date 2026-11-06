@@ -61,8 +61,9 @@ public final class ExtraSoundHandler {
         // Use the final screen so that redirect does not play open, close, open.
         GuiScreen next = mc.currentScreen;
         if (Config.extraInventoryScreens && screen != next && !PlayerInventoryScreens.isNavigation(screen, next)) {
-            if (screen instanceof GuiContainer) ExtraSounds.ui("inventory.close");
-            if (next instanceof GuiContainer) ExtraSounds.ui("inventory.open");
+            // Kitchen storage plays its door instead.
+            if (screen instanceof GuiContainer && !KitchenDoors.ownsScreen(screen)) ExtraSounds.ui("inventory.close");
+            if (next instanceof GuiContainer && !KitchenDoors.ownsScreen(next)) ExtraSounds.ui("inventory.open");
         }
         screen = next;
     }

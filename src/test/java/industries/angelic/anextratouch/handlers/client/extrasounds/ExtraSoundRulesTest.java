@@ -43,10 +43,18 @@ public class ExtraSoundRulesTest {
 
     @Test
     public void dropPitchUsesAmountActuallyDropped() {
-        assertEquals(2, ExtraSounds.dropPitch(1, 64), 0);
-        assertEquals(1.5, ExtraSounds.dropPitch(64, 64), 0.00001);
-        assertEquals(2, ExtraSounds.dropPitch(1, 1), 0);
-        assertEquals(1.75, ExtraSounds.dropPitch(3, 5), 0);
+        assertEquals(1.2, ExtraSounds.dropPitch(1, 64), 0.00001);
+        assertEquals(0.9, ExtraSounds.dropPitch(64, 64), 0.00001);
+        assertEquals(1.2, ExtraSounds.dropPitch(1, 1), 0.00001);
+        assertEquals(1.05, ExtraSounds.dropPitch(3, 5), 0.00001);
+    }
+
+    @Test
+    public void dropsVaryALittleAroundTheirPitch() {
+        for (int i = 0; i < 200; i++) {
+            float pitch = ExtraSounds.varied(1);
+            assertTrue(pitch >= 0.94F && pitch <= 1.06F);
+        }
     }
 
     @Test
