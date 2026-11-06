@@ -149,6 +149,32 @@ or recipe-arrow buttons. These respect `extraInventoryClicks`,
 `extraScreenScroll`, Players volume and `extraSoundsVolume`; no dependency is
 added.
 
+Mod world interactions that make no sound of their own play modern vanilla
+cues (`extraModInteractions`). Picking fruit plays a short stem snap: HarvestCraft
+tree fruit and fruiting logs, Biomes O' Plenty apple and persimmon leaves and
+berry bushes, Growthcraft apples, grapes, hops and dried curds, and HarvestCraft's
+berry, tomato and pepper crops. Other HarvestCraft
+crops sound by kind: grain (barley, oats, rye, rice, sesame, mustard) is cut with
+a sickle, leafy crops (lettuce, cabbage, spinach, brassicas, celery, rhubarb,
+spice/curry/tea leaves, seaweed and the leafy garden) are torn, and other crops
+and gardens tear like grass. Each kind picks one of up to three CC0 recordings
+at random. Hunger Overhaul's right-click harvesting, which takes over every
+`BlockCrops` (vanilla wheat, carrots and potatoes, HarvestCraft and Natura
+crops) when enabled, plays the same cues; vanilla wheat and Natura barley count
+as grain. So does EnderCore's right-click harvesting, which handles the crops in
+its own crop config (vanilla wheat, carrots, potatoes and nether wart by default)
+before Hunger Overhaul does; a sickle's area harvest plays one cue.
+Bucket and bottle fill/empty cues cover the HarvestCraft sink (including washing
+leather armor), the SaltyMod evaporator, Growthcraft tanks and paddies, BOP honey
+jars and BOP buckets. Hoeing SaltyMod salt grass, which skips the hoe's own till
+sound, plays the modern till, and each Growthcraft butter-churn stroke plays a
+low, wet stir at a widely varying pitch, including the stroke that makes butter. Most of these run
+only on the server, which detects an actual change (the plant's block or
+metadata, the held container, a successful tank transfer) and sends the cue to
+players within 16 blocks. Each client plays it under its own toggle, the Blocks
+volume and `extraSoundsVolume`, so clients without AET simply receive nothing.
+These hooks need AET on the server; no mod dependency is added.
+
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch
 bag: a short crinkle excerpted from MichaelGillighan's CC0 "03 - Bolsa llena.wav"

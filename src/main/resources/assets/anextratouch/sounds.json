@@ -15610,5 +15610,134 @@
         "pitch": 1.0
       }
     ]
+  },
+  "action.bucket.fill": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.bucket.fill",
+        "type": "event"
+      }
+    ]
+  },
+  "action.bucket.empty": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.bucket.empty",
+        "type": "event"
+      }
+    ]
+  },
+  "action.bottle.fill": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.bottle.fill",
+        "type": "event"
+      }
+    ]
+  },
+  "action.bottle.empty": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.bottle.empty",
+        "type": "event"
+      }
+    ]
+  },
+  "action.hoe.till": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.hoe.till",
+        "type": "event"
+      }
+    ]
+  },
+  "action.harvest": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/harvest/fruit",
+        "volume": 0.71,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "action.churn": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/churn/stir1",
+        "volume": 0.79,
+        "pitch": 0.8
+      },
+      {
+        "name": "anextratouch:action/churn/stir2",
+        "volume": 0.79,
+        "pitch": 0.8
+      }
+    ]
+  },
+  "action.churn.done": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action.churn",
+        "type": "event"
+      }
+    ]
+  },
+  "action.harvest.crop": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/harvest/crop",
+        "volume": 0.71,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "action.harvest.grain": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/harvest/grain1",
+        "volume": 0.71,
+        "pitch": 1.0
+      },
+      {
+        "name": "anextratouch:action/harvest/grain2",
+        "volume": 0.71,
+        "pitch": 1.0
+      },
+      {
+        "name": "anextratouch:action/harvest/grain3",
+        "volume": 0.71,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "action.harvest.leafy": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/harvest/leafy1",
+        "volume": 0.71,
+        "pitch": 1.0
+      },
+      {
+        "name": "anextratouch:action/harvest/leafy2",
+        "volume": 0.71,
+        "pitch": 1.0
+      },
+      {
+        "name": "anextratouch:action/harvest/leafy3",
+        "volume": 0.71,
+        "pitch": 1.0
+      }
+    ]
   }
 }

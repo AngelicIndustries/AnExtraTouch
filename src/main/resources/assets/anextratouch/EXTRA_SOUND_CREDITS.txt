@@ -74,9 +74,11 @@ minecraft:item.armor.equip_turtle -> anextratouch:armor.light_walk
 minecraft:item.armor.equip_wolf -> anextratouch:armor.light_walk
 minecraft:item.axe.strip -> minecraft:dig.wood
 minecraft:item.book.page_turn -> anextratouch:pageflip
+minecraft:item.bottle.empty -> anextratouch:item.potion.equip
 minecraft:item.bottle.fill -> anextratouch:item.potion.equip
 minecraft:item.bucket.fill -> minecraft:liquid.swim
 minecraft:item.bucket.fill_lava -> minecraft:liquid.lavapop
+minecraft:item.hoe.till -> minecraft:step.gravel
 minecraft:particle.soul_escape -> minecraft:random.fizz
 minecraft:ui.toast.in -> minecraft:random.click
 minecraft:ui.toast.out -> minecraft:random.click
@@ -128,6 +130,71 @@ Changes: excerpt at 1.18-1.51 s; mono, 44.1 kHz; 70 Hz high-pass;
 3 ms fade in / 35 ms fade out; peak normalized to -6 dB; Ogg Vorbis quality 6.
 Playback volume 0.8, pitch 1.0. Picked from the lunch bag audition page.
 SHA-256 paper_bag/contact.ogg: 0a22baac5b74ba0863dfb678101228ff5c9e6fbbd04490124217fa0a10fb95df
+
+Picking fruit uses an excerpt from
+"pencil snap break wood crack fruit stem branch twig.flac" by kyles:
+https://freesound.org/people/kyles/sounds/637746/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpt at 4.33-4.48 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out (a third of shorter excerpts); peak normalized to -6 dB;
+Ogg Vorbis quality 6.
+Playback volume 0.71. Picked from the crop audition page (8b).
+SHA-256 action/harvest/fruit.ogg: f17322ae3bc60a75ed9b1bd79d924610e8dfc1bb8a7d8880f3efe2c4bc3234ba
+
+Harvesting grain crops uses three excerpts from
+"Silencyo_COUNTRY_DAY_Sickle_Wheat.aif" by silencyo:
+https://freesound.org/people/silencyo/sounds/81721/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpts at 2.65-3.15, 4.07-4.57 and 6.84-7.34 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out (a third of shorter excerpts); peak normalized to -6 dB;
+Ogg Vorbis quality 6.
+Playback volume 0.71, chosen at random.
+SHA-256 action/harvest/grain1.ogg: 3527445a68c3fb11b827dcfe6b1952f918f5825e222c97d411754683d4a6bc8f
+SHA-256 action/harvest/grain2.ogg: d64d188e830d4e866a56bc4fabb1aa8effe3281cfdff6e8eefb4730ce160906a
+SHA-256 action/harvest/grain3.ogg: 9220498bd6f4f20fb6ba87424cf428b03a528ec1ec82a7415b6adb5c954361a9
+
+Harvesting leafy crops uses three excerpts from
+"Lettuce Ripping - Senn K6 SD 788T.WAV" by lunchmoney:
+https://freesound.org/people/lunchmoney/sounds/382042/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpts at 2.74-3.24, 3.34-3.84 and 4.21-4.36 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out (a third of shorter excerpts); peak normalized to -6 dB;
+Ogg Vorbis quality 6.
+Playback volume 0.71, chosen at random.
+SHA-256 action/harvest/leafy1.ogg: 50b171d65eaacf9d0ba6b6edf54eb6c612dc4761719620b1f1108f1026c66def
+SHA-256 action/harvest/leafy2.ogg: 6728737fdcf2aee698367e5216734750002f377582430b94c98cb7f3482fc052
+SHA-256 action/harvest/leafy3.ogg: 90fe7bd8a651a08af74cd79ab575b4c63f5b35e7a4644556d0df5fc432f72f00
+
+Harvesting other crops and gardens uses an excerpt from
+"Tear Foliage Grass" by alegemaate:
+https://freesound.org/people/alegemaate/sounds/364697/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpt at 1.18-1.68 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out (a third of shorter excerpts); peak normalized to -6 dB;
+Ogg Vorbis quality 6.
+Playback volume 0.71.
+SHA-256 action/harvest/crop.ogg: 44933c6318756ccbe03e72e7611d00634635e6eac2ea8638f53858362eba0d0c
+
+Butter churn strokes use two excerpts from
+"stirring pasta_batch1_bip.wav" by iggy1345:
+https://freesound.org/people/iggy1345/sounds/77251/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpts at 9.03-9.28 and 13.39-13.84 s; mono, 44.1 kHz; 70 Hz high-pass;
+3 ms fade in / 35 ms fade out (a third of shorter excerpts); peak normalized to -6 dB;
+Ogg Vorbis quality 6.
+Playback volume 0.79, pitch 0.8, with a wider random pitch range in game.
+SHA-256 action/churn/stir1.ogg: 8ad4b5a29b1d099e5ca84a8f0086b847c53b904a35486244a1e4fefbd5bd5500
+SHA-256 action/churn/stir2.ogg: 650632b49358857b0177c93758f1ece842455c14c82c0014b05c44e84a1be845
 
 Keyboard type/move/erase/cut/paste handling uses excerpts from
 "Single Key Press Sounds" by eklee, qubodup:

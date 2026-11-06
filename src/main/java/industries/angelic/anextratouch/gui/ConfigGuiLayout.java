@@ -73,6 +73,7 @@ final class ConfigGuiLayout {
                     "extraStatusEffects",
                     "extraRepeaters",
                     "extraJukebox",
+                    "extraModInteractions",
                     "extraEntityPoof",
                     "extraSoundsVolume"),
                 section(config, "sounds.thunder", "thunder", "thunderSoundsEnabled", "thunderSoundVolume"),

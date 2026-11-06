@@ -82,6 +82,7 @@ public class Config {
     public static boolean extraStatusEffects = true;
     public static boolean extraRepeaters = true;
     public static boolean extraJukebox = true;
+    public static boolean extraModInteractions = true;
     public static boolean extraEntityPoof = false;
     public static float extraSoundsVolume = 1.0F;
 
@@ -473,6 +474,11 @@ public class Config {
                 .getBoolean("extraRepeaters", Categories.extraSounds, true, "Changing repeater delay.");
             extraJukebox = config
                 .getBoolean("extraJukebox", Categories.extraSounds, true, "Ejecting a record from a jukebox.");
+            extraModInteractions = config.getBoolean(
+                "extraModInteractions",
+                Categories.extraSounds,
+                true,
+                "Mod interactions that are otherwise silent: right-click harvesting (HarvestCraft, Biomes O' Plenty, Growthcraft), filling and emptying buckets and bottles at sinks, tanks, barrels and paddies, tilling salt grass and churning butter. The server must also have An Extra Touch.");
             extraEntityPoof = config.getBoolean(
                 "extraEntityPoof",
                 Categories.extraSounds,

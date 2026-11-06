@@ -359,3 +359,94 @@ Machine-readable inventory and per-jar disposition for this session: `/tmp/aet-p
 - Validation: `./gradlew spotlessApply build` passed, 133 tests with no failures,
   including the lunch bag follow-up.
 - Pack listening result: accepted by jack.
+
+## Interaction audit of supported mods - 2026-11-03
+
+Requested by jack: check the mods AET already supports for GUIs and world
+interactions that deserve a cue hook. Audited the installed HarvestCraft,
+SaltyMod, Growthcraft and BOP jars: every right-click handler, its sound calls
+and the GUI classes. EFR, Adventure Backpack, NEI and Baubles Expanded already
+have AET hooks; their documented gaps are unchanged.
+
+- Already voiced by the mods: SaltyMod stove ignition, stripping, shears, bee
+  burrows and salt crystals; Growthcraft brew kettle, cheese press and vat, fruit
+  presser and planting; EFR smithing table, buckets, bottles, composter, barrel,
+  stripping, berry bush and beehive. EFR's stonecutter, loom and cartography
+  table are decorative in 2.6.65 (no activation), so no GUI cues to add.
+- Machine GUIs (HarvestCraft oven/churn/quern/presser/grinder/pot, SaltyMod
+  pot/apiary/press/oven/fish farm, Growthcraft cellar devices) are ordinary
+  containers already covered by the inventory cues.
+- Added, behind `extraModInteractions`, server-detected and sent to players
+  within 16 blocks:
+  - Right-click harvesting (pack config enables HarvestCraft's crop and fruit
+    harvesting): HarvestCraft crops, tree fruit, fruiting logs and gardens; BOP
+    apple/persimmon leaves and berry bushes; Growthcraft apples, grapes, hops
+    and dried curds. A cue needs the plant's block or metadata to change.
+  - Bucket/bottle fill and empty: HarvestCraft sink (fill; washing leather
+    armor plays the bottle pour), SaltyMod evaporator fill/drain, Growthcraft
+    barrel/keg/jar transfers and paddy flooding, BOP honey jar and BOP buckets.
+  - Salt grass tilling: SaltyMod's hook converts it and skips the hoe's till
+    sound; the modern till now plays.
+  - Growthcraft butter churn: a stroke cue, and a separate cue for the stroke
+    that produces butter.
+- Not added: HarvestCraft market purchases (server message, item entity, needs
+  confirmation); Growthcraft's tank discard/switch buttons keep vanilla clicks.
+- Harvest audition, picked by jack: fruit (and berries, hops, grapes, curds)
+  uses kyles' CC0 stem snap (crop page 8b), replacing the berry pick he first
+  chose. HarvestCraft crops by kind: grain uses three cuts of silencyo's sickle
+  through wheat, leafy crops three cuts of lunchmoney's lettuce ripping, and the
+  rest plus gardens alegemaate's grass tear. Churn strokes use two cuts of
+  iggy1345's pasta stirring at pitch 0.8 with a +/-20% spread; the finishing
+  stroke reuses it (no separate "done" pick). All ship in AET with credits.
+  Per jack, HarvestCraft's berry, tomato and pepper crops use the fruit snap.
+  Corn, a grass picked by its ears, stays with "other" crops.
+- Pack check: right-clicking vanilla wheat was silent. Hunger Overhaul's
+  `enableRightClickHarvesting` (on in the pack) harvests every BlockCrops,
+  which includes HarvestCraft's BlockPamCrop, in its PlayerInteractEvent
+  handler and resets the crop before the block's own handler runs, so the
+  HarvestCraft crop hook never saw a change. Added a hook on Hunger Overhaul's
+  handler with the same crop classification (vanilla wheat and Natura barley
+  are grain). The HarvestCraft hook stays for packs without Hunger Overhaul;
+  the two cannot double, as the crop is already reset when HarvestCraft runs.
+  Netherlicious and Fether nether crops harvest in their own handlers and are
+  not hooked yet.
+- Wheat stayed silent after that. Debug prints showed the server received the
+  click with the wheat at metadata 7, and by the last event listener it was 0
+  and cancelled, without Hunger Overhaul's handler running: EnderCore's
+  `RightClickCropHandler` (`allowCropRC`, crop list in
+  `config/endercore/cropConfig.json`: wheat, carrots, potatoes, nether wart)
+  harvests those on the server first and cancels the event. Its client side only
+  swings the arm, so Hunger Overhaul still harvests them visually on the client.
+  HarvestCraft crops are not in EnderCore's list, so Hunger Overhaul harvests
+  them. Added an EnderCore hook with the same crop cues.
+- Per jack, the pack now turns EnderCore's crop right-click off
+  (`pack/config/endercore/endercore.cfg`, `allowCropRC=false`), so Hunger
+  Overhaul harvests every crop. The AET hook stays for packs that keep it on.
+- Validation: `./gradlew spotlessApply build` passed, 137 tests. Target
+  signatures checked against the installed jars' bytecode; the production jar
+  references only SRG Minecraft names. Pack check pending.
+
+## Past Footsteps coverage of supported mods - 2026-11-03
+
+- Source: jack's `/pf mappings all` and `/pf mappings unmapped` reports from the
+  pack (3459 blocks; 850 still on primitive or native fallback, mostly Biomic).
+  Mod mappings live in the pack's `resourcepacks/aa-footsteps.zip`; PF itself
+  bundles vanilla mappings only.
+- HarvestCraft, SaltyMod, Growthcraft, BOP and CFB were fully mapped. Their
+  plants all have foliage or foliage_low channels; the remaining silent entries
+  are fluids and candles, which is intended.
+- Gaps found: 71 EFR blocks (nether woods and stems, nether plants and vines,
+  azalea, moss, mangrove roots, dripstone, nylium, sculk, shroomlight, extra
+  fences and gates), three Adventure Backpack blocks (the sleeping bag fell
+  back to stone) and vanilla's nether brick fence.
+- Added 57 EFR/Adventure Backpack keys to `aa-footsteps.zip` in the pack repo,
+  following its conventions (doors/trapdoors bluntwood, plates wood + carpet,
+  buttons/signs NOT_EMITTER, fence tops `.bigger` bluntwood, nether roots and
+  sprouts foliage brush, fungus foliage_low plant_brush, vines leaves, moss
+  softgrass, muddy roots mud, sculk organic, catalyst bone, sleeping bag rug).
+  Packwiz index refreshed; `checkIndex` passes. Per jack, the vanilla nether
+  brick fence went into PF's bundled map instead (one line; PF tests pass).
+- Fences, gates and walls otherwise map only `.bigger`, as the pack does for
+  vanilla; their primitive normal surface is intentional. Monster egg
+  metadata 3-15 is unused.
+
