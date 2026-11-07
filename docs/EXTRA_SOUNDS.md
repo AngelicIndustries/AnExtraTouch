@@ -192,8 +192,8 @@ generic screen sounds: fridges open and close with recorded fridge doors (CC0,
 naxxfish and bolkmar),
 ovens sound like copper doors and counters and cabinets like wooden trapdoors.
 These recordings are credited in `EXTRA_SOUND_CREDITS.txt`. Book page arrows, in
-vanilla books and Spice of Life's food journal, turn a page instead of clicking
-(`extraBookPages`).
+vanilla books, Spice of Life's food journal and the Aether lore book, turn a page
+instead of clicking (`extraBookPages`).
 
 Plant Mega Pack 4.33 has definitions for its 275 enabled items and unusual
 blocks, checked against the pack jar's registrations and textures. Its produce

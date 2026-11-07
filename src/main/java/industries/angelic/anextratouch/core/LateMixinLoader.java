@@ -44,6 +44,7 @@ public class LateMixinLoader implements ILateMixinLoader {
             .addMixin("MixinKitchenSink", MixinBuilder.Side.BOTH, "cookingforblockheads")
             .addMixin("MixinCookingTableCraft", MixinBuilder.Side.BOTH, "cookingforblockheads")
             .addMixin("MixinJournalPageButton", MixinBuilder.Side.CLIENT, "SpiceOfLife")
+            .addMixin("MixinLorePageButton", MixinBuilder.Side.CLIENT, "aether_legacy")
             .addMixin("MixinLunchLid", MixinBuilder.Side.BOTH, "SpiceOfLife")
             .addMixin("MixinMarketPurchase", MixinBuilder.Side.BOTH, "harvestcraft")
             .addMixin("MixinEvaporatorDrain", MixinBuilder.Side.BOTH, "saltymod")

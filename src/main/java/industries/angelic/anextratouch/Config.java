@@ -484,7 +484,7 @@ public class Config {
                 "extraBookPages",
                 Categories.extraSounds,
                 true,
-                "Book page arrows turn a page, as in modern Minecraft, instead of clicking: vanilla books and Spice of Life's food journal.");
+                "Book page arrows turn a page, as in modern Minecraft, instead of clicking: vanilla books, Spice of Life's food journal and the Aether lore book.");
             extraEntityPoof = config.getBoolean(
                 "extraEntityPoof",
                 Categories.extraSounds,

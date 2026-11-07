@@ -606,9 +606,14 @@ in development). All under `extraModInteractions` unless noted.
   they now chime like amethyst. Leaves and saplings follow BOP's foliage.
 - Interaction: berry bushes, orange and grape trees give fruit when broken
   (break sound). Chests, mimics and the elysian totem play their own sounds.
-  Not handled yet: the ancient enchanter (altar) takes ambrosium and items and
-  drops them back silently, and the lore book's page buttons click; both are
-  candidates for cues.
+  The lore book's page arrows (`GuiLoreButton`, used for nothing else) now
+  turn a page under `extraBookPages`. Untestable in this version: a spread
+  holds 15 lines over its two sides, and the longest entry (angelic stone)
+  fills both sides of the first spread without enabling the arrow, per jack's
+  check; all 16 languages are English copies. The hook waits for longer lore. The source's ancient enchanter took items
+  and ambrosium in the world silently, but the pack's 26w35a jar replaced that
+  with a furnace-style screen (`ContainerAncientEnchanter`), so it needs no
+  cue.
 - Past Footsteps: the pack's map has 424 Aether keys and covers every block
   except stairs. No change.
 - jack's in-game check, 2026-11-07: gear, food, crystal blocks and foliage
