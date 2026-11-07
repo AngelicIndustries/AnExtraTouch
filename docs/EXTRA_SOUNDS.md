@@ -160,9 +160,10 @@ a sickle, leafy crops (lettuce, cabbage, spinach, brassicas, celery, rhubarb,
 spice/curry/tea leaves, seaweed and the leafy garden) are torn, and other crops
 and gardens tear like grass. Each kind picks one of up to three CC0 recordings
 at random. Hunger Overhaul's right-click harvesting, which takes over every
-`BlockCrops` (vanilla wheat, carrots and potatoes, HarvestCraft and Natura
-crops) when enabled, plays the same cues; vanilla wheat and Natura barley count
-as grain. So does EnderCore's right-click harvesting, which handles the crops in
+`BlockCrops` (vanilla wheat, carrots and potatoes, HarvestCraft, Natura and
+Netherlicious crops) when enabled, plays the same cues; vanilla wheat, Natura
+barley and Netherlicious abyssal oat count as grain. Netherlicious' own
+replanting harvest of abyssal oat and devilish maize plays them too. So does EnderCore's right-click harvesting, which handles the crops in
 its own crop config (vanilla wheat, carrots, potatoes and nether wart by default)
 before Hunger Overhaul does; a sickle's area harvest plays one cue.
 Bucket and bottle fill/empty cues cover the HarvestCraft sink (including washing
@@ -225,6 +226,21 @@ bowl, and imp meat and cactus juice (the water drop) the meat cue. Leaves, sapli
 bluebells, thornvines and berry bushes rustle like BOP's foliage, the saguaro
 matches Plant Mega Pack's cacti, large glowshrooms sound like mushroom blocks
 (they were wood), and blaze rails like rails (they were stone).
+
+Netherlicious 3.2.8 ships modern sounds for its blocks (nylium, stems, nether
+wood, basalt, lanterns, chains, amethyst clusters and more), so its block items
+keep them. 58 definitions cover its plain items, which fell back to the generic
+pickup: Efrine armor and tools sound like iron, heavy blaze armor like netherite,
+the glasses like glass; signs and doors sound like wood; the soul, foxfire and
+shadow flint and steel like vanilla's. The Efrine ingot and nuggets use metal,
+crystal shards and void quartz the amethyst shard, shield scrap netherite scrap
+and the spore membrane the phantom membrane. Dyes, gloomstone dust, foxfire
+powder, warts and seeds rustle as dust; abyssal oats sound like hay, devilish
+maize and hellderberry cookies are crunchy, hellderberries use the fruit contact,
+strider flank the meat cue, the ghastly pie vanilla's pumpkin pie, abyssal bread
+bread, the hellderberry juice bottle a full bottle, and devilish popcorn, a soup
+item, the dry bowl. The pack hides Netherlicious' 89 Et Futurum duplicates (see
+Adventura Arcana Core); those that are items share these definitions.
 
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch

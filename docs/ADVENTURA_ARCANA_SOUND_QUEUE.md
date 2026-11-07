@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 10 - Netherlicious** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack and Natura are accepted.
+**Next: 11 - Aether Legacy Departure** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura and Netherlicious are accepted.
 
 ## Scope and workflow
 
@@ -29,7 +29,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 07 | Biomic | Queued | Boats, produce and special material variants; ordinary blocks may already fall back correctly | Biome-browser interactions are low priority; inspect actual survival-facing actions |
 | 08 | Plant Mega Pack | Accepted | Berries, seeds, plant products and nonstandard block materials | Mostly mappings; config screens are out of scope |
 | 09 | Natura | Accepted | Seed bags, food, sticks, bows, materials and wood variants | Inspect bag actions; ordinary furnace/workbench clicks may already work |
-| 10 | Netherlicious | Queued | Fungi, ingredients, meat, dyes, gear and Nether materials | Custom furnace, beacon and workbench actions |
+| 10 | Netherlicious | Accepted | Fungi, ingredients, meat, dyes, gear and Nether materials | Custom furnace, beacon and workbench actions |
 | 11 | Aether Legacy Departure | Queued | Eggs, petals, amber, darts, food, accessories, tools and armor | Accessory pages, lore/book controls and special crafting containers |
 | 12 | Fether | Queued | Quartz gear, fruit and remaining addon materials | Check for inherited Aether behavior before proposing hooks |
 | 13 | Twilight Forest | Queued | Loot, food, maps, charms, tools, armor and specialty containers | Uncrafting-table interactions and map/book behavior |
@@ -558,4 +558,32 @@ in development). All under `extraModInteractions` unless noted.
   `/setblock ~1 ~ ~ Natura:BerryBush 12` (or `Natura:NetherBerryBush`, 12-15).
 - Berry bush cue confirmed with set-ripe bushes on both clicks, overworld and
   Nether. Accepted.
+
+## Netherlicious review - 2026-11-07
+
+- Source: the pack's `netherlicious-3.2.8.jar` (decompiled `ModItems`,
+  `ModBlocks`, `ModSounds` and item textures) and AAC's startup log, which
+  pairs 89 Netherlicious items with Et Futurum namesakes. AAC hides those from
+  the creative tabs and NEI and makes them drop as the namesake; Netherlicious'
+  biomes still place its own blocks.
+- Blocks keep their sounds: Netherlicious defines modern sound types (nylium,
+  stem, nether wood, basalt, lantern, chain, bone, moss, roots, sprouts, wart,
+  shroomlight, amethyst and more) and uses stone where modern Minecraft does
+  (blackstone, quartz, crying obsidian, magma). The nether beacon falls to
+  stone, which is how vanilla's beacon steps in 1.7.10.
+- 58 item definitions (see EXTRA_SOUNDS.md). Notable: Efrine and heavy blaze
+  gear used custom materials (generic); Netherlicious' seeds are plain items,
+  not seeds; devilish popcorn extends `ItemSoup` and would have sloshed.
+- Interaction: doors, gates, trapdoors, buttons, stripping, planting, igniting,
+  hellderberry bushes and glistering vines already play sounds. Abyssal oat and
+  devilish maize harvest and replant silently on use; Hunger Overhaul usually
+  harvests them first (they are `BlockCrops`) and its cue now cuts abyssal oat
+  like grain; a hook on their own harvest covers the rest. Barrels, the
+  blackstone furnace, nether crafting table and beacon open screens with the
+  generic screen sound.
+- Past Footsteps: the pack's map covers every Netherlicious block except
+  stairs (the pack's convention) and brittle bedrock, which falls back to its
+  stone sound. No change.
+- jack's in-game check, 2026-11-07: gear, materials, food and both crop
+  harvest cues work. Accepted.
 

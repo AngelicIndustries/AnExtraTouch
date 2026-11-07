@@ -53,6 +53,9 @@ public class InteractionCuesTest {
         assertEquals(InteractionCues.Cue.HARVEST_GRAIN, InteractionCues.crop("Natura:N Crops", 3));
         assertEquals(InteractionCues.Cue.HARVEST_CROP, InteractionCues.crop("Natura:N Crops", 8));
         assertEquals(InteractionCues.Cue.HARVEST, InteractionCues.crop("harvestcraft:pamtomatoCrop", 7));
+        // Netherlicious: abyssal oat is cut like grain, devilish maize tears like other crops.
+        assertEquals(InteractionCues.Cue.HARVEST_GRAIN, InteractionCues.crop("netherlicious:AbyssalOat", 7));
+        assertEquals(InteractionCues.Cue.HARVEST_CROP, InteractionCues.crop("netherlicious:DevilishMaize", 7));
     }
 
     @Test

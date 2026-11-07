@@ -18679,6 +18679,528 @@
       }
     ]
   },
+  "item.pickup.netherlicious.crimsonSign": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.warpedSign": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.foxfireSign": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.door_crimson": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.door_warped": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.door_foxfire": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.GlassesWhite": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.GlassesBlue": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.GlassesGreen": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.GlassesYellow": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.GlassesMagenta": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.GlassesDealmaker": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.EfrineHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.EfrineChestPlate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.EfrineLeggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.EfrineBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.EfrineShovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.EfrinePickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.EfrineAxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.EfrineHoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.EfrineSword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.HeavyBlazeHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.HeavyBlazeChestPlate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.HeavyBlazeLeggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.HeavyBlazeBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.FlintAndSteelSoul": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.flint_and_steel",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.FlintAndSteelFoxfire": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.flint_and_steel",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.FlintAndSteelShadow": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.flint_and_steel",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.NetherSpawnEgg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.dye": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.GloomstoneDust": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.FoxfirePowder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.WartItem": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.AbyssalOatSeeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.GhastlyGourdSeeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.DevilishMaizeSeeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.HellderBerrySeeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.Nugget": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.Ingot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.CrystalShard": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.VoidQuartzItem": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.Materials": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.netherite_scrap",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.Materials.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.phantom_membrane",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.AbyssalOatItem": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.DevilishMaizeItem": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.RoastedDevilishMaize": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.CookieHellderberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.HellderBerryItem": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.InfernalReedItem": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.StriderFlankRaw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.StriderFlankCooked": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.GhastlyPie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.pumpkin_pie",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.AbyssalBread": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.RoastedWart": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.FungalTreat": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.DevilishPopcornRaw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.DevilishPopcorn": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.netherlicious.JuiceHellderberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
   "item.category.paper_bag": {
     "category": "player",
     "sounds": [

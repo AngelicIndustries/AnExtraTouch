@@ -32,7 +32,7 @@ public final class InteractionCues {
     private static volatile Thread serverThread;
     /** Cut like wheat. */
     private static final Set<String> GRAINS = new HashSet<>(
-        Arrays.asList("wheat", "barley", "oats", "rye", "rice", "sesameseeds", "mustardseeds"));
+        Arrays.asList("wheat", "barley", "oats", "rye", "rice", "sesameseeds", "mustardseeds", "abyssaloat"));
     /** Ground crops whose produce is picked like fruit. */
     private static final Set<String> FRUIT = new HashSet<>(
         Arrays.asList(
