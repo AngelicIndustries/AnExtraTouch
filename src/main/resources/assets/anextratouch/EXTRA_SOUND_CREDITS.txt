@@ -267,6 +267,20 @@ Playback volume 1.
 SHA-256 action/door/fridge_open.ogg: 90c14ba19363e08275e98cc2b734e3555ee2d1debe9d69224fcca70cf07c79c6
 SHA-256 action/door/fridge_close.ogg: da94cd023340fc3ddda47eb1534b84158765b7a92d028b502f46609983b63984
 
+Rings and amulets use excerpts from "Jewelry-003.wav" (rings) and "Jewelry-002.wav"
+(amulets, pendants and medals) by MaGs_007:
+https://freesound.org/people/MaGs_007/sounds/349363/
+https://freesound.org/people/MaGs_007/sounds/349362/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpts at 3.41-3.48 s (ring) and 2.48-2.63 s (amulet); mono, 44.1 kHz;
+120 Hz high-pass; 3 ms fade in / fade out over a third of the excerpt; peak normalized to
+-6 dB; Ogg Vorbis quality 6.
+Playback volume 0.63. Picked from the ring audition page (JW21, JW18).
+SHA-256 item/jewelry/ring.ogg: d2ec9f16ae098013e19d95bd8d8fda6622257dd637e44af2f7e68113ac0f3556
+SHA-256 item/jewelry/amulet.ogg: f8bf0c583fd40f7c71f0a2dfa6d063a5e895f9805a3071acbad57624b709759f
+
 Keyboard type/move/erase/cut/paste handling uses excerpts from
 "Single Key Press Sounds" by eklee, qubodup:
 https://opengameart.org/content/single-key-press-sounds

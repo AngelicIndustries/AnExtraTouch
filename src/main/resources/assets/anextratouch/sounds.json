@@ -19201,6 +19201,4380 @@
       }
     ]
   },
+  "item.pickup.aether_legacy.skyroot_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.skyroot_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.skyroot_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.skyroot_hoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_skyroot_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_skyroot_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_skyroot_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_skyroot_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_skyroot_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_skyroot_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.holystone_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.holystone_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.holystone_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.holystone_hoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_holystone_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_holystone_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_holystone_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_holystone_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_holystone_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_holystone_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_hoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_zanite_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_zanite_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_zanite_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_zanite_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_zanite_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_zanite_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_hoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_arkenium_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_arkenium_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_arkenium_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_hoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_continuum_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_continuum_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_continuum_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_continuum_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_continuum_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_continuum_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_hoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_gravitite_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_gravitite_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_gravitite_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_hoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_hoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_valkyrie_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_valkyrie_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_valkyrie_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_valkyrie_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_valkyrie_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_valkyrie_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ascensite_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ascensite_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ascensite_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_zanite_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_zanite_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_zanite_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_zanite_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_zanite_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_zanite_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_zanite_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_zanite_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_arkenium_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_arkenium_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_arkenium_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_arkenium_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_arkenium_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_arkenium_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_arkenium_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_arkenium_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_continuum_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_continuum_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_continuum_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_continuum_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_continuum_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_continuum_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_continuum_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_continuum_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_gravitite_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_gravitite_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_gravitite_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_gravitite_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.neptune_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.neptune_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.neptune_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.neptune_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_neptune_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_neptune_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_neptune_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_neptune_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_neptune_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_neptune_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_neptune_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_neptune_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.agility_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_agility_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_agility_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.phoenix_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.phoenix_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.phoenix_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.phoenix_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_phoenix_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_phoenix_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_phoenix_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_phoenix_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_phoenix_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_phoenix_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_phoenix_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_phoenix_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.obsidian_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.obsidian_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.obsidian_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.obsidian_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_obsidian_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_obsidian_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_obsidian_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_obsidian_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_obsidian_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_obsidian_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_obsidian_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_obsidian_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_valkyrie_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_valkyrie_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_valkyrie_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_valkyrie_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_valkyrie_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_valkyrie_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_valkyrie_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_valkyrie_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.elysian_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.elysian_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.elysian_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.elysian_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_elysian_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_elysian_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_elysian_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_elysian_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_elysian_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_elysian_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_elysian_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_elysian_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ascensite_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ascensite_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ascensite_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ascensite_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.skyroot_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_skyroot_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_skyroot_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.holystone_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_holystone_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_holystone_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_zanite_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_zanite_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_arkenium_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_continuum_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_continuum_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_gravitite_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_divineral_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ascensite_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.leather_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.iron_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.chain_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.diamond_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.copper_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.copper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.netherite_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.effrine_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.heavy_blaze_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.pherithium_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.vanite_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.klangite_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ascensite_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_zanite_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_arkenium_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_continuum_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.neptune_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_neptune_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.phoenix_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_phoenix_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.obsidian_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_obsidian_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_valkyrie_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.elysian_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_elysian_gloves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_lance": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tipped_valkyrie_lance": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_valkyrie_lance": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.sentry_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.scaled_sentry_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_sentry_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.sentry_shield": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_shield": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_shield": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.iron_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.diamond_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.copper_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.netherite_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.auralite_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ice_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.reinforced_valkyrie_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_valkyrie_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.bone_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.reinforced_bone_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_bone_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.haste_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.reinforced_haste_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_haste_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.elysian_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.reinforced_elysian_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_elysian_ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.iron_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.diamond_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.copper_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.netherite_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.auralite_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.auralite_pendant.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.reinforced_auralite_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.reinforced_auralite_pendant.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_auralite_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_auralite_pendant.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ice_pendant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.red_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blue_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.yellow_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.white_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.black_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.green_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.purple_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.orange_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.lime_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.pink_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gray_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.cyan_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.light_blue_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.light_gray_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.magenta_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.brown_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.swet_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.invisibility_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.agility_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.phoenix_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.aer_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.discharge_cape": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.false_wings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_feather": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.reinforced_golden_feather": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_golden_feather": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.flaming_stone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.regeneration_stone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.reinforced_regeneration_stone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.healing_matrix": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.iron_bubble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.reinforced_iron_bubble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_iron_bubble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.repulsion_shield": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.jeb_shield": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.cloud_staff": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.nature_staff": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.confractus_staff": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.lightning_knife": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_shears": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.amplified_dragon_bane": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_and_cinerarium": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.flint_and_steel",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_and_cyro": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.flint_and_steel",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.dart_shooter": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.generic",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.dart": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.arrow",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.skyroot_stick": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.stick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.developer_stick": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.stick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_gemstone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_gemstone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.empyrean_gemstone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.cracked_empyrean_gemstone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.charged_empyrean_gemstone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_ingot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_ingot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_ingot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zanite_nugget": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_nugget": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_nugget": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.valkyrie_nugget": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gravitite_nugget": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divineral_nugget": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.osmium_insignia": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.victory_medal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tempest_insignia": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.raw_gravitite": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.loose_metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_chunk": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.loose_metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_fragement": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.loose_metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.enchanted_divineral": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.loose_metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.icestone_crystal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.auralite_crystal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.aceninum_shard": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ambrosium_shard": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.mimicry_ambrosium_shard": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.life_shard": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.dexterity_shard": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.power_shard": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.tempest_core": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.charged_tempest_core": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.continuum_orb": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.heart_of_the_sea",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.elysian_core": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.heart_of_the_sea",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.notched_core": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.heart_of_the_sea",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.elysian_offering": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.heart_of_the_sea",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.palladium_eye": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.heart_of_the_sea",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_amber": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.honeycomb",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.aechor_petal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blue_aechor_petal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_aechor_petal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.cyro_rod": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.blaze_rod",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.cinerarium_rod": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.blaze_rod",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.thunderlo_leather": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.thunderlo_horn": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.aerca_tooth": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.cockatrice_feather": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.aerca_powder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.black_dye": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.white_dye": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blue_dye": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divine_essence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.crystal_dragon_scales": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.scute",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zarnillys_scales": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.scute",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.elysian_dragon_scales": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.scute",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.holystone_bowl": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.swet_ball": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_swet_ball": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.purple_swet_ball": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.uligo_swet_ball": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gummy_swet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.poison_gummy_swet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.aercloud_globule": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.snowball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blue_aercloud_globule": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.snowball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_aercloud_globule": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.snowball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.purple_aercloud_globule": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.snowball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.green_aercloud_globule": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.snowball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.cold_parachute": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.snowball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_parachute": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.snowball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blue_parachute": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.snowball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.dungeon_key": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.keys",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.skyroot_bucket": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.moa_egg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.zephyroo_saddle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.aether_tune": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.music_disc",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.ascending_dawn": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.music_disc",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.welcoming_skies": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.music_disc",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.legacy": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.music_disc",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.lore_book": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.aether_spawn_egg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.skyroot_bed_item": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.skyroot_door_item": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blueberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.enchanted_blueberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.grapes": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.enchanted_grapes": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.strawberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.enchanted_strawberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.orange": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.enchanted_orange": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.raspberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.enchanted_raspberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blackberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.enchanted_blackberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.void_tomato": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.wynberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.rainbow_strawberry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.white_apple": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.arkenium_apple": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.elysian_apple": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.raw_thunderlo": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.enchanted_thunderlo": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.raw_aerwhale": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.enchanted_aerwhale": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.candy_cane": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.gingerbread_man": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.healing_stone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.resistance_stone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.strength_stone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.dexterity_stone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.agility_stone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.flame_stone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.uncooked_fruit_stew_bowl": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.enchanted_fruit_stew": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blueberry_seeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.raspberry_seeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.strawberry_seeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.grape_seeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.orange_seeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blackberry_seeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.block_of_auralite": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.budding_auralite": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.auralite_pillar": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.auralite_cluster_1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.auralite_cluster_2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.block_of_aceninum": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.aceninum_cluster": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.skyroot_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_oak_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_oak_fruit_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.crystal_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.crystal_fruit_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.holiday_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.decorated_holiday_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.purple_skyroot_fruit_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.purple_skyroot_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blue_skyroot_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.dark_blue_skyroot_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.green_light_skyroot_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blue_light_skyroot_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.void_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.void_fruit_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divine_oak_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.skyroot_sapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.golden_oak_sapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.crystal_sapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.purple_skyroot_sapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.blue_skyroot_sapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.dark_blue_skyroot_sapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.wisproot_sapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.greatroot_sapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.void_sapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.aether_legacy.divine_oak_sapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
   "item.category.paper_bag": {
     "category": "player",
     "sounds": [
@@ -19208,6 +23582,24 @@
         "name": "anextratouch:item/paper_bag/contact",
         "volume": 0.8,
         "pitch": 1.0
+      }
+    ]
+  },
+  "item.category.ring": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item/jewelry/ring",
+        "volume": 0.63
+      }
+    ]
+  },
+  "item.category.amulet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item/jewelry/amulet",
+        "volume": 0.63
       }
     ]
   },

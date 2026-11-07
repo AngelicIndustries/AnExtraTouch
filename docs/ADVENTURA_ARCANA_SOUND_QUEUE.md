@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 11 - Aether Legacy Departure** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura and Netherlicious are accepted.
+**Next: 12 - Fether** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious and Aether Legacy Departure are accepted.
 
 ## Scope and workflow
 
@@ -30,7 +30,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 08 | Plant Mega Pack | Accepted | Berries, seeds, plant products and nonstandard block materials | Mostly mappings; config screens are out of scope |
 | 09 | Natura | Accepted | Seed bags, food, sticks, bows, materials and wood variants | Inspect bag actions; ordinary furnace/workbench clicks may already work |
 | 10 | Netherlicious | Accepted | Fungi, ingredients, meat, dyes, gear and Nether materials | Custom furnace, beacon and workbench actions |
-| 11 | Aether Legacy Departure | Queued | Eggs, petals, amber, darts, food, accessories, tools and armor | Accessory pages, lore/book controls and special crafting containers |
+| 11 | Aether Legacy Departure | Accepted | Eggs, petals, amber, darts, food, accessories, tools and armor | Accessory pages, lore/book controls and special crafting containers |
 | 12 | Fether | Queued | Quartz gear, fruit and remaining addon materials | Check for inherited Aether behavior before proposing hooks |
 | 13 | Twilight Forest | Queued | Loot, food, maps, charms, tools, armor and specialty containers | Uncrafting-table interactions and map/book behavior |
 | 14 | Uralte Zauber | Queued | Wands, spell materials, charms, crystals, bottles and equipment | Spell/book selection and custom inventory controls; avoid native spell audio |
@@ -586,4 +586,43 @@ in development). All under `extraModInteractions` unless noted.
   stone sound. No change.
 - jack's in-game check, 2026-11-07: gear, materials, food and both crop
   harvest cues work. Accepted.
+
+## Aether Legacy Departure review - 2026-11-07
+
+- Source: the local `AetherLegacyDeparture` checkout for classes and textures,
+  checked against the pack's `Aether.Legacy.Departure.Snapshot.26w35a.jar`
+  registries (the jar adds `palladium_eye`, `skyroot_door_item`,
+  `tempest_insignia`, `aether_cactus` and the stratos aerclouds and drops
+  `zephyroo_leather` and `elysian_totem`; the jar's lists were used).
+- 496 items, 464 block registrations. Tools and armor use vanilla tool and
+  armor tiers, so the classifier gave tier sounds (skyroot stone, Neptune and
+  obsidian diamond, gravitite and valkyrie emerald). 483 definitions map gear by
+  the material in its name, accessories by type and material, and materials,
+  food and misc items by vanilla family (see EXTRA_SOUNDS.md). 46 named special
+  weapons and bows keep the classifier's tier sound.
+- Blocks: aerclouds cloth, quicksoil sand, skyroot wood, holystone and dungeon
+  stone and metal blocks metal are right and keep their fallback. Auralite and
+  aceninum clusters and blocks used glass, which steps like stone in 1.7.10;
+  they now chime like amethyst. Leaves and saplings follow BOP's foliage.
+- Interaction: berry bushes, orange and grape trees give fruit when broken
+  (break sound). Chests, mimics and the elysian totem play their own sounds.
+  Not handled yet: the ancient enchanter (altar) takes ambrosium and items and
+  drops them back silently, and the lore book's page buttons click; both are
+  candidates for cues.
+- Past Footsteps: the pack's map has 424 Aether keys and covers every block
+  except stairs. No change.
+- jack's in-game check, 2026-11-07: gear, food, crystal blocks and foliage
+  work. Rings (and pendants, which share the cue) sound far too heavy with the
+  nugget sound; golden amber as honeycomb is questioned (it is resin from
+  golden oak logs, but looks like a gem). Both on an audition page
+  (`/tmp/aet-aether-sounds/index.html`).
+- Picks: golden amber stays honeycomb (AMB1). No vanilla ring option was light
+  enough; from a CC0 page jack picked MaGs_007's jewelry recordings, JW21 for
+  rings and JW18 for necklaces and amulets. They ship as `item.category.ring`
+  and `item.category.amulet` for later mods' jewelry (Twilight Forest charms,
+  Mo' Creatures amulets); Aether's metal rings, pendants, medals and insignias
+  use them. Per jack, auralite pendants layer the amulet chain with the
+  amethyst shard ding (an `.accent` event).
+- jack's in-game check: rings, pendants and medals and the layered auralite
+  pendant work. Accepted.
 

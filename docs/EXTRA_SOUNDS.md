@@ -242,6 +242,29 @@ bread, the hellderberry juice bottle a full bottle, and devilish popcorn, a soup
 item, the dry bowl. The pack hides Netherlicious' 89 Et Futurum duplicates (see
 Adventura Arcana Core); those that are items share these definitions.
 
+Aether Legacy Departure (the pack's 26w35a snapshot) has 483 definitions. Its
+tools and armor reuse vanilla tiers that misrepresent them (skyroot tools are
+stone tier, tipped holystone and zanite iron, gravitite and valkyrie emerald,
+Neptune and obsidian armor diamond), so gear sounds like its material instead:
+skyroot wood, holystone stone, arkenium and divineral iron, valkyrie and phoenix
+gold, Neptune chain, obsidian and heavy blaze netherite, agility leather, and
+the gemstone families (zanite, continuum, gravitite, ascensite, elysian)
+diamond. Gloves and shields follow the same table and capes sound like cloth
+banners. Rings play a light ring clink and pendants, medals and insignias a
+small chain, two CC0 excerpts from MaGs_007's jewelry recordings that other
+mods' jewelry can reuse as `item.category.ring` and `item.category.amulet`;
+bone rings sound like bone, ice jewelry and auralite rings like crystal, and
+auralite pendants chain with an amethyst ding on top.
+Gems and ingots use metal, nuggets small metal, raw gravitite and arkenium
+chunks loose metal, ambrosium and other crystal shards the amethyst shard, cores
+and orbs the heart of the sea, swets and gummy swets slime, aercloud globules
+and parachutes snow, dungeon keys the key cue, berries and apples fruit, and
+aerwhale and thunderlo meat. Named special weapons (slayers, hammers, the
+elemental swords, vampire blade) and bows keep their tier sound. Crystal
+clusters and blocks chime like amethyst instead of stepping like stone, leaves
+and saplings rustle like BOP's; aerclouds, quicksoil, holystone and skyroot
+blocks already sound like their material.
+
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch
 bag: a short crinkle excerpted from MichaelGillighan's CC0 "03 - Bolsa llena.wav"
