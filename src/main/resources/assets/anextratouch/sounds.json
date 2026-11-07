@@ -15601,6 +15601,2481 @@
       }
     ]
   },
+  "item.pickup.plantmegapack.berriesBeauty": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.berriesBlack": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.berriesBlue": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.berriesElder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.berriesGoose": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.berriesHarlequinMistletoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.berriesHuckle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.berriesOrange": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.berriesSnow": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.berriesStraw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodTomato": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodPricklyPearFruit": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBeet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBellPepperOrange": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBellPepperRed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBellPepperYellow": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBroccoli": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodCassavaRoot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodCelery": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodCorn": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodCucumber": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodEggplant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodGreenBeans": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodLeek": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodLettuce": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodOnion": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodSacredLotusRoot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodTaroRoot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodWasabiStem": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodWaterChestnut": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodCookiePeanutButter": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.cactusArmatocereusMatucanensis": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.cactusBaseballBat": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.cactusEchinocereusMetornii": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.cactusGoldenCereus": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.cactusGoldenSaguaro": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.cactusMatucanaAureiflora": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.cactusPricklyPear": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.cactusSnowPole": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.cactusToothpick": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodCentellaLeaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodLaksaLeaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodSorrel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodSpinach": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodWatercress": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.leafAloe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.leafWildMint": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapSeaweed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.flowerBlueStarItem": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.flowerBroomSnakeweed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.flowerCattail": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.flowerOcotillo": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.flowerTorchGinger": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.flowerYellowToadflaxItem": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.salveFireResist": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.salveHealth": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.salveNightVision": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.salveStrength": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.salveSwiftness": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.salveWaterBreathing": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodMozukuSeaweed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodPeanuts": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodQuinoaSeeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodRice": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodWildRice": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodCornFlour": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedBeet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedBellPepperOrange": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedBellPepperRed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedBellPepperYellow": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedBroccoli": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedCassava": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedCelery": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedCorn": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedCucumber": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedEggplant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedGreenBean": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedLeek": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedLettuce": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedOnion": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedSorrel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedSpinach": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.seedTomato": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderAloe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderBerry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderCactus": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderCoral": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderFern": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderLeaf": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderMoss": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderMushroom": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderMushroomPoison": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderConditioner": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderDefoliant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.powderFertilizer": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodCookedRice": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBeautyberryTurnover": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBlackberryDanish": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodGooseberryCobbler": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodHuckleberryTart": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodOrangeberrySquare": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodStrawberryDelight": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodStuffedPepperOrange": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodStuffedPepperRed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodStuffedPepperYellow": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapBeef": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapChicken": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapFish": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapPork": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapRice": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodCornBread": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBlueberryMuffin": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodSandwichPBJ": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodSandwichBeef": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodSandwichChicken": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodSandwichFish": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodSandwichMutton": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodSandwichPork": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapCorn": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapCornBeef": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapCornChicken": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapCornFish": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapCornPork": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wrapCornRice": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBeetSoup": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBroccoliSoup": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodMozukuSoup": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodTomatoSoup": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBerrybowl": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodElderberrySorbet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodSnowberryCustard": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodQuinoaCereal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodStirFry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBeautyberryBlazer": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBlackberryTumbler": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodBlueberrySlushie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodElderberrySpritzer": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodGooseberryShake": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodHarlequinFizz": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodHuckleberryBubbler": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodOrangeberryWhip": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodPricklyPearTwister": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodSnowberryCooler": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodStrawberrySmoothie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodWasabiQuencher": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodJelly": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.foodPeanutButter": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralFragmentBlueStaghorn": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralFragmentElegance": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralFragmentFeatheredHydroid": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralFragmentPillar": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralFragmentPulsingXenia": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralFragmentPurpleSeaWhip": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralFragmentRedSeaFan": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralFragmentSunPolyps": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralFragmentYellowBamboo": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralBlueStaghorn": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralElegance": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralFeatheredHydroid": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralPillar": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.waterPulsingXenia": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.waterPurpleSeaWhip": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.waterRedSeaFan": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.coralSunPolyps": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.waterBambooCoralYEL": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.coral_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.epiphyteArtistsConk": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mushroom_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.epiphyteSulphurShelf": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mushroom_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.epiphyteTurkeyTail": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mushroom_block",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooAsper": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooFargesiaRobusta": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGiantTimber": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGolden": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooMoso": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooShortTassled": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTimorBlack": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTropicalBlue": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooWetForest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooAsperPole": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooAsperBlock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooAsperStairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooAsperSlab": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooAsperSlabDouble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooAsperDoor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooAsperFence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooAsperGate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooAsperLadder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooFargesiaRobustaPole": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooFargesiaRobustaBlock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooFargesiaRobustaStairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooFargesiaRobustaSlab": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooFargesiaRobustaSlabDouble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooFargesiaRobustaDoor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooFargesiaRobustaFence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooFargesiaRobustaGate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooFargesiaRobustaLadder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGiantTimberPole": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGiantTimberBlock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGiantTimberStairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGiantTimberSlab": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGiantTimberSlabDouble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGiantTimberDoor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGiantTimberFence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGiantTimberGate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGiantTimberLadder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGoldenPole": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGoldenBlock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGoldenStairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGoldenSlab": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGoldenSlabDouble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGoldenDoor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGoldenFence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGoldenGate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooGoldenLadder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooMosoPole": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooMosoBlock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooMosoStairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooMosoSlab": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooMosoSlabDouble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooMosoDoor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooMosoFence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooMosoGate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooMosoLadder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooShortTassledPole": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooShortTassledBlock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooShortTassledStairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooShortTassledSlab": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooShortTassledSlabDouble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooShortTassledDoor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooShortTassledFence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooShortTassledGate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooShortTassledLadder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTimorBlackPole": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTimorBlackBlock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTimorBlackStairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTimorBlackSlab": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTimorBlackSlabDouble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTimorBlackDoor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTimorBlackFence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTimorBlackGate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTimorBlackLadder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTropicalBluePole": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTropicalBlueBlock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTropicalBlueStairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTropicalBlueSlab": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTropicalBlueSlabDouble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTropicalBlueDoor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTropicalBlueFence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTropicalBlueGate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooTropicalBlueLadder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooWetForestPole": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooWetForestBlock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooWetForestStairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooWetForestSlab": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooWetForestSlabDouble": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooWetForestDoor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooWetForestFence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooWetForestGate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.bambooWetForestLadder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketBambooAsper": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketBambooFargesiaRobusta": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketBambooGiantTimber": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketBambooGolden": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketBambooMoso": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketBambooShortTassled": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketBambooTimorBlack": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketBambooTropicalBlue": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketBambooWetForest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketWoodAcacia": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketWoodBirch": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketWoodDarkOak": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketWoodJungle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketWoodOak": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketWoodSpruce": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketIronCurl": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.plantmegapack.wallBracketGoldCurl": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
   "item.category.paper_bag": {
     "category": "player",
     "sounds": [

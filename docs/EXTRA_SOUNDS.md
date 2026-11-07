@@ -152,8 +152,8 @@ added.
 Mod world interactions that make no sound of their own play modern vanilla
 cues (`extraModInteractions`). Picking fruit plays a short stem snap: HarvestCraft
 tree fruit and fruiting logs, Biomes O' Plenty apple and persimmon leaves and
-berry bushes, Growthcraft apples, grapes, hops and dried curds, and HarvestCraft's
-berry, tomato and pepper crops. Other HarvestCraft
+berry bushes, Growthcraft apples, grapes, hops and dried curds, Plant Mega Pack's
+ripe berry bushes, and HarvestCraft's berry, tomato and pepper crops. Other HarvestCraft
 crops sound by kind: grain (barley, oats, rye, rice, sesame, mustard) is cut with
 a sickle, leafy crops (lettuce, cabbage, spinach, brassicas, celery, rhubarb,
 spice/curry/tea leaves, seaweed and the leafy garden) are torn, and other crops
@@ -192,6 +192,22 @@ ovens sound like copper doors and counters and cabinets like wooden trapdoors.
 These recordings are credited in `EXTRA_SOUND_CREDITS.txt`. Book page arrows, in
 vanilla books and Spice of Life's food journal, turn a page instead of clicking
 (`extraBookPages`).
+
+Plant Mega Pack 4.33 has definitions for its 275 enabled items and unusual
+blocks, checked against the pack jar's registrations and textures. Its produce
+and meals follow the accepted HarvestCraft families: berries, tomatoes and prickly
+pears use the fruit contact; vegetables, roots and peanut butter cookies are
+crunchy; leafy greens, herbs, flowers, salves (leaf-wrapped) and the plain seaweed
+wrap rustle like leaves; seeds, grains, flour and powders rustle as dust; mozuku
+seaweed is wet. Soups use the liquid bowl and other bowls the dry bowl; the
+stemmed-glass drinks, jelly and peanut butter use full bottles; sandwiches, corn
+bread, muffins and corn wraps use bread; pastries, stuffed peppers, cooked rice and
+filled seaweed wraps use dry food. Bamboo stalks and all bamboo building blocks use
+modern bamboo instead of wood, cacti use the crunchy plant cue instead of wood,
+corals and coral fragments use wet coral instead of gravel, shelf fungi use
+mushroom stems, and wooden and iron wall brackets stop sounding like stone. Other
+plants keep their grass step. The extra wall brackets are disabled in the pack and
+the stone bracket keeps its stone.
 
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch

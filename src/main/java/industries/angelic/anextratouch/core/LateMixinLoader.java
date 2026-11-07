@@ -62,6 +62,7 @@ public class LateMixinLoader implements ILateMixinLoader {
             .addMixin("MixinBopBucket", MixinBuilder.Side.BOTH, "BiomesOPlenty")
             .addMixin("MixinBopHarvest", MixinBuilder.Side.BOTH, "BiomesOPlenty")
             .addMixin("MixinBopJar", MixinBuilder.Side.BOTH, "BiomesOPlenty")
+            .addMixin("MixinPmpBerryHarvest", MixinBuilder.Side.BOTH, "plantmegapack")
             .addMixin("MixinBlizzSnowTrail", MixinBuilder.Side.BOTH, "ThermalFoundation")
             .addMixin("MixinThaumicHorizonsBoat", MixinBuilder.Side.BOTH, "ThaumicHorizons")
             .addMixin("MixinExplosionNT", MixinBuilder.Side.BOTH, "hbm")

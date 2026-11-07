@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 06 - Adventura Arcana Core.** Growthcraft, Cooking for Blockheads and Spice of Life are accepted.
+**Next: 09 - Natura** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life and Plant Mega Pack are accepted.
 
 ## Scope and workflow
 
@@ -27,7 +27,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 05 | Spice of Life - Carrot Edition | Accepted | Food journal, lunch bag and lunch box | Journal navigation and lunch-container interactions |
 | 06 | Adventura Arcana Core | Queued | Bamboo shoots, pack-specific produce, worktable and compartments | Compartment tabs and worktable actions; inspect local build |
 | 07 | Biomic | Queued | Boats, produce and special material variants; ordinary blocks may already fall back correctly | Biome-browser interactions are low priority; inspect actual survival-facing actions |
-| 08 | Plant Mega Pack | Queued | Berries, seeds, plant products and nonstandard block materials | Mostly mappings; config screens are out of scope |
+| 08 | Plant Mega Pack | Accepted | Berries, seeds, plant products and nonstandard block materials | Mostly mappings; config screens are out of scope |
 | 09 | Natura | Queued | Seed bags, food, sticks, bows, materials and wood variants | Inspect bag actions; ordinary furnace/workbench clicks may already work |
 | 10 | Netherlicious | Queued | Fungi, ingredients, meat, dyes, gear and Nether materials | Custom furnace, beacon and workbench actions |
 | 11 | Aether Legacy Departure | Queued | Eggs, petals, amber, darts, food, accessories, tools and armor | Accessory pages, lore/book controls and special crafting containers |
@@ -492,4 +492,34 @@ in development). All under `extraModInteractions` unless noted.
   market purchase, book page arrows, the SaltyMod drain plug (a hidden 3x3
   spot under the evaporator's fluid gauge), the brew kettle's discard and
   switch buttons, the drop flutter and `/aet_sound` work.
+
+## Plant Mega Pack review - 2026-11-07
+
+- Source: the pack's `plantmegapack-4.33-1.7.10-1492.jar` (decompiled
+  registrations and item textures) and `config/plantmegapack/settings.cfg`
+  (crops and aquatic content on, extra wall brackets off).
+  `plantmegapackfix-1.3.1.jar` only patches world generation.
+- Previously every PMP item fell back to the generic classifier; jack flagged
+  the tomato. Now 275 explicit definitions cover all 17 seeds, 91 foods, 12
+  powders, 6 salves, 8 flower and leaf items and 9 coral fragments, plus the
+  block forms with misleading step sounds.
+- Item families follow HarvestCraft's accepted mappings (see EXTRA_SOUNDS.md).
+  Containers come from the textures: stemmed glasses for the twelve drinks,
+  jars for jelly and peanut butter, liquid bowls for the four soups, dry bowls
+  for the berry bowl, sorbet, custard, cereal and stir fry.
+- Blocks: bamboo stalks, poles, blocks, stairs, slabs, doors, fences, gates,
+  ladders and bamboo wall brackets use modern bamboo (they were wood, like
+  Growthcraft bamboo before its mapping); the 9 cacti use the crunchy plant cue
+  (wood); the 9 corals and coral fragments use wet coral (gravel); the 3 shelf
+  fungi use mushroom stems (wood); wooden brackets use wood and the iron and
+  gold curl brackets small metal (all brackets had the default stone). The
+  other 315 plants and the 36 hanging planters keep their grass step.
+- Interaction: ripe berry bushes drop berries and reset on use without a sound;
+  they now play the fruit snap, like BOP's bushes. Nothing else in PMP acts on
+  use.
+- Past Footsteps: the pack's `aa-footsteps.zip` already maps every PMP block
+  except the bamboo stairs, which follow the pack's convention of leaving all
+  stairs to Past Footsteps' fallback (wood here). No change.
+- jack's in-game check, 2026-11-07: produce, meals and containers, the block
+  forms and the berry bush cue work. Accepted.
 
