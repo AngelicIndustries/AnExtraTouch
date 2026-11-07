@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 09 - Natura** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life and Plant Mega Pack are accepted.
+**Next: 10 - Netherlicious** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack and Natura are accepted.
 
 ## Scope and workflow
 
@@ -28,7 +28,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 06 | Adventura Arcana Core | Queued | Bamboo shoots, pack-specific produce, worktable and compartments | Compartment tabs and worktable actions; inspect local build |
 | 07 | Biomic | Queued | Boats, produce and special material variants; ordinary blocks may already fall back correctly | Biome-browser interactions are low priority; inspect actual survival-facing actions |
 | 08 | Plant Mega Pack | Accepted | Berries, seeds, plant products and nonstandard block materials | Mostly mappings; config screens are out of scope |
-| 09 | Natura | Queued | Seed bags, food, sticks, bows, materials and wood variants | Inspect bag actions; ordinary furnace/workbench clicks may already work |
+| 09 | Natura | Accepted | Seed bags, food, sticks, bows, materials and wood variants | Inspect bag actions; ordinary furnace/workbench clicks may already work |
 | 10 | Netherlicious | Queued | Fungi, ingredients, meat, dyes, gear and Nether materials | Custom furnace, beacon and workbench actions |
 | 11 | Aether Legacy Departure | Queued | Eggs, petals, amber, darts, food, accessories, tools and armor | Accessory pages, lore/book controls and special crafting containers |
 | 12 | Fether | Queued | Quartz gear, fruit and remaining addon materials | Check for inherited Aether behavior before proposing hooks |
@@ -522,4 +522,40 @@ in development). All under `extraModInteractions` unless noted.
   stairs to Past Footsteps' fallback (wood here). No change.
 - jack's in-game check, 2026-11-07: produce, meals and containers, the block
   forms and the berry bush cue work. Accepted.
+
+## Natura review - 2026-11-07
+
+- Source: the pack's `Natura-2.8.24.jar` (decompiled `NContent` registrations,
+  block sounds and item classes) and `config/Natura.cfg` (blaze rails, hoppers,
+  nether glass, furnaces, obelisks and flint and blaze enabled).
+- Wood blocks (planks, logs, workbenches, bookshelves, stairs, slabs, fences,
+  gates, trapdoors, plates, buttons, doors) set the wood sound already and keep
+  their fallback. Ghostwood tools already resolve to wood.
+- 67 definitions: wooden tools whose tiers misled the classifier (darkwood
+  stone, fusewood iron, bloodwood custom), imp armor (custom material, now
+  leather), the `barleyFood` crafting items by metadata (barley hay, flours,
+  sulfur, fletching, flame string and dye dust, cotton like HarvestCraft's,
+  imp leather), sticks, bowls, stews, berry medley, berries, potash apple,
+  saguaro fruit, imp meat, water drop, seed and bone bags, spawn eggs, flint and
+  blaze and the door item, which all fell back to the generic pickup.
+- Blocks: the bloodwood log used Natura's metal sound (now wood); blaze rails
+  set no sound and fell to stone (now rails); large glowshrooms were wood (now
+  mushroom blocks); leaves, saplings, bluebells, thornvines and berry bushes
+  follow BOP's foliage; the saguaro follows PMP's cacti.
+- Interaction: ripe berry bushes, overworld and Nether, hand over berries on
+  either click without a sound of their own (the berry's pickup pop only); both
+  now play the fruit snap. Seed bags already play the crops' placing sound; the
+  bone bag shows bone meal particles silently, like vanilla bone meal in 1.7.10.
+  Crops were covered earlier through Hunger Overhaul.
+- Past Footsteps: the pack's map covers every Natura block except stairs, which
+  follow the pack's convention. No change.
+- jack's in-game check, 2026-11-07: tools and gear, food and materials and the
+  block forms work. Per jack, cactus juice (`waterdrop`) now uses the meat cue
+  instead of a soft liquid. The berry bush cue is untested: bonemeal only grows
+  Natura's bushes to full size and stacks them, never to ripe (by design; they
+  ripen on random ticks in light). The creative tab lists ripe bushes, but
+  the item always places the youngest stage (metadata mod 4); test with
+  `/setblock ~1 ~ ~ Natura:BerryBush 12` (or `Natura:NetherBerryBush`, 12-15).
+- Berry bush cue confirmed with set-ripe bushes on both clicks, overworld and
+  Nether. Accepted.
 

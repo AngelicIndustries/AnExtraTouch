@@ -153,7 +153,8 @@ Mod world interactions that make no sound of their own play modern vanilla
 cues (`extraModInteractions`). Picking fruit plays a short stem snap: HarvestCraft
 tree fruit and fruiting logs, Biomes O' Plenty apple and persimmon leaves and
 berry bushes, Growthcraft apples, grapes, hops and dried curds, Plant Mega Pack's
-ripe berry bushes, and HarvestCraft's berry, tomato and pepper crops. Other HarvestCraft
+ripe berry bushes, Natura's overworld and Nether berry bushes (on either click),
+and HarvestCraft's berry, tomato and pepper crops. Other HarvestCraft
 crops sound by kind: grain (barley, oats, rye, rice, sesame, mustard) is cut with
 a sickle, leafy crops (lettuce, cabbage, spinach, brassicas, celery, rhubarb,
 spice/curry/tea leaves, seaweed and the leafy garden) are torn, and other crops
@@ -208,6 +209,22 @@ corals and coral fragments use wet coral instead of gravel, shelf fungi use
 mushroom stems, and wooden and iron wall brackets stop sounding like stone. Other
 plants keep their grass step. The extra wall brackets are disabled in the pack and
 the stone bracket keeps its stone.
+
+Natura 2.8.24 has 67 definitions for the items that fell back to the generic
+pickup and the blocks with misleading sounds. Its wood blocks already sound like
+wood and keep that. Ghostwood, bloodwood, darkwood and fusewood tools and kamas
+sound wooden, though Natura gives darkwood and fusewood the stone and iron tiers
+and bloodwood its own material; nether quartz tools keep stone and bows keep the
+vanilla bow's cue. Imp armor sounds like leather, sticks, bowls and flint and
+blaze like vanilla's, and the redwood-family doors and the bloodwood log (metal
+in Natura) like wood. Berries, potash apples and saguaro fruit use the fruit
+contact; flour, sulfur, fletching, flame string, blue dye, seed bags and the bone
+bag rustle as dust, barley like hay, cotton softly like HarvestCraft's cotton, and
+imp leather like leather. Stews use the liquid bowl, the berry medley the dry
+bowl, and imp meat and cactus juice (the water drop) the meat cue. Leaves, saplings,
+bluebells, thornvines and berry bushes rustle like BOP's foliage, the saguaro
+matches Plant Mega Pack's cacti, large glowshrooms sound like mushroom blocks
+(they were wood), and blaze rails like rails (they were stone).
 
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch
