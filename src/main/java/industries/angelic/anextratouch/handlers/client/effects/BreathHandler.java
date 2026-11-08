@@ -3,9 +3,12 @@ package industries.angelic.anextratouch.handlers.client.effects;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
+import java.util.WeakHashMap;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.EntityFX;
 import net.minecraft.client.renderer.ActiveRenderInfo;
@@ -36,6 +39,13 @@ public class BreathHandler {
 
     private static final ResourceLocation PARTICLE_TEX = new ResourceLocation("textures/particle/particles.png");
     private final List<FrostBreathFX> breathParticles = new ArrayList<>();
+    /**
+     * For the "cold" dimension mode: how far around the head ice and snow count, how many blocks of it make breath
+     * show, and how long a look holds, in ticks.
+     */
+    private static final int COLD_RADIUS = 3, COLD_BLOCKS = 4, COLD_CHECK_TICKS = 20;
+    /** Each entity's last look for ice and snow: the world time, and 1 if it found enough. */
+    private final Map<EntityLivingBase, long[]> coldChecks = new WeakHashMap<>();
 
     @SubscribeEvent
     public void onLivingUpdate(LivingEvent.LivingUpdateEvent event) {
@@ -88,8 +98,12 @@ public class BreathHandler {
             return;
         }
 
-        // Biome/altitude check (skip in "always" mode)
-        if (!"always".equals(dimMode)) {
+        // Biome/altitude check (skip in "always" mode; "cold" only asks for ice or snow nearby)
+        if ("cold".equals(dimMode)) {
+            if (!nearIceOrSnow(living)) {
+                return;
+            }
+        } else if (!"always".equals(dimMode)) {
             int bx = MathHelper.floor_double(event.entity.posX);
             int by = MathHelper.floor_double(event.entity.boundingBox.minY);
             int bz = MathHelper.floor_double(event.entity.posZ);
@@ -141,6 +155,34 @@ public class BreathHandler {
 
         FrostBreathFX particle = new FrostBreathFX(event.entity.worldObj, x, y, z, vx, vy, vz, baby);
         breathParticles.add(particle);
+    }
+
+    /** Whether enough ice or snow lies around the entity's head, looked up at most once a second. */
+    private boolean nearIceOrSnow(EntityLivingBase entity) {
+        long now = entity.worldObj.getTotalWorldTime();
+        long[] check = coldChecks.get(entity);
+        if (check != null && now - check[0] < COLD_CHECK_TICKS) {
+            return check[1] != 0;
+        }
+        int cx = MathHelper.floor_double(entity.posX);
+        int cy = MathHelper.floor_double(entity.boundingBox.minY + entity.height);
+        int cz = MathHelper.floor_double(entity.posZ);
+        int found = 0;
+        for (int dx = -COLD_RADIUS; dx <= COLD_RADIUS && found < COLD_BLOCKS; dx++) {
+            for (int dy = -COLD_RADIUS; dy <= COLD_RADIUS && found < COLD_BLOCKS; dy++) {
+                for (int dz = -COLD_RADIUS; dz <= COLD_RADIUS && found < COLD_BLOCKS; dz++) {
+                    Material material = entity.worldObj.getBlock(cx + dx, cy + dy, cz + dz)
+                        .getMaterial();
+                    if (material == Material.ice || material == Material.packedIce
+                        || material == Material.snow
+                        || material == Material.craftedSnow) {
+                        found++;
+                    }
+                }
+            }
+        }
+        coldChecks.put(entity, new long[] { now, found >= COLD_BLOCKS ? 1 : 0 });
+        return found >= COLD_BLOCKS;
     }
 
     private static boolean shouldShowBreathForClimate(BiomeGenBase biome, int x, int y, int z) {

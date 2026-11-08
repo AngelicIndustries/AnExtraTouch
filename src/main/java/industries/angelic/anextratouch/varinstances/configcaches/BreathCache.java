@@ -124,9 +124,9 @@ public class BreathCache {
             try {
                 int dimId = Integer.parseInt(parts[0]);
                 String mode = parts[1].toLowerCase();
-                if (!"normal".equals(mode) && !"always".equals(mode) && !"never".equals(mode)) {
+                if (!"normal".equals(mode) && !"always".equals(mode) && !"never".equals(mode) && !"cold".equals(mode)) {
                     AnExtraTouch.LOG
-                        .error("Invalid breath dimension mode '{}' in: {}. Use normal/always/never.", mode, entry);
+                        .error("Invalid breath dimension mode '{}' in: {}. Use normal/always/never/cold.", mode, entry);
                     continue;
                 }
                 breathDimensionModes.put(dimId, mode);

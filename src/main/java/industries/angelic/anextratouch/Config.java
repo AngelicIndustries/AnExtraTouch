@@ -372,13 +372,13 @@ public class Config {
                 "breathDimensionRules",
                 Categories.breath,
                 breathDimensionRules,
-                "Per-dimension breath rules. Format: \"dimensionId;mode\". Modes: \"normal\" (temperature + altitude checks), \"always\" (breath always visible), \"never\" (breath disabled). Unlisted dimensions use breathDefaultDimensionMode.");
+                "Per-dimension breath rules. Format: \"dimensionId;mode\". Modes: \"normal\" (temperature + altitude checks), \"always\" (breath always visible), \"never\" (breath disabled), \"cold\" (only near ice or snow, for dimensions whose biomes say nothing about the cold, like Dimensional Doors' pockets). Unlisted dimensions use breathDefaultDimensionMode.");
             breathDefaultDimensionMode = config.getString(
                 "breathDefaultDimensionMode",
                 Categories.breath,
                 breathDefaultDimensionMode,
                 "Default breath mode for dimensions not listed in breathDimensionRules.",
-                new String[] { "normal", "always", "never" });
+                new String[] { "normal", "always", "never", "cold" });
             breathColdBiomes = config.getStringList(
                 "breathColdBiomes",
                 Categories.breath,
