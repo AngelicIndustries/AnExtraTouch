@@ -23585,6 +23585,15 @@
       }
     ]
   },
+  "item.throw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:entity.witch.throw",
+        "type": "event"
+      }
+    ]
+  },
   "item.category.ring": {
     "category": "player",
     "sounds": [

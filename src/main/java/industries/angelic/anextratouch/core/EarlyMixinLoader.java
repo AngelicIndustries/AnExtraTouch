@@ -47,6 +47,8 @@ public class EarlyMixinLoader extends AngelEarlyMixinLoader {
             .addMixin("MixinChunk", MixinBuilder.Side.CLIENT)
             .addMixin("MixinEntityArrow", MixinBuilder.Side.CLIENT)
             .addMixin("MixinEntityBoat", MixinBuilder.Side.BOTH)
+            .addMixin("MixinItemThrow", MixinBuilder.Side.BOTH)
+            .addMixin("MixinEnderPearlThrow", MixinBuilder.Side.BOTH)
             .addMixin("MixinEntityBubbleFX", MixinBuilder.Side.CLIENT)
             .addMixin("MixinEntityClient", MixinBuilder.Side.CLIENT)
             .addMixin("MixinEntityDropParticleFX", MixinBuilder.Side.CLIENT)

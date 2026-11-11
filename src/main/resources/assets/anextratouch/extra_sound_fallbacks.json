@@ -71,5 +71,6 @@
   "minecraft:block.wooden_trapdoor.open": "minecraft:random.door_open",
   "minecraft:block.wooden_trapdoor.close": "minecraft:random.door_close",
   "minecraft:block.copper_door.open": "minecraft:random.door_open",
-  "minecraft:block.copper_door.close": "minecraft:random.door_close"
+  "minecraft:block.copper_door.close": "minecraft:random.door_close",
+  "minecraft:entity.witch.throw": "minecraft:random.bow"
 }

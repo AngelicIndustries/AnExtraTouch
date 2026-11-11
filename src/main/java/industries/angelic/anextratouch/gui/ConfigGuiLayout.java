@@ -90,6 +90,7 @@ final class ConfigGuiLayout {
                         "itemUtilityEquipSoundsEnabled",
                         "itemBlockEquipSoundsEnabled"),
                     section(config, "sounds.items.bow", "item_sounds", "itemBowDrawSoundsEnabled", "itemBowDrawVolume"),
+                    section(config, "sounds.items.throw", "item_sounds", "itemThrowSoundsEnabled"),
                     section(
                         config,
                         "sounds.items.matching",

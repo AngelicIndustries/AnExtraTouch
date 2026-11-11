@@ -31,7 +31,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 09 | Natura | Accepted | Seed bags, food, sticks, bows, materials and wood variants | Inspect bag actions; ordinary furnace/workbench clicks may already work |
 | 10 | Netherlicious | Accepted | Fungi, ingredients, meat, dyes, gear and Nether materials | Custom furnace, beacon and workbench actions |
 | 11 | Aether Legacy Departure | Accepted | Eggs, petals, amber, darts, food, accessories, tools and armor | Accessory pages, lore/book controls and special crafting containers |
-| 12 | Fether | Queued | Quartz gear, fruit and remaining addon materials | Check for inherited Aether behavior before proposing hooks |
+| 12 | Fether | Queued | Nether crops and food (GTNH's port of Pam's Harvest the Nether): fruit, seeds, meals and plant blocks | Right-click crop harvesting, like HarvestCraft's |
 | 13 | Twilight Forest | Queued | Loot, food, maps, charms, tools, armor and specialty containers | Uncrafting-table interactions and map/book behavior |
 | 14 | Uralte Zauber | Queued | Wands, spell materials, charms, crystals, bottles and equipment | Spell/book selection and custom inventory controls; avoid native spell audio |
 | 15 | Mob Rewind | Queued | Mob drops, food, shells, teeth, eggs, equipment and special items | Inspect actual custom item controls; do not infer from localization alone |
@@ -100,7 +100,7 @@ Use the installed jar filename, not a guessed upstream version. Some embedded mc
 | 09 | `Natura-2.8.24.jar` |
 | 10 | `netherlicious-3.2.8.jar` |
 | 11 | `Aether.Legacy.Departure.Snapshot.26w35a.jar` |
-| 12 | `fether-2.0.9.jar` |
+| 12 | `fether-2.1.0.jar` |
 | 13 | `TwilightForest-2.7.45.jar` |
 | 14 | `uraltezauber-2515978-master+251597899a-dirty.jar` |
 | 15 | `mobrewind-93305cd-master+93305cdca1-dirty.jar` |
@@ -630,4 +630,25 @@ in development). All under `extraModInteractions` unless noted.
   amethyst shard ding (an `.accent` event).
 - jack's in-game check: rings, pendants and medals and the layered auralite
   pendant work. Accepted.
+
+## Potion throw - 2026-11-11
+
+- jack: the potion throw sounded weird. Vanilla 1.7.10 has no throw sound;
+  `ItemPotion` (and Et Futurum's `ItemLingeringPotion`) play `random.bow` at
+  volume 0.5 and pitch 0.33-0.5, and the pack's `rhapsodia-replacements.zip`
+  replaces `random/bow.ogg`. Modern Minecraft's `entity.splash_potion.throw`
+  is the same bow file, so it would only have restored Mojang's recording.
+- From an audition (`/tmp/aet-throw-sounds/index.html`) jack picked TH3, the
+  witch's potion throw (`entity.witch.throw`) at volume 0.5 and pitch 0.9-1.1.
+  AET swaps the throw call on both sides under `itemThrowSoundsEnabled`.
+- Snowballs, eggs, ender pearls and experience bottles use the same low bow
+  release; per jack they throw the same way (event `item.throw`). The eye of
+  ender keeps Et Futurum's modern launch sound. Splash and lingering potion
+  throws confirmed in game.
+- The first build crashed the pack: BugTorch overwrites
+  `ItemEnderPearl.onItemRightClick` (creative pearl throwing) at priority
+  1000, and Mixin injects into an overwritten method only from a strictly
+  higher priority. The pearl now has its own mixin at 1100 that wraps the same
+  `random.bow` call in BugTorch's version. jack confirmed the pack starts and
+  all throwables play the witch throw.
 

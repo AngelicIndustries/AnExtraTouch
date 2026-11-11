@@ -68,6 +68,7 @@ minecraft:entity.armor_stand.break -> minecraft:dig.wood
 minecraft:entity.cod.flop -> minecraft:mob.slime.small
 minecraft:entity.fish.swim -> minecraft:random.splash
 minecraft:entity.item_frame.place -> minecraft:dig.wood
+minecraft:entity.witch.throw -> minecraft:random.bow
 minecraft:item.armor.equip_chain -> anextratouch:armor.medium_walk
 minecraft:item.armor.equip_copper -> anextratouch:armor.medium_walk
 minecraft:item.armor.equip_diamond -> anextratouch:armor.crystal_walk

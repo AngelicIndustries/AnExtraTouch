@@ -98,6 +98,7 @@ public class Config {
     public static float itemEquipVolume = 1.0f;
     public static boolean itemBowDrawSoundsEnabled = true;
     public static float itemBowDrawVolume = 0.5f;
+    public static boolean itemThrowSoundsEnabled = true;
     public static boolean itemSoundsForOtherEntities = true;
     public static boolean itemUtilityEquipSoundsEnabled = true;
     public static boolean itemBlockEquipSoundsEnabled = true;
@@ -549,6 +550,11 @@ public class Config {
                 0.0f,
                 1.0f,
                 "Bow drawstring volume, also scaled by Minecraft's Players volume.");
+            itemThrowSoundsEnabled = config.getBoolean(
+                "itemThrowSoundsEnabled",
+                Categories.itemSounds,
+                true,
+                "Thrown splash and lingering potions, snowballs, eggs, ender pearls and bottles o' enchanting play modern Minecraft's witch potion throw instead of the very low bow release vanilla borrows, which resource packs replacing the bow sound also change. The side that throws decides: in multiplayer, the server's setting is what other players hear.");
             itemSoundsForOtherEntities = config.getBoolean(
                 "itemSoundsForOtherEntities",
                 Categories.itemSounds,

@@ -11,6 +11,7 @@ anextratouch.configgui.menu.sounds.items=Item sounds
 anextratouch.configgui.menu.sounds.items.swing=Swing sounds
 anextratouch.configgui.menu.sounds.items.equip=Item selection
 anextratouch.configgui.menu.sounds.items.bow=Bow drawstrings
+anextratouch.configgui.menu.sounds.items.throw=Thrown items
 anextratouch.configgui.menu.sounds.items.matching=Item categories and nearby entities
 anextratouch.configgui.menu.sounds.armor=Armor equip sounds
 anextratouch.configgui.menu.water_effects=Water effects
