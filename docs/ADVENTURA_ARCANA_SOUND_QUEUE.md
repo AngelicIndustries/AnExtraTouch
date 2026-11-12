@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 12 - Fether** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious and Aether Legacy Departure are accepted.
+**Next: 13 - Twilight Forest** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure and Fether are accepted.
 
 ## Scope and workflow
 
@@ -31,7 +31,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 09 | Natura | Accepted | Seed bags, food, sticks, bows, materials and wood variants | Inspect bag actions; ordinary furnace/workbench clicks may already work |
 | 10 | Netherlicious | Accepted | Fungi, ingredients, meat, dyes, gear and Nether materials | Custom furnace, beacon and workbench actions |
 | 11 | Aether Legacy Departure | Accepted | Eggs, petals, amber, darts, food, accessories, tools and armor | Accessory pages, lore/book controls and special crafting containers |
-| 12 | Fether | Queued | Nether crops and food (GTNH's port of Pam's Harvest the Nether): fruit, seeds, meals and plant blocks | Right-click crop harvesting, like HarvestCraft's |
+| 12 | Fether | Accepted | Nether crops and food (GTNH's port of Pam's Harvest the Nether): fruit, seeds, meals and plant blocks | Right-click crop harvesting, like HarvestCraft's |
 | 13 | Twilight Forest | Queued | Loot, food, maps, charms, tools, armor and specialty containers | Uncrafting-table interactions and map/book behavior |
 | 14 | Uralte Zauber | Queued | Wands, spell materials, charms, crystals, bottles and equipment | Spell/book selection and custom inventory controls; avoid native spell audio |
 | 15 | Mob Rewind | Queued | Mob drops, food, shells, teeth, eggs, equipment and special items | Inspect actual custom item controls; do not infer from localization alone |
@@ -651,4 +651,24 @@ in development). All under `extraModInteractions` unless noted.
   higher priority. The pearl now has its own mixin at 1100 that wraps the same
   `random.bow` call in BugTorch's version. jack confirmed the pack starts and
   all throwables play the witch throw.
+
+## Fether review - 2026-11-12
+
+- Source: the pack's `fether-2.1.0.jar` (decompiled `FetherItems`,
+  `FetherBlocks` and blocks) and `config/fether.cfg` (quartz items enabled,
+  right-click harvesting on).
+- 25 definitions (see EXTRA_SOUNDS.md). Quartz armor and tools use the
+  `QUARTZ` materials, which the classifier treated as generic gear. First
+  mapped to crystal (amethyst) gear; per jack they sound like diamond gear.
+  Per jack, the weevil and its soft egg use the meat cue (were spider eye and
+  egg).
+- Interaction: ripe crops (`BlockNetherCrops`, a `BlockCrops`) and ignis fruit
+  harvest and reset on use in silence. Hunger Overhaul usually takes the crops
+  first and plays its cue; a hook on Fether's own harvest covers the rest. The
+  crop classifier now also reads snake_case `<crop>_crop` names: blood leaf is
+  leafy, marrow berry and ignis fruit are fruit, flesh root and glow flower
+  are other crops.
+- Past Footsteps: the pack's map covers all 12 Fether blocks. No change.
+- jack's in-game check, 2026-11-12: items (after the quartz and weevil
+  changes) and all harvest cues work. Accepted.
 

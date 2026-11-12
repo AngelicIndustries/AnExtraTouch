@@ -163,7 +163,10 @@ at random. Hunger Overhaul's right-click harvesting, which takes over every
 `BlockCrops` (vanilla wheat, carrots and potatoes, HarvestCraft, Natura and
 Netherlicious crops) when enabled, plays the same cues; vanilla wheat, Natura
 barley and Netherlicious abyssal oat count as grain. Netherlicious' own
-replanting harvest of abyssal oat and devilish maize plays them too. So does EnderCore's right-click harvesting, which handles the crops in
+replanting harvest of abyssal oat and devilish maize plays them too. Fether's right-click
+harvest of ripe crops and ignis fruit does too: blood leaf tears like leafy crops,
+marrow berries and ignis fruit snap like fruit, flesh root and glow flowers tear
+like other crops. So does EnderCore's right-click harvesting, which handles the crops in
 its own crop config (vanilla wheat, carrots, potatoes and nether wart by default)
 before Hunger Overhaul does; a sickle's area harvest plays one cue.
 Bucket and bottle fill/empty cues cover the HarvestCraft sink (including washing
@@ -264,6 +267,14 @@ elemental swords, vampire blade) and bows keep their tier sound. Crystal
 clusters and blocks chime like amethyst instead of stepping like stone, leaves
 and saplings rustle like BOP's; aerclouds, quicksoil, holystone and skyroot
 blocks already sound like their material.
+
+Fether 2.1.0 (Food from the Nether, GTNH's port of Pam's Harvest the Nether)
+has 25 definitions. Its quartz armor and tools, whose `QUARTZ` materials fell
+back to generic gear, sound like diamond gear, and the quartz ingot uses metal.
+Ignis fruit and marrow berries use the fruit contact, blood leaf, leaves and
+saplings rustle like leaves, flesh root, weevils and their soft eggs use the meat
+cue, seeds rustle as dust, scrambled weevil egg sounds like dry food and the
+Nether bed like cloth.
 
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch

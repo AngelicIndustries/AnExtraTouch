@@ -23575,6 +23575,231 @@
       }
     ]
   },
+  "item.pickup.fether.quartz_ingot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.quartz_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.quartz_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.quartz_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.quartz_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.quartz_axe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.quartz_hoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.quartz_pickaxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.quartz_shovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.quartz_sword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.ignis_fruit": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.marrow_berry": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.blood_leaf": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.nether_leaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.nether_sapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.flesh_root": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.cooked_weevil": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.blood_leaf_seeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.flesh_root_seeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.marrow_berry_seeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.glow_flower_seeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.weevil": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.weevil_egg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.scrambled_weevil_egg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.fether.nether_bed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
   "item.category.paper_bag": {
     "category": "player",
     "sounds": [

@@ -44,7 +44,9 @@ public final class InteractionCues {
             "candleberry",
             "tomato",
             "bellpepper",
-            "chilipepper"));
+            "chilipepper",
+            "marrowberry",
+            "ignisfruit"));
     /** Torn off like lettuce. */
     private static final Set<String> LEAFY = new HashSet<>(
         Arrays.asList(
@@ -60,7 +62,8 @@ public final class InteractionCues {
             "curryleaf",
             "tealeaf",
             "seaweed",
-            "leafygarden"));
+            "leafygarden",
+            "bloodleaf"));
 
     public enum Cue {
 
@@ -162,13 +165,18 @@ public final class InteractionCues {
         return crop(registryName);
     }
 
-    /** HarvestCraft's crop blocks are named {@code pam<crop>Crop}; gardens and vanilla crops keep their own names. */
+    /**
+     * HarvestCraft's crop blocks are named {@code pam<crop>Crop} and Fether's {@code <crop>_crop}; gardens, fruit and
+     * vanilla crops keep their own names.
+     */
     public static Cue crop(String registryName) {
         if (registryName == null) return Cue.HARVEST_CROP;
         String crop = registryName.substring(registryName.indexOf(':') + 1);
         if (crop.startsWith("pam")) crop = crop.substring(3);
         if (crop.endsWith("Crop")) crop = crop.substring(0, crop.length() - 4);
         crop = crop.toLowerCase(Locale.ROOT);
+        if (crop.endsWith("_crop")) crop = crop.substring(0, crop.length() - 5);
+        crop = crop.replace("_", "");
         if (FRUIT.contains(crop)) return Cue.HARVEST;
         if (GRAINS.contains(crop)) return Cue.HARVEST_GRAIN;
         return LEAFY.contains(crop) ? Cue.HARVEST_LEAFY : Cue.HARVEST_CROP;
