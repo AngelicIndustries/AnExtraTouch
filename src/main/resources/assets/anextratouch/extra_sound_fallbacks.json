@@ -72,5 +72,8 @@
   "minecraft:block.wooden_trapdoor.close": "minecraft:random.door_close",
   "minecraft:block.copper_door.open": "minecraft:random.door_open",
   "minecraft:block.copper_door.close": "minecraft:random.door_close",
-  "minecraft:entity.witch.throw": "minecraft:random.bow"
+  "minecraft:entity.witch.throw": "minecraft:random.bow",
+  "minecraft:block.lever.click": "minecraft:random.click",
+  "minecraft:entity.silverfish.step": "minecraft:mob.silverfish.step",
+  "minecraft:entity.armadillo.scute_drop": "minecraft:step.stone"
 }

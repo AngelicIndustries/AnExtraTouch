@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 13 - Twilight Forest** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure and Fether are accepted.
+**Next: 14 - Uralte Zauber** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure, Fether and Twilight Forest are accepted.
 
 ## Scope and workflow
 
@@ -32,7 +32,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 10 | Netherlicious | Accepted | Fungi, ingredients, meat, dyes, gear and Nether materials | Custom furnace, beacon and workbench actions |
 | 11 | Aether Legacy Departure | Accepted | Eggs, petals, amber, darts, food, accessories, tools and armor | Accessory pages, lore/book controls and special crafting containers |
 | 12 | Fether | Accepted | Nether crops and food (GTNH's port of Pam's Harvest the Nether): fruit, seeds, meals and plant blocks | Right-click crop harvesting, like HarvestCraft's |
-| 13 | Twilight Forest | Queued | Loot, food, maps, charms, tools, armor and specialty containers | Uncrafting-table interactions and map/book behavior |
+| 13 | Twilight Forest | Accepted | Loot, food, maps, charms, tools, armor and specialty containers | Uncrafting-table interactions and map/book behavior |
 | 14 | Uralte Zauber | Queued | Wands, spell materials, charms, crystals, bottles and equipment | Spell/book selection and custom inventory controls; avoid native spell audio |
 | 15 | Mob Rewind | Queued | Mob drops, food, shells, teeth, eggs, equipment and special items | Inspect actual custom item controls; do not infer from localization alone |
 | 16 | Mo' Creatures Legacy | Queued | Amulets, capture items, saddles, food, materials, weapons and armor | Pet/chest/name interfaces and capture/release feedback |
@@ -101,7 +101,7 @@ Use the installed jar filename, not a guessed upstream version. Some embedded mc
 | 10 | `netherlicious-3.2.8.jar` |
 | 11 | `Aether.Legacy.Departure.Snapshot.26w35a.jar` |
 | 12 | `fether-2.1.0.jar` |
-| 13 | `TwilightForest-2.7.45.jar` |
+| 13 | `TwilightForest-2.8.0.jar` |
 | 14 | `uraltezauber-2515978-master+251597899a-dirty.jar` |
 | 15 | `mobrewind-93305cd-master+93305cdca1-dirty.jar` |
 | 16 | `MoCreatures-68a0be5-snapshot.jar` |
@@ -671,4 +671,63 @@ in development). All under `extraModInteractions` unless noted.
 - Past Footsteps: the pack's map covers all 12 Fether blocks. No change.
 - jack's in-game check, 2026-11-12: items (after the quartz and weevil
   changes) and all harvest cues work. Accepted.
+
+## Twilight Forest review - 2026-11-12
+
+- Source: the pack's `TwilightForest-2.8.0.jar` (decompiled `TFItems`,
+  `TFBlocks`, blocks and items) and its item textures. Registry names come
+  from unlocalized names: `TwilightForest:item.<name>` and
+  `TwilightForest:tile.<name>`.
+- 119 items; 112 mapped (see EXTRA_SOUNDS.md). Every TF armor and tool set
+  uses a custom material, which the classifier treated as generic gear.
+  Bows, the minotaur axe, the mazebreaker pick and trophies keep the
+  classifier's cue.
+- Blocks: TF trapdoors extend `BlockTrapDoor` and set no sound, so they fell
+  to stone (now wood); critter blocks set none either (now meat); the
+  firefly jar steps like wood (now glass). Leaves, saplings, plants and hedges
+  follow BOP's foliage. Aurora bricks (packed-ice material, no sound) fall to
+  stone, which is also how vanilla ice steps in 1.7.10; left alone.
+- Interaction: the ice bomb used the snowball's low bow release (now the
+  witch throw, `itemThrowSoundsEnabled`). Experiment 115 is its own cake
+  block with a private `eatCake`, eaten silently; it now gets AET's cake
+  eating sound and crumbs. Doors, the castle door, tower devices and trophies
+  play their own sounds; the uncrafting table and cinder furnace open screens.
+  Magic log cores (time, transformation, miner's, sorting) toggled on and off
+  silently, and sneak-using a critter put it on your head silently; per jack
+  both get cues.
+- jack's check: everything but the naga armor works. The turtle gear sound
+  (modern `item.armor.equip_turtle`) sounded meaty. From
+  `/tmp/aet-tf-sounds/index.html` jack picked NG2 (armadillo scute armor, now
+  also the naga scale), CO1 (lever click, on pitch 0.6, off 0.5) and CT3
+  (silverfish step, volume 0.5, pitch 1.4). The lever uses the modern event
+  because `rhapsodia-replacements.zip` also replaces `random/click.ogg`.
+- jack: a single naga scale should not sound like armor (now NG4, the
+  armadillo scute drop), and critters also played an armor equip sound: an
+  unknown item in an armor slot falls to `armorDefaultCategory` (heavy). AET
+  now has a built-in `TwilightForest:item.critter;none` override, below the
+  configured overrides.
+- Past Footsteps: the pack's map has 111 TF keys and covers every block except
+  stairs and `tile.CastleUnlock` (the castle's lock block, stone fallback).
+- jack: equipping armor by mouse sounded different from shift-click. A sound
+  trace showed a mouse placement played the item's pickup cue with AET's
+  armor equip sound, while a creative shift-click played the equip sound with
+  `item.delete_partial`: AET read a shift-click that empties its slot as a
+  deletion. Per jack, a click that changes an armor slot now plays only the
+  equip sound (while `armorSoundsEnabled`), and a creative shift-click counts
+  as a deletion only when the item leaves the container and inventory. Naga
+  armor gets a built-in `light` armor category (was the default heavy).
+- jack: the equip sound alone was too quiet; `armorSoundVolume` was 0.3. Per
+  jack it defaults to 1.0 (modern's equip volume), also in the pack's
+  `config/anextratouch.cfg` (packwiz index refreshed, `checkIndex` passes).
+- Still quiet for naga: AET plays equips through `armor.<category>_walk`, and
+  the light category uses AET's own leather rustle recordings (peaks -21 to
+  -26 dB, about 10 dB under the others). The pack's `aa-sound-swaps.zip`
+  already swaps medium, heavy and crystal to modern equip sounds; it now also
+  swaps `armor.light_walk` to modern `item.armor.equip_leather` (pack index
+  refreshed; the run folder's copy updated too).
+- Still quieter than inventory clicks: those play flat (no attenuation), the
+  equip played positionally at the player's feet, through distance falloff
+  and Sound Physics. The local player's equips now play flat.
+- jack's in-game check: equips now sit level with the inventory sounds, the
+  scale, critter and core cues work. Twilight Forest accepted.
 

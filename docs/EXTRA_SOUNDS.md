@@ -25,6 +25,8 @@ UI and inventory sounds. Group settings do not change AET's existing sounds.
 Switching Baubles inventory pages or opening/returning from NEI recipe views does
 not play extra screen sounds or restart the GUI animation.
 Potion state is baselined on joining and respawning, avoiding a burst of fake changes.
+Clicking armor into or out of an armor slot, by mouse or shift-click, plays only
+the armor equip sound while armor sounds are enabled.
 Inventory sounds follow successful local changes; server-side rejection cannot be
 predicted by a client-only mod. Block interaction cues likewise follow the local attempt.
 
@@ -275,6 +277,25 @@ Ignis fruit and marrow berries use the fruit contact, blood leaf, leaves and
 saplings rustle like leaves, flesh root, weevils and their soft eggs use the meat
 cue, seeds rustle as dust, scrambled weevil egg sounds like dry food and the
 Nether bed like cloth.
+
+Twilight Forest 2.8.0 has 133 definitions. Every armor and tool set uses its own
+material, which fell back to generic gear: naga armor sounds like armadillo
+scute armor and a single naga scale like a dropped scute,
+ironwood, knightmetal and phantom gear like iron, fiery gear like netherite,
+steeleaf, yeti and arctic gear like leather, giant tools like stone and the ice
+and glass swords like diamond; scepters sound wooden and the block and chain like
+chain. Charms and the cube talisman use the amulet clink and the knightmetal ring
+the ring. Maps sound like paper, meat, venison, meef, hydra chops, critters and
+the moonworm queen like meat, feathers, beans, powders and map foci like dust,
+fiery blood and tears like full bottles, and Experiment 115 like bread. Wooden
+trapdoors, which set no sound and fell back to stone, sound like wood, the
+firefly jar like glass, and leaves, saplings, plants and hedges like BOP's
+foliage. Bows, the minotaur axe, the mazebreaker and trophies keep the
+classifier's cue. The ice bomb throws like a snowball, and Experiment 115 gets
+the cake eating sound and crumbs (`cakeEatingParticlesEnabled`). Its magic log
+cores (timewood, transformation, miner's, sorting) click like a lever when they
+switch on or off, and a firefly, cicada or moonworm skitters onto your head when
+sneak-used (`extraModInteractions`; server-detected like the other cues).
 
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch

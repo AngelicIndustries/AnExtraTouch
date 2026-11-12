@@ -53,7 +53,7 @@ public class Config {
 
     // armor
     public static boolean armorSoundsEnabled = true;
-    public static float armorSoundVolume = 0.3f;
+    public static float armorSoundVolume = 1.0f;
     public static String armorDefaultCategory = "heavy";
     public static String[] armorCategoryOverrides = { "etfuturum:elytra;elytra" };
     // EFR armorEquipCustomRules, translated to AET equip categories.
@@ -554,7 +554,7 @@ public class Config {
                 "itemThrowSoundsEnabled",
                 Categories.itemSounds,
                 true,
-                "Thrown splash and lingering potions, snowballs, eggs, ender pearls and bottles o' enchanting play modern Minecraft's witch potion throw instead of the very low bow release vanilla borrows, which resource packs replacing the bow sound also change. The side that throws decides: in multiplayer, the server's setting is what other players hear.");
+                "Thrown splash and lingering potions, snowballs, eggs, ender pearls, bottles o' enchanting and Twilight Forest's ice bombs play modern Minecraft's witch potion throw instead of the very low bow release vanilla borrows, which resource packs replacing the bow sound also change. The side that throws decides: in multiplayer, the server's setting is what other players hear.");
             itemSoundsForOtherEntities = config.getBoolean(
                 "itemSoundsForOtherEntities",
                 Categories.itemSounds,
@@ -1463,7 +1463,7 @@ public class Config {
                 "cakeEatingParticlesEnabled",
                 Categories.misc,
                 cakeEatingParticlesEnabled,
-                "Enable Particular-style eating sound and crumbs when taking a bite of cake.");
+                "Enable Particular-style eating sound and crumbs when taking a bite of cake, including Twilight Forest's Experiment 115.");
             blizzSnowTrailEnabled = config.getBoolean(
                 "blizzSnowTrailEnabled",
                 Categories.misc,

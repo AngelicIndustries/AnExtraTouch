@@ -83,6 +83,14 @@ public final class ExtraSounds {
         at("entity.poof", entity.posX, entity.posY, entity.posZ, 0.7F, pitch);
     }
 
+    /** Plays an event flat, like inventory cues: no distance falloff and no positional processing. */
+    public static void flat(ResourceLocation event, float volume, float pitch) {
+        if (volume <= 0) return;
+        Minecraft.getMinecraft()
+            .getSoundHandler()
+            .playSound(new UiSound(event, volume, pitch));
+    }
+
     static final class UiSound extends PositionedSoundRecord {
 
         UiSound(ResourceLocation event, float volume, float pitch) {

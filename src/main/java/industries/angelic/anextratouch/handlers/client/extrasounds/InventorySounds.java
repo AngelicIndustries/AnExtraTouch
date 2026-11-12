@@ -51,6 +51,8 @@ public final class InventorySounds {
     private final int index, button, mode;
     private final boolean creative, palette, trash;
     private final boolean hadInventory;
+    private final ItemStack[] armor = new ItemStack[4];
+    private final int owned;
 
     public static InventorySounds begin(EntityPlayer player, Container container, Slot slot, int index, int button,
         int mode, boolean creative, boolean palette, boolean trash) {
@@ -76,6 +78,8 @@ public final class InventorySounds {
         for (ItemStack stack : inventory.mainInventory) any |= stack != null;
         for (ItemStack stack : inventory.armorInventory) any |= stack != null;
         hadInventory = any;
+        for (int i = 0; i < armor.length; i++) armor[i] = copy(inventory.armorInventory[i]);
+        owned = owned(clicked);
         for (Object value : container.inventorySlots) contents.add(copy(((Slot) value).getStack()));
     }
 
@@ -128,10 +132,15 @@ public final class InventorySounds {
         if (mode == 3) {
             return Config.extraCreativeActions && after != null ? new Cue("item.clone", null, 1) : null;
         }
-        if (creative && (palette && cursor != null && count(after) < count(cursor)
-            || mode == 1 && !palette && clicked != null && (slot == null || slot.getStack() == null))) {
+        // A creative shift-click deletes from a hotbar under a palette tab, but moves within the inventory tab.
+        if (creative && (palette && cursor != null && count(after) < count(cursor) || mode == 1 && !palette
+            && clicked != null
+            && (slot == null || slot.getStack() == null)
+            && owned(clicked) < owned)) {
             return Config.extraCreativeActions ? new Cue("item.delete_partial", null, 1) : null;
         }
+        // Putting armor on or taking it off plays the equip sound alone, as a shift-click does.
+        if (Config.armorSoundsEnabled && armorChanged()) return null;
         if (!Config.extraInventoryClicks) return null;
         // The completed drag places the cursor's item, even when it empties the cursor.
         if (mode == 5) return cursor == null ? null : new Cue(null, cursor, 0.9F);
@@ -164,6 +173,26 @@ public final class InventorySounds {
             this.item = item;
             this.pitch = pitch;
         }
+    }
+
+    boolean armorChanged() {
+        for (int i = 0; i < armor.length; i++)
+            if (!ItemStack.areItemStacksEqual(armor[i], inventory.armorInventory[i])) return true;
+        return false;
+    }
+
+    /** How many of this item the open container and the player hold; a move keeps the total, a deletion lowers it. */
+    private int owned(ItemStack item) {
+        if (item == null) return 0;
+        int total = 0;
+        for (Object slot : container.inventorySlots) total += matching(((Slot) slot).getStack(), item);
+        for (ItemStack stack : inventory.mainInventory) total += matching(stack, item);
+        for (ItemStack stack : inventory.armorInventory) total += matching(stack, item);
+        return total;
+    }
+
+    private static int matching(ItemStack stack, ItemStack item) {
+        return stack != null && sameItem(stack, item) ? stack.stackSize : 0;
     }
 
     private static boolean sameItem(ItemStack a, ItemStack b) {

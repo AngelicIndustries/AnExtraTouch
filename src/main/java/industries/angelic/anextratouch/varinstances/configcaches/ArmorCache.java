@@ -55,6 +55,11 @@ public class ArmorCache {
     void populateSoundRules(String[] overrides, String[] names) {
         armorCategoryOverrideMap.clear();
         armorNameRules.clear();
+        // Built-in defaults; configured overrides still win. Twilight Forest critters worn on the head play their own
+        // pickup cue, and naga scale armor is light, not the default heavy.
+        armorCategoryOverrideMap.put("TwilightForest:item.critter", "none");
+        armorCategoryOverrideMap.put("TwilightForest:item.plateNaga", "light");
+        armorCategoryOverrideMap.put("TwilightForest:item.legsNaga", "light");
         for (String entry : overrides) {
             String[] parts = entry.split(";", -1);
             if (parts.length != 2) {

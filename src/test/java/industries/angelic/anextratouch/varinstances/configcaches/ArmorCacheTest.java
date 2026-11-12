@@ -37,6 +37,20 @@ public class ArmorCacheTest {
     }
 
     @Test
+    public void twilightForestCrittersOnTheHeadStaySilentUnlessConfigured() throws Exception {
+        Item critter = new Item().setUnlocalizedName("critter");
+        Method register = Item.itemRegistry.getClass()
+            .getDeclaredMethod("addObjectRaw", int.class, String.class, Object.class);
+        register.setAccessible(true);
+        register.invoke(Item.itemRegistry, 31996, "TwilightForest:item.critter", critter);
+        ArmorCache cache = new ArmorCache();
+        cache.populateSoundRules(new String[0], new String[0]);
+        assertEquals("none", cache.resolveArmorCategory(new ItemStack(critter)));
+        cache.populateSoundRules(new String[] { "TwilightForest:item.critter;light" }, new String[0]);
+        assertEquals("light", cache.resolveArmorCategory(new ItemStack(critter)));
+    }
+
+    @Test
     public void vanillaMaterialsWinOverNameRules() {
         ArmorCache cache = defaults();
         ItemArmor.ArmorMaterial[] materials = { ItemArmor.ArmorMaterial.CLOTH, ItemArmor.ArmorMaterial.CHAIN,

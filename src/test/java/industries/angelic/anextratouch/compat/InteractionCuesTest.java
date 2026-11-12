@@ -65,6 +65,17 @@ public class InteractionCuesTest {
     }
 
     @Test
+    public void magicLogCoresAreOffWhileTheirOrientationHoldsEight() {
+        for (int wood = 0; wood < 4; wood++) {
+            assertEquals(InteractionCues.Cue.CORE_ON, InteractionCues.core(wood));
+            assertEquals(InteractionCues.Cue.CORE_OFF, InteractionCues.core(wood | 12));
+        }
+        // The time core's in-between states.
+        assertEquals(InteractionCues.Cue.CORE_ON, InteractionCues.core(4));
+        assertEquals(InteractionCues.Cue.CORE_OFF, InteractionCues.core(8));
+    }
+
+    @Test
     public void churningIsLowerAndVariesMore() throws Exception {
         JsonObject churn = events().getAsJsonObject("action.churn")
             .getAsJsonArray("sounds")

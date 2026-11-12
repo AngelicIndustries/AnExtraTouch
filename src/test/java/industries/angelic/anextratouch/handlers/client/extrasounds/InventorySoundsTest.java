@@ -186,6 +186,49 @@ public class InventorySoundsTest {
     }
 
     @Test
+    public void creativeShiftClickDeletesOnlyWhenTheItemIsGone() {
+        boolean armorSounds = Config.armorSoundsEnabled;
+        try {
+            Config.armorSoundsEnabled = false;
+            slots.setInventorySlotContents(0, stack(1));
+            InventorySounds deleted = begin(0, 0, 1, true, false, false);
+            slots.setInventorySlotContents(0, null);
+            assertEquals("item.delete_partial", deleted.result().event);
+            // The inventory tab moves it instead, here into the main inventory.
+            slots.setInventorySlotContents(0, stack(1));
+            InventorySounds moved = begin(0, 0, 1, true, false, false);
+            slots.setInventorySlotContents(0, null);
+            player.setInventorySlotContents(5, stack(1));
+            assertNotEquals("item.delete_partial", moved.result().event);
+        } finally {
+            Config.armorSoundsEnabled = armorSounds;
+        }
+    }
+
+    @Test
+    public void armorSlotChangesLeaveTheSoundToTheEquipSound() {
+        boolean armorSounds = Config.armorSoundsEnabled;
+        try {
+            Config.armorSoundsEnabled = true;
+            player.setItemStack(stack(1));
+            InventorySounds equip = begin(0, 0, 0, false, false, false);
+            player.armorInventory[2] = player.getItemStack();
+            player.setItemStack(null);
+            assertNull(equip.result());
+            // Without armor sounds, the click keeps its own cue.
+            Config.armorSoundsEnabled = false;
+            player.setItemStack(player.armorInventory[2]);
+            player.armorInventory[2] = null;
+            InventorySounds again = begin(0, 0, 0, false, false, false);
+            player.armorInventory[2] = player.getItemStack();
+            player.setItemStack(null);
+            assertEquals(0.9, again.result().pitch, 0.00001);
+        } finally {
+            Config.armorSoundsEnabled = armorSounds;
+        }
+    }
+
+    @Test
     public void creativeDeleteAllIsPacketOnlyAndIndependentOfClicks() {
         player.setInventorySlotContents(0, stack(10));
         Config.extraInventoryClicks = false;

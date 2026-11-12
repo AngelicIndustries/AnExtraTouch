@@ -23800,6 +23800,1205 @@
       }
     ]
   },
+  "item.pickup.TwilightForest.item.plateNaga": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.legsNaga": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.ironwoodHelm": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.ironwoodPlate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.ironwoodLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.ironwoodBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.ironwoodSword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.ironwoodShovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.ironwoodPick": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.ironwoodAxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.ironwoodHoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.knightlyHelm": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.knightlyPlate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.knightlyLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.knightlyBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.knightlySword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.knightlyPick": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.knightlyAxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.phantomHelm": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.phantomPlate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.fieryHelm": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.fieryPlate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.fieryLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.fieryBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.fierySword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.fieryPick": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.netherite",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.steeleafHelm": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.steeleafPlate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.steeleafLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.steeleafBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.steeleafSword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.steeleafShovel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.steeleafPick": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.steeleafAxe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.steeleafHoe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.yetiHelm": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.yetiPlate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.yetiLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.yetiBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.arcticHelm": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.arcticPlate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.arcticLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.arcticBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.giantPick": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.giantSword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.iceSword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.glassSword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.scepterTwilight": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.scepterLifeDrain": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.scepterZombie": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.chainBlock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.oreMagnet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.oreMeter": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.lampOfCinders": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.ironwoodIngot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.fieryIngot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.knightMetal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.carminite": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.crumbleHorn": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.peacockFan": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.transformPowder": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.borerEssence": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.magicBeans": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.magicMapFocus": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.mazeMapFocus": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.tfFeather": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.moonwormQueen": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.critter": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.venisonRaw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.venisonCooked": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.meefRaw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.meefSteak": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.hydraChop": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.cubeOfAnnihilation": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.heart_of_the_sea",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.iceBomb": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.snowball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.towerKey": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.keys",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.magicMap": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.mazeMap": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.oreMap": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.emptyMagicMap": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.emptyMazeMap": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.emptyOreMap": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.charmOfLife1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.charmOfLife2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.charmOfKeeping1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.charmOfKeeping2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.charmOfKeeping3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.cubeTalisman": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.knightmetalRing": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.ring",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.nagaScale": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:entity.armadillo.scute_drop",
+        "type": "event",
+        "volume": 0.8,
+        "pitch": 1.2
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.liveRoot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.stick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.ironwoodRaw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.loose_metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.shardCluster": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.loose_metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.steeleafIngot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.torchberries": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.fieryBlood": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.fieryTears": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.armorShards": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.alphaFur": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.arcticFur": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.meefStroganoff": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.mazeWafer": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.experiment115": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.doorTwilight": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.doorCanopy": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.doorMangrove": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.doorDarkwood": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.doorTime": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.doorTrans": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.doorMine": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.doorSort": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.item.tfspawnegg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFLeaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFLeaves3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.DarkLeaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFMagicLeaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.GiantLeaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFSapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFPlant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFHedge": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFThornRose": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFTrapDoorTwilight": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFTrapDoorCanopy": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFTrapDoorMangrove": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFTrapDoorDarkwood": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFTrapDoorTime": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFTrapDoorTrans": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFTrapDoorMine": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFTrapDoorSort": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFFirefly": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFCicada": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFMoonworm": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.TwilightForest.tile.TFFireflyJar": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
   "item.category.paper_bag": {
     "category": "player",
     "sounds": [
@@ -24062,6 +25261,39 @@
         "name": "anextratouch:action/lunchbag/crumple",
         "volume": 1.0,
         "pitch": 0.9
+      }
+    ]
+  },
+  "action.core.on": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.lever.click",
+        "type": "event",
+        "volume": 0.5,
+        "pitch": 0.6
+      }
+    ]
+  },
+  "action.core.off": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.lever.click",
+        "type": "event",
+        "volume": 0.5,
+        "pitch": 0.5
+      }
+    ]
+  },
+  "action.critter.pickup": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:entity.silverfish.step",
+        "type": "event",
+        "volume": 0.5,
+        "pitch": 1.4
       }
     ]
   },

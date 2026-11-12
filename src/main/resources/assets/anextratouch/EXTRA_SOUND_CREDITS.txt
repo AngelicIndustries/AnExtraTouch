@@ -44,6 +44,7 @@ minecraft:block.iron_trapdoor.close -> minecraft:random.door_close
 minecraft:block.iron_trapdoor.open -> minecraft:random.door_open
 minecraft:block.ladder.step -> minecraft:step.ladder
 minecraft:block.lantern.place -> anextratouch:armor.medium_walk
+minecraft:block.lever.click -> minecraft:random.click
 minecraft:block.nether_bricks.place -> minecraft:dig.stone
 minecraft:block.nether_gold_ore.place -> minecraft:dig.stone
 minecraft:block.note_block.chime -> minecraft:note.harp
@@ -64,10 +65,12 @@ minecraft:block.wood.place -> minecraft:dig.wood
 minecraft:block.wooden_trapdoor.close -> minecraft:random.door_close
 minecraft:block.wooden_trapdoor.open -> minecraft:random.door_open
 minecraft:block.wool.place -> minecraft:dig.cloth
+minecraft:entity.armadillo.scute_drop -> minecraft:step.stone
 minecraft:entity.armor_stand.break -> minecraft:dig.wood
 minecraft:entity.cod.flop -> minecraft:mob.slime.small
 minecraft:entity.fish.swim -> minecraft:random.splash
 minecraft:entity.item_frame.place -> minecraft:dig.wood
+minecraft:entity.silverfish.step -> minecraft:mob.silverfish.step
 minecraft:entity.witch.throw -> minecraft:random.bow
 minecraft:item.armor.equip_chain -> anextratouch:armor.medium_walk
 minecraft:item.armor.equip_copper -> anextratouch:armor.medium_walk

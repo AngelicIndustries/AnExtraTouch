@@ -40,6 +40,9 @@ heavy; turtle, generic, and elytra fall back to AET light. Resource packs can
 replace the AET events as usual. Existing light/medium/heavy/crystal recordings,
 entity whitelist, client-side equip/unequip detection, and armor volume are unchanged.
 The Extra Sounds group toggle and volume do not control armor equip playback.
+Your own equips play flat, like the inventory cues, at `armorSoundVolume`
+(default 1.0); other players' and mobs' equips stay positional. Clicking armor
+into or out of an armor slot plays only the equip sound.
 
 ## Pack examples with default settings
 

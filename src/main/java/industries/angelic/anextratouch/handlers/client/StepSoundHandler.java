@@ -5,12 +5,14 @@ import java.util.WeakHashMap;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
 import industries.angelic.anextratouch.AnExtraTouch;
 import industries.angelic.anextratouch.Config;
 import industries.angelic.anextratouch.compat.EtFuturumElytraCompat;
+import industries.angelic.anextratouch.handlers.client.extrasounds.ExtraSounds;
 import industries.angelic.anextratouch.varinstances.configcaches.ArmorCache;
 
 /** Detects armor equip and unequip changes on the client. */
@@ -108,6 +110,11 @@ public class StepSoundHandler {
         String soundName = getEquipSoundName(category);
         if (soundName == null) return;
 
+        // Your own equip plays like the inventory clicks around it; positional playback at your feet came out quieter.
+        if (entity == Minecraft.getMinecraft().thePlayer) {
+            ExtraSounds.flat(new ResourceLocation(soundName), Config.armorSoundVolume, 1.0f);
+            return;
+        }
         Minecraft.getMinecraft().theWorld.playSound(
             entity.posX,
             entity.posY - entity.yOffset,

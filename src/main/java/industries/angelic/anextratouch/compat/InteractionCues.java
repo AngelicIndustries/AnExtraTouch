@@ -91,7 +91,12 @@ public final class InteractionCues {
         LUNCHBOX_OPEN("action.lunchbox.open"),
         LUNCHBOX_CLOSE("action.lunchbox.close"),
         LUNCHBAG_OPEN("action.lunchbag.open"),
-        LUNCHBAG_CLOSE("action.lunchbag.close");
+        LUNCHBAG_CLOSE("action.lunchbag.close"),
+        /** Twilight Forest's magic log cores switching on or off. */
+        CORE_ON("action.core.on", 0.1F),
+        CORE_OFF("action.core.off", 0.1F),
+        /** A Twilight Forest critter going onto a player's head. */
+        CRITTER("action.critter.pickup");
 
         public final String event;
         /** Random pitch range around the event's own pitch. */
@@ -151,6 +156,11 @@ public final class InteractionCues {
 
     static boolean isBucket(ItemStack held) {
         return held != null && (held.getItem() == Items.bucket || FluidContainerRegistry.isBucket(held));
+    }
+
+    /** Twilight Forest's magic log cores are off while their orientation bits hold 8 (4 and 8 are the time core's). */
+    public static Cue core(int meta) {
+        return (meta & 8) != 0 ? Cue.CORE_OFF : Cue.CORE_ON;
     }
 
     /** Right-click harvesting changes the plant it was used on, or removes it. */

@@ -16,13 +16,17 @@ public final class CakeEatingEffect {
     private CakeEatingEffect() {}
 
     public static void spawn(EntityPlayer player) {
-        if (player == null || player.worldObj == null || !player.worldObj.isRemote) {
+        spawn(player, new ItemStack(Items.cake));
+    }
+
+    /** The crumbs show {@code cake}'s icon, for cakes other than vanilla's. */
+    public static void spawn(EntityPlayer player, ItemStack cake) {
+        if (player == null || player.worldObj == null || !player.worldObj.isRemote || cake == null) {
             return;
         }
 
         World world = player.worldObj;
         Random random = player.getRNG();
-        ItemStack cake = new ItemStack(Items.cake);
         world.playSound(
             player.posX,
             player.posY - (double) player.yOffset,
