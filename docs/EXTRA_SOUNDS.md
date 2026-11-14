@@ -280,7 +280,7 @@ Nether bed like cloth.
 
 Twilight Forest 2.8.0 has 133 definitions. Every armor and tool set uses its own
 material, which fell back to generic gear: naga armor sounds like armadillo
-scute armor and a single naga scale like a dropped scute,
+scute armor and a single naga scale like a small wooden piece,
 ironwood, knightmetal and phantom gear like iron, fiery gear like netherite,
 steeleaf, yeti and arctic gear like leather, giant tools like stone and the ice
 and glass swords like diamond; scepters sound wooden and the block and chain like
@@ -296,6 +296,17 @@ the cake eating sound and crumbs (`cakeEatingParticlesEnabled`). Its magic log
 cores (timewood, transformation, miner's, sorting) click like a lever when they
 switch on or off, and a firefly, cicada or moonworm skitters onto your head when
 sneak-used (`extraModInteractions`; server-detected like the other cues).
+
+Mo' Creatures Legacy (the pack's `973dfd0` build) has 116 definitions. Reptile
+and scorpion gear, whose materials are custom (scorpion stings even report gold),
+sound like armadillo scute armor; fur and hide gear, the whip, saddle and
+elephant harness like leather; the bo and staffs like wood, nunchaku like chain,
+and the shark sword, claws and unicorn horn like bone. Pet, horse and fairy
+amulets and the medallion use the amulet clink, chitin and shark teeth the
+light small-piece click (CC0, Robo9418) shared with Twilight Forest's naga scale, essences and filled fishbowls full
+bottles, hearts and meats the meat cue, scrolls paper, and the elephant chest,
+howdah, platform, kitty bed and litter box wood. The katana, sai, tusks and
+record keep the classifier's tier cues; achievement icons are not obtainable.
 
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch

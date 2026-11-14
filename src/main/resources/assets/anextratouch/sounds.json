@@ -24605,10 +24605,8 @@
     "category": "player",
     "sounds": [
       {
-        "name": "minecraft:entity.armadillo.scute_drop",
-        "type": "event",
-        "volume": 0.8,
-        "pitch": 1.2
+        "name": "anextratouch:item.category.piece",
+        "type": "event"
       }
     ]
   },
@@ -24999,6 +24997,1050 @@
       }
     ]
   },
+  "item.pickup.MoCreatures.reptilehelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.reptileplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.reptilelegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.reptileboots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorphelmetdirt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpplatedirt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorplegsdirt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpbootsdirt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorphelmetfrost": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpplatefrost": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorplegsfrost": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpbootsfrost": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorphelmetnether": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpplatenether": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorplegsnether": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpbootsnether": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorphelmetcave": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpplatecave": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorplegscave": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpbootscave": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpsworddirt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpswordfrost": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpswordnether": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpswordcave": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpstingdirt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpstingfrost": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpstingnether": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scorpstingcave": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.furchest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.furhelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.furlegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.furboots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.hidechest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.hidehelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.hidelegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.hideboots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.elephantharness": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.horsesaddle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.whip": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bo": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.staffportal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.staffteleport": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.nunchaku": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.silversword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.builderhammer": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.horsearmorcrystal": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.sharksword": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.sharkteeth": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.piece",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bigcatclaw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.unicornhorn": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.medallion": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.petamulet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.amuletbone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.amuletbonefull": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.amuletghost": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.amuletghostfull": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.amuletfairy": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.amuletfairyfull": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.amuletpegasus": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.amuletpegasusfull": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.woolball": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.elephantgarment": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.petfood": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.omelet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.food_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.reptilehide": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.fur": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.hide": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.key": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.keys",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.essencedarkness": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.essencefire": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.essenceundead": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.essencelight": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlwater": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlfish1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlfish2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlfish3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlfish4": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlfish5": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlfish6": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlfish7": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlfish8": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlfish9": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlfish10": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.bowlempty": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.heartdarkness": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.heartfire": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.heartundead": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.turtleraw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.ostrichraw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.ostrichcooked": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.turkeyraw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.turkeycooked": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.ratraw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.ratcooked": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.crabraw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.crabcooked": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.chitin": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.piece",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.chitinblack": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.piece",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.chitinfrost": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.piece",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.chitinnether": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.piece",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scrolloffreedom": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scrollofsale": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.scrollofowner": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.elephantchest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.elephanthowdah": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.mammothplatform": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.kittybed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.kittylitter": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.ratburger": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bread",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.turtlesoup": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bowl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.fishnet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.sugarlump": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.haystack": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.hay",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.mocegg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.MoCLeaves": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MoCreatures.MoCTallGrass": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
   "item.category.paper_bag": {
     "category": "player",
     "sounds": [
@@ -25015,6 +26057,15 @@
       {
         "name": "minecraft:entity.witch.throw",
         "type": "event"
+      }
+    ]
+  },
+  "item.category.piece": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item/piece/click",
+        "volume": 0.65
       }
     ]
   },

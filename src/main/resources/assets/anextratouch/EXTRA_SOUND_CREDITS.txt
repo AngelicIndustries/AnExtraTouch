@@ -65,7 +65,6 @@ minecraft:block.wood.place -> minecraft:dig.wood
 minecraft:block.wooden_trapdoor.close -> minecraft:random.door_close
 minecraft:block.wooden_trapdoor.open -> minecraft:random.door_open
 minecraft:block.wool.place -> minecraft:dig.cloth
-minecraft:entity.armadillo.scute_drop -> minecraft:step.stone
 minecraft:entity.armor_stand.break -> minecraft:dig.wood
 minecraft:entity.cod.flop -> minecraft:mob.slime.small
 minecraft:entity.fish.swim -> minecraft:random.splash
@@ -284,6 +283,16 @@ Changes: excerpts at 3.41-3.48 s (ring) and 2.48-2.63 s (amulet); mono, 44.1 kHz
 Playback volume 0.63. Picked from the ring audition page (JW21, JW18).
 SHA-256 item/jewelry/ring.ogg: d2ec9f16ae098013e19d95bd8d8fda6622257dd637e44af2f7e68113ac0f3556
 SHA-256 item/jewelry/amulet.ogg: f8bf0c583fd40f7c71f0a2dfa6d063a5e895f9805a3071acbad57624b709759f
+
+Small hard pieces (scales, chitin, teeth) use an excerpt from "Wooden Short Click!" by Robo9418:
+https://freesound.org/people/Robo9418/sounds/840321/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpt at 0.01-0.06 s; mono, 44.1 kHz; 120 Hz high-pass; 3 ms fade in / fade out over
+a third of the excerpt; peak normalized to -6 dB; Ogg Vorbis quality 6.
+Playback volume 0.65. Picked from the small piece audition page (SP8).
+SHA-256 item/piece/click.ogg: e957f83a2136a6f8de04671b73de2bfe8f3381f216426af30977415d66bda867
 
 Keyboard type/move/erase/cut/paste handling uses excerpts from
 "Single Key Press Sounds" by eklee, qubodup:

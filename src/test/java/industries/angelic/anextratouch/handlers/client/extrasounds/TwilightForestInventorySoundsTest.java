@@ -54,6 +54,7 @@ public class TwilightForestInventorySoundsTest {
         // Every Twilight Forest set uses its own material, which the classifier gave generic gear.
         // Per jack, naga scales sound dry like armadillo scutes, not the soft turtle shell.
         aliases("category.gear.armadillo", "item.plateNaga", "item.legsNaga");
+        aliases("category.piece", "item.nagaScale");
         aliases("category.gear.iron", "item.ironwoodPick", "item.knightlyPlate", "item.phantomHelm");
         aliases("category.gear.netherite", "item.fierySword", "item.fieryBoots");
         aliases("category.gear.leather", "item.steeleafAxe", "item.yetiPlate", "item.arcticBoots");

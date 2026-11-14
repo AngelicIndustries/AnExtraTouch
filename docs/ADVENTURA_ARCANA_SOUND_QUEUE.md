@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 14 - Uralte Zauber** (06 - Adventura Arcana Core and 07 - Biomic wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure, Fether and Twilight Forest are accepted.
+**Next: 17 - Wild Mobs** (06 - Adventura Arcana Core, 07 - Biomic, 14 - Uralte Zauber and 15 - Mob Rewind wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure, Fether, Twilight Forest and Mo' Creatures Legacy are accepted.
 
 ## Scope and workflow
 
@@ -35,7 +35,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 13 | Twilight Forest | Accepted | Loot, food, maps, charms, tools, armor and specialty containers | Uncrafting-table interactions and map/book behavior |
 | 14 | Uralte Zauber | Queued | Wands, spell materials, charms, crystals, bottles and equipment | Spell/book selection and custom inventory controls; avoid native spell audio |
 | 15 | Mob Rewind | Queued | Mob drops, food, shells, teeth, eggs, equipment and special items | Inspect actual custom item controls; do not infer from localization alone |
-| 16 | Mo' Creatures Legacy | Queued | Amulets, capture items, saddles, food, materials, weapons and armor | Pet/chest/name interfaces and capture/release feedback |
+| 16 | Mo' Creatures Legacy | Accepted | Amulets, capture items, saddles, food, materials, weapons and armor | Pet/chest/name interfaces and capture/release feedback |
 | 17 | Wild Mobs | Queued | Meat, fur, hides, gear and remaining drops | Primarily mappings |
 | 18 | Mowzie's Mobs | Queued | Seeds, masks, axe, helmet and other drops | Primarily mappings; preserve existing ability sounds |
 | 19 | Mutant Creatures | Queued | Shards, Chemical X, skeleton parts, equipment and special drops | Creeper-minion controls; preserve existing ability sounds |
@@ -104,7 +104,7 @@ Use the installed jar filename, not a guessed upstream version. Some embedded mc
 | 13 | `TwilightForest-2.8.0.jar` |
 | 14 | `uraltezauber-2515978-master+251597899a-dirty.jar` |
 | 15 | `mobrewind-93305cd-master+93305cdca1-dirty.jar` |
-| 16 | `MoCreatures-68a0be5-snapshot.jar` |
+| 16 | `MoCreatures-973dfd0-snapshot.jar` |
 | 17 | `WildMobs-1.7.10-1.5.3.jar` |
 | 18 | `MowziesMobs-1.2.99.jar` |
 | 19 | `MutantCreatures-0d9fca7-snapshot.jar` |
@@ -730,4 +730,35 @@ in development). All under `extraModInteractions` unless noted.
   and Sound Physics. The local player's equips now play flat.
 - jack's in-game check: equips now sit level with the inventory sounds, the
   scale, critter and core cues work. Twilight Forest accepted.
+
+## Mo' Creatures Legacy review - 2026-11-12
+
+- Source: jack's `mo-creatures-legacy` repo at `973dfd0`, the pack's build
+  (HEAD has since reworked pet amulets and pet persistence, not items).
+  Items register under their constructor names (`MoCreatures:<name>`).
+- 162 registrations; 116 definitions (see EXTRA_SOUNDS.md). Reptile and
+  scorpion armor and weapons use custom materials (stings claim gold); fur
+  and hide armor custom too. The 35 achievement icons are not obtainable.
+  The katana, sai, tusks and record keep the classifier's tier cues.
+  Added `item.category.scale` (the armadillo scute drop jack picked for the
+  naga scale), now shared by the naga scale and Mo' Creatures chitin.
+- Blocks (Wyvern Lair stone, grass, dirt, leaves, log, tall grass, planks)
+  set proper vanilla sounds. The pack's footstep map had no Mo' Creatures
+  entries; it now maps them like Past Footsteps' vanilla equivalents
+  (tall grass NOT_EMITTER with a brush foliage layer).
+- Interaction: horse amulets play `mocreatures:vanish` on capture and
+  `appearmagic` on release; pet amulets and fishnets were silent. Per jack the
+  fix goes into his fork: `MoCTools.captureInAmulet` plays `vanish` and
+  `MoCItemPetAmulet.onReleased` plays `appearmagic` (uncommitted there; it
+  reaches the pack with the next Mo' Creatures build). The whip and builder
+  hammer already sound.
+- jack's check: gear, food, blocks and footsteps work. The armadillo scute drop
+  (chitin and the naga scale) sounded like a pop, and the shark tooth needed
+  something lighter than bone. jack rejected the shell, nail and teeth
+  recordings; from a page of small wood and bone-like pieces
+  (`/tmp/aet-piece-sounds/index.html`) he picked SP8, Robo9418's CC0 "Wooden
+  Short Click!", for all three. It ships as `item.category.piece` (replacing
+  the short-lived `item.category.scale`).
+- jack's check: the small-piece click works for all three. Mo' Creatures
+  accepted (pet amulet sounds pending the next Mo' Creatures build).
 
