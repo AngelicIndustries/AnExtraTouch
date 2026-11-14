@@ -480,7 +480,7 @@ public class Config {
                 "extraModInteractions",
                 Categories.extraSounds,
                 true,
-                "Mod interactions that are otherwise silent: right-click harvesting (HarvestCraft, Biomes O' Plenty, Growthcraft), filling and emptying buckets and bottles at sinks, tanks, barrels and paddies, tilling salt grass, churning butter, kitchen doors, sinks and cooking, market purchases, drain and tank buttons, and lunch box lids. The server must also have An Extra Touch, except for kitchen doors.");
+                "Mod interactions that are otherwise silent: right-click harvesting (HarvestCraft, Biomes O' Plenty, Growthcraft), filling and emptying buckets and bottles at sinks, tanks, barrels and paddies, tilling salt grass, churning butter, kitchen doors, sinks and cooking, market purchases, drain and tank buttons, lunch box lids, Twilight Forest's magic log cores and critters, and Wild Mobs' creature buckets, bugs, magma plant seeds and mired bottles. The server must also have An Extra Touch, except for kitchen doors.");
             extraBookPages = config.getBoolean(
                 "extraBookPages",
                 Categories.extraSounds,
@@ -554,7 +554,7 @@ public class Config {
                 "itemThrowSoundsEnabled",
                 Categories.itemSounds,
                 true,
-                "Thrown splash and lingering potions, snowballs, eggs, ender pearls, bottles o' enchanting and Twilight Forest's ice bombs play modern Minecraft's witch potion throw instead of the very low bow release vanilla borrows, which resource packs replacing the bow sound also change. The side that throws decides: in multiplayer, the server's setting is what other players hear.");
+                "Thrown splash and lingering potions, snowballs, eggs, ender pearls, bottles o' enchanting, Twilight Forest's ice bombs and Wild Mobs' sea scorpion eggs play modern Minecraft's witch potion throw instead of the very low bow release vanilla borrows, which resource packs replacing the bow sound also change. The side that throws decides: in multiplayer, the server's setting is what other players hear.");
             itemSoundsForOtherEntities = config.getBoolean(
                 "itemSoundsForOtherEntities",
                 Categories.itemSounds,

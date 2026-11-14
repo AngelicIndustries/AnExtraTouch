@@ -1,6 +1,7 @@
 package industries.angelic.anextratouch.network.handler;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.audio.SoundEventAccessorComposite;
 
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
@@ -42,6 +43,13 @@ public class HandlerInteractionCue implements IMessageHandler<MessageInteraction
                 float pitch = 1 + ((float) Math.random() - 0.5F) * cue.spread;
                 AnExtraTouch.debug("Playing " + cue.event + " at pitch " + pitch);
                 ExtraSounds.at(cue.event, message.x + 0.5, message.y + 0.5, message.z + 0.5, 1, pitch);
+                // A companion event plays alongside, as the inventory accents do.
+                String accent = cue.event + ".accent";
+                SoundEventAccessorComposite companion = Minecraft.getMinecraft()
+                    .getSoundHandler()
+                    .getSound(ExtraSounds.id(accent));
+                if (companion != null && companion.func_148721_a() > 0)
+                    ExtraSounds.at(accent, message.x + 0.5, message.y + 0.5, message.z + 0.5, 1, pitch);
             });
         return null;
     }

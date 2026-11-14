@@ -308,6 +308,23 @@ bottles, hearts and meats the meat cue, scrolls paper, and the elephant chest,
 howdah, platform, kitty bed and litter box wood. The katana, sai, tusks and
 record keep the classifier's tier cues; achievement icons are not obtainable.
 
+Wild Mobs 1.5.3 has 69 definitions. Its items are all plain items, so even its
+buckets and armor fell back to the generic cue: bison leather and fur armor sound
+like leather, meats and infected flesh like meat, the caught butterfly and
+dragonfly like leaves, hides and fur like leather, creature buckets like water
+buckets (with the liquid accent), eggs like eggs, seeds and the bug net like dust,
+the mired bottle like BOP's pixie jar (an empty bottle with one of the mired's whispers, a little quieter and higher), the armadillo shell like the small-piece
+click, the slime and magma cream drops like slime balls and spawn eggs like
+vanilla's.
+Its leather, fur, bladder and armadillo shell blocks already sound right. The sea
+scorpion egg throws like an egg. Emptying a jellyfish or sea scorpion bucket
+plays modern Minecraft's fish bucket empty, letting a butterfly or dragonfly go a
+soft bat flutter, planting a magma plant seed modern crop planting, and
+uncorking a mired bottle a cork squeak and pop (CC0 excerpt from Luisa_Sanchez's
+"uncorking a wine") with a mired whisper, each where the creature appears
+(`extraModInteractions`). A cue event's `.accent` companion plays alongside it,
+as inventory accents do.
+
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch
 bag: a short crinkle excerpted from MichaelGillighan's CC0 "03 - Bolsa llena.wav"

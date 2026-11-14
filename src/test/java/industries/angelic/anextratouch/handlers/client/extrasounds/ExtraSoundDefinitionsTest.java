@@ -78,6 +78,36 @@ public class ExtraSoundDefinitionsTest {
     }
 
     @Test
+    public void otherNamespacesNameFilesByPathAndEventsByType() throws Exception {
+        JsonObject events;
+        try (InputStream stream = getClass().getResourceAsStream(ROOT + "sounds.json")) {
+            events = new JsonParser().parse(new InputStreamReader(stream, StandardCharsets.UTF_8))
+                .getAsJsonObject();
+        }
+        for (Map.Entry<String, JsonElement> event : events.entrySet()) {
+            for (JsonElement value : event.getValue()
+                .getAsJsonObject()
+                .getAsJsonArray("sounds")) {
+                JsonObject entry = value.isJsonObject() ? value.getAsJsonObject() : null;
+                String name = entry == null ? value.getAsString()
+                    : entry.get("name")
+                        .getAsString();
+                if (name.startsWith("anextratouch:")) continue;
+                boolean isEvent = entry != null && entry.has("type")
+                    && "event".equals(
+                        entry.get("type")
+                            .getAsString());
+                // A file outside AET is a path (minecraft:random/pop); a dotted name is an event that needs its type,
+                // or the game looks for a file named after it and plays nothing.
+                if (!isEvent) assertTrue(
+                    event.getKey() + " names " + name + " as a file",
+                    name.substring(name.indexOf(':') + 1)
+                        .contains("/"));
+            }
+        }
+    }
+
+    @Test
     public void everyModernDefaultHasAFallbackAndLocalFallbacksExist() throws Exception {
         JsonObject events, fallbacks;
         try (InputStream definitions = getClass().getResourceAsStream(ROOT + "sounds.json");

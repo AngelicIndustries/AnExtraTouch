@@ -144,6 +144,24 @@ public class InteractionCuesTest {
                 "block",
                 event.get("category")
                     .getAsString());
+            JsonObject accent = events.getAsJsonObject(cue.event + ".accent");
+            if (accent != null) assertEquals(
+                cue.event + ".accent",
+                "block",
+                accent.get("category")
+                    .getAsString());
         }
+    }
+
+    @Test
+    public void theMiredWhispersAsItsBottleIsUncorked() throws Exception {
+        JsonObject sound = events().getAsJsonObject(InteractionCues.Cue.MIRED.event + ".accent")
+            .getAsJsonArray("sounds")
+            .get(0)
+            .getAsJsonObject();
+        assertEquals(
+            "wildmobsmod:entity.mired.say",
+            sound.get("name")
+                .getAsString());
     }
 }

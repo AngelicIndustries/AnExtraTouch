@@ -10,6 +10,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import net.minecraft.block.Block;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Facing;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 
@@ -96,7 +97,15 @@ public final class InteractionCues {
         CORE_ON("action.core.on", 0.1F),
         CORE_OFF("action.core.off", 0.1F),
         /** A Twilight Forest critter going onto a player's head. */
-        CRITTER("action.critter.pickup");
+        CRITTER("action.critter.pickup"),
+        /** A creature let out of a bucket into water, like a modern fish bucket. */
+        BUCKET_RELEASE("action.bucket.release"),
+        /** A caught bug let go. */
+        BUG_RELEASE("action.bug.release"),
+        /** A seed planted as a creature or entity rather than a block. */
+        PLANT("action.plant"),
+        /** Wild Mobs' mired bottle uncorked to summon a mired. */
+        MIRED("action.mired.summon");
 
         public final String event;
         /** Random pitch range around the event's own pitch. */
@@ -118,6 +127,17 @@ public final class InteractionCues {
     }
 
     private InteractionCues() {}
+
+    /** At the block in front of the clicked face, where something used on a block appears. */
+    public static void sendOnFace(World world, int x, int y, int z, int side, Cue cue) {
+        if (side < 0 || side >= Facing.offsetsXForSide.length) send(world, x, y, z, cue);
+        else send(
+            world,
+            x + Facing.offsetsXForSide[side],
+            y + Facing.offsetsYForSide[side],
+            z + Facing.offsetsZForSide[side],
+            cue);
+    }
 
     public static void send(World world, int x, int y, int z, Cue cue) {
         if (world == null || world.isRemote || cue == null) return;

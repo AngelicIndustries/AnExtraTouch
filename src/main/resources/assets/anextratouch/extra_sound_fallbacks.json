@@ -32,6 +32,7 @@
   "minecraft:block.wood.place": "minecraft:dig.wood",
   "minecraft:block.wool.place": "minecraft:dig.cloth",
   "minecraft:entity.armor_stand.break": "minecraft:dig.wood",
+  "minecraft:entity.bat.takeoff": "minecraft:mob.bat.takeoff",
   "minecraft:entity.cod.flop": "minecraft:mob.slime.small",
   "minecraft:entity.item_frame.place": "minecraft:dig.wood",
   "minecraft:item.armor.equip_chain": "anextratouch:armor.medium_walk",
@@ -74,5 +75,7 @@
   "minecraft:block.copper_door.close": "minecraft:random.door_close",
   "minecraft:entity.witch.throw": "minecraft:random.bow",
   "minecraft:block.lever.click": "minecraft:random.click",
-  "minecraft:entity.silverfish.step": "minecraft:mob.silverfish.step"
+  "minecraft:entity.silverfish.step": "minecraft:mob.silverfish.step",
+  "minecraft:item.bucket.empty_fish": "minecraft:random.splash",
+  "minecraft:item.crop.plant": "minecraft:step.grass"
 }

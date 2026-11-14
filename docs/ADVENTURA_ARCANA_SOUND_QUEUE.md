@@ -36,7 +36,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 14 | Uralte Zauber | Queued | Wands, spell materials, charms, crystals, bottles and equipment | Spell/book selection and custom inventory controls; avoid native spell audio |
 | 15 | Mob Rewind | Queued | Mob drops, food, shells, teeth, eggs, equipment and special items | Inspect actual custom item controls; do not infer from localization alone |
 | 16 | Mo' Creatures Legacy | Accepted | Amulets, capture items, saddles, food, materials, weapons and armor | Pet/chest/name interfaces and capture/release feedback |
-| 17 | Wild Mobs | Queued | Meat, fur, hides, gear and remaining drops | Primarily mappings |
+| 17 | Wild Mobs | Ready for pack test | Meat, fur, hides, gear and remaining drops | Primarily mappings |
 | 18 | Mowzie's Mobs | Queued | Seeds, masks, axe, helmet and other drops | Primarily mappings; preserve existing ability sounds |
 | 19 | Mutant Creatures | Queued | Shards, Chemical X, skeleton parts, equipment and special drops | Creeper-minion controls; preserve existing ability sounds |
 | 20 | Project Zulu | Queued | Food, seeds, flowers, drops, gear and unusual materials | Animal-name, flower-pot and tombstone interfaces |
@@ -761,4 +761,54 @@ in development). All under `extraModInteractions` unless noted.
   the short-lived `item.category.scale`).
 - jack's check: the small-piece click works for all three. Mo' Creatures
   accepted (pet amulet sounds pending the next Mo' Creatures build).
+
+## Wild Mobs review - 2026-11-14
+
+- Source: the pack's `WildMobs-1.7.10-1.5.3.jar` (decompiled
+  `WildMobsModItems`, `WildMobsModBlocks`). Every item extends a plain item
+  class (`ItemWM`, `ItemWMFood`), so all fell back to the generic pickup,
+  armor included (custom `WILDMOBS_FUR` and `WILDMOBS_BISON_LEATHER`).
+- 69 definitions, 29 of them spawn eggs (see EXTRA_SOUNDS.md).
+- Blocks: leather, fur and bison blocks and carpets use cloth, bladder blocks
+  cloth, armadillo shell blocks stone; left alone. The pack's footstep map
+  covers all of them except stairs.
+- Interaction: catching with the bug net and buckets plays through the
+  creatures' own code, but the other way was silent. Per jack, added cues for
+  releasing a jellyfish or sea scorpion from its bucket (modern
+  `item.bucket.empty_fish`), letting a butterfly or dragonfly go (bat takeoff,
+  volume 0.2), planting a magma plant seed (modern `item.crop.plant`) and
+  uncorking a mired bottle to summon a mired. The sea scorpion egg's throw
+  plays the modern throw like other eggs.
+- Mired bottle: from `/tmp/aet-mired-sounds/index.html` jack picked MB13,
+  Luisa_Sanchez's CC0 "uncorking a wine" (0.04-0.18 s), shipped as
+  `action/mired/uncork.ogg`.
+- jack's check: gear and most drops work. Changed per jack: the butterfly and
+  dragonfly no longer sound like meat (now leaves), infected flesh sounds like
+  meat, the armadillo shell like the naga scale (small-piece click), the magma
+  cream drop like the slime drop, and the creature buckets get the water
+  bucket's liquid accent. The uncork was too quiet: now peaks at -1 dB at
+  volume 1.0 (was -6 dB at 0.71).
+- Releasing a creature needs a water (or, for the nether jellyfish, lava)
+  source block in the crosshair. Using the bucket with no block in reach
+  crashed the game in Wild Mobs' own code (null ray trace); fixed by an AAC
+  patch (`wildMobsCreatureBucketAim`).
+- jack's check: no crash, but water releases did nothing. His bucket was a
+  `nether_jellyfish_bucket`: Wild Mobs lists that item with the six water
+  colors and names (lava-only), never its real Nether Medusa variant 6. AAC
+  patch `wildMobsNetherJellyfishBucketList` lists only the medusa for it.
+- jack: the uncork was still too quiet. The cut now runs on to 0.32 s, keeping
+  the pop's ring, and goes through a lookahead limiter (mean -13 dB, was -20).
+  The use cues (mired, magma plant seed, bugs) now play in front of the
+  clicked face, where the creature appears, not inside the clicked block.
+- Per jack the mired bottle also whispers in the inventory: an accent playing
+  Wild Mobs' own `entity.mired.say` (four whispers) with the bottle slosh.
+- jack: make it like BOP's pixie jar, a dry bottle plus the voice, the voice a
+  bit quieter and higher (now empty bottle, whisper at volume 0.7, pitch 1.1).
+  The cork is fine but should whisper too: interaction cues now play an
+  `<event>.accent` companion like inventory accents, and
+  `action.mired.summon.accent` plays the mired's whisper.
+- The bug release played nothing: `mob.bat.takeoff` lacked `"type": "event"`
+  and was looked up as a file. Now modern `entity.bat.takeoff` (same file,
+  legacy fallback); a new test rejects dotted file names from other
+  namespaces.
 

@@ -26041,6 +26041,665 @@
       }
     ]
   },
+  "item.pickup.wildmobsmod.bison_leather_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.bison_leather_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.bison_leather_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.bison_leather_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.fur_helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.fur_chestplate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.fur_leggings": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.fur_boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.bison_meat": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.cooked_bison_meat": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.calamari": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.cooked_calamari": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.chevon": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.cooked_chevon": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.goose": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.cooked_goose": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.mouse": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.cooked_mouse": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.venison": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.cooked_venison": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.butterfly": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.dragonfly": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.infected_flesh": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.golden_sea_egg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.sea_scorpion_egg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.roasted_magma_plant_seed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.magma_plant_seed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.bug_net": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.mired_bottle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bottle_empty",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.mired_bottle.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "wildmobsmod:entity.mired.say",
+        "type": "event",
+        "volume": 0.7,
+        "pitch": 1.1
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.cougar_hide": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.bison_leather": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.fur": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.thick_bone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.armadillo_shell": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.piece",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.slime_drop": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.magma_cream_drop": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.jellyfish_bucket": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.jellyfish_bucket.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket_liquid",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.nether_jellyfish_bucket": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.nether_jellyfish_bucket.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket_liquid",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.sea_scorpion_bucket": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.sea_scorpion_bucket.accent": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.bucket_liquid",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.magic_wand": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_deer": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_reindeer": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_elk": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_fox": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_arctic": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_desert": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_cougar": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_zomgus": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_bison": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_mouse": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_butterfly": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_tarantula": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_dreath": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_mired": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_goat": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_dire_wolf": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_magma_plant": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_dragonfly": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_armadillo": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_jellyfish": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_nether_jellyfish": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_skeleton_wolf": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_goose": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_wild_cat": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_wmwolf": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_sea_scorpion": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_faded": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_cheetah": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.wildmobsmod.spawn_egg_hyena": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
   "item.category.paper_bag": {
     "category": "player",
     "sounds": [
@@ -26345,6 +27004,51 @@
         "type": "event",
         "volume": 0.5,
         "pitch": 1.4
+      }
+    ]
+  },
+  "action.bucket.release": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.bucket.empty_fish",
+        "type": "event"
+      }
+    ]
+  },
+  "action.bug.release": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:entity.bat.takeoff",
+        "type": "event",
+        "volume": 0.2
+      }
+    ]
+  },
+  "action.plant": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.crop.plant",
+        "type": "event"
+      }
+    ]
+  },
+  "action.mired.summon": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "anextratouch:action/mired/uncork"
+      }
+    ]
+  },
+  "action.mired.summon.accent": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "wildmobsmod:entity.mired.say",
+        "type": "event"
       }
     ]
   },

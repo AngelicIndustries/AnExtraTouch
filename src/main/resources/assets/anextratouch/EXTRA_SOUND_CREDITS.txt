@@ -66,6 +66,7 @@ minecraft:block.wooden_trapdoor.close -> minecraft:random.door_close
 minecraft:block.wooden_trapdoor.open -> minecraft:random.door_open
 minecraft:block.wool.place -> minecraft:dig.cloth
 minecraft:entity.armor_stand.break -> minecraft:dig.wood
+minecraft:entity.bat.takeoff -> minecraft:mob.bat.takeoff
 minecraft:entity.cod.flop -> minecraft:mob.slime.small
 minecraft:entity.fish.swim -> minecraft:random.splash
 minecraft:entity.item_frame.place -> minecraft:dig.wood
@@ -86,8 +87,10 @@ minecraft:item.axe.strip -> minecraft:dig.wood
 minecraft:item.book.page_turn -> anextratouch:pageflip
 minecraft:item.bottle.empty -> anextratouch:item.potion.equip
 minecraft:item.bottle.fill -> anextratouch:item.potion.equip
+minecraft:item.bucket.empty_fish -> minecraft:random.splash
 minecraft:item.bucket.fill -> minecraft:liquid.swim
 minecraft:item.bucket.fill_lava -> minecraft:liquid.lavapop
+minecraft:item.crop.plant -> minecraft:step.grass
 minecraft:item.hoe.till -> minecraft:step.gravel
 minecraft:particle.soul_escape -> minecraft:random.fizz
 minecraft:ui.toast.in -> minecraft:random.click
@@ -293,6 +296,16 @@ Changes: excerpt at 0.01-0.06 s; mono, 44.1 kHz; 120 Hz high-pass; 3 ms fade in 
 a third of the excerpt; peak normalized to -6 dB; Ogg Vorbis quality 6.
 Playback volume 0.65. Picked from the small piece audition page (SP8).
 SHA-256 item/piece/click.ogg: e957f83a2136a6f8de04671b73de2bfe8f3381f216426af30977415d66bda867
+
+Uncorking a Wild Mobs mired bottle uses an excerpt from "uncorking a wine" by Luisa_Sanchez:
+https://freesound.org/people/Luisa_Sanchez/sounds/816976/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpt at 0.04-0.32 s; mono, 44.1 kHz; 120 Hz high-pass; 3 ms fade in, 60 ms fade out;
+raised 14 dB into a lookahead limiter (FFmpeg alimiter) at -1 dB; Ogg Vorbis quality 6.
+Playback volume 1.0. Picked from the mired bottle audition page (MB13).
+SHA-256 action/mired/uncork.ogg: 37f40ef95644ecf4d1e4ec0c199a7e5b1c66d4c1e877b37f06029e0f2e9b90df
 
 Keyboard type/move/erase/cut/paste handling uses excerpts from
 "Single Key Press Sounds" by eklee, qubodup:
