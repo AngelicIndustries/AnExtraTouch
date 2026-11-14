@@ -71,7 +71,8 @@ public final class ExtraSoundHandler {
     @SubscribeEvent(priority = EventPriority.LOWEST)
     public void chat(ClientChatReceivedEvent event) {
         Minecraft mc = Minecraft.getMinecraft();
-        if (!Config.extraChat || mc.thePlayer == null) return;
+        // Mods hide a line by setting the message to null, and an empty chat packet arrives as null.
+        if (!Config.extraChat || mc.thePlayer == null || event.message == null) return;
         String text = EnumChatFormatting.getTextWithoutFormattingCodes(event.message.getUnformattedText());
         String name = mc.thePlayer.getCommandSenderName();
         boolean own = text.startsWith("<" + name + ">");
