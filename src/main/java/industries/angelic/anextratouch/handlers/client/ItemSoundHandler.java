@@ -214,6 +214,12 @@ public final class ItemSoundHandler {
     }
 
     private static void playEquip(EntityLivingBase entity, ItemStack stack, Category category) {
+        // An item can name its own equip sound, item.equip.<modid>.<name>, like its pickup event.
+        ResourceLocation own = ownEquip(stack);
+        if (own != null) {
+            play(entity, own, Config.itemEquipVolume, 0.9F, 1.1F);
+            return;
+        }
         String sound;
         float volume = 0.5F;
         switch (category) {
@@ -263,6 +269,16 @@ public final class ItemSoundHandler {
                 return;
         }
         play(entity, sound, volume * Config.itemEquipVolume, 0.8F, 1.2F);
+    }
+
+    private static ResourceLocation ownEquip(ItemStack stack) {
+        if (stack == null) return null;
+        String name = Item.itemRegistry.getNameForObject(stack.getItem());
+        if (name == null) return null;
+        ResourceLocation event = new ResourceLocation("anextratouch", "item.equip." + name.replaceFirst(":", "."));
+        return Minecraft.getMinecraft()
+            .getSoundHandler()
+            .getSound(event) != null ? event : null;
     }
 
     private static ISound play(EntityLivingBase entity, String sound, float volume, float minPitch, float maxPitch) {

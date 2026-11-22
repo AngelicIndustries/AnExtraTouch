@@ -20,6 +20,7 @@ import industries.angelic.anextratouch.Config;
 public final class ThrowSounds {
 
     public static final String THROW = AnExtraTouch.MODID + ":item.throw";
+    public static final String BLOWGUN = AnExtraTouch.MODID + ":item.blowgun.shoot";
 
     private ThrowSounds() {}
 
@@ -34,6 +35,17 @@ public final class ThrowSounds {
         Operation<Void> original) {
         String played = replace(sound);
         original.call(world, thrower, played, volume, played.equals(sound) ? pitch : pitch(world.rand));
+    }
+
+    /** Mowzie's Mobs' blowgun fires its darts with the same bow release; it puffs instead. */
+    public static void blown(World world, Entity shooter, String sound, float volume, float pitch,
+        Operation<Void> original) {
+        String played = blowgun(sound);
+        original.call(world, shooter, played, volume, played.equals(sound) ? pitch : pitch(world.rand));
+    }
+
+    static String blowgun(String sound) {
+        return Config.itemThrowSoundsEnabled && "random.bow".equals(sound) ? BLOWGUN : sound;
     }
 
     static String replace(String sound) {

@@ -76,6 +76,8 @@ public class LateMixinLoader implements ILateMixinLoader {
             .addMixin("MixinBugRelease", MixinBuilder.Side.BOTH, "wildmobsmod")
             .addMixin("MixinMagmaPlantSeed", MixinBuilder.Side.BOTH, "wildmobsmod")
             .addMixin("MixinMiredBottle", MixinBuilder.Side.BOTH, "wildmobsmod")
+            .addMixin("MixinFoliaathSeedPlant", MixinBuilder.Side.BOTH, "mowziesmobs")
+            .addMixin("MixinBlowgunShot", MixinBuilder.Side.BOTH, "mowziesmobs")
             .addMixin("MixinLingeringPotionThrow", MixinBuilder.Side.BOTH, "etfuturum")
             .addMixin("MixinBlizzSnowTrail", MixinBuilder.Side.BOTH, "ThermalFoundation")
             .addMixin("MixinThaumicHorizonsBoat", MixinBuilder.Side.BOTH, "ThaumicHorizons")

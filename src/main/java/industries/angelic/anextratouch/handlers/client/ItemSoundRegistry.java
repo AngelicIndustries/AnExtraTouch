@@ -70,6 +70,9 @@ public final class ItemSoundRegistry {
     public static void reload(String[] entries) {
         Map<String, Category> wildcard = new HashMap<String, Category>();
         Map<MetaKey, Category> exact = new HashMap<MetaKey, Category>();
+        // Built-in defaults; configured overrides still win. Mowzie's Mobs' blowgun is a bow in code, but has no string
+        // to twang or pull.
+        wildcard.put("mowziesmobs:blowgun", Category.UTILITY);
         if (entries != null) {
             for (String raw : entries) {
                 ParsedEntry parsed = parse(raw);

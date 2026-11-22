@@ -13,6 +13,7 @@ import net.minecraft.entity.EntityLivingBase;
 import industries.angelic.anextratouch.Config;
 import industries.angelic.anextratouch.varinstances.configcaches.ArmorCache;
 import industries.angelic.anextratouch.varinstances.configcaches.BreathCache;
+import industries.angelic.anextratouch.varinstances.configcaches.EntityClassList;
 import industries.angelic.anextratouch.varinstances.configcaches.SoundShakeCache;
 
 public class VarInstanceClient {
@@ -43,18 +44,10 @@ public class VarInstanceClient {
         // Wetness
         wetnessEntities = new HashSet<>();
         String playerName = "Player";
+        Set<Class<?>> wetnessListed = EntityClassList.classes(Config.wetnessEntityClassList);
         for (Class<? extends Entity> c : EntityList.stringToClassMapping.values()) {
             if (!EntityLivingBase.class.isAssignableFrom(c)) continue;
-
-            String name = EntityList.classToStringMapping.get(c);
-            boolean inWetnessList = false;
-            for (String s : Config.wetnessEntityClassList) {
-                if (name.equals(s)) {
-                    inWetnessList = true;
-                    break;
-                }
-            }
-            if (Config.wetnessEntityClassListIsBlacklist == inWetnessList) continue;
+            if (Config.wetnessEntityClassListIsBlacklist == EntityClassList.listed(c, wetnessListed)) continue;
 
             wetnessEntities.add(c);
         }

@@ -51,6 +51,19 @@ public class ArmorCacheTest {
     }
 
     @Test
+    public void barakoaMasksKnockLikeWoodNotChain() throws Exception {
+        // Mowzie's Mobs' masks report the chain armor material.
+        Item mask = new ItemArmor(ItemArmor.ArmorMaterial.CHAIN, 0, 0).setUnlocalizedName("barakoaMask3");
+        Method register = Item.itemRegistry.getClass()
+            .getDeclaredMethod("addObjectRaw", int.class, String.class, Object.class);
+        register.setAccessible(true);
+        register.invoke(Item.itemRegistry, 31995, "mowziesmobs:barakoaMask3", mask);
+        ArmorCache cache = new ArmorCache();
+        cache.populateSoundRules(new String[0], new String[0]);
+        assertEquals("turtle", cache.resolveArmorCategory(new ItemStack(mask)));
+    }
+
+    @Test
     public void vanillaMaterialsWinOverNameRules() {
         ArmorCache cache = defaults();
         ItemArmor.ArmorMaterial[] materials = { ItemArmor.ArmorMaterial.CLOTH, ItemArmor.ArmorMaterial.CHAIN,

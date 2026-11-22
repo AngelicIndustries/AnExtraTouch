@@ -26700,6 +26700,105 @@
       }
     ]
   },
+  "item.pickup.mowziesmobs.spawnEgg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.mowziesmobs.foliaathseed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.mowziesmobs.dart": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.arrow",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.mowziesmobs.blowgun": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.equip.mowziesmobs.blowgun": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bamboo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.mowziesmobs.spear": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.mowziesmobs.barakoaMask1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.mowziesmobs.barakoaMask2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.mowziesmobs.barakoaMask3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.mowziesmobs.barakoaMask4": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.mowziesmobs.barakoaMask5": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
   "item.category.paper_bag": {
     "category": "player",
     "sounds": [
@@ -26716,6 +26815,14 @@
       {
         "name": "minecraft:entity.witch.throw",
         "type": "event"
+      }
+    ]
+  },
+  "item.blowgun.shoot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item/blowgun/shoot"
       }
     ]
   },

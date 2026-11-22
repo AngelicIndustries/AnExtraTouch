@@ -35,8 +35,17 @@ public class Config {
     // breath
     public static boolean breathEnabled = true;
     public static String[] breathEntityClassList = { "Chicken", "SnowMan", "Zombie", "VillagerGolem", "Skeleton",
-        "Creeper", "Enderman" };
+        "Creeper", "Enderman", "PigZombie", "Blaze", "Ghast", "Silverfish", "MutantCreatures.MutantEnderman",
+        "MutantCreatures.EndermanClone", "mowziesmobs.Foliaath", "mowziesmobs.BabyFoliaath", "wildmobsmod.MagmaPlant",
+        "eyesintheshadows.Eyes", "MoCreatures.Ant", "MoCreatures.Bee", "MoCreatures.Butterfly", "MoCreatures.Cricket",
+        "MoCreatures.Dragonfly", "MoCreatures.Firefly", "MoCreatures.Fly", "MoCreatures.Maggot", "MoCreatures.Roach",
+        "wildmobsmod.Butterfly", "wildmobsmod.Dragonfly", "BiomesOPlenty.Wasp", "etfuturum.bee", "etfuturum.endermite",
+        "TwilightForest.Firefly", "TwilightForest.Mosquito Swarm", "TwilightForest.Tower Termite",
+        "TwilightForest.Fire Beetle", "TwilightForest.Slime Beetle", "TwilightForest.Pinch Beetle",
+        "ProjectZulu|Core.BeetleAS", "ProjectZulu|Core.BeetleBS", "mobrewind.cockroach", "mobrewind.crimson_mosquito",
+        "mobrewind.fly", "mobrewind.leafcutter_ant" };
     public static boolean breathEntityClassListIsBlacklist = true;
+    public static boolean breathUndead = false;
     public static float breathDefaultUpOffset = -0.4f;
     public static float breathDefaultForwardDist = 0.3f;
     public static float breathDefaultBabyUpOffset = -0.1f;
@@ -119,7 +128,13 @@ public class Config {
 
     // wetness
     public static boolean wetParticlesEnabled = true;
-    public static String[] wetnessEntityClassList = {};
+    public static String[] wetnessEntityClassList = { "Silverfish", "MoCreatures.Ant", "MoCreatures.Bee",
+        "MoCreatures.Butterfly", "MoCreatures.Cricket", "MoCreatures.Dragonfly", "MoCreatures.Firefly",
+        "MoCreatures.Fly", "MoCreatures.Maggot", "MoCreatures.Roach", "wildmobsmod.Butterfly", "wildmobsmod.Dragonfly",
+        "BiomesOPlenty.Wasp", "etfuturum.bee", "etfuturum.endermite", "TwilightForest.Firefly",
+        "TwilightForest.Mosquito Swarm", "TwilightForest.Tower Termite", "ProjectZulu|Core.BeetleAS",
+        "ProjectZulu|Core.BeetleBS", "mobrewind.cockroach", "mobrewind.crimson_mosquito", "mobrewind.fly",
+        "mobrewind.leafcutter_ant" };
     public static boolean wetnessEntityClassListIsBlacklist = true;
     public static boolean wetnessRainEnabled = true;
     public static float wetnessDuration = 1.0f;
@@ -311,12 +326,17 @@ public class Config {
                 "breathEntityClassList",
                 Categories.breath,
                 breathEntityClassList,
-                "List of mobs which either show breath, or don't, depending on breathEntityClassListIsBlacklist.");
+                "List of mobs which either show breath, or don't, depending on breathEntityClassListIsBlacklist. An entry also covers mobs built on it, such as modded variants of vanilla mobs. The defaults leave out mobs that should show no breath, such as golems, creepers, ender creatures, blazes, ghasts, plants and insects.");
             breathEntityClassListIsBlacklist = config.getBoolean(
                 "breathEntityClassListIsBlacklist",
                 Categories.breath,
                 breathEntityClassListIsBlacklist,
                 "Whether breathEntityClassList is a blacklist (or a whitelist).");
+            breathUndead = config.getBoolean(
+                "breathUndead",
+                Categories.breath,
+                breathUndead,
+                "Whether undead mobs breathe: anything the game counts as undead, such as zombies, skeletons, zombie pigmen, withers, zombie horses and modded undead.");
             breathDefaultUpOffset = config.getFloat(
                 "breathDefaultUpOffset",
                 Categories.breath,
@@ -480,7 +500,7 @@ public class Config {
                 "extraModInteractions",
                 Categories.extraSounds,
                 true,
-                "Mod interactions that are otherwise silent: right-click harvesting (HarvestCraft, Biomes O' Plenty, Growthcraft), filling and emptying buckets and bottles at sinks, tanks, barrels and paddies, tilling salt grass, churning butter, kitchen doors, sinks and cooking, market purchases, drain and tank buttons, lunch box lids, Twilight Forest's magic log cores and critters, and Wild Mobs' creature buckets, bugs, magma plant seeds and mired bottles. The server must also have An Extra Touch, except for kitchen doors.");
+                "Mod interactions that are otherwise silent: right-click harvesting (HarvestCraft, Biomes O' Plenty, Growthcraft), filling and emptying buckets and bottles at sinks, tanks, barrels and paddies, tilling salt grass, churning butter, kitchen doors, sinks and cooking, market purchases, drain and tank buttons, lunch box lids, Twilight Forest's magic log cores and critters, Wild Mobs' creature buckets, bugs, magma plant seeds and mired bottles, and Mowzie's Mobs' Foliaath seeds. The server must also have An Extra Touch, except for kitchen doors.");
             extraBookPages = config.getBoolean(
                 "extraBookPages",
                 Categories.extraSounds,
@@ -554,7 +574,7 @@ public class Config {
                 "itemThrowSoundsEnabled",
                 Categories.itemSounds,
                 true,
-                "Thrown splash and lingering potions, snowballs, eggs, ender pearls, bottles o' enchanting, Twilight Forest's ice bombs and Wild Mobs' sea scorpion eggs play modern Minecraft's witch potion throw instead of the very low bow release vanilla borrows, which resource packs replacing the bow sound also change. The side that throws decides: in multiplayer, the server's setting is what other players hear.");
+                "Thrown splash and lingering potions, snowballs, eggs, ender pearls, bottles o' enchanting, Twilight Forest's ice bombs and Wild Mobs' sea scorpion eggs play modern Minecraft's witch potion throw instead of the very low bow release vanilla borrows, which resource packs replacing the bow sound also change. Mowzie's Mobs' blowgun puffs instead of the bow release. The side that throws decides: in multiplayer, the server's setting is what other players hear.");
             itemSoundsForOtherEntities = config.getBoolean(
                 "itemSoundsForOtherEntities",
                 Categories.itemSounds,
@@ -574,7 +594,7 @@ public class Config {
                 "itemSoundOverrides",
                 Categories.itemSounds,
                 new String[0],
-                "Item category overrides: modid:item=category or modid:item@metadata=category. Categories: sword, axe, tool, bow, crossbow, shield, potion, book, utility, none. Example: modid:hammer=axe. Exact metadata wins over whole-item rules; last duplicate wins. Damageable items use metadata 0 so wear does not change categories. none silences the item. Changes apply when saved.");
+                "Item category overrides: modid:item=category or modid:item@metadata=category. Categories: sword, axe, tool, bow, crossbow, shield, potion, book, utility, none. Example: modid:hammer=axe. Exact metadata wins over whole-item rules; last duplicate wins. Damageable items use metadata 0 so wear does not change categories. none silences the item. Mowzie's Mobs' blowgun is utility by default. Changes apply when saved.");
 
             // steam and lava jets
             steamEnabled = config.getBoolean(
@@ -649,7 +669,7 @@ public class Config {
                 "wetnessEntityClassList",
                 Categories.wetness,
                 wetnessEntityClassList,
-                "List of mobs which either show wetness particles, or don't, depending on wetnessEntityClassListIsBlacklist.");
+                "List of mobs which either show wetness particles, or don't, depending on wetnessEntityClassListIsBlacklist. An entry also covers mobs built on it. By default small insects don't drip.");
             wetnessEntityClassListIsBlacklist = config.getBoolean(
                 "wetnessEntityClassListIsBlacklist",
                 Categories.wetness,

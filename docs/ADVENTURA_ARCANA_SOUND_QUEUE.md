@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 17 - Wild Mobs** (06 - Adventura Arcana Core, 07 - Biomic, 14 - Uralte Zauber and 15 - Mob Rewind wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure, Fether, Twilight Forest and Mo' Creatures Legacy are accepted.
+**Next: 19 - Mutant Creatures** (06 - Adventura Arcana Core, 07 - Biomic, 14 - Uralte Zauber and 15 - Mob Rewind wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure, Fether, Twilight Forest, Mo' Creatures Legacy, Wild Mobs and Mowzie's Mobs are accepted.
 
 ## Scope and workflow
 
@@ -36,8 +36,8 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 14 | Uralte Zauber | Queued | Wands, spell materials, charms, crystals, bottles and equipment | Spell/book selection and custom inventory controls; avoid native spell audio |
 | 15 | Mob Rewind | Queued | Mob drops, food, shells, teeth, eggs, equipment and special items | Inspect actual custom item controls; do not infer from localization alone |
 | 16 | Mo' Creatures Legacy | Accepted | Amulets, capture items, saddles, food, materials, weapons and armor | Pet/chest/name interfaces and capture/release feedback |
-| 17 | Wild Mobs | Ready for pack test | Meat, fur, hides, gear and remaining drops | Primarily mappings |
-| 18 | Mowzie's Mobs | Queued | Seeds, masks, axe, helmet and other drops | Primarily mappings; preserve existing ability sounds |
+| 17 | Wild Mobs | Accepted | Meat, fur, hides, gear and remaining drops | Primarily mappings |
+| 18 | Mowzie's Mobs | Accepted | Seeds, masks, axe, helmet and other drops | Primarily mappings; preserve existing ability sounds |
 | 19 | Mutant Creatures | Queued | Shards, Chemical X, skeleton parts, equipment and special drops | Creeper-minion controls; preserve existing ability sounds |
 | 20 | Project Zulu | Queued | Food, seeds, flowers, drops, gear and unusual materials | Animal-name, flower-pot and tombstone interfaces |
 | 21 | Battlegear 2 for Backhand | Queued | Bows, shields, quivers, heraldry and weapon materials | Weapon/quiver inventory transitions and transfers |
@@ -811,4 +811,49 @@ in development). All under `extraModInteractions` unless noted.
   and was looked up as a file. Now modern `entity.bat.takeoff` (same file,
   legacy fallback); a new test rejects dotted file names from other
   namespaces.
+
+## Mowzie's Mobs review - 2026-11-22
+
+- Source: the pack's `MowziesMobs-1.2.99.jar` (decompiled `ItemHandler`,
+  `BlockHandler` and the item classes). 11 registered items (the test
+  structures item is never registered) and 2 blocks.
+- 10 definitions (see EXTRA_SOUNDS.md). The Barakoa masks construct with
+  cloth but `getArmorMaterial` returns CHAIN, so they sounded and equipped
+  like chain mail; now wooden gear, with a built-in `turtle` armor override
+  (AET's name rules already send wooden armor to turtle). The spear reports
+  stone but is mostly a wooden shaft (wood). The blowgun (a bow) is bamboo;
+  darts, the Foliaath seed and spawn eggs had the generic pickup.
+- Kept: the wrought axe and helm report vanilla iron (iron cue, heavy equip);
+  the mob remover is a creative tool and keeps the generic pickup. Painted
+  acacia and its slab set wood, and the pack's footstep map has both as wood.
+- Interaction: planting a Foliaath seed spawns a baby Foliaath in silence;
+  now the planting cue, like the magma plant seed. The wrought axe plays its
+  own anvil hit and whoosh. The blowgun fires with `random.bow`, which
+  `rhapsodia-replacements.zip` replaces; left alone pending jack.
+- jack: selecting the blowgun twanged like a bow; it should be the bamboo
+  sound. The blowgun now counts as a utility item by default (no twang, no
+  bowstring creak while drawing) and plays its bamboo pickup through a new
+  per-item `item.equip.<modid>.<name>` event. Its shot: from
+  `/tmp/aet-blowgun-sounds/index.html` jack picked BG8, Crinkem's CC0 "Blow
+  Dart" (0.02-0.11 s), replacing the bow release.
+- The Foliaath planting cue now follows the plant appearing: the seed reports
+  every use as done, so in creative it would have played on stone too.
+- AAC patches per jack: `mowziesMobsBlowgunAim` holds the blowgun level from
+  the mouth toward the crosshair while blown, in first person (the bow pose
+  angled it across the screen); `mowziesMobsFoliaathSoil` lets the seed take
+  on any grass or dirt (Material grass or ground, farmland aside), like AAC's
+  wild crops.
+- Per jack, breath and drips: undead mobs no longer breathe (new
+  `breathUndead`, checked per entity so zombie horses count), nor do
+  Foliaaths, the Eyes, insects, endermen, blazes, ghasts and zombie pigmen;
+  small insects (Mo' Creatures, Wild Mobs and similar, not big spiders) no
+  longer drip. List entries now cover subclasses, so Special Mobs' and Twilight
+  Forest's variants follow the vanilla entries. Names come from the pack's FML
+  trace log. The pack's `anextratouch.cfg` lists were updated too.
+- The aim patch first did not load: GTNH's loader checks required mods for
+  early mixins before mod jars are on the classpath, so Mowzie's Mobs was "not
+  found". It now applies without the check and finds the blowgun at runtime.
+- jack: helmets stay silent while walking, as in Presence Footsteps (only
+  chest, legs and boots sound). jack's check: blowgun aim, sounds, Foliaath
+  soil, breath and drips work. Mowzie's Mobs accepted.
 

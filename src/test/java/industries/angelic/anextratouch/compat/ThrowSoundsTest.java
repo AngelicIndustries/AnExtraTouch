@@ -25,6 +25,19 @@ public class ThrowSoundsTest {
     }
 
     @Test
+    public void theBlowgunPuffsInsteadOfTheBowRelease() {
+        boolean enabled = Config.itemThrowSoundsEnabled;
+        try {
+            Config.itemThrowSoundsEnabled = true;
+            assertEquals("anextratouch:item.blowgun.shoot", ThrowSounds.blowgun("random.bow"));
+            Config.itemThrowSoundsEnabled = false;
+            assertEquals("random.bow", ThrowSounds.blowgun("random.bow"));
+        } finally {
+            Config.itemThrowSoundsEnabled = enabled;
+        }
+    }
+
+    @Test
     public void theThrowKeepsItsOwnPitch() {
         Random random = new Random(7);
         for (int i = 0; i < 200; i++) {

@@ -6,6 +6,7 @@ import java.lang.reflect.Method;
 
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
@@ -27,6 +28,7 @@ public class ItemSoundRegistryTest {
         }
     }.setMaxDamage(336);
     private static final Item SWORD = new ItemSword(Item.ToolMaterial.IRON);
+    private static final Item BLOWGUN = new ItemBow();
 
     @BeforeClass
     public static void registerItems() throws ReflectiveOperationException {
@@ -36,6 +38,7 @@ public class ItemSoundRegistryTest {
         addObjectRaw.setAccessible(true);
         addObjectRaw.invoke(Item.itemRegistry, 31998, "aet_sound_test:shield", SHIELD);
         addObjectRaw.invoke(Item.itemRegistry, 31999, "aet_sound_test:sword", SWORD);
+        addObjectRaw.invoke(Item.itemRegistry, 31994, "mowziesmobs:blowgun", BLOWGUN);
     }
 
     @Before
@@ -66,5 +69,13 @@ public class ItemSoundRegistryTest {
 
         ItemSoundRegistry.reload(new String[] { "aet_sound_test:shield=sword" });
         assertEquals(Category.SWORD, ItemSoundRegistry.resolve(new ItemStack(SHIELD)));
+    }
+
+    @Test
+    public void mowziesBlowgunHasNoBowStringUnlessConfigured() {
+        // A bow in code, so it would twang when selected and creak when drawn.
+        assertEquals(Category.UTILITY, ItemSoundRegistry.resolve(new ItemStack(BLOWGUN)));
+        ItemSoundRegistry.reload(new String[] { "mowziesmobs:blowgun=bow" });
+        assertEquals(Category.BOW, ItemSoundRegistry.resolve(new ItemStack(BLOWGUN)));
     }
 }

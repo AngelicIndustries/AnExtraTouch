@@ -325,6 +325,20 @@ uncorking a mired bottle a cork squeak and pop (CC0 excerpt from Luisa_Sanchez's
 (`extraModInteractions`). A cue event's `.accent` companion plays alongside it,
 as inventory accents do.
 
+Mowzie's Mobs 1.2.99 has 10 definitions. Its Barakoa masks report chain mail
+and its spear stone, but both are carved wood and sound like wooden gear; the
+masks equip with the turtle shell knock (a built-in armor override) instead of
+chain. The bamboo blowgun sounds like bamboo, darts like arrows, the Foliaath
+seed like seeds and spawn eggs like vanilla's. The wrought axe and helm report
+iron and keep the iron cue, and painted acacia already sounds like wood.
+Planting a Foliaath seed plays modern crop planting where the baby Foliaath
+appears (`extraModInteractions`). The blowgun is a bow in code: it counts as a
+utility item, so selecting it plays its bamboo pickup through an
+`item.equip.mowziesmobs.blowgun` event (any item can have one) instead of the bow
+twang, drawing it no longer creaks like a bowstring, and a dart fires with a short
+puff (CC0 excerpt from Crinkem's "Blow Dart", `itemThrowSoundsEnabled`) instead
+of the bow release.
+
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch
 bag: a short crinkle excerpted from MichaelGillighan's CC0 "03 - Bolsa llena.wav"

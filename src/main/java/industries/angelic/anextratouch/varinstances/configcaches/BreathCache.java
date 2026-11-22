@@ -2,6 +2,7 @@ package industries.angelic.anextratouch.varinstances.configcaches;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Set;
 
 import net.minecraft.client.entity.EntityClientPlayerMP;
 import net.minecraft.client.entity.EntityOtherPlayerMP;
@@ -67,18 +68,12 @@ public class BreathCache {
         }
 
         // Build breath maps for all allowed entities
+        Set<Class<?>> listed = EntityClassList.classes(Config.breathEntityClassList);
         for (Class<? extends Entity> c : EntityList.stringToClassMapping.values()) {
             if (!EntityLivingBase.class.isAssignableFrom(c)) continue;
 
             String name = EntityList.classToStringMapping.get(c);
-            boolean inBreathList = false;
-            for (String s : Config.breathEntityClassList) {
-                if (name.equals(s)) {
-                    inBreathList = true;
-                    break;
-                }
-            }
-            if (Config.breathEntityClassListIsBlacklist == inBreathList) continue;
+            if (Config.breathEntityClassListIsBlacklist == EntityClassList.listed(c, listed)) continue;
 
             float upOff = breathUpOverrides.getOrDefault(name, Config.breathDefaultUpOffset);
             float fwdDist = breathFwdOverrides.getOrDefault(name, Config.breathDefaultForwardDist);

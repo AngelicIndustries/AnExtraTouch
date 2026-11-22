@@ -70,6 +70,10 @@ public class BreathHandler {
         if (!AnExtraTouch.vic.breath.breathUpOffsets.containsKey(event.entity.getClass())) {
             return;
         }
+        // Per entity rather than per class: a zombie horse is a horse.
+        if (!Config.breathUndead && living.isEntityUndead()) {
+            return;
+        }
 
         if (isInLiquid(living)) {
             return;

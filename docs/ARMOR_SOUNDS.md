@@ -7,7 +7,9 @@ It does not use the translated display name.
 
 Resolution order:
 
-1. `armorCategoryOverrides` by item registry name, including `none` overrides.
+1. `armorCategoryOverrides` by item registry name, including `none` overrides. Built-in
+   defaults sit below the configured ones: Twilight Forest critters `none`, naga armor
+   `light`, Mowzie's Mobs Barakoa masks `turtle`.
 2. Vanilla materials: cloth = light, chain = medium, iron/gold = heavy, diamond = crystal.
 3. Name rules in EFR order: none, medium (chain), crystal (diamond), heavy (gold/iron),
    light (leather), netherite, elytra, turtle, generic.
@@ -57,7 +59,7 @@ These classifications were checked against local source/jars and resolver tests.
 | Netherlicious Efrine | heavy | efrine rule |
 | Netherlicious Heavy Blaze | netherite | heavyblaze rule |
 | Mowzie's Mobs Wrought helmet | heavy | Reports vanilla IRON material |
-| Mowzie's Mobs Barakoa masks | medium | getArmorMaterial reports CHAIN, despite constructing with CLOTH |
+| Mowzie's Mobs Barakoa masks | turtle | Built-in override: getArmorMaterial reports CHAIN (constructed with CLOTH), but the masks are carved wood |
 
 Unmatched armor still uses the configured default. This does not invent new
 material mappings for every mod's armor.

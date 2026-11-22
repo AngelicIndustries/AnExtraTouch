@@ -29,6 +29,7 @@ final class ConfigGuiLayout {
                     "breathEnabled",
                     "breathEntityClassList",
                     "breathEntityClassListIsBlacklist",
+                    "breathUndead",
                     "breathDefaultUpOffset",
                     "breathDefaultForwardDist",
                     "breathDefaultBabyUpOffset",

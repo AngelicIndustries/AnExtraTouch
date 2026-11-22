@@ -307,6 +307,16 @@ raised 14 dB into a lookahead limiter (FFmpeg alimiter) at -1 dB; Ogg Vorbis qua
 Playback volume 1.0. Picked from the mired bottle audition page (MB13).
 SHA-256 action/mired/uncork.ogg: 37f40ef95644ecf4d1e4ec0c199a7e5b1c66d4c1e877b37f06029e0f2e9b90df
 
+Mowzie's Mobs' blowgun shot uses an excerpt from "Blow Dart" by Crinkem:
+https://freesound.org/people/Crinkem/sounds/492027/
+License: Creative Commons Zero 1.0 (CC0-1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source audio: the sound page's public HQ Ogg preview.
+Changes: excerpt at 0.02-0.11 s; mono, 44.1 kHz; 120 Hz high-pass; 3 ms fade in / fade out over
+a third of the excerpt; peak normalized to -6 dB; Ogg Vorbis quality 6.
+Playback volume 1.0. Picked from the blowgun audition page (BG8).
+SHA-256 item/blowgun/shoot.ogg: 0b37854befce032684746c9d676b94ff2007aea0792f82c039eea865da5184cf
+
 Keyboard type/move/erase/cut/paste handling uses excerpts from
 "Single Key Press Sounds" by eklee, qubodup:
 https://opengameart.org/content/single-key-press-sounds
