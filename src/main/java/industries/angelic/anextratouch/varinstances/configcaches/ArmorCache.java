@@ -57,11 +57,13 @@ public class ArmorCache {
         armorNameRules.clear();
         // Built-in defaults; configured overrides still win. Twilight Forest critters worn on the head play their own
         // pickup cue, and naga scale armor is light, not the default heavy. Mowzie's Mobs' wooden Barakoa masks report
-        // chain mail; they knock like a turtle shell instead.
+        // chain mail; they knock like a turtle shell instead, as does Mutant Creatures' bone armor, which reports iron.
         armorCategoryOverrideMap.put("TwilightForest:item.critter", "none");
         armorCategoryOverrideMap.put("TwilightForest:item.plateNaga", "light");
         armorCategoryOverrideMap.put("TwilightForest:item.legsNaga", "light");
         for (int mask = 1; mask <= 5; mask++) armorCategoryOverrideMap.put("mowziesmobs:barakoaMask" + mask, "turtle");
+        for (String piece : new String[] { "Head", "Chest", "Legs", "Boots" })
+            armorCategoryOverrideMap.put("MutantCreatures:item.skeleArmor" + piece, "turtle");
         for (String entry : overrides) {
             String[] parts = entry.split(";", -1);
             if (parts.length != 2) {

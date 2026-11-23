@@ -339,6 +339,15 @@ twang, drawing it no longer creaks like a bowstring, and a dart fires with a sho
 puff (CC0 excerpt from Crinkem's "Blow Dart", `itemThrowSoundsEnabled`) instead
 of the bow release.
 
+Mutant Creatures (jack's fork, `0d9fca7`) has 12 definitions. Its items were plain
+items, and its Mutant Skeleton armor reports iron: the armor and skeleton parts
+sound like bone (the shoulder pad like leather), and the armor equips with the
+turtle shell knock (a built-in armor override; the pack's footstep pack walks it
+as light). Chemical X and the creeper stats bottle sound like full bottles, the
+creeper shard like an amethyst shard, the endersoul hand like an ender pearl,
+the hulk hammer like stone gear and spawn eggs like vanilla's. Chemical X throws
+like a splash potion instead of a very low bow release.
+
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch
 bag: a short crinkle excerpted from MichaelGillighan's CC0 "03 - Bolsa llena.wav"

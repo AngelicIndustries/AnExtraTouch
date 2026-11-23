@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 19 - Mutant Creatures** (06 - Adventura Arcana Core, 07 - Biomic, 14 - Uralte Zauber and 15 - Mob Rewind wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure, Fether, Twilight Forest, Mo' Creatures Legacy, Wild Mobs and Mowzie's Mobs are accepted.
+**Next: 20 - Project Zulu** (06 - Adventura Arcana Core, 07 - Biomic, 14 - Uralte Zauber and 15 - Mob Rewind wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure, Fether, Twilight Forest, Mo' Creatures Legacy, Wild Mobs, Mowzie's Mobs and Mutant Creatures are accepted.
 
 ## Scope and workflow
 
@@ -38,7 +38,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 16 | Mo' Creatures Legacy | Accepted | Amulets, capture items, saddles, food, materials, weapons and armor | Pet/chest/name interfaces and capture/release feedback |
 | 17 | Wild Mobs | Accepted | Meat, fur, hides, gear and remaining drops | Primarily mappings |
 | 18 | Mowzie's Mobs | Accepted | Seeds, masks, axe, helmet and other drops | Primarily mappings; preserve existing ability sounds |
-| 19 | Mutant Creatures | Queued | Shards, Chemical X, skeleton parts, equipment and special drops | Creeper-minion controls; preserve existing ability sounds |
+| 19 | Mutant Creatures | Accepted | Shards, Chemical X, skeleton parts, equipment and special drops | Creeper-minion controls; preserve existing ability sounds |
 | 20 | Project Zulu | Queued | Food, seeds, flowers, drops, gear and unusual materials | Animal-name, flower-pot and tombstone interfaces |
 | 21 | Battlegear 2 for Backhand | Queued | Bows, shields, quivers, heraldry and weapon materials | Weapon/quiver inventory transitions and transfers |
 | 22 | Dimensional Doors | Queued | Door materials, keys and other dimensional items | Inspect item state changes; installed local build differs from manifest |
@@ -856,4 +856,34 @@ in development). All under `extraModInteractions` unless noted.
 - jack: helmets stay silent while walking, as in Presence Footsteps (only
   chest, legs and boots sound). jack's check: blowgun aim, sounds, Foliaath
   soil, breath and drips work. Mowzie's Mobs accepted.
+
+## Mutant Creatures review - 2026-11-22
+
+- Source: jack's fork (`../Mutant-Creatures`, the pack's `0d9fca7` build).
+  Items register under their unlocalized names
+  (`MutantCreatures:item.creeperShard`). 11 items, no blocks.
+- 12 definitions (see EXTRA_SOUNDS.md), including skeleton part metadata 3
+  (the leather shoulder pad). All items but the armor were plain items with
+  the generic pickup; the bone armor reports iron (iron cue, heavy equip).
+- Per jack: the bone armor equips with the turtle knock (built-in AET
+  override) and walks light (an `equipment.json` layer in the pack's
+  `aa-footsteps.zip`).
+- Interaction: Chemical X is thrown with `random.bow` at a very low pitch; it
+  now throws like a splash potion (`itemThrowSoundsEnabled`). The hulk hammer
+  and creeper shard explode and the endersoul hand teleports with their own
+  sounds. Feeding a creeper minion gunpowder or TNT is silent apart from
+  particles; per jack, sounds go into the fork. Its stats GUI uses vanilla
+  buttons. The first page (powder pours, fuses, charge-ups) was all "mid";
+  per jack gunpowder gets a pleased hiss and TNT a fuse that fizzles. From
+  `/tmp/mc-minion-sounds2/index.html` he picked PH11 (schreibsel's CC0 "Snake
+  hissing", 1.45-2.25 s, bundled in the fork as `creeperminion.pleased`) and
+  FF1 (1.7.10's `game.tnt.primed`, volume 0.5, pitch 1.2).
+- Per jack, the fork also gets a Chemical X mob list (`ChemicalXMobs`,
+  `ChemicalXMobsIsWhitelist`): Chemical X killed any mob without a boss bar
+  (only five come back as mutants), so it could cheese minibosses. By
+  default it now takes only the five mobs with mutant forms.
+- The fork is now in the pack's `localMods`, replacing the installed jar in
+  the run. jack's check: inventory sounds, bone armor equip and walk, the
+  Chemical X throw and mob list, and the minion feeding sounds work. Mutant
+  Creatures accepted.
 

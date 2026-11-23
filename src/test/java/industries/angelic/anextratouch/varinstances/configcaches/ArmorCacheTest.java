@@ -51,16 +51,20 @@ public class ArmorCacheTest {
     }
 
     @Test
-    public void barakoaMasksKnockLikeWoodNotChain() throws Exception {
+    public void woodAndBoneArmorKnockLikeAShell() throws Exception {
         // Mowzie's Mobs' masks report the chain armor material.
         Item mask = new ItemArmor(ItemArmor.ArmorMaterial.CHAIN, 0, 0).setUnlocalizedName("barakoaMask3");
         Method register = Item.itemRegistry.getClass()
             .getDeclaredMethod("addObjectRaw", int.class, String.class, Object.class);
         register.setAccessible(true);
         register.invoke(Item.itemRegistry, 31995, "mowziesmobs:barakoaMask3", mask);
+        // Mutant Creatures' bone armor reports iron.
+        Item bones = new ItemArmor(ItemArmor.ArmorMaterial.IRON, 0, 1).setUnlocalizedName("skeleArmorChest");
+        register.invoke(Item.itemRegistry, 31993, "MutantCreatures:item.skeleArmorChest", bones);
         ArmorCache cache = new ArmorCache();
         cache.populateSoundRules(new String[0], new String[0]);
         assertEquals("turtle", cache.resolveArmorCategory(new ItemStack(mask)));
+        assertEquals("turtle", cache.resolveArmorCategory(new ItemStack(bones)));
     }
 
     @Test

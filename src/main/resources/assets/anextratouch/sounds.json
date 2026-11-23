@@ -26799,6 +26799,114 @@
       }
     ]
   },
+  "item.pickup.MutantCreatures.item.mcSpawnEgg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.spawn_egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MutantCreatures.item.creeperShard": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MutantCreatures.item.creeperStats": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MutantCreatures.item.chemicalX": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.potion",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MutantCreatures.item.endersoulHand": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.ender_pearl",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MutantCreatures.item.hulkHammer": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MutantCreatures.item.skeletonPart": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MutantCreatures.item.skeletonPart.3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MutantCreatures.item.skeleArmorHead": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MutantCreatures.item.skeleArmorChest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MutantCreatures.item.skeleArmorLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.MutantCreatures.item.skeleArmorBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
   "item.category.paper_bag": {
     "category": "player",
     "sounds": [
