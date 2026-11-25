@@ -26907,6 +26907,888 @@
       }
     ]
   },
+  "item.pickup.ProjectZulu|Core.BlueClothHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.BlueClothChest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.BlueClothLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.BlueClothBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GreenClothHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GreenClothChest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GreenClothLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GreenClothBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.RedClothHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.RedClothChest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.RedClothLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.RedClothBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.WhiteClothHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.WhiteClothChest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.WhiteClothLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.WhiteClothBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.FurHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.FurChest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.FurLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.FurBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.CactusHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.CactusChest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.CactusLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.CactusBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.ScaleHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.ScaleChest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.ScaleLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.ScaleBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.armadillo",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.IronScaleHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.IronScaleChest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.IronScaleLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.IronScaleBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GoldScaleHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GoldScaleChest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GoldScaleLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GoldScaleBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.DiamondScaleHelmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.DiamondScaleChest": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.DiamondScaleLegs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.DiamondScaleBoots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.AloeVeraSeeds": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.Ankh": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.amulet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.CoconutItem": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.CoconutMilkFragment": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.CoconutSeed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.CoconutShell": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.CoconutShellFuel": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.DuckEgg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.OstrichEgg": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.FurPelt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.MuttonRaw": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.mutton",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.MuttonCooked": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.cooked_mutton",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.ScaleItem": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.piece",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.ScrapMeat": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.ThrowingRock": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.StructurePlacer": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.paper",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.WaterDroplet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.UniversalFlowerPot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.0": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.string",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.20": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.21": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.22": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.23": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.piece",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.24": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.amethyst_shard",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.25": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.26": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.27": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.28": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.29": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.30": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.31": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.32": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.33": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.rabbit_foot",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.34": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.dust",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.35": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wet",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.36": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.37": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.38": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.meat",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.39": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.slime_ball",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.40": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.41": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.egg",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.GenericCraftingItems1.42": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.stone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.palmtreeplank": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.palmtreestairs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.palmtreesapling": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.leaves",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.brewingstandsingle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.brewingstandtriple": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.limitedmobspawner": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.mobskulls": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.banner",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.spikes_iron": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.metal_bits",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.spikes_ivory": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.pickup.minecraft.bone",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.spikes_wood": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.tumbleweed": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.crunchy_dry",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.campfire": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.universalflowerpot": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.brick",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.ProjectZulu|Core.coconut": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.fruit",
+        "type": "event"
+      }
+    ]
+  },
   "item.category.paper_bag": {
     "category": "player",
     "sounds": [
@@ -26931,6 +27813,17 @@
     "sounds": [
       {
         "name": "anextratouch:item/blowgun/shoot"
+      }
+    ]
+  },
+  "item.category.stone": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:block.stone.step",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.7
       }
     ]
   },
@@ -27264,6 +28157,45 @@
       {
         "name": "wildmobsmod:entity.mired.say",
         "type": "event"
+      }
+    ]
+  },
+  "action.campfire.light": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.flintandsteel.use",
+        "type": "event"
+      }
+    ]
+  },
+  "action.campfire.out": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.fire.extinguish",
+        "type": "event",
+        "volume": 0.6
+      }
+    ]
+  },
+  "action.campfire.out.accent": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.bucket.empty",
+        "type": "event"
+      }
+    ]
+  },
+  "action.grave.retrieve": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.ender_chest.open",
+        "type": "event",
+        "volume": 0.5,
+        "pitch": 1.2
       }
     ]
   },

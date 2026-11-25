@@ -77,5 +77,9 @@
   "minecraft:block.lever.click": "minecraft:random.click",
   "minecraft:entity.silverfish.step": "minecraft:mob.silverfish.step",
   "minecraft:item.bucket.empty_fish": "minecraft:random.splash",
-  "minecraft:item.crop.plant": "minecraft:step.grass"
+  "minecraft:item.crop.plant": "minecraft:step.grass",
+  "minecraft:item.flintandsteel.use": "minecraft:fire.ignite",
+  "minecraft:block.fire.extinguish": "minecraft:random.fizz",
+  "minecraft:block.ender_chest.open": "minecraft:random.chestopen",
+  "minecraft:block.stone.step": "minecraft:step.stone"
 }

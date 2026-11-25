@@ -348,6 +348,26 @@ creeper shard like an amethyst shard, the endersoul hand like an ender pearl,
 the hulk hammer like stone gear and spawn eggs like vanilla's. Chemical X throws
 like a splash potion instead of a very low bow release.
 
+Project Zulu 1.4b4 (`ProjectZulu|Core`, all modules on) has 97 definitions. Its
+armor uses custom materials and fell to the generic cue: desert cloth sounds like
+cloth, fur like leather, cactus dry and crunchy, lizard scale like armadillo
+scute armor, and iron, gold and diamond scale like their metals. Cloth, fur and
+cactus equip light and lizard scale with the turtle knock (built-in armor
+overrides; the pack's footstep pack walks them light and diamond scale as
+crystal). The generic crafting item's subtypes each get their family (hearts,
+frog legs, gills, ectoplasm and unhealthy hearts meat, tusks and talons bone,
+goos and spit slime), as do its coconuts, shells (wood), eggs, mutton, pelts, the
+ankh (amulet), the throwing rock (a stone block) and the structure placers
+(paper). Blocks that set no sound and fell back to stone (palm planks, stairs
+and saplings, brewing stands, the mob spawner, spikes, the flower pot and
+campfire) follow their material; mob heads sound like wool. Its potions and thrown rocks and
+eggs throw instead of the low bow release. Lighting a campfire plays modern flint
+and steel and putting it out with water the extinguish hiss over a bucket
+emptying; getting your items back from a tombstone (or an OpenBlocks grave)
+plays the ender chest opening at a higher pitch (`extraModInteractions`). Typing
+in the tombstone and animal-naming screens plays the keyboard sounds
+(`extraTyping`).
+
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch
 bag: a short crinkle excerpted from MichaelGillighan's CC0 "03 - Bolsa llena.wav"

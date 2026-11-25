@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 20 - Project Zulu** (06 - Adventura Arcana Core, 07 - Biomic, 14 - Uralte Zauber and 15 - Mob Rewind wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure, Fether, Twilight Forest, Mo' Creatures Legacy, Wild Mobs, Mowzie's Mobs and Mutant Creatures are accepted.
+**Next: 21 - Battlegear 2 for Backhand** (06 - Adventura Arcana Core, 07 - Biomic, 14 - Uralte Zauber and 15 - Mob Rewind wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure, Fether, Twilight Forest, Mo' Creatures Legacy, Wild Mobs, Mowzie's Mobs, Mutant Creatures and Project Zulu are accepted.
 
 ## Scope and workflow
 
@@ -39,7 +39,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 17 | Wild Mobs | Accepted | Meat, fur, hides, gear and remaining drops | Primarily mappings |
 | 18 | Mowzie's Mobs | Accepted | Seeds, masks, axe, helmet and other drops | Primarily mappings; preserve existing ability sounds |
 | 19 | Mutant Creatures | Accepted | Shards, Chemical X, skeleton parts, equipment and special drops | Creeper-minion controls; preserve existing ability sounds |
-| 20 | Project Zulu | Queued | Food, seeds, flowers, drops, gear and unusual materials | Animal-name, flower-pot and tombstone interfaces |
+| 20 | Project Zulu | Accepted | Food, seeds, flowers, drops, gear and unusual materials | Animal-name, flower-pot and tombstone interfaces |
 | 21 | Battlegear 2 for Backhand | Queued | Bows, shields, quivers, heraldry and weapon materials | Weapon/quiver inventory transitions and transfers |
 | 22 | Dimensional Doors | Queued | Door materials, keys and other dimensional items | Inspect item state changes; installed local build differs from manifest |
 | 23 | OpenBlocks | Queued | Tools, tanks, glider, books, utility items and block materials | Custom transfer controls, tank interactions and guide pages |
@@ -887,3 +887,38 @@ in development). All under `extraModInteractions` unless noted.
   Chemical X throw and mob list, and the minion feeding sounds work. Mutant
   Creatures accepted.
 
+## Project Zulu review - 2026-11-23
+
+- Source: the pack's `ProjectZulu-1.7.10-1.4b4.jar` (decompiled declarations).
+  Every block and item is enabled in the run's config. Exact registry names
+  come from the test world's `level.dat` FML item data (92 items, blocks
+  lower case): `ProjectZulu|Core:FurHelmet`, `ProjectZulu|Core:palmtreeplank`.
+- 97 definitions (see EXTRA_SOUNDS.md), including 23 subtypes of
+  `GenericCraftingItems1`. Fur and cactus armor use the lizard "Scale
+  Material", the four cloth colors "Desert Cloth Material"; all fell to the
+  generic cue, default heavy equip and (in Past Footsteps) heavy walking.
+  Built-in AET armor overrides and the pack's `equipment.json` layer fix
+  them. Many blocks set no step sound (stone): palm planks, stairs (they copy
+  the planks), saplings, brewing stands, the mob spawner, skulls, spikes.
+- AET's `MixinBuilder` gained a package argument: `ProjectZulu|Core` is no
+  package name.
+- Interaction: its potions, throwing rock, duck egg and ostrich egg throw
+  with the very low `random.bow`; now the throw. Per jack, cues for lighting
+  (torch or flint and steel; modern flint and steel) and putting out (water
+  bucket; extinguish hiss with a bucket-empty accent) the campfire, and for
+  getting items back from a tombstone; typing sounds in the tombstone and
+  animal-naming screens (custom screens, no text field). The flower pot is a
+  container screen (inventory sounds already). Palm sapling bone meal stays
+  silent like vanilla 1.7.10's.
+- Tombstone cue: from `/tmp/aet-tombstone-sounds/index.html` jack picked TR11,
+  modern `block.ender_chest.open` (volume 0.5, pitch 1.2). Per jack OpenBlocks'
+  grave gets it too: its sneak-use retrieval (`autoEquipAll`) was silent; the
+  shovel path already plays the dirt break.
+- jack's check: changed per jack: mob heads like wool (`item.category.banner`),
+  ectoplasm and the unhealthy hearts like meat, the structure placers (oasis,
+  pyramid, labyrinth, cemetery, cathedral) like paper, the coconut shell like
+  wood instead of the bowl, and the throwing rock like a plain stone block (new
+  `item.category.stone`: modern stone step at a block item's 0.6 volume, 1.7
+  pitch). Everything else works.
+- Project Zulu accepted; jack had the corrections above committed without a
+  second check.

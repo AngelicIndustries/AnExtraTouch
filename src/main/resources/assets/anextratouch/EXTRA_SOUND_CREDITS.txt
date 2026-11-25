@@ -38,6 +38,8 @@ minecraft:block.copper_door.open -> minecraft:random.door_open
 minecraft:block.coral_block.place -> minecraft:mob.slime.small
 minecraft:block.deepslate_bricks.place -> minecraft:dig.stone
 minecraft:block.dried_ghast.place -> minecraft:dig.cloth
+minecraft:block.ender_chest.open -> minecraft:random.chestopen
+minecraft:block.fire.extinguish -> minecraft:random.fizz
 minecraft:block.glass.place -> minecraft:dig.glass
 minecraft:block.honey_block.place -> minecraft:mob.slime.small
 minecraft:block.iron_trapdoor.close -> minecraft:random.door_close
@@ -57,6 +59,7 @@ minecraft:block.soul_sand.step -> minecraft:step.sand
 minecraft:block.stem.place -> minecraft:dig.wood
 minecraft:block.stone.hit -> minecraft:step.stone
 minecraft:block.stone.place -> minecraft:dig.stone
+minecraft:block.stone.step -> minecraft:step.stone
 minecraft:block.stone_button.click_off -> minecraft:random.click
 minecraft:block.stone_button.click_on -> minecraft:random.click
 minecraft:block.tuff.place -> minecraft:dig.stone
@@ -91,6 +94,7 @@ minecraft:item.bucket.empty_fish -> minecraft:random.splash
 minecraft:item.bucket.fill -> minecraft:liquid.swim
 minecraft:item.bucket.fill_lava -> minecraft:liquid.lavapop
 minecraft:item.crop.plant -> minecraft:step.grass
+minecraft:item.flintandsteel.use -> minecraft:fire.ignite
 minecraft:item.hoe.till -> minecraft:step.gravel
 minecraft:particle.soul_escape -> minecraft:random.fizz
 minecraft:ui.toast.in -> minecraft:random.click

@@ -500,7 +500,7 @@ public class Config {
                 "extraModInteractions",
                 Categories.extraSounds,
                 true,
-                "Mod interactions that are otherwise silent: right-click harvesting (HarvestCraft, Biomes O' Plenty, Growthcraft), filling and emptying buckets and bottles at sinks, tanks, barrels and paddies, tilling salt grass, churning butter, kitchen doors, sinks and cooking, market purchases, drain and tank buttons, lunch box lids, Twilight Forest's magic log cores and critters, Wild Mobs' creature buckets, bugs, magma plant seeds and mired bottles, and Mowzie's Mobs' Foliaath seeds. The server must also have An Extra Touch, except for kitchen doors.");
+                "Mod interactions that are otherwise silent: right-click harvesting (HarvestCraft, Biomes O' Plenty, Growthcraft), filling and emptying buckets and bottles at sinks, tanks, barrels and paddies, tilling salt grass, churning butter, kitchen doors, sinks and cooking, market purchases, drain and tank buttons, lunch box lids, Twilight Forest's magic log cores and critters, Wild Mobs' creature buckets, bugs, magma plant seeds and mired bottles, Mowzie's Mobs' Foliaath seeds, Project Zulu's campfires and tombstones, and OpenBlocks' graves. The server must also have An Extra Touch, except for kitchen doors.");
             extraBookPages = config.getBoolean(
                 "extraBookPages",
                 Categories.extraSounds,
@@ -574,7 +574,7 @@ public class Config {
                 "itemThrowSoundsEnabled",
                 Categories.itemSounds,
                 true,
-                "Thrown splash and lingering potions, snowballs, eggs, ender pearls, bottles o' enchanting, Twilight Forest's ice bombs, Wild Mobs' sea scorpion eggs and Mutant Creatures' Chemical X play modern Minecraft's witch potion throw instead of the very low bow release vanilla borrows, which resource packs replacing the bow sound also change. Mowzie's Mobs' blowgun puffs instead of the bow release. The side that throws decides: in multiplayer, the server's setting is what other players hear.");
+                "Thrown splash and lingering potions, snowballs, eggs, ender pearls, bottles o' enchanting, Twilight Forest's ice bombs, Wild Mobs' sea scorpion eggs, Mutant Creatures' Chemical X and Project Zulu's potions, throwing rocks, duck eggs and ostrich eggs play modern Minecraft's witch potion throw instead of the very low bow release vanilla borrows, which resource packs replacing the bow sound also change. Mowzie's Mobs' blowgun puffs instead of the bow release. The side that throws decides: in multiplayer, the server's setting is what other players hear.");
             itemSoundsForOtherEntities = config.getBoolean(
                 "itemSoundsForOtherEntities",
                 Categories.itemSounds,

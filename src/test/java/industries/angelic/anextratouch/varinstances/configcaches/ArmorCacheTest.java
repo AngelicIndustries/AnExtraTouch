@@ -68,6 +68,19 @@ public class ArmorCacheTest {
     }
 
     @Test
+    public void projectZuluSoftArmorIsLightNotTheDefaultHeavy() throws Exception {
+        Method register = Item.itemRegistry.getClass()
+            .getDeclaredMethod("addObjectRaw", int.class, String.class, Object.class);
+        register.setAccessible(true);
+        // The real armor uses a custom material, which falls to the default heavy; the override wins even over iron.
+        Item robe = new ItemArmor(ItemArmor.ArmorMaterial.IRON, 0, 1).setUnlocalizedName("redclothchest");
+        register.invoke(Item.itemRegistry, 31992, "ProjectZulu|Core:RedClothChest", robe);
+        ArmorCache cache = new ArmorCache();
+        cache.populateSoundRules(new String[0], new String[0]);
+        assertEquals("light", cache.resolveArmorCategory(new ItemStack(robe)));
+    }
+
+    @Test
     public void vanillaMaterialsWinOverNameRules() {
         ArmorCache cache = defaults();
         ItemArmor.ArmorMaterial[] materials = { ItemArmor.ArmorMaterial.CLOTH, ItemArmor.ArmorMaterial.CHAIN,

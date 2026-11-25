@@ -32,6 +32,31 @@ public class ArmorCache {
     private static final String[][] NAME_PHRASES = { {}, { "chain" }, { "diamond" }, { "gold", "iron" }, { "leather" },
         { "netherite" }, { "elytra" }, {}, {} };
 
+    /**
+     * Built-in defaults; configured overrides still win. Twilight Forest critters worn on the head play their own
+     * pickup
+     * cue, and naga scale armor is light, not the default heavy. Mowzie's Mobs' wooden Barakoa masks report chain mail
+     * and Mutant Creatures' bone armor iron; they knock like a turtle shell instead. Project Zulu's cloth, fur, cactus
+     * and lizard scale armor use custom materials that fell to the default heavy.
+     */
+    private static final Map<String, String> BUILT_IN_CATEGORIES = new HashMap<>();
+
+    static {
+        BUILT_IN_CATEGORIES.put("TwilightForest:item.critter", "none");
+        BUILT_IN_CATEGORIES.put("TwilightForest:item.plateNaga", "light");
+        BUILT_IN_CATEGORIES.put("TwilightForest:item.legsNaga", "light");
+        for (int mask = 1; mask <= 5; mask++) BUILT_IN_CATEGORIES.put("mowziesmobs:barakoaMask" + mask, "turtle");
+        for (String piece : new String[] { "Head", "Chest", "Legs", "Boots" })
+            BUILT_IN_CATEGORIES.put("MutantCreatures:item.skeleArmor" + piece, "turtle");
+        for (String piece : new String[] { "Helmet", "Chest", "Legs", "Boots" }) {
+            for (String cloth : new String[] { "Blue", "Green", "Red", "White" })
+                BUILT_IN_CATEGORIES.put("ProjectZulu|Core:" + cloth + "Cloth" + piece, "light");
+            BUILT_IN_CATEGORIES.put("ProjectZulu|Core:Fur" + piece, "light");
+            BUILT_IN_CATEGORIES.put("ProjectZulu|Core:Cactus" + piece, "light");
+            BUILT_IN_CATEGORIES.put("ProjectZulu|Core:Scale" + piece, "turtle");
+        }
+    }
+
     public void populateFromConfig() {
         armorSoundEntities = new HashSet<>();
         HashSet<String> armorEntityNames = new HashSet<>();
@@ -55,15 +80,7 @@ public class ArmorCache {
     void populateSoundRules(String[] overrides, String[] names) {
         armorCategoryOverrideMap.clear();
         armorNameRules.clear();
-        // Built-in defaults; configured overrides still win. Twilight Forest critters worn on the head play their own
-        // pickup cue, and naga scale armor is light, not the default heavy. Mowzie's Mobs' wooden Barakoa masks report
-        // chain mail; they knock like a turtle shell instead, as does Mutant Creatures' bone armor, which reports iron.
-        armorCategoryOverrideMap.put("TwilightForest:item.critter", "none");
-        armorCategoryOverrideMap.put("TwilightForest:item.plateNaga", "light");
-        armorCategoryOverrideMap.put("TwilightForest:item.legsNaga", "light");
-        for (int mask = 1; mask <= 5; mask++) armorCategoryOverrideMap.put("mowziesmobs:barakoaMask" + mask, "turtle");
-        for (String piece : new String[] { "Head", "Chest", "Legs", "Boots" })
-            armorCategoryOverrideMap.put("MutantCreatures:item.skeleArmor" + piece, "turtle");
+        armorCategoryOverrideMap.putAll(BUILT_IN_CATEGORIES);
         for (String entry : overrides) {
             String[] parts = entry.split(";", -1);
             if (parts.length != 2) {

@@ -22,6 +22,11 @@ public class MixinBuilder {
     private final List<String> mixins = new ArrayList<>();
 
     public MixinBuilder addMixin(String name, Side side, String modid) {
+        return addMixin(name, side, modid, modid);
+    }
+
+    /** For mod IDs that are not valid package names, such as Project Zulu's {@code ProjectZulu|Core}. */
+    public MixinBuilder addMixin(String name, Side side, String modid, String mixinPackage) {
         if ((side == Side.CLIENT && isServer()) || (side == Side.SERVER && !isServer())) {
             return this;
         }
@@ -29,7 +34,7 @@ public class MixinBuilder {
             return this;
         }
 
-        mixins.add(modid + "." + name);
+        mixins.add(mixinPackage + "." + name);
         return this;
     }
 

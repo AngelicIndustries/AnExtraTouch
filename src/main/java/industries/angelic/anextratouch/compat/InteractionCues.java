@@ -105,7 +105,13 @@ public final class InteractionCues {
         /** A seed planted as a creature or entity rather than a block. */
         PLANT("action.plant"),
         /** Wild Mobs' mired bottle uncorked to summon a mired. */
-        MIRED("action.mired.summon");
+        MIRED("action.mired.summon"),
+        /** Project Zulu's campfire lit with a torch or flint and steel. */
+        CAMPFIRE_LIGHT("action.campfire.light"),
+        /** Project Zulu's campfire put out with a water bucket. */
+        CAMPFIRE_OUT("action.campfire.out"),
+        /** A grave handing back its owner's items: Project Zulu's tombstone or OpenBlocks' grave. */
+        GRAVE("action.grave.retrieve");
 
         public final String event;
         /** Random pitch range around the event's own pitch. */
