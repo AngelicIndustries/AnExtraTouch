@@ -191,8 +191,9 @@ roboroo). HarvestCraft market
 purchases play a cash register (CC0, CapsLok). SaltyMod's drain button and
 Growthcraft's discard buttons pour when a tank with fluid is emptied, and the brew
 kettle's switch button closes like an iron trapdoor when the tanks' contents
-change. Spice of Life's sneak-use lid opens and folds the lunch bag with a paper
-crumple (CC0, esperri) and flips the lunch box with a quiet, high iron trapdoor. Cooking for Blockheads doors play
+change. Spice of Life's lunch bag lid opens and folds with a paper crumple (CC0,
+esperri) and the lunch box lid flips with a quiet, high iron trapdoor, whether
+sneak-used or opened and closed with its screen. Cooking for Blockheads doors play
 on every nearby client as they start to open and when they shut, instead of the
 generic screen sounds: fridges open and close with recorded fridge doors (CC0,
 naxxfish and bolkmar),

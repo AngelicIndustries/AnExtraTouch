@@ -939,3 +939,10 @@ in development). All under `extraModInteractions` unless noted.
   toggling a shield's arrow catching (lever click, on higher than off).
   Off-hand swapping belongs to Backhand.
 - jack's check: the sounds work. Battlegear 2 accepted.
+- 2026-11-26, jack: the lunch box and bag lid sounds should also play when
+  their screen opens. Using one opens the screen and sets the `Open` flag, and
+  closing the screen clears it (`ContainerFoodContainer.onContainerClosed`);
+  the cue now follows any flag change on use and on screen close. Left-click
+  toggling (a packet) is off in the pack's Spice of Life config and stays
+  uncued.
+
