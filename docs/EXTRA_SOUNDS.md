@@ -12,6 +12,7 @@ Client-only sounds adapted from Extra Sounds for Minecraft 1.7.10. Settings are 
 | `extraScreenScroll` | Creative inventory rows, NEI item/bookmark pages, and NEI recipe scrolling, including scrollbar dragging |
 | `extraBookmarks` | Adding/removing NEI bookmarks |
 | `extraChat` | Received messages and mentions; own messages never count as mentions |
+| `extraChatCommandMentions` | Command feedback naming you (NEI or `/give` items) counts as a mention; **off by default**, so it plays the message cue |
 | `extraTyping` | Accepted text edits and cursor/selection changes in text fields, signs, and writable books |
 | `extraScreenshots` | Successfully saved screenshots |
 | `extraStatusEffects` | Beneficial/harmful potion additions and removals on the local player |

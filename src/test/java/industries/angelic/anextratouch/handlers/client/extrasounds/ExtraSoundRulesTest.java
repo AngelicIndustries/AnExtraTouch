@@ -42,6 +42,14 @@ public class ExtraSoundRulesTest {
     }
 
     @Test
+    public void commandFeedbackCoversGiveAndAdminEchoes() {
+        assertTrue(ExtraSoundHandler.commandFeedback("commands.give.success"));
+        assertTrue(ExtraSoundHandler.commandFeedback("chat.type.admin"));
+        assertFalse(ExtraSoundHandler.commandFeedback("chat.type.text"));
+        assertFalse(ExtraSoundHandler.commandFeedback("chat.type.emote"));
+    }
+
+    @Test
     public void dropPitchUsesAmountActuallyDropped() {
         assertEquals(1.2, ExtraSounds.dropPitch(1, 64), 0.00001);
         assertEquals(0.9, ExtraSounds.dropPitch(64, 64), 0.00001);

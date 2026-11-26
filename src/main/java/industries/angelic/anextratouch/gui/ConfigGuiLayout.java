@@ -69,6 +69,7 @@ final class ConfigGuiLayout {
                     "extraInventoryScreens",
                     "extraScreenScroll",
                     "extraChat",
+                    "extraChatCommandMentions",
                     "extraTyping",
                     "extraScreenshots",
                     "extraStatusEffects",

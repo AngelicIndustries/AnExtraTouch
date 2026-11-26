@@ -75,20 +75,27 @@ public final class ExtraSoundHandler {
         if (!Config.extraChat || mc.thePlayer == null || event.message == null) return;
         String text = EnumChatFormatting.getTextWithoutFormattingCodes(event.message.getUnformattedText());
         String name = mc.thePlayer.getCommandSenderName();
-        boolean own = text.startsWith("<" + name + ">");
+        boolean own = text.startsWith("<" + name + ">"), command = false;
         if (event.message instanceof ChatComponentTranslation) {
             ChatComponentTranslation message = (ChatComponentTranslation) event.message;
-            if (message.getKey()
-                .startsWith("screenshot.")) return;
+            String key = message.getKey();
+            if (key.startsWith("screenshot.")) return;
+            command = commandFeedback(key);
             Object[] args = message.getFormatArgs();
-            if (message.getKey()
-                .startsWith("chat.type.") && args.length > 0) {
+            if (key.startsWith("chat.type.") && args.length > 0) {
                 String sender = args[0] instanceof IChatComponent ? ((IChatComponent) args[0]).getUnformattedText()
                     : String.valueOf(args[0]);
                 own |= name.equals(EnumChatFormatting.getTextWithoutFormattingCodes(sender));
             }
         }
-        ExtraSounds.ui(mention(text, name, own) ? "chat.mention" : "chat.message");
+        ExtraSounds.ui(
+            (!command || Config.extraChatCommandMentions) && mention(text, name, own) ? "chat.mention"
+                : "chat.message");
+    }
+
+    /** Command feedback names its target, as in NEI's and /give's "Given [item] to <you>". */
+    public static boolean commandFeedback(String key) {
+        return key.startsWith("commands.") || key.equals("chat.type.admin");
     }
 
     public static boolean mention(String text, String name, boolean own) {

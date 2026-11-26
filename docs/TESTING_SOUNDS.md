@@ -92,6 +92,8 @@ Test its palette and player-inventory tab, not NEI's separate item browser.
 - [ ] For the default dev username, run `/tellraw @p {"text":"Hello Developer!"}`.
   Expect the mention cue. Replace Developer if your username differs.
 - [ ] Run `/tellraw @p {"text":"Developer123"}`. That is not a whole-name mention.
+- [ ] Take an item from NEI, or run `/give @p stone`. Expect the message cue, not the
+  mention cue. Enable `extraChatCommandMentions`, repeat for the mention cue, then restore it.
 - [ ] Disable `extraChat`, repeat the chat checks, then restore it.
 - [ ] Press F2. After the screenshot saves, expect one screenshot cue. Disable
   `extraScreenshots` and repeat: saving still works without the added sound.

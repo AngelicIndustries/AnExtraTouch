@@ -86,6 +86,7 @@ public class Config {
     public static boolean extraScreenScroll = true;
     public static boolean extraBookmarks = true;
     public static boolean extraChat = true;
+    public static boolean extraChatCommandMentions = false;
     public static boolean extraTyping = true;
     public static boolean extraScreenshots = true;
     public static boolean extraStatusEffects = true;
@@ -480,6 +481,11 @@ public class Config {
                 Categories.extraSounds,
                 true,
                 "Incoming chat messages and mentions of your name.");
+            extraChatCommandMentions = config.getBoolean(
+                "extraChatCommandMentions",
+                Categories.extraSounds,
+                false,
+                "Play the mention sound for command feedback that names you, such as getting items from NEI or /give. Off plays the regular chat sound.");
             extraTyping = config.getBoolean(
                 "extraTyping",
                 Categories.extraSounds,
