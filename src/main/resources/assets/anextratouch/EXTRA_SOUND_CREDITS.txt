@@ -93,6 +93,7 @@ minecraft:item.bottle.fill -> anextratouch:item.potion.equip
 minecraft:item.bucket.empty_fish -> minecraft:random.splash
 minecraft:item.bucket.fill -> minecraft:liquid.swim
 minecraft:item.bucket.fill_lava -> minecraft:liquid.lavapop
+minecraft:item.bundle.drop_contents -> minecraft:random.pop
 minecraft:item.crop.plant -> minecraft:step.grass
 minecraft:item.flintandsteel.use -> minecraft:fire.ignite
 minecraft:item.hoe.till -> minecraft:step.gravel

@@ -81,5 +81,6 @@
   "minecraft:item.flintandsteel.use": "minecraft:fire.ignite",
   "minecraft:block.fire.extinguish": "minecraft:random.fizz",
   "minecraft:block.ender_chest.open": "minecraft:random.chestopen",
-  "minecraft:block.stone.step": "minecraft:step.stone"
+  "minecraft:block.stone.step": "minecraft:step.stone",
+  "minecraft:item.bundle.drop_contents": "minecraft:random.pop"
 }

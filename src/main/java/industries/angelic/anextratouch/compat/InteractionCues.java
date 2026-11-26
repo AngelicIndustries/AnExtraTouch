@@ -111,7 +111,15 @@ public final class InteractionCues {
         /** Project Zulu's campfire put out with a water bucket. */
         CAMPFIRE_OUT("action.campfire.out"),
         /** A grave handing back its owner's items: Project Zulu's tombstone or OpenBlocks' grave. */
-        GRAVE("action.grave.retrieve");
+        GRAVE("action.grave.retrieve"),
+        /** A Battlegear quiver spilling its arrows. */
+        QUIVER_DUMP("action.quiver.dump"),
+        /** A Battlegear quiver right-clicked into its Baubles slot. */
+        QUIVER_EQUIP("action.quiver.equip"),
+        /** A Battlegear shield set to catch arrows again. */
+        SHIELD_ARROWS_ON("action.shield.arrows.on", 0.1F),
+        /** A Battlegear shield set to let arrows through. */
+        SHIELD_ARROWS_OFF("action.shield.arrows.off", 0.1F);
 
         public final String event;
         /** Random pitch range around the event's own pitch. */

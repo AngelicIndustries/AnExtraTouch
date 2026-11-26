@@ -86,6 +86,8 @@ public class LateMixinLoader implements ILateMixinLoader {
             .addMixin("MixinZuluNameTyping", MixinBuilder.Side.CLIENT, "ProjectZulu|Core", "projectzulu")
             .addMixin("MixinZuluTombstoneTyping", MixinBuilder.Side.CLIENT, "ProjectZulu|Core", "projectzulu")
             .addMixin("MixinGraveRetrieve", MixinBuilder.Side.BOTH, "OpenBlocks")
+            .addMixin("MixinQuiver", MixinBuilder.Side.BOTH, "battlegear2")
+            .addMixin("MixinShieldArrows", MixinBuilder.Side.BOTH, "battlegear2")
             .addMixin("MixinLingeringPotionThrow", MixinBuilder.Side.BOTH, "etfuturum")
             .addMixin("MixinBlizzSnowTrail", MixinBuilder.Side.BOTH, "ThermalFoundation")
             .addMixin("MixinThaumicHorizonsBoat", MixinBuilder.Side.BOTH, "ThaumicHorizons")

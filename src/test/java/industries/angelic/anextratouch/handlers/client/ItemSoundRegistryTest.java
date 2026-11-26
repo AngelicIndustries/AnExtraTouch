@@ -29,6 +29,7 @@ public class ItemSoundRegistryTest {
     }.setMaxDamage(336);
     private static final Item SWORD = new ItemSword(Item.ToolMaterial.IRON);
     private static final Item BLOWGUN = new ItemBow();
+    private static final Item MACE = new ItemSword(Item.ToolMaterial.IRON);
 
     @BeforeClass
     public static void registerItems() throws ReflectiveOperationException {
@@ -39,6 +40,7 @@ public class ItemSoundRegistryTest {
         addObjectRaw.invoke(Item.itemRegistry, 31998, "aet_sound_test:shield", SHIELD);
         addObjectRaw.invoke(Item.itemRegistry, 31999, "aet_sound_test:sword", SWORD);
         addObjectRaw.invoke(Item.itemRegistry, 31994, "mowziesmobs:blowgun", BLOWGUN);
+        addObjectRaw.invoke(Item.itemRegistry, 31991, "battlegear2:mace.iron", MACE);
     }
 
     @Before
@@ -77,5 +79,10 @@ public class ItemSoundRegistryTest {
         assertEquals(Category.UTILITY, ItemSoundRegistry.resolve(new ItemStack(BLOWGUN)));
         ItemSoundRegistry.reload(new String[] { "mowziesmobs:blowgun=bow" });
         assertEquals(Category.BOW, ItemSoundRegistry.resolve(new ItemStack(BLOWGUN)));
+    }
+
+    @Test
+    public void battlegearMacesSwingBluntThoughTheyAreSwords() {
+        assertEquals(Category.AXE, ItemSoundRegistry.resolve(new ItemStack(MACE)));
     }
 }

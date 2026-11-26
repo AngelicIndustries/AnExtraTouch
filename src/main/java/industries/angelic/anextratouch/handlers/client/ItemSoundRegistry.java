@@ -71,8 +71,12 @@ public final class ItemSoundRegistry {
         Map<String, Category> wildcard = new HashMap<String, Category>();
         Map<MetaKey, Category> exact = new HashMap<MetaKey, Category>();
         // Built-in defaults; configured overrides still win. Mowzie's Mobs' blowgun is a bow in code, but has no string
-        // to twang or pull.
+        // to twang or pull. Battlegear's maces and war axes are swords in code, but blunt.
         wildcard.put("mowziesmobs:blowgun", Category.UTILITY);
+        for (String material : new String[] { "wood", "stone", "iron", "gold", "diamond" }) {
+            wildcard.put("battlegear2:mace." + material, Category.AXE);
+            wildcard.put("battlegear2:waraxe." + material, Category.AXE);
+        }
         if (entries != null) {
             for (String raw : entries) {
                 ParsedEntry parsed = parse(raw);

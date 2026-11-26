@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the installed jars in `../AdventuraArcana/run/client-java25/mods`. There are 123 manifest entries and 127 installed jars (including nested coremod jars).
 
-**Next: 21 - Battlegear 2 for Backhand** (06 - Adventura Arcana Core, 07 - Biomic, 14 - Uralte Zauber and 15 - Mob Rewind wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure, Fether, Twilight Forest, Mo' Creatures Legacy, Wild Mobs, Mowzie's Mobs, Mutant Creatures and Project Zulu are accepted.
+**Next: 22 - Dimensional Doors** (06 - Adventura Arcana Core, 07 - Biomic, 14 - Uralte Zauber and 15 - Mob Rewind wait while they are in development). Growthcraft, Cooking for Blockheads, Spice of Life, Plant Mega Pack, Natura, Netherlicious, Aether Legacy Departure, Fether, Twilight Forest, Mo' Creatures Legacy, Wild Mobs, Mowzie's Mobs, Mutant Creatures, Project Zulu and Battlegear 2 are accepted.
 
 ## Scope and workflow
 
@@ -40,7 +40,7 @@ Snapshot: 2026-11-01. Source: `../AdventuraArcana/pack/mods/*.pw.toml` and the i
 | 18 | Mowzie's Mobs | Accepted | Seeds, masks, axe, helmet and other drops | Primarily mappings; preserve existing ability sounds |
 | 19 | Mutant Creatures | Accepted | Shards, Chemical X, skeleton parts, equipment and special drops | Creeper-minion controls; preserve existing ability sounds |
 | 20 | Project Zulu | Accepted | Food, seeds, flowers, drops, gear and unusual materials | Animal-name, flower-pot and tombstone interfaces |
-| 21 | Battlegear 2 for Backhand | Queued | Bows, shields, quivers, heraldry and weapon materials | Weapon/quiver inventory transitions and transfers |
+| 21 | Battlegear 2 for Backhand | Accepted | Bows, shields, quivers, heraldry and weapon materials | Weapon/quiver inventory transitions and transfers |
 | 22 | Dimensional Doors | Queued | Door materials, keys and other dimensional items | Inspect item state changes; installed local build differs from manifest |
 | 23 | OpenBlocks | Queued | Tools, tanks, glider, books, utility items and block materials | Custom transfer controls, tank interactions and guide pages |
 | 24 | BiblioCraft + BiblioWoods BOP/Natura | Queued | Books, catalogs, clipboards, tools, framing parts and furniture materials | Book/catalog pages and specialized display/storage transfers |
@@ -922,3 +922,20 @@ in development). All under `extraModInteractions` unless noted.
   pitch). Everything else works.
 - Project Zulu accepted; jack had the corrections above committed without a
   second check.
+
+## Battlegear 2 for Backhand review - 2026-11-25
+
+- Source: the pack's `battlegear2-1.7.0-backhand.jar`; registry names from
+  the test world's `level.dat` (32 items; the iron and diamond bows and the
+  heraldry crest are not registered in the pack).
+- 11 definitions (see EXTRA_SOUNDS.md): shields by material (the classifier
+  heard every shield as iron), knight's armour (custom material, iron), chain,
+  quiver, multi-bow arrows. Weapons are `ItemSword`s with vanilla materials.
+  Built-in held-item category: maces and war axes count as axes (blunt).
+- Interaction: shields already play `battlegear2:shield` when blocking. Per
+  jack, cues for spilling a quiver (sneak-use; modern bundle drop-contents),
+  right-click equipping a quiver into its Baubles slot (leather equip; only
+  during the right-click, so the Baubles screen keeps its slot clicks), and
+  toggling a shield's arrow catching (lever click, on higher than off).
+  Off-hand swapping belongs to Backhand.
+- jack's check: the sounds work. Battlegear 2 accepted.

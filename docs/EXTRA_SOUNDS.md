@@ -368,6 +368,18 @@ plays the ender chest opening at a higher pitch (`extraModInteractions`). Typing
 in the tombstone and animal-naming screens plays the keyboard sounds
 (`extraTyping`).
 
+Battlegear 2 for Backhand 1.7.0 (the pack registers 32 items: no iron or diamond
+bows, no heraldry) has 11 definitions. Its shields are plain items the classifier
+heard as iron shields; now wood, hide (leather), gold and diamond follow their
+material. Knight's armour (custom material) sounds like iron, chain like chain
+mail, the quiver like leather and multi-bow arrows like arrows. Its daggers,
+maces, spears and war axes are swords with vanilla tool materials and keep their
+cues; maces and war axes count as axes for held-item sounds (blunt). Spilling a
+quiver's arrows plays modern bundle drop-contents, right-clicking a quiver into
+its Baubles slot the leather equip, and turning a shield's arrow catching on or
+off a light lever click (`extraModInteractions`). Shields keep Battlegear's own
+blocking sound.
+
 Spice of Life - Carrot Edition 2.2.12 uses paper for the food journal, light
 metal contact for the iron lunch box, and `item.category.paper_bag` for the lunch
 bag: a short crinkle excerpted from MichaelGillighan's CC0 "03 - Bolsa llena.wav"

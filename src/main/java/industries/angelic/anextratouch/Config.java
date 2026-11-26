@@ -500,7 +500,7 @@ public class Config {
                 "extraModInteractions",
                 Categories.extraSounds,
                 true,
-                "Mod interactions that are otherwise silent: right-click harvesting (HarvestCraft, Biomes O' Plenty, Growthcraft), filling and emptying buckets and bottles at sinks, tanks, barrels and paddies, tilling salt grass, churning butter, kitchen doors, sinks and cooking, market purchases, drain and tank buttons, lunch box lids, Twilight Forest's magic log cores and critters, Wild Mobs' creature buckets, bugs, magma plant seeds and mired bottles, Mowzie's Mobs' Foliaath seeds, Project Zulu's campfires and tombstones, and OpenBlocks' graves. The server must also have An Extra Touch, except for kitchen doors.");
+                "Mod interactions that are otherwise silent: right-click harvesting (HarvestCraft, Biomes O' Plenty, Growthcraft), filling and emptying buckets and bottles at sinks, tanks, barrels and paddies, tilling salt grass, churning butter, kitchen doors, sinks and cooking, market purchases, drain and tank buttons, lunch box lids, Twilight Forest's magic log cores and critters, Wild Mobs' creature buckets, bugs, magma plant seeds and mired bottles, Mowzie's Mobs' Foliaath seeds, Project Zulu's campfires and tombstones, OpenBlocks' graves, and Battlegear's quivers and shields. The server must also have An Extra Touch, except for kitchen doors.");
             extraBookPages = config.getBoolean(
                 "extraBookPages",
                 Categories.extraSounds,
@@ -594,7 +594,7 @@ public class Config {
                 "itemSoundOverrides",
                 Categories.itemSounds,
                 new String[0],
-                "Item category overrides: modid:item=category or modid:item@metadata=category. Categories: sword, axe, tool, bow, crossbow, shield, potion, book, utility, none. Example: modid:hammer=axe. Exact metadata wins over whole-item rules; last duplicate wins. Damageable items use metadata 0 so wear does not change categories. none silences the item. Mowzie's Mobs' blowgun is utility by default. Changes apply when saved.");
+                "Item category overrides: modid:item=category or modid:item@metadata=category. Categories: sword, axe, tool, bow, crossbow, shield, potion, book, utility, none. Example: modid:hammer=axe. Exact metadata wins over whole-item rules; last duplicate wins. Damageable items use metadata 0 so wear does not change categories. none silences the item. Mowzie's Mobs' blowgun is utility and Battlegear's maces and war axes axe by default. Changes apply when saved.");
 
             // steam and lava jets
             steamEnabled = config.getBoolean(

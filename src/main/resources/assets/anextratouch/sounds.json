@@ -27411,6 +27411,105 @@
       }
     ]
   },
+  "item.pickup.battlegear2.shield.wood": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.wood",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.battlegear2.shield.hide": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.battlegear2.shield.gold": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.golden",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.battlegear2.shield.diamond": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.diamond",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.battlegear2.chain": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.chain",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.battlegear2.quiver": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.leather",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.battlegear2.mb.arrow": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.arrow",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.battlegear2.knights_armour.helmet": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.battlegear2.knights_armour.plate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.battlegear2.knights_armour.legs": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
+  "item.pickup.battlegear2.knights_armour.boots": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anextratouch:item.category.gear.iron",
+        "type": "event"
+      }
+    ]
+  },
   "item.pickup.ProjectZulu|Core.WaterDroplet": {
     "category": "player",
     "sounds": [
@@ -28196,6 +28295,46 @@
         "type": "event",
         "volume": 0.5,
         "pitch": 1.2
+      }
+    ]
+  },
+  "action.quiver.dump": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.bundle.drop_contents",
+        "type": "event"
+      }
+    ]
+  },
+  "action.quiver.equip": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:item.armor.equip_leather",
+        "type": "event"
+      }
+    ]
+  },
+  "action.shield.arrows.on": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.lever.click",
+        "type": "event",
+        "volume": 0.4,
+        "pitch": 1.2
+      }
+    ]
+  },
+  "action.shield.arrows.off": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:block.lever.click",
+        "type": "event",
+        "volume": 0.4,
+        "pitch": 1.0
       }
     ]
   },
