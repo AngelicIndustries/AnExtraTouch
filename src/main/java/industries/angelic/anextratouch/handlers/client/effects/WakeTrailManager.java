@@ -191,12 +191,11 @@ public final class WakeTrailManager {
                     prepareFoamTexture(mc, partialTicks);
                     renderNodes(mc.theWorld, camX, camY, camZ, partialTicks, WakeRenderPass.FOAM, true);
                 }
-                GL11.glDisable(GL11.GL_TEXTURE_2D);
+                WhiteTexture.bind(mc);
                 renderNodes(mc.theWorld, camX, camY, camZ, partialTicks, WakeRenderPass.REGULAR, shaderWaterRendered);
             } finally {
                 if (overlayScope != null) overlayScope.close();
             }
-            GL11.glEnable(GL11.GL_TEXTURE_2D);
             return shaderWaterRendered;
         } finally {
             mc.entityRenderer.disableLightmap((double) partialTicks);
@@ -996,11 +995,12 @@ public final class WakeTrailManager {
                 flush();
             }
 
+            tessellator.setNormal(0.0F, 1.0F, 0.0F);
             tessellator.setColorRGBA(red, green, blue, alpha);
-            tessellator.addVertex(x0, y, z0);
-            tessellator.addVertex(x0, y, z1);
-            tessellator.addVertex(x1, y, z1);
-            tessellator.addVertex(x1, y, z0);
+            tessellator.addVertexWithUV(x0, y, z0, WhiteTexture.U, WhiteTexture.V);
+            tessellator.addVertexWithUV(x0, y, z1, WhiteTexture.U, WhiteTexture.V);
+            tessellator.addVertexWithUV(x1, y, z1, WhiteTexture.U, WhiteTexture.V);
+            tessellator.addVertexWithUV(x1, y, z0, WhiteTexture.U, WhiteTexture.V);
             quads++;
         }
 
